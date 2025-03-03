@@ -1,0 +1,10 @@
+weight: 2
+title: "Geophysical Services"
+description: >
+  <ul class="list-style-none">
+     <li>MT/CSAMT</li>
+     <li>CSEM, INCLUDING BOTH TIME AND FREQUENCY DOMAIN IP</li>
+     <li>GRAVITY AND MAGNETICS</li>
+   </ul>
+image: "img/carousel/Lithium.png"
+href: "faq"

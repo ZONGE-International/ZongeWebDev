@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zonge</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Zonge</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Dec 2023 21:29:20 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roundup Vancouver</title>
+      <link>http://localhost:1313/blog/2023/12/07/ameroundup/</link>
+      <pubDate>Thu, 07 Dec 2023 21:29:20 +0200</pubDate>
+      <guid>http://localhost:1313/blog/2023/12/07/ameroundup/</guid>
+      <description>&lt;p&gt;Zonge will be attending the next Roundup in Vancouver.  Please join us at Booth XYX and discuss how Zonge&amp;rsquo;s next generation of EM, Magnetics, and Gravity tools can energize your exploration program.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IP is CSEM</title>
+      <link>http://localhost:1313/blog/2023/12/04/ip-csem/</link>
+      <pubDate>Mon, 04 Dec 2023 13:47:08 +0200</pubDate>
+      <guid>http://localhost:1313/blog/2023/12/04/ip-csem/</guid>
+      <description>&lt;p&gt;Induced Polarization is a special case of the Controlled Source Electromagnetic (CSEM) method where the resistivity is a function of frequency.  By modeling the entire physics of the EM response, covering the entire frequency range, can both inprove the interpretability of the IP response and extend the depth of investigation of investigation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ANT-64</title>
+      <link>http://localhost:1313/blog/2023/12/01/amt-64/</link>
+      <pubDate>Fri, 01 Dec 2023 13:50:46 +0200</pubDate>
+      <guid>http://localhost:1313/blog/2023/12/01/amt-64/</guid>
+      <description>&lt;p&gt;We have developed a new magnetic field sensor, which covers the entire frequency band from 10 KHz to 1000 seconds without interruption of the acquisition process.  The noise envelope of this sensor meets or exceeds the performance of all competing sensors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TEM-4</title>
+      <link>http://localhost:1313/blog/2023/12/01/tem-4/</link>
+      <pubDate>Fri, 01 Dec 2023 13:50:46 +0200</pubDate>
+      <guid>http://localhost:1313/blog/2023/12/01/tem-4/</guid>
+      <description>&lt;p&gt;The sensor development team has created a dB/dT sensor with an effective area of 15,000 m^2.  This sensor is both smaller than the legacy TEM-3 and lower noise than the older sensor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;#About Zonge&#xA;Zonge International is both a Employee-Owned geophysical service provider and an instrument manufacturer.  Founded by Dr. Ken Zonge in 1972, we have focused on the application of electrical, electromagnetic, and potential field to the imaging of the of the earth&amp;rsquo;s subsurface.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xD;&#xA;  &lt;iframe src=&#34;https://www.youtube-nocookie.com/embed/nAI2SXPjE3M?rel=0&amp;start=0&#34;&#xD;&#xA;          style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34;&#xD;&#xA;          allowfullscreen=&#34;&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;&#xD;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ant4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ant4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ANT-4&lt;/strong&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/antennas/ANT_Image.png&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Zonge Magnetic Field Sensors&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;#Description&#xA;The ANT/4 is a low-noise magnetic field sensor designed for magnetotelluric investigations and other applications where measurements of the field at frequencies below 1 Hz are required. Using Triple-Nested magnetic feedback amplifier technology and including carefully designed mu-metal cores, this antenna is designed to be a highly flexible instrument, built to withstand the difficult conditions encountered in the field environment.&lt;/p&gt;&#xA;&lt;p&gt;##Specifications&lt;/p&gt;&#xA;&lt;p&gt;###Dimensions:&#xA;Length: 138.0 cm ( 54.0 in)&#xA;Diameter: 4.8 cm ( 1.875 in)&#xA;Weight: 6.2 kg ( 13.5 lb)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ant6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ant6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ANT-6&lt;/strong&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/antennas/ANT_Image.png&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Zonge Magnetic Field Sensors&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;#Description&#xA;The ANT/6 is a low noise sensor designed for accurate measurement of the magnetic field from 1 to 10 kHz. Using Triple-Nested magnetic feedback amplifier technology and including carefully designed mu-metal cores, this antenna is designed to be a highly flexible instrument, built to withstand the difficult conditions encountered in the field environment.&lt;/p&gt;&#xA;&lt;p&gt;##Specifications&lt;/p&gt;&#xA;&lt;p&gt;###Dimensions:&#xA;Length: 91.0 cm ( 36.0 in)&#xA;Diameter: 4.8 cm ( 1.875 in)&#xA;Weight: 3.2 kg ( 7.0 lb)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ant64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ant64/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ANT-64&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;#Description&#xA;The ANT/4 is a low-noise magnetic field sensor designed for ultra-broadband magnetotelluric investigations and other applications where measurements of the field at frequencies both upto 10KHz and below 1 Hz are required.  This  Using Triple-Nested magnetic feedback amplifier technology and including carefully designed mu-metal cores, this antenna is designed to be a highly flexible instrument, built to withstand the difficult conditions encountered in the field environment.&lt;/p&gt;&#xA;&lt;p&gt;#Specifications&lt;/p&gt;&#xA;&lt;p&gt;#Supporting Documents&#xA;&lt;a href=&#34;http://localhost:1313/documents/GGT-30.pdf&#34;&gt;Download Specification sheet for GGT-30&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/antennasummary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/antennasummary/</guid>
+      <description>&lt;p&gt;#SUMMARY OF SENSORS&lt;/p&gt;&#xA;&lt;p&gt;Zonge manufacturers a complete suite of electromagnetic field sensors for CSAMT, AMT, MT, and TDEM.&lt;/p&gt;&#xA;&lt;h1 id=&#34;ant-4&#34;&gt;ANT-4&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ant4/&#34; title=&#34;MT Antenna&#34;&gt;Specification Sheet for ANT-4&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;ant-6&#34;&gt;ANT-6&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ant6/&#34; title=&#34;AMT/CSAMT Antenna&#34;&gt;Specification Sheet for ANT-6&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;ant-64&#34;&gt;ANT-64&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ant6/&#34; title=&#34;Ultra-wideband Antenna&#34;&gt;Specification Sheet for ANT-64&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;tem-4&#34;&gt;TEM-4&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/tem4/&#34; title=&#34;db/dT TDEM Antenna&#34;&gt;Specification Sheet for TEM-4&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/co2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/co2/</guid>
+      <description>&lt;h1 id=&#34;all-phases-of-carbon-sequestration&#34;&gt;All Phases of Carbon Sequestration&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abandoned-well-location&#34;&gt;Abandoned Well Location&lt;/h2&gt;&#xA;&lt;h2 id=&#34;em-monitoring&#34;&gt;EM Monitoring&lt;/h2&gt;&#xA;&lt;h2 id=&#34;gravity-monitoring&#34;&gt;Gravity Monitoring&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/copper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/copper/</guid>
+      <description>&lt;h1 id=&#34;exploration-for-copper&#34;&gt;Exploration for Copper&lt;/h1&gt;&#xA;&lt;h1 id=&#34;target-type&#34;&gt;Target Type&lt;/h1&gt;&#xA;&lt;h2 id=&#34;porphyry-deposits&#34;&gt;Porphyry Deposits&lt;/h2&gt;&#xA;&lt;h3 id=&#34;induced-polarization&#34;&gt;Induced Polarization&lt;/h3&gt;&#xA;&lt;h4 id=&#34;complex-resistivity&#34;&gt;Complex Resistivity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/crip/&#34; title=&#34;Complex Resistivity&#34;&gt;CR&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;time-domain-ip&#34;&gt;Time Domain IP&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/tdip/&#34; title=&#34;TDIP&#34;&gt;Time Domain IP&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;massive-sulfides-and-skarns&#34;&gt;Massive Sulfides and Skarns&lt;/h2&gt;&#xA;&lt;h3 id=&#34;mt&#34;&gt;MT&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mt/&#34; title=&#34;MT&#34;&gt;Magnetotellurics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;csamt&#34;&gt;CSAMT&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csamt/&#34; title=&#34;CSAMT&#34;&gt;Controlled Source Audio-Frequency Magnetotellurics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;structure&#34;&gt;Structure&lt;/h1&gt;&#xA;&lt;h3 id=&#34;magnetics&#34;&gt;Magnetics&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/magnetics/&#34; title=&#34;Drone Mag&#34;&gt;Drone Magnetics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;gravity&#34;&gt;Gravity&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/gravity/&#34; title=&#34;Gravity&#34;&gt;Gravity&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/crip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/crip/</guid>
+      <description>&lt;h1 id=&#34;complex-resistivity&#34;&gt;Complex Resistivity&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-induced-polarization&#34;&gt;What is Induced Polarization?&lt;/h2&gt;&#xA;&lt;figure class=&#34;center&#34;&gt;&lt;a href=&#34;https://youtu.be/k5hCEHI0Dps&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/methods/croverview.png&#34; width=&#34;1000&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;What is Complex Resistivity&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;The Complex Resistivity Method is the frequency domain version of thel Induced Polarization (IP) method, which is in turn an extension of the DC resistivity method. The DC method is effectively a three-dimensional ohm-meter, with current input into the earth in one location and the voltage generated measured everywhere else. The measurement of voltage and current can then be used to calculate an Apparent Resistivity:&lt;br&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/methods/dcresistivityequation.PNG&#34; width=&#34;180&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Calculation of the DC Electrical Resistivity&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;where V is the voltage measured at a receiver dipole, the current is I, and K defines the geometry of the acquisition array (discussed below). This version of the resistivity assumes that things are constant in all directions, termed a 1/2 space. When viewed over any other electrical structure, (1D,2D, or 3D) this estimate of the electrical resistivity will contain artifacts. To go from this version of the resistivity to a depth section that reflects the actual electrical structure requires &lt;a href=&#34;http://localhost:1313/inversion/&#34; title=&#34;Link to Outline of Inversion Tools&#34;&gt;&lt;strong&gt;inversion&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/csamt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/csamt/</guid>
+      <description>&lt;p&gt;#Controlled Source Audio-Magnetotellurics&lt;/p&gt;&#xA;&lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;&#xA;&lt;h2 id=&#34;strengths-and-weaknesses&#34;&gt;Strengths and Weaknesses&lt;/h2&gt;&#xA;&lt;h3 id=&#34;depth-of-investigation&#34;&gt;Depth of investigation:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;lateral-resolution&#34;&gt;Lateral Resolution:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;straightforward-logistics&#34;&gt;Straightforward Logistics:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;integration-with-other-methods&#34;&gt;Integration with other methods:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;susceptibility-to-cultural-noise&#34;&gt;Susceptibility to Cultural Noise&lt;/h3&gt;&#xA;&lt;h1 id=&#34;logistics&#34;&gt;Logistics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;receiver&#34;&gt;Receiver&lt;/h2&gt;&#xA;&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;&#xA;&lt;h1 id=&#34;targets&#34;&gt;Targets&lt;/h1&gt;&#xA;&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;&#xA;&lt;h3 id=&#34;lithium&#34;&gt;Lithium&lt;/h3&gt;&#xA;&lt;h3 id=&#34;gold&#34;&gt;Gold&lt;/h3&gt;&#xA;&lt;h3 id=&#34;copper&#34;&gt;Copper&lt;/h3&gt;&#xA;&lt;h3 id=&#34;groundwater&#34;&gt;Groundwater&lt;/h3&gt;&#xA;&lt;h3 id=&#34;geothermal&#34;&gt;Geothermal&lt;/h3&gt;&#xA;&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;&#xA;&lt;p&gt;CSAMT Zonge and Hughes (1991) &lt;a href=&#34;https://library.seg.org/doi/10.1190/1.9781560802686.ch9&#34;&gt;https://library.seg.org/doi/10.1190/1.9781560802686.ch9&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;required-instruments-csamt&#34;&gt;Required Instruments (CSAMT)&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/gdp3224/&#34;&gt;Zen Receiver&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ggt10/&#34; title=&#34;Medium generator for driving transmitters&#34;&gt;GGT-10 Receiver&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ggt30/&#34; title=&#34;High power generator for driving transmitters&#34;&gt;GGT-30 Receiver&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/xmtg/&#34; title=&#34;Transmitter Controller&#34;&gt;XMT-G Transmitter Controller&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ggt10/&#34; title=&#34;Medium Power Generator&#34;&gt;ZMG-9 Generator&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ggt30/&#34; title=&#34;High Power Transmitter&#34;&gt;ZMG-30 Generator&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ant6/&#34; title=&#34;Ant-6 Antennas&#34;&gt;Ant-6 CSAMT Antenna&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/csamtsystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/csamtsystem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;CSAMT System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/documents/csamtsystem.zip&#34;&gt;Download Zip File of Required Instruments&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/csem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/csem/</guid>
+      <description>&lt;h1 id=&#34;controlled-source-audio-magnetotelluricscsem&#34;&gt;Controlled Source Audio-Magnetotellurics/CSEM&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://youtu.be/&#34;&gt;https://youtu.be/&lt;/a&gt;&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xD;&#xA;  &lt;iframe src=&#34;https://www.youtube-nocookie.com/embed/E3hoFyt8JYw?rel=0&amp;start=0&#34;&#xD;&#xA;          style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34;&#xD;&#xA;          allowfullscreen=&#34;&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;&#xD;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/exploration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/exploration/</guid>
+      <description>&lt;p&gt;Exploration&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/geothermal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/geothermal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ggt10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ggt10/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;GGT-10&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;&#xA;&lt;h1 id=&#34;specifications&#34;&gt;Specifications&lt;/h1&gt;&#xA;&lt;p&gt;#Supporting Documents&#xA;&lt;a href=&#34;http://localhost:1313/documents/GGT-10.pdf&#34;&gt;Download Specification sheet for GGT-10&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ggt30/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ggt30/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;GGT-30&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;#Description&lt;/p&gt;&#xA;&lt;p&gt;#Specifications&lt;/p&gt;&#xA;&lt;p&gt;#Supporting Documents&#xA;&lt;a href=&#34;http://localhost:1313/documents/GGT-30.pdf&#34;&gt;Download Specification sheet for GGT-30&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/gold/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gold/</guid>
+      <description>&lt;h1 id=&#34;mapping-of-resistivity-for-silicificaiton&#34;&gt;Mapping of resistivity for silicificaiton&lt;/h1&gt;&#xA;&lt;h1 id=&#34;induced-polarization-for-sulfides&#34;&gt;Induced Polarization for Sulfides&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mapping-of-resistivity-for-structure&#34;&gt;Mapping of resistivity for structure&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mapping-of-structure-using-magnetics&#34;&gt;Mapping of structure using magnetics&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mineral-systems-understanding-using-mt&#34;&gt;Mineral Systems Understanding Using MT&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/gravity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gravity/</guid>
+      <description>&lt;h1 id=&#34;gravity&#34;&gt;Gravity&lt;/h1&gt;&#xA;&lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;&#xA;&lt;h2 id=&#34;strengths-and-weaknesses&#34;&gt;Strengths and Weaknesses&lt;/h2&gt;&#xA;&lt;h3 id=&#34;depth-of-investigation&#34;&gt;Depth of investigation:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;lateral-resolution&#34;&gt;Lateral Resolution:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;straightforward-logistics&#34;&gt;Straightforward Logistics:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;integration-with-other-methods&#34;&gt;Integration with other methods:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;susceptibility-to-cultural-noise&#34;&gt;Susceptibility to Cultural Noise&lt;/h3&gt;&#xA;&lt;h1 id=&#34;logistics&#34;&gt;Logistics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;receiver&#34;&gt;Receiver&lt;/h2&gt;&#xA;&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;&#xA;&lt;h1 id=&#34;targets&#34;&gt;Targets&lt;/h1&gt;&#xA;&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;&#xA;&lt;h3 id=&#34;lithium&#34;&gt;Lithium&lt;/h3&gt;&#xA;&lt;h3 id=&#34;gold&#34;&gt;Gold&lt;/h3&gt;&#xA;&lt;h3 id=&#34;copper&#34;&gt;Copper&lt;/h3&gt;&#xA;&lt;h3 id=&#34;groundwater&#34;&gt;Groundwater&lt;/h3&gt;&#xA;&lt;h3 id=&#34;geothermal&#34;&gt;Geothermal&lt;/h3&gt;&#xA;&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;&#xA;&lt;h1 id=&#34;required-instruments&#34;&gt;Required Instruments&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/groundwater/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/groundwater/</guid>
+      <description>&lt;p&gt;#Target&#xA;Water is an important, often controlling, part of the earths electrical resistivity structure.  The permeability of the subsurface is also highly dependent upon rock type.&lt;/p&gt;&#xA;&lt;p&gt;#Physical Properties&#xA;The electrical resistivity of water with no TDS is extremely high.  But naturally occuring waters include some TDS, and therefore form lower resistivity zones.  This lower resistivity is compounded by the fact that water alters rocks, and the resulting alteration is conductive.&#xA;#Methods&#xA;TDEM&#xA;CSAMT&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/heapleach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/heapleach/</guid>
+      <description>&lt;h1 id=&#34;electrical-resistivity-of-pregnate-leach-solution-pls-makes-the-use-of-electrical-resistivity-methods-very-effective-tools-in-the-mapping-of-pls-saturation&#34;&gt;Electrical Resistivity of Pregnate Leach Solution (PLS) makes the use of electrical resistivity methods very effective tools in the mapping of PLS saturation.&lt;/h1&gt;&#xA;&lt;h2 id=&#34;dc-resistivity-and-ip&#34;&gt;DC Resistivity and IP&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/crip/&#34; title=&#34;Complex Resistivity&#34;&gt;CR&lt;/a&gt;&#xA;&lt;a href=&#34;http://localhost:1313/tdip/&#34; title=&#34;TDIP&#34;&gt;Time Domain IP&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;controlled-source-amt&#34;&gt;Controlled Source AMT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/csamt/&#34; title=&#34;CSAMT&#34;&gt;Controlled Source AMT &lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/instrumentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/instrumentation/</guid>
+      <description>&lt;p&gt;Instrumentation&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/instrumentskeleton/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/instrumentskeleton/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/inversion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/inversion/</guid>
+      <description>&lt;h1 id=&#34;inversion&#34;&gt;Inversion&lt;/h1&gt;&#xA;&lt;p&gt;This is a description of inversion and why you care.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ipcsemsystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ipcsemsystem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;IP/CSEM System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/documents/ipcsemsystem.zip&#34;&gt;Download Zip File of Required IP/CSEM Instruments&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/lithium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lithium/</guid>
+      <description>&lt;p&gt;#Target&lt;/p&gt;&#xA;&lt;p&gt;#Physical Properties&lt;/p&gt;&#xA;&lt;p&gt;#Methods&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/magnetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/magnetics/</guid>
+      <description>&lt;h1 id=&#34;magnetics&#34;&gt;Magnetics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;&#xA;&lt;h2 id=&#34;strengths-and-weaknesses&#34;&gt;Strengths and Weaknesses&lt;/h2&gt;&#xA;&lt;h3 id=&#34;depth-of-investigation&#34;&gt;Depth of investigation:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;lateral-resolution&#34;&gt;Lateral Resolution:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;straightforward-logistics&#34;&gt;Straightforward Logistics:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;integration-with-other-methods&#34;&gt;Integration with other methods:&lt;/h3&gt;&#xA;&lt;h3 id=&#34;susceptibility-to-cultural-noise&#34;&gt;Susceptibility to Cultural Noise&lt;/h3&gt;&#xA;&lt;h1 id=&#34;logistics&#34;&gt;Logistics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;receiver&#34;&gt;Receiver&lt;/h2&gt;&#xA;&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;&#xA;&lt;h1 id=&#34;targets&#34;&gt;Targets&lt;/h1&gt;&#xA;&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;&#xA;&lt;h3 id=&#34;lithium&#34;&gt;Lithium&lt;/h3&gt;&#xA;&lt;h3 id=&#34;gold&#34;&gt;Gold&lt;/h3&gt;&#xA;&lt;h3 id=&#34;copper&#34;&gt;Copper&lt;/h3&gt;&#xA;&lt;h3 id=&#34;groundwater&#34;&gt;Groundwater&lt;/h3&gt;&#xA;&lt;h3 id=&#34;geothermal&#34;&gt;Geothermal&lt;/h3&gt;&#xA;&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;&#xA;&lt;h1 id=&#34;required-instruments&#34;&gt;Required Instruments&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/methodsskeleton/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/methodsskeleton/</guid>
+      <description>&lt;h1&gt;&lt;/h1&gt;&#xA;&lt;p&gt;#Physical Basis of Method&lt;/p&gt;&#xA;&lt;p&gt;#Variations of Method&lt;/p&gt;&#xA;&lt;p&gt;#Strengths and Weaknesses&lt;/p&gt;&#xA;&lt;p&gt;#Logistics&lt;/p&gt;&#xA;&lt;p&gt;#Usual Targets&lt;/p&gt;&#xA;&lt;p&gt;#Required Instrumentation&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/monitoring/</guid>
+      <description>&lt;p&gt;Monitoring&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/mt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mt/</guid>
+      <description>&lt;h1 id=&#34;magnetotellurics&#34;&gt;Magnetotellurics&lt;/h1&gt;&#xA;&lt;p&gt;The magnetotelluric (MT) method utilizes naturally generated electromagnetic fields to examine the earth’s electrical resistivity to depths of up to 10’s of kilometers. This is the deepest sounding electromagnetic exploration method and utilizes the most sophisticated receivers, trading the signals generated by transmitters low noise sensors and electronics and more sophisticated data processing tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;&#xA;&lt;p&gt;The MT method utilizes measurements of the natural time varying electric and magnetic fields at the earth’s surface. The ratio of these fields is a function of the subsurface resistivity structure:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/mtsystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mtsystem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;MT System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/documents/mtsystem.zip&#34;&gt;Download Zip File of Required MT Instruments&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/nt20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nt20/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;NT-20&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/power/nt20.png&#34; width=&#34;500&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;NT-20&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;&#xA;&lt;p&gt;The turn-off of the transmitter, as well as the sample rate of the receiver, is a critical component in the ablity of a TEM system to image the shallow electrical section - the length of the turn-off acting as a filter on the decay and therefore removing the response of thin layer.&lt;/p&gt;&#xA;&lt;p&gt;Tturn-off of the NT-20 into a 20m x 20m loop is approximately 1 microsecond. When coupled with the high speed sampling of the GDP-3224, the NT-20 is a unique tool for the investigation of shallow groundwater applications with resolution in the upper 2-3 meters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/saltwaterintrusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/saltwaterintrusion/</guid>
+      <description>&lt;h1 id=&#34;saltwater-intrusion-mapping&#34;&gt;Saltwater Intrusion Mapping&lt;/h1&gt;&#xA;&lt;h1 id=&#34;preferred-tools&#34;&gt;Preferred Tools&lt;/h1&gt;&#xA;&lt;p&gt;In most cases saltwater  forms a low angle wedge as intrudes into the terrestrial aquifer, dipping beneath the lower density fresh water.  This is an exceptional target for central loop TEM investigations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tdem&#34;&gt;TDEM&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/tdem/&#34; title=&#34;TDEM&#34;&gt;Time Domain EM&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/targetskeleton/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/targetskeleton/</guid>
+      <description>&lt;p&gt;#Target&lt;/p&gt;&#xA;&lt;p&gt;#Physical Properties&lt;/p&gt;&#xA;&lt;p&gt;#Methods&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/tdem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tdem/</guid>
+      <description>&lt;h1 id=&#34;time-domain-electromagnetics&#34;&gt;Time-Domain Electromagnetics&lt;/h1&gt;&#xA;&lt;p&gt;The TDEM (or TEM, they are equivalent) method is one of the easiest electromagnetic methods to initially understand, but is one of the more difficult to master.&lt;/p&gt;&#xA;&lt;h2 id=&#34;theory&#34;&gt;Theory&lt;/h2&gt;&#xA;&lt;p&gt;The figure below outlines the basic signals observed by a TDEM system. The first panel is the current waveform, with a fairly slow turn-on, a constant current on-time, followed by a fast - linear - turn-off. This current, generally driven through a loop of wire on the earth&amp;rsquo;s surface, creates a secondary EMF in the subsurface proportional to the derivative of source (panel 2). This EMF then generates secondary current in the earth, which then drives a secondary magnetic field related to the electrical properties of the subsurface. It is this magnetic field, measured during the off-time, that is the basis of the method.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/tdip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tdip/</guid>
+      <description>&lt;h1 id=&#34;time-domain-induced-polarization&#34;&gt;Time-Domain Induced Polarization&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-induced-polarization&#34;&gt;What is Induced Polarization?&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;a href=&#34;https://youtu.be/DZEbVHr5728&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/methods/tdipoverview.png&#34; width=&#34;500&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;What is TDIP&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;The Time-Domain Induced Polarization Method (TDIP) is time-domain implementation of the Induced Polarization method, which is in turn an extension of the DC resistivity method. The DC method is effectively a three-dimensional ohm-meter, with current input into the earth in one location and voltage generated everywhere else. The measurement of that voltage and the source current can then be used to calculate an Apparent Resistivity:&lt;br&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/methods/dcresistivityequation.PNG&#34; width=&#34;180&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Calculation of the DC Electrical Resistivity&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;where V is the voltage measured at a receiver dipole, the current&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/tem4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tem4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TEM-4&lt;/strong&gt;&#xA;#Description&lt;/p&gt;&#xA;&lt;p&gt;#Specifications&lt;/p&gt;&#xA;&lt;p&gt;#Supporting Documents&#xA;&lt;a href=&#34;http://localhost:1313/documents/GGT-30.pdf&#34;&gt;Download Specification sheet for GGT-30&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/xmtg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/xmtg/</guid>
+      <description>&lt;p&gt;Transmitter Controller for all systems&#xA;&lt;strong&gt;XMG-G&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/power/xmtg.png&#34; width=&#34;500&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;XMT-G&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;#Description&#xA;GPS syncronized transmitter controller, compatible with all existing Zonge transmitters. The XMT is WiFi enabled, enabling remote operation of transmitters and wireless download of custom waveforms.&lt;/p&gt;&#xA;&lt;p&gt;#Specifications&#xA;Width: 21 cm&#xA;Length: 28 cm&#xA;Height: 18 cm&#xA;Weight: 6.4 kg including battery sufficient for 24 hours of continous operation&lt;/p&gt;&#xA;&lt;p&gt;#Supporting Documents&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/documents/xmtg.pdf&#34;&gt;Download Specification sheet for XMT-G&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;#Related Instruments&#xA;&lt;a href=&#34;http://localhost:1313/ggt10/&#34; title=&#34;10 KW Transmitter&#34;&gt;GGT10&lt;/a&gt;&#xA;&lt;a href=&#34;http://localhost:1313/ggt30/&#34; title=&#34;30 KW Transmitter&#34;&gt;GGT30&lt;/a&gt;&#xA;&lt;a href=&#34;http://localhost:1313/zt30b/&#34;&gt;Transmitter&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zmg30/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zmg30/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ZMG-30B&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/power/zmg30b.png&#34; width=&#34;500&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;ZMG-30B&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;#Description&#xA;Rugged 30 KVA desiel engine, designed specfically for geophysical applications.&lt;/p&gt;&#xA;&lt;p&gt;#Specifications&#xA;Width:&#xA;Length:&#xA;Height:&lt;/p&gt;&#xA;&lt;p&gt;#Supporting Documents&#xA;&lt;a href=&#34;http://localhost:1313/documents/zmg30.pdf&#34;&gt;Download Specification sheet for ZMG-30&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;#Related Instruments&#xA;&lt;a href=&#34;http://localhost:1313/ggt30/&#34; title=&#34;30 KW Transmitter&#34;&gt;GGT30&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zmg9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zmg9/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ZMG-9A&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/power/zmg9.png&#34; width=&#34;500&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;ZMG-9a&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;&#xA;&lt;p&gt;Rugged 9 KVA gasoline engine, designed specfically for geophysical applications.&lt;/p&gt;&#xA;&lt;h1 id=&#34;specifications&#34;&gt;Specifications&lt;/h1&gt;&#xA;&lt;p&gt;Width:&#xA;Length:&#xA;Height:&lt;/p&gt;&#xA;&lt;h1 id=&#34;supporting-documents&#34;&gt;Supporting Documents&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/documents/ZMG-9.pdf&#34;&gt;Download Specification sheet for ZMG-9&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;related-instruments&#34;&gt;Related Instruments&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ggt10/&#34; title=&#34;10 KW Transmitter&#34;&gt;GGT10&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;what-can-we-help-you-with&#34;&gt;What can we help you with?&lt;/h1&gt;&#xA;&lt;p&gt;Have questions concerning how geophysics might advance your project or need assistance in configuring a suite of instruments to meet your local challenges?&lt;/p&gt;&#xA;&lt;p&gt;Please feel free to contact us and we will do our best to assist you.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FAQ</title>
+      <link>http://localhost:1313/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/</guid>
+      <description>&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-what-to-do-if-i-have-still-not-received-the-order&#34;&gt;1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?&lt;/h2&gt;&#xA;&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
