@@ -1,9 +1,7 @@
----
-title: "News"
-description: "Latest updates and announcements from Zonge International."
-date: 2025-03-11
-draft: false
----
++++
+title = "News"
+id = "news"
++++
 
 # Latest News
 
