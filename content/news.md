@@ -1,7 +1,4 @@
-+++
-title = "News"
-id = "news"
-+++
+**NT-20**
 
 # Latest News
 
