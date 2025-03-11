@@ -1,4 +1,4 @@
-**NT-20**
+**News**
 
 # Latest News
 
