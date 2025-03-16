@@ -1,10 +1,5 @@
-+++
-title = 'ZT-30B'
-date = 2023-12-08T16:32:27-07:00
-draft = true
-slug= "zt30b"
-url= "/zt30b/"
-+++
+**ZT30b*
+
 
 # ZT-30B Geophysical Transmitter
 
