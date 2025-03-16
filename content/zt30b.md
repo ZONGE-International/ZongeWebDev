@@ -1,4 +1,4 @@
-**ZT30b*
+**ZT30b**
 
 
 # ZT-30B Geophysical Transmitter
