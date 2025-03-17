@@ -186,6 +186,18 @@ pluralizelisttitles = false
     parent     = "section.exploration"
 
 [[menu.main]]
+    name       = "Silver"
+    url        = "/targets/exploration/silver/"
+    weight     = 7
+    parent     = "section.exploration"
+
+[[menu.main]]
+    name       = "Base Metals"
+    url        = "/targets/exploration/baseMetals/"
+    weight     = 8
+    parent     = "section.exploration"
+
+[[menu.main]]
     name       = "CO2"
     url        = "/targets/monitoring/co2/"
     weight     = 1
