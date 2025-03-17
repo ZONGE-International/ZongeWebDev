@@ -36,6 +36,11 @@ pluralizelisttitles = false
     url        = "/"
     weight     = 1
 
+##############################
+# Methods ####################
+##############################
+
+
 [[menu.main]]
     name       = "Methods"
     identifier = "menu.methods"
@@ -60,55 +65,55 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "Complex Resistivity"
-    url        = "/crip/"
+    url        = "/Methods/GroundMethods/crip/"
     weight     = 1
     parent     = "section.ground"
 
 [[menu.main]]
     name       = "Controlled Source AMT/CSEM"
-    url        = "/csem/"
+    url        = "/Methods/GroundMethods/csem/"
     weight     = 2
     parent     = "section.ground"
 
 [[menu.main]]
     name       = "Magnetotellurics"
-    url        = "/mt/"
+    url        = "/Methods/GroundMethods/mt/"
     weight     = 3
     parent     = "section.ground"
 
 [[menu.main]]
     name       = "Time Domain EM"
-    url        = "/tdem/"
+    url        = "/Methods/GroundMethods/tdem/"
     weight     = 4
     parent     = "section.ground"
 
 [[menu.main]]
     name       = "Gravity"
-    url        = "/gravity/"
+    url        = "/Methods/GroundMethods/gravity/"
     weight     = 5
     parent     = "section.ground"
 
 [[menu.main]]
     name       = "Magnetics"
-    url        = "/magnetics/"
+    url        = "/Methods/GroundMethods/magnetics/"
     weight     = 6
     parent     = "section.ground"
 
 [[menu.main]]
     name       = "Time Domain IP"
-    url        = "/tdip/"
+    url        = "/Methods/GroundMethods/tdip/"
     weight     = 7
     parent     = "section.ground"
 
 [[menu.main]]
     name       = "Drone Magnetics"
-    url        = "/dronemagnetics/"
+    url        = "/Methods/AirboneMethods/dronemagnetics/"
     weight     = 1
     parent     = "section.airborne"
 
 [[menu.main]]
     name       = "Semi-Airborne Electromagnetics"
-    url        = "/semiairborneEM/"
+    url        = "/Methods/AirboneMethods/semiairborneEM/"
     weight     = 2
     parent     = "section.airborne"
 
@@ -117,6 +122,10 @@ pluralizelisttitles = false
     url        = ""
     weight     = 3
     parent     = "section.airborne"
+
+##############################
+# Targets ####################
+##############################
 
 [[menu.main]]
     name       = "Targets"
@@ -142,7 +151,7 @@ pluralizelisttitles = false
 	
 [[menu.main]]
     name       = "Gold"
-    url        = "/gold/"
+    url        = "/targets/exploration/gold/"
     weight     = 1
     parent     = "section.exploration"
 
@@ -154,45 +163,51 @@ pluralizelisttitles = false
 	
 [[menu.main]]
     name       = "Massive Sulfides"
-    url        = "/massivesulfides/"
+    url        = "/targets/exploration/massivesulfides/"
     weight     = 3
     parent     = "section.exploration"
 	
 [[menu.main]]
     name       = "Lithium"
-    url        = "/lithium/"
+    url        = "/targets/exploration/lithium/"
     weight     = 4
     parent     = "section.exploration"
 
 [[menu.main]]
     name       = "Geothermal"
-    url        = "/geothermal/"
+    url        = "/targets/exploration/geothermal/"
     weight     = 5
     parent     = "section.exploration"
 
 [[menu.main]]
     name       = "Groundwater"
-    url        = "/groundwater/"
+    url        = "/targets/exploration/groundwater/"
     weight     = 6
     parent     = "section.exploration"
 
 [[menu.main]]
     name       = "CO2"
-    url        = "/co2/"
+    url        = "/targets/monitoring/co2/"
     weight     = 1
     parent     = "section.monitoring"
 
 [[menu.main]]
     name       = "Heap Leach"
-    url        = "/heapleach/"
+    url        = "/targets/monitoring/heapleach/"
     weight     = 2
     parent     = "section.monitoring"
 	
 [[menu.main]]
     name       = "Salt Water Intrusion"
-    url        = "/saltwaterintrusion/"
+    url        = "/targets/monitoring/saltwaterintrusion/"
     weight     = 3
     parent     = "section.monitoring"
+
+
+##############################
+# Instruments ################
+##############################
+
 
 [[menu.main]]
     name       = "Instruments"
@@ -419,6 +434,10 @@ pluralizelisttitles = false
     weight     = 2
     parent     = "section.accessories"	
 	post       = 7	
+
+##############################
+# About ######################
+##############################
 	
 [[menu.main]]
     name       = "About"
@@ -437,6 +456,10 @@ pluralizelisttitles = false
     url        = ""
     weight     = 2
     parent     = "section.about"
+
+##############################
+# Contact ####################
+##############################
 
 [[menu.main]]
     identifier = "contact"
