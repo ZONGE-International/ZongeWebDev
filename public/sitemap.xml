@@ -2,135 +2,139 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/</loc>
     <lastmod>2023-12-08T16:32:27-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/authors/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/blog/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/meeting/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tags/meeting/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/2023/12/07/ameroundup/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/blog/2023/12/07/ameroundup/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tags/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/zonge/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/authors/zonge/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/categories/</loc>
     <lastmod>2023-12-04T13:47:08+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/csem/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/categories/csem/</loc>
     <lastmod>2023-12-04T13:47:08+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/2023/12/04/ip-csem/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/blog/2023/12/04/ip-csem/</loc>
     <lastmod>2023-12-04T13:47:08+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/methods/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tags/methods/</loc>
     <lastmod>2023-12-04T13:47:08+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/2023/12/01/amt-64/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/blog/2023/12/01/amt-64/</loc>
     <lastmod>2023-12-01T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/antennas/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tags/antennas/</loc>
     <lastmod>2023-12-01T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/equipment/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/categories/equipment/</loc>
     <lastmod>2023-12-01T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/mt-csamt/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/categories/mt-csamt/</loc>
     <lastmod>2023-12-01T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sensors/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tags/sensors/</loc>
     <lastmod>2023-12-01T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/2023/12/01/tem-4/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/blog/2023/12/01/tem-4/</loc>
     <lastmod>2023-12-01T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/ant4/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/ant4/</loc>
   </url><url>
-    <loc>http://localhost:1313/ant6/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/ant6/</loc>
   </url><url>
-    <loc>http://localhost:1313/ant64/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/ant64/</loc>
   </url><url>
-    <loc>http://localhost:1313/antennasummary/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/antennasummary/</loc>
   </url><url>
-    <loc>http://localhost:1313/co2/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/co2/</loc>
   </url><url>
-    <loc>http://localhost:1313/copper/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/copper/</loc>
   </url><url>
-    <loc>http://localhost:1313/crip/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/crip/</loc>
   </url><url>
-    <loc>http://localhost:1313/csamt/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/csamt/</loc>
   </url><url>
-    <loc>http://localhost:1313/csamtsystem/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/csamtsystem/</loc>
   </url><url>
-    <loc>http://localhost:1313/csem/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/csem/</loc>
   </url><url>
-    <loc>http://localhost:1313/exploration/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/exploration/</loc>
   </url><url>
-    <loc>http://localhost:1313/geothermal/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/geothermal/</loc>
   </url><url>
-    <loc>http://localhost:1313/ggt10/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/ggt10/</loc>
   </url><url>
-    <loc>http://localhost:1313/ggt30/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/ggt30/</loc>
   </url><url>
-    <loc>http://localhost:1313/gold/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/gold/</loc>
   </url><url>
-    <loc>http://localhost:1313/gravity/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/gravity/</loc>
   </url><url>
-    <loc>http://localhost:1313/groundwater/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/groundwater/</loc>
   </url><url>
-    <loc>http://localhost:1313/heapleach/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/heapleach/</loc>
   </url><url>
-    <loc>http://localhost:1313/instrumentation/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/instrumentation/</loc>
   </url><url>
-    <loc>http://localhost:1313/instrumentskeleton/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/instrumentskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/inversion/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/inversion/</loc>
   </url><url>
-    <loc>http://localhost:1313/ipcsemsystem/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/ipcsemsystem/</loc>
   </url><url>
-    <loc>http://localhost:1313/lithium/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/lithium/</loc>
   </url><url>
-    <loc>http://localhost:1313/magnetics/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/magnetics/</loc>
   </url><url>
-    <loc>http://localhost:1313/methodsskeleton/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/methodsskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/monitoring/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/monitoring/</loc>
   </url><url>
-    <loc>http://localhost:1313/mt/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/mt/</loc>
   </url><url>
-    <loc>http://localhost:1313/mtsystem/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/mtsystem/</loc>
   </url><url>
-    <loc>http://localhost:1313/nt20/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/news/</loc>
   </url><url>
-    <loc>http://localhost:1313/saltwaterintrusion/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/nt20/</loc>
   </url><url>
-    <loc>http://localhost:1313/targetskeleton/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/saltwaterintrusion/</loc>
   </url><url>
-    <loc>http://localhost:1313/tdem/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/targetskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/tdip/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tdem/</loc>
   </url><url>
-    <loc>http://localhost:1313/tem4/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tdip/</loc>
   </url><url>
-    <loc>http://localhost:1313/xmtg/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/tem4/</loc>
   </url><url>
-    <loc>http://localhost:1313/zmg30/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/xmtg/</loc>
   </url><url>
-    <loc>http://localhost:1313/zmg9/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/zmg30/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/zmg9/</loc>
   </url><url>
-    <loc>http://localhost:1313/faq/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/zt30b/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/contact/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/faq/</loc>
   </url>
 </urlset>
