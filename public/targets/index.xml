@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Targets on Zonge</title>
+    <link>http://localhost:1313/ZongeWebDev/targets/</link>
+    <description>Recent content in Targets on Zonge</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/ZongeWebDev/targets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</guid>
+      <description>&lt;h1 id=&#34;exploration-for-copper&#34;&gt;Exploration for Copper&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Copper exploration has been a significant focus for Zonge, starting in porphyry country (Arizona). We expect to be active in the copper realm for years to come, as the world continues to rely upon this industrial metal. Most, if not all, new porphyry discoveries are likely to be completely blind, with the odds of finding one with much alteration exposed being slim.&lt;/p&gt;&#xA;&lt;p&gt;Porphyries are fascinating targets for exploration due to the influence of alteration on certain physical properties such as resistivity and magnetic intensity. The erosional level must also be considered when interpreting these responses. Their footprint is large enough to make them detectable but small enough that there are still some out there to be found. The geophysical responses can also vary between Copper-Gold and Moly-Copper-Gold types. The presence of a supergene enrichment zone in the form of chalcocite can also have a significant influence on resistivity.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

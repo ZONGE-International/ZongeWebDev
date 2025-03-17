@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
-    <lastmod>2023-12-08T16:32:27-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/</loc>
-    <lastmod>2023-12-08T16:32:27-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
@@ -21,6 +15,9 @@
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/tags/</loc>
+    <lastmod>2023-12-07T21:29:20+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/zonge/</loc>
@@ -58,10 +55,6 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/co2/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/copper/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/crip/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/csamt/</loc>
@@ -72,15 +65,7 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/exploration/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/geothermal/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/gold/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/gravity/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/groundwater/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/heapleach/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/ant4/</loc>
   </url><url>
@@ -114,8 +99,6 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/ipcsemsystem/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/lithium/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/magnetics/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methodsskeleton/</loc>
@@ -128,7 +111,13 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/news/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/saltwaterintrusion/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/co2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/heapleach/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/saltwaterintrusion/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targetskeleton/</loc>
   </url><url>
@@ -139,5 +128,9 @@
     <loc>http://localhost:1313/ZongeWebDev/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/faq/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/</loc>
   </url>
 </urlset>
