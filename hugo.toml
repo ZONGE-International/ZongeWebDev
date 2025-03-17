@@ -258,44 +258,44 @@ pluralizelisttitles = false
 	
 [[menu.main]]
     name       = "ZMG-9"
-    url        = "/zmg9/"
+    url        = "/instruments/zmg9/"
     weight     = 1
     parent     = "section.generators"	
 
 [[menu.main]]
     name       = "ZMG-30"
-    url        = "/zmg30/"
+    url        = "/instruments/zmg30/"
     weight     = 2
     parent     = "section.generators"	
 
 [[menu.main]]
     name       = "GGT-10"
-	url        = "/ggt10/"
+	url        = "/instruments/ggt10/"
     weight     = 1
     parent     = "section.transmitters"
 
 [[menu.main]]
     name       = "GGT-30"
-	url        = "/ggt30/"
+	url        = "/instruments/ggt30/"
     weight     = 2
     parent     = "section.transmitters"
 	
 [[menu.main]]
     name       = "ZT-30B"
-	url        = "/Instruments/zt30b/"
+	url        = "/instruments/zt30b/"
     weight     = 3
     parent     = "section.transmitters"
 		
 [[menu.main]]
     name       = "XMT-G"
-    url        = "/xmtg/"
+    url        = "/instruments/xmtg/"
     weight     = 4
     parent     = "section.transmitters"
 
 [[menu.main]]
     name       = "GDP3224"
     identifier = "section.gdp"
-    url        = "/gdp3224/"
+    url        = "/instruments/gdp3224/"
     weight     = 1
     parent     = "section.receivers"	
 	post       = 1
@@ -303,7 +303,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Zen"
     identifier = "section.zen"
-    url        = "/zen/"
+    url        = "/instruments/zen/"
     weight     = 2
     parent     = "section.receivers"	
 	post       = 2
@@ -311,7 +311,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Antenna Summary"
     identifier = "section.antennasummary"
-    url        = "/antennasummary/"
+    url        = "/instruments/antennasummary/"
     weight     = 1
     parent     = "section.sensors"	
 	post       = 2	
@@ -319,7 +319,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "ANT-4"
     identifier = "section.ant4"
-    url        = "/ant4/"
+    url        = "/instruments/ant4/"
     weight     = 2
     parent     = "section.sensors"	
 	post       = 2	
@@ -327,7 +327,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "ANT-6"
     identifier = "section.ant6"
-    url        = "/ant6/"
+    url        = "/instruments/ant6/"
     weight     = 3
     parent     = "section.sensors"	
 	post       = 3	
@@ -335,7 +335,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "ANT-64"
     identifier = "section.ant64"
-    url        = "/ant64/"
+    url        = "/instruments/ant64/"
     weight     = 4
     parent     = "section.sensors"	
 	post       = 4	
@@ -343,7 +343,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "TEM-4"
     identifier = "section.tem4"
-    url        = "/tem4/"
+    url        = "/instruments/tem4/"
     weight     = 5
     parent     = "section.sensors"	
 	post       = 5	
@@ -351,7 +351,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Processing"
     identifier = "section.processing"
-    url        = "/processing/"
+    url        = "/instruments/processing/"
     weight     = 1
     parent     = "section.software"	
 	post       = 6	
@@ -359,7 +359,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Inversion"
     identifier = "section.inversion"
-    url        = "/inversion/"
+    url        = "/instruments/inversion/"
     weight     = 2
     parent     = "section.software"	
 	post       = 7	
@@ -367,7 +367,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "IP/CSEM"
     identifier = "section.ipcsemsystem"
-    url        = "/ipcsemsystem/"
+    url        = "/instruments/ipcsemsystem/"
     weight     = 3
     parent     = "section.systems"	
 	post       = 7	
@@ -375,7 +375,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "CSAMT"
     identifier = "section.csamtsystem"
-    url        = "/csamtsystem/"
+    url        = "/instruments/csamtsystem/"
     weight     = 1
     parent     = "section.systems"	
 	post       = 7	
@@ -383,7 +383,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "TEM"
     identifier = "section.temsystem"
-    url        = "/temsystem/"
+    url        = "/instruments/temsystem/"
     weight     = 4
     parent     = "section.systems"	
 	post       = 7	
@@ -391,7 +391,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "MT"
     identifier = "section.mtsystem"
-    url        = "/mtsystem/"
+    url        = "/instruments/mtsystem/"
     weight     = 2
     parent     = "section.systems"	
 	post       = 7	
@@ -399,7 +399,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "MultiFunction"
     identifier = "section.multifunction"
-    url        = "/gdp/"
+    url        = "/instruments/gdp/"
     weight     = 5
     parent     = "section.systems"	
 	post       = 7	
@@ -407,7 +407,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Reels"
     identifier = "section.reels"
-    url        = "/reel/"
+    url        = "/instruments/reel/"
     weight     = 1
     parent     = "section.accessories"	
 	post       = 7	
@@ -415,7 +415,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Misc"
     identifier = "section.misc"
-    url        = "/misc/"
+    url        = "/instruments/misc/"
     weight     = 2
     parent     = "section.accessories"	
 	post       = 7	
