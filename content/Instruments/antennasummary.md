@@ -12,7 +12,7 @@ Zonge manufacturers a complete suite of electromagnetic field sensors for CSAMT,
 
 # ANT-64
 
-[Specification Sheet for ANT-64]({{< ref "ANT6" >}} 'Ultra-wideband Antenna')
+[Specification Sheet for ANT-64]({{< ref "ANT64" >}} 'Ultra-wideband Antenna')
 
 # TEM-4
 

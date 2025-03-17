@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
+    <lastmod>2023-12-08T16:32:27-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/</loc>
+    <lastmod>2023-12-08T16:32:27-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
@@ -15,9 +21,6 @@
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/tags/</loc>
-    <lastmod>2023-12-07T21:29:20+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/zonge/</loc>
@@ -55,8 +58,6 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/antennasummary/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/co2/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/copper/</loc>
@@ -73,10 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/geothermal/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/ggt10/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/ggt30/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/gold/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/gravity/</loc>
@@ -85,9 +82,31 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/heapleach/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/instrumentation/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/ant4/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/ant6/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/ant64/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/antennasummary/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/ggt10/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/ggt30/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/instrumentation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/nt20/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/tem4/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/xmtg/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/zmg30/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/zmg9/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/zt30b/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instrumentskeleton/</loc>
   </url><url>
@@ -109,8 +128,6 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/news/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/nt20/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/saltwaterintrusion/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targetskeleton/</loc>
@@ -119,20 +136,8 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/tdip/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/tem4/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/xmtg/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/zmg30/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/zmg9/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/zt30b/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/faq/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
   </url>
 </urlset>

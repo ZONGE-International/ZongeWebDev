@@ -197,7 +197,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Instruments"
     identifier = "menu.instruments"
-   url        = "/img/receivers/zen_hero.png"
+    url        = "/img/receivers/zen_hero.png"
     weight     = 4
 
 [[menu.main]]
@@ -282,7 +282,7 @@ pluralizelisttitles = false
 	
 [[menu.main]]
     name       = "ZT-30B"
-	url        = "/zt30b/"
+	url        = "/Instruments/zt30b/"
     weight     = 3
     parent     = "section.transmitters"
 		
