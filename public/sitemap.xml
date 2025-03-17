@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ZongeWebDev/</loc>
-    <lastmod>2023-12-08T16:32:27-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
@@ -18,6 +15,9 @@
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/tags/</loc>
+    <lastmod>2023-12-07T21:29:20+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/zonge/</loc>
@@ -55,12 +55,6 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/ant4/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/ant6/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/ant64/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/antennasummary/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/co2/</loc>
@@ -92,6 +86,8 @@
     <loc>http://localhost:1313/ZongeWebDev/heapleach/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instrumentation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/ant4/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instrumentskeleton/</loc>
   </url><url>
@@ -136,5 +132,7 @@
     <loc>http://localhost:1313/ZongeWebDev/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/faq/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
   </url>
 </urlset>
