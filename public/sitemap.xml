@@ -55,17 +55,11 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/crip/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/csamt/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/csamtsystem/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/csem/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/exploration/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/gravity/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/ant4/</loc>
   </url><url>
@@ -99,13 +93,11 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/ipcsemsystem/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/magnetics/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/crip/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methodsskeleton/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/monitoring/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/mt/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/mtsystem/</loc>
   </url><url>
@@ -121,15 +113,13 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targetskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/tdem/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/tdip/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/faq/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/methods/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/</loc>
   </url>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Methods on Zonge</title>
+    <link>http://localhost:1313/ZongeWebDev/methods/</link>
+    <description>Recent content in Methods on Zonge</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/ZongeWebDev/methods/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/methods/groundmethods/crip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/methods/groundmethods/crip/</guid>
+      <description>&lt;h1 id=&#34;complex-resistivity&#34;&gt;Complex Resistivity&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-induced-polarization&#34;&gt;What is Induced Polarization?&lt;/h2&gt;&#xA;&lt;figure class=&#34;center&#34;&gt;&lt;a href=&#34;https://youtu.be/k5hCEHI0Dps&#34;&gt;&lt;img src=&#34;../img/methods/croverview.png&#34; width=&#34;1000&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;What is Complex Resistivity&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;The Complex Resistivity Method is the frequency domain version of thel Induced Polarization (IP) method, which is in turn an extension of the DC resistivity method. The DC method is effectively a three-dimensional ohm-meter, with current input into the earth in one location and the voltage generated measured everywhere else. The measurement of voltage and current can then be used to calculate an Apparent Resistivity:&lt;br&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;../img/methods/dcresistivityequation.PNG&#34; width=&#34;180&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Calculation of the DC Electrical Resistivity&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;where V is the voltage measured at a receiver dipole, the current is I, and K defines the geometry of the acquisition array (discussed below). This version of the resistivity assumes that things are constant in all directions, termed a 1/2 space. When viewed over any other electrical structure, (1D,2D, or 3D) this estimate of the electrical resistivity will contain artifacts. To go from this version of the resistivity to a depth section that reflects the actual electrical structure requires &lt;a href=&#34;http://localhost:1313/ZongeWebDev/inversion/&#34; title=&#34;Link to Outline of Inversion Tools&#34;&gt;&lt;strong&gt;inversion&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
