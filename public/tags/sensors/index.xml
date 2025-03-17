@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sensors on Zonge</title>
-    <link>http://localhost:1313/tags/sensors/</link>
+    <link>http://localhost:1313/ZongeWebDev/tags/sensors/</link>
     <description>Recent content in Sensors on Zonge</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Dec 2023 13:50:46 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sensors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ZongeWebDev/tags/sensors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ANT-64</title>
-      <link>http://localhost:1313/blog/2023/12/01/amt-64/</link>
+      <link>http://localhost:1313/ZongeWebDev/blog/2023/12/01/amt-64/</link>
       <pubDate>Fri, 01 Dec 2023 13:50:46 +0200</pubDate>
-      <guid>http://localhost:1313/blog/2023/12/01/amt-64/</guid>
+      <guid>http://localhost:1313/ZongeWebDev/blog/2023/12/01/amt-64/</guid>
       <description>&lt;p&gt;We have developed a new magnetic field sensor, which covers the entire frequency band from 10 KHz to 1000 seconds without interruption of the acquisition process.  The noise envelope of this sensor meets or exceeds the performance of all competing sensors.&lt;/p&gt;</description>
     </item>
   </channel>
