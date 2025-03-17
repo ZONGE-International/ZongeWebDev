@@ -66,6 +66,48 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ZongeWebDev/instruments/software/inversion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/instruments/software/inversion/</guid>
+      <description>&lt;h1 id=&#34;inversion&#34;&gt;Inversion&lt;/h1&gt;&#xA;&lt;p&gt;This is a description of inversion and why you care.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/instruments/systems/csamtsystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/instruments/systems/csamtsystem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;CSAMT System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../documents/csamtsystem.zip&#34;&gt;Download Zip File of Required Instruments&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/instruments/systems/csem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/instruments/systems/csem/</guid>
+      <description>&lt;h1 id=&#34;controlled-source-audio-magnetotelluricscsem&#34;&gt;Controlled Source Audio-Magnetotellurics/CSEM&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://youtu.be/&#34;&gt;https://youtu.be/&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;  &lt;iframe src=&#34;https://www.youtube-nocookie.com/embed/E3hoFyt8JYw?rel=0&amp;start=0&#34;&#xA;          style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34;&#xA;          allowfullscreen=&#34;&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/instruments/systems/ipcsemsystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/instruments/systems/ipcsemsystem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;IP/CSEM System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../documents/ipcsemsystem.zip&#34;&gt;Download Zip File of Required IP/CSEM Instruments&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/instruments/systems/mtsystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/instruments/systems/mtsystem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;MT System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../documents/mtsystem.zip&#34;&gt;Download Zip File of Required MT Instruments&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/instruments/systems/temsystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/instruments/systems/temsystem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TEM System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../documents/temsystem.zip&#34;&gt;Download Zip File of Required TEM Instruments&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ZongeWebDev/instruments/tem4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ZongeWebDev/instruments/tem4/</guid>

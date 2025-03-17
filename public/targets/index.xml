@@ -9,10 +9,80 @@
     <atom:link href="http://localhost:1313/ZongeWebDev/targets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/</guid>
+      <description>&lt;p&gt;Exploration&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</guid>
       <description>&lt;h1 id=&#34;exploration-for-copper&#34;&gt;Exploration for Copper&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Copper exploration has been a significant focus for Zonge, starting in porphyry country (Arizona). We expect to be active in the copper realm for years to come, as the world continues to rely upon this industrial metal. Most, if not all, new porphyry discoveries are likely to be completely blind, with the odds of finding one with much alteration exposed being slim.&lt;/p&gt;&#xA;&lt;p&gt;Porphyries are fascinating targets for exploration due to the influence of alteration on certain physical properties such as resistivity and magnetic intensity. The erosional level must also be considered when interpreting these responses. Their footprint is large enough to make them detectable but small enough that there are still some out there to be found. The geophysical responses can also vary between Copper-Gold and Moly-Copper-Gold types. The presence of a supergene enrichment zone in the form of chalcocite can also have a significant influence on resistivity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/geothermal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/geothermal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/gold/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/gold/</guid>
+      <description>&lt;h1 id=&#34;mapping-of-resistivity-for-silicificaiton&#34;&gt;Mapping of resistivity for silicificaiton&lt;/h1&gt;&#xA;&lt;p&gt;This is an edit&lt;/p&gt;&#xA;&lt;h1 id=&#34;induced-polarization-for-sulfides&#34;&gt;Induced Polarization for Sulfides&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mapping-of-resistivity-for-structure&#34;&gt;Mapping of resistivity for structure&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mapping-of-structure-using-magnetics&#34;&gt;Mapping of structure using magnetics&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mineral-systems-understanding-using-mt&#34;&gt;Mineral Systems Understanding Using MT&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/groundwater/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/groundwater/</guid>
+      <description>&lt;p&gt;#Target&#xA;Water is an important, often controlling, part of the earths electrical resistivity structure.  The permeability of the subsurface is also highly dependent upon rock type.&lt;/p&gt;&#xA;&lt;p&gt;#Physical Properties&#xA;The electrical resistivity of water with no TDS is extremely high.  But naturally occuring waters include some TDS, and therefore form lower resistivity zones.  This lower resistivity is compounded by the fact that water alters rocks, and the resulting alteration is conductive.&#xA;#Methods&#xA;TDEM&#xA;CSAMT&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/lithium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/lithium/</guid>
+      <description>&lt;p&gt;#Target&lt;/p&gt;&#xA;&lt;p&gt;#Physical Properties&lt;/p&gt;&#xA;&lt;p&gt;#Methods&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/massivesulfides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/massivesulfides/</guid>
+      <description>&lt;h1 id=&#34;exploration-for-massive-sulfides&#34;&gt;Exploration for Massive Sulfides&lt;/h1&gt;&#xA;&lt;h1 id=&#34;target-type&#34;&gt;Target Type&lt;/h1&gt;&#xA;&lt;h2 id=&#34;porphyry-deposits&#34;&gt;Porphyry Deposits&lt;/h2&gt;&#xA;&lt;h3 id=&#34;induced-polarization&#34;&gt;Induced Polarization&lt;/h3&gt;&#xA;&lt;h4 id=&#34;complex-resistivity&#34;&gt;Complex Resistivity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/tdem/&#34; title=&#34;Time-Domain EM&#34;&gt;TDEM&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;massive-sulfides-and-skarns&#34;&gt;Massive Sulfides and Skarns&lt;/h2&gt;&#xA;&lt;h3 id=&#34;mt&#34;&gt;MT&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/mt/&#34; title=&#34;MT&#34;&gt;Magnetotellurics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;csamt&#34;&gt;CSAMT&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/csamt/&#34; title=&#34;CSAMT&#34;&gt;Controlled Source Audio-Frequency Magnetotellurics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;gravity&#34;&gt;Gravity&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/gravity/&#34; title=&#34;Gravity&#34;&gt;Gravity&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;structure&#34;&gt;Structure&lt;/h1&gt;&#xA;&lt;h3 id=&#34;magnetics&#34;&gt;Magnetics&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/magnetics/&#34; title=&#34;Drone Mag&#34;&gt;Drone Magnetics&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/monitoring/</guid>
+      <description>&lt;p&gt;Monitoring&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/monitoring/co2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/monitoring/co2/</guid>
+      <description>&lt;h1 id=&#34;all-phases-of-carbon-sequestration&#34;&gt;All Phases of Carbon Sequestration&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abandoned-well-location&#34;&gt;Abandoned Well Location&lt;/h2&gt;&#xA;&lt;h2 id=&#34;em-monitoring&#34;&gt;EM Monitoring&lt;/h2&gt;&#xA;&lt;h2 id=&#34;gravity-monitoring&#34;&gt;Gravity Monitoring&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/monitoring/heapleach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/monitoring/heapleach/</guid>
+      <description>&lt;h1 id=&#34;electrical-resistivity-of-pregnate-leach-solution-pls-makes-the-use-of-electrical-resistivity-methods-very-effective-tools-in-the-mapping-of-pls-saturation&#34;&gt;Electrical Resistivity of Pregnate Leach Solution (PLS) makes the use of electrical resistivity methods very effective tools in the mapping of PLS saturation.&lt;/h1&gt;&#xA;&lt;h2 id=&#34;dc-resistivity-and-ip&#34;&gt;DC Resistivity and IP&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/crip/&#34; title=&#34;Complex Resistivity&#34;&gt;CR&lt;/a&gt;&#xA;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/tdip/&#34; title=&#34;TDIP&#34;&gt;Time Domain IP&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;controlled-source-amt&#34;&gt;Controlled Source AMT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/csamt/&#34; title=&#34;CSAMT&#34;&gt;Controlled Source AMT &lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/monitoring/saltwaterintrusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/monitoring/saltwaterintrusion/</guid>
+      <description>&lt;h1 id=&#34;saltwater-intrusion-mapping&#34;&gt;Saltwater Intrusion Mapping&lt;/h1&gt;&#xA;&lt;h1 id=&#34;preferred-tools&#34;&gt;Preferred Tools&lt;/h1&gt;&#xA;&lt;p&gt;In most cases saltwater  forms a low angle wedge as intrudes into the terrestrial aquifer, dipping beneath the lower density fresh water.  This is an exceptional target for central loop TEM investigations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tdem&#34;&gt;TDEM&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/tdem/&#34; title=&#34;TDEM&#34;&gt;Time Domain EM&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

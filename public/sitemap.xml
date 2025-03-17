@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
+    <lastmod>2023-12-08T16:32:27-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/</loc>
+    <lastmod>2023-12-08T16:32:27-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
@@ -15,9 +21,6 @@
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/tags/</loc>
-    <lastmod>2023-12-07T21:29:20+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/</loc>
     <lastmod>2023-12-07T21:29:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/authors/zonge/</loc>
@@ -53,13 +56,9 @@
     <loc>http://localhost:1313/ZongeWebDev/blog/2023/12/01/tem-4/</loc>
     <lastmod>2023-12-01T13:50:46+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/about/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/about/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/csamtsystem/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/csem/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/exploration/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/about/news/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/ant4/</loc>
   </url><url>
@@ -77,6 +76,18 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/nt20/</loc>
   </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/software/inversion/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/systems/csamtsystem/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/systems/csem/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/systems/ipcsemsystem/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/systems/mtsystem/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/instruments/systems/temsystem/</loc>
+  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/tem4/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instruments/xmtg/</loc>
@@ -89,21 +100,37 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instrumentskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/inversion/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/ipcsemsystem/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/crip/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/csamt/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/gravity/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/magnetics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/mt/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/tdem/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/tdip/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methodsskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/monitoring/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/mtsystem/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/news/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/geothermal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/gold/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/groundwater/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/lithium/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/massivesulfides/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/co2/</loc>
   </url><url>
@@ -113,11 +140,11 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targetskeleton/</loc>
   </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/about/</loc>
+  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/faq/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/instruments/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methods/</loc>
   </url><url>
