@@ -36,7 +36,7 @@
 
 
 
-<link href="../../../css/custom.css?1742828239" rel="stylesheet">
+<link href="../../../css/custom.css?1742834023" rel="stylesheet">
 
 
 
@@ -537,71 +537,135 @@
                         
 
                         <div id="post-content">
-                          <h1 id="complex-resistivity">Complex Resistivity</h1>
-<h2 id="what-is-induced-polarization">What is Induced Polarization?</h2>
-<figure class="center"><a href="https://youtu.be/k5hCEHI0Dps"><img src="../../../img/methods/croverview.png" width="1000"></a><figcaption>
-      <h4>What is Complex Resistivity</h4>
+                          <h1 id="induced-polarization-ip">Induced Polarization (IP)</h1>
+<h2 id="method">Method</h2>
+<h3 id="introduction">Introduction</h3>
+<p>An IP survey is produced by injecting current into the ground and measuring the change in voltage with respect to time (TD) or a lag in phase between the receiver and transmitter waveforms (CR). The voltage potential is measured between two receiver electrodes, and as the spacing between transmitter electrodes and the receiver pairs increases, the depth of investigation increases.</p>
+<p>In simple terms, the target’s ability to store electrical energy after the current is turned off or after the polarity switches indicates the material is chargeable (ie sulfides, graphite, clays, or other alteration products).</p>
+<ul>
+<li>
+<p>Time-domain: The measured IP response is the secondary voltage decay produced by charging the interface of the target’s grain surface, which is dependent on the electrochemical properties of the target.</p>
+</li>
+<li>
+<p>Complex Resistivity: Where there is no turn-off of the transmitter, the IP effect is observed as changes in shape of the receiver waveform, where information on the phase and magnitude is obtained. Higher IP amplitudes are associated with the chargeable nature of the target.</p>
+</li>
+</ul>
+<p>Through time-series processing, Zonge evaluates the nature of the IP response in both domains. The CR processing is in frequency-domain and able to apply decoupling methods in an attempt to remove the frequency dependent EM coupling responses. TD processing allows adjusting of the integration window which can provide information on the nature of early vs late time responses.</p>
+<p>We obtain information on the variation of the resistivity (<em>ohm*m</em>) and chargeability (<em>msec</em>) or phase (<em>mrad)</em> with depth, and surveys are designed with various array configurations, such as Dipole-Dipole, Pole-Dipole, or as a 3D array.</p>
+<figure><img src="../../../img/IP_resistivity.png" width="800"><figcaption>
+      <h4>Dipole-Dipole configuration example</h4>
     </figcaption>
 </figure>
 
-<p>The Complex Resistivity Method is the frequency domain version of thel Induced Polarization (IP) method, which is in turn an extension of the DC resistivity method. The DC method is effectively a three-dimensional ohm-meter, with current input into the earth in one location and the voltage generated measured everywhere else. The measurement of voltage and current can then be used to calculate an Apparent Resistivity:<br>
-<figure><img src="../../../img/methods/dcresistivityequation.PNG" width="180"><figcaption>
-      <h4>Calculation of the DC Electrical Resistivity</h4>
+<hr>
+<h2 id="applications">Applications</h2>
+<p>The IP response is limited to specific materials and environments, where fluid-filled pore spaces may interact with metallic grains or clay. IP is most effective by comparing resistivity information to the chargeable responses of specific targets (ie disseminated sulfides).</p>
+<p>IP is generally a follow-up survey from magnetic or gravity information that guides the orientation of IP lines, and is commonly deployed to prioritize drill targets.</p>
+<ul>
+<li>
+<p>Disseminated sulfide mineralization</p>
+<ul>
+<li>
+<p>Porphyry, Epithermal, Carlin Type, Orogenic, Uranium deposits</p>
+</li>
+<li>
+<p>Cemented, massive sulphides are not viable IP targets, but associated disseminated zones of mineralization can produce an IP effect</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Structures, depth to bedrock, and fault zones identified through complimentary resistivity data</p>
+</li>
+<li>
+<p>Mapping of clay minerals or gravels in groundwater or mineral (alteration) applications.</p>
+</li>
+<li>
+<p>Dissolved solids in groundwater (contaminants) and groundwater porosity</p>
+</li>
+</ul>
+<figure><img src="../../../img/Relative_Ip_Res_responses.png" width="800"><figcaption>
+      <h4>Examples of relative resistivity and IP responses from geologic settings.</h4>
     </figcaption>
 </figure>
 
-where V is the voltage measured at a receiver dipole, the current is I, and K defines the geometry of the acquisition array (discussed below). This version of the resistivity assumes that things are constant in all directions, termed a 1/2 space. When viewed over any other electrical structure, (1D,2D, or 3D) this estimate of the electrical resistivity will contain artifacts. To go from this version of the resistivity to a depth section that reflects the actual electrical structure requires <a href="http://localhost:1313/ZongeWebDev/instruments/software/inversion/" title="Link to Outline of Inversion Tools"><strong>inversion</strong></a>.</p>
-<h2 id="theory">Theory</h2>
-<p>The electrical resistivity can be measured using many geometries of the transmitter and receiver locations, the most general of which is illustrated below. Often surveys are done in specific geometries, each of which has its inherent advantages and disadvantages, but the apparent resistivity can be calculated for any geometry for which the geometric factor K is defined.
-<figure><img src="../../../img/methods/generalgeometrydcresistivity.PNG" width="500"><figcaption>
-      <h4>Geometry of DC Resistivity in the General Case</h4>
-    </figcaption>
-</figure>
-</p>
-<figure><img src="../../../img/methods/generalresistivitygeometricfactor.PNG" width="400"><figcaption>
-      <h4>Geometric Factor for calculation of the DC Resistivity</h4>
-    </figcaption>
+<hr>
+<h2 id="survey-design">Survey Design</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Parameter</strong></th>
+          <th><strong>Description</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Depth</strong></td>
+          <td>The depth is based on the distance between current electrode and potential electrodes (n-spacing) and the observed signal-to-noise ratio.</td>
+      </tr>
+      <tr>
+          <td><strong>Dipole Length</strong></td>
+          <td>Distance between receiver electrodes (a-spacing). Larger dipoles increase depth but decrease resolution. Smaller dipoles are ideal for narrow vein targets and shallow features.</td>
+      </tr>
+      <tr>
+          <td><strong>Scale</strong></td>
+          <td>Localized grid or profiles of electrodes. Lines often span 1.8 km or larger</td>
+      </tr>
+      <tr>
+          <td><strong>Production</strong></td>
+          <td>Profiles are completed on a scale of days, where the dipole length, line length, and S/N are main contributions to production.</td>
+      </tr>
+      <tr>
+          <td><strong>Processing</strong></td>
+          <td>Data are collected as time-series, where the number of cycles may be adjusted based on data quality. 100% (CR) or 50% (TD) duty cycle data may be processed in either domain.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<figure><img src="../../../img/IP_n_a-spc.png" width="800">
 </figure>
 
-<h2 id="strengths-and-weaknesses">Strengths and Weaknesses</h2>
-<p>The primary strength of all IP methods is the ability of these tools to map the distribution of dessieminated sulfides. It is this strength that makes the IP method one of the primary exploration tools for sulfide dominated ore deposits. The limitation of the method is with its depth of investigation - which is controlled by the transmitter receiver separation. Deeper sounings require large offsets, at least twice the required depth of investigation. This results in lower signal levels and inherently noisier measurments.</p>
-<h3 id="depth-of-investigation">Depth of investigation:</h3>
-<p>The depth of investigation in all DC resistivity style measurements is limited by the transmitter(Tx)/receiver(Rx) separation. As the distance between the transmitter and receiver increases, the effective depth of investigation increases. But as the distance between the Tx and Rx increases, the signal levels drop and at some point the signal/noise ratio drops to the point that greater offsets do not add usable information. These tradeoffs between the Tx/Rx offset combine to limit the effective depth of application of the CR method to 2-3 times the dipole lengths.</p>
-<h3 id="lateral-resolution">Lateral Resolution:</h3>
-<p>The resolution of the CR method in the shallow section is roughly 1/2 the length of the dipoles. As the depth increases, the resolution decreases but the scale of this decrease is difficult to estimate without modeling of the expected target and background geological structure. This allows the examination of the interaction between the acquisition geometry and the geological context of the target.</p>
-<h3 id="straightforward-logistics">Straightforward Logistics:</h3>
-<p>The logistics of CR are straightforward, if labor intensive. Transmitter dipoles need to be constructed and arrays of receiver dipoles need to be deployed to measure the voltage generated by that injected current. Once these receciver and transmitter dipoles are deployed current needs to be injected over a range of frequencies. The transmitted frequencies must generally be below 1 Hz to minimize the impact of the EM response, a response which increases:
-<figure><img src="../../../img/methods/emcoupling.png" width="275"><figcaption>
-      <h4>Electromagnetic Response</h4>
-    </figcaption>
+<h3 style="text-align:center; color:blue;">Let’s talk about it! Contact us today</h3>
+<h2 id="instrumentation">Instrumentation</h2>
+<ul>
+<li>
+<p>Receivers:</p>
+<ul>
+<li>ZEN High-Res Receiver, 32-bit A/D’s using a 1024 hz sample rate</li>
+<li>GDP-3224 Multi-Function Geophysical Receiver, 24-bit multi-channel</li>
+</ul>
+<p>· Transmitters:</p>
+<p>GGT-30, 30KVA or GGT-10, 10KVA</p>
+<p>· Generators: ZMG-30 or ZMG-9</p>
+</li>
+</ul>
+<hr>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li>Pseudosections of observed apparent resistivity and chargeability data</li>
+<li>Results of two-dimensional inversions as sections of inversion chargeability/phase and resistivity versus depth</li>
+<li>Plan maps of 2D inversion chargeability/resistivity results at selected elevations or depths.</li>
+<li>3D model of IP/Resistivity data at horizontal depth or elevation slices</li>
+</ul>
+<hr>
+<h2 id="survey-life-cycle">Survey Life Cycle</h2>
+<ol>
+<li>Survey design and planning of array type and line layout</li>
+<li>Electrode deployment and transmitter energization</li>
+<li>Data acquisition with real-time QC</li>
+<li>Processing of time-domain or phase-domain data</li>
+<li>Inversion of chargeability and resistivity</li>
+<li>Final interpretation and integration with geology</li>
+</ol>
+<figure><img src="../../../img/IP_survey%20life%20cycle.png" width="800">
 </figure>
 
-where a is the dipole length, f is the frequency, and rho is the resistivity. The result of this is that, as the frequency goes up and/or the resistivity decreases, the electromagnetic response increases to a point that it dominates the total response and makes separation of the EM response from the IP response problematic.</p>
-<p>While the logistics of CR are straightforward, they are not trivial. The selection of dipole lengths for the transmitters and receivers has a direct impact on the depth of investigation and the lateral resolution as discussed above.</p>
-<h3 id="integration-with-other-methods">Integration with other methods:</h3>
-<p>As the frequency domain implementation of the IP methods, many of the modeling tools developed for magnetotellurics(MT) and controlled source EM(CSEM) can be utilized for the modeling of CR. For an example, see the IP is CSEM link below, which looks at the inversion of CR data using Mare2dem, a tool originally developed for the inversion of marine CSEM data.</p>
-<h3 id="susceptibility-to-cultural-noise">Susceptibility to Cultural Noise</h3>
-<p>CR, as all IP methods, are particularly effected by electrical noise in the area of the survey and any</p>
-<h1 id="logistics">Logistics</h1>
-<h2 id="receiver">Receiver</h2>
-<h2 id="source">Source</h2>
-<h1 id="targets">Targets</h1>
-<h2 id="examples">Examples</h2>
-<h3 id="lithium">Lithium</h3>
-<h3 id="gold">Gold</h3>
-<h3 id="copper">Copper</h3>
-<h3 id="groundwater">Groundwater</h3>
-<h3 id="geothermal">Geothermal</h3>
-<h1 id="references">References</h1>
-<h1 id="required-instruments">Required Instruments</h1>
-<p><a href="../../../zen/">Zen Receiver</a></p>
-<p><a href="../../../gdp3224/">GDP Receiver</a></p>
-<p><a href="http://localhost:1313/ZongeWebDev/instruments/ggt10/" title="Medium generator for driving transmitters">GGT-10 Receiver</a></p>
-<p><a href="http://localhost:1313/ZongeWebDev/instruments/ggt30/" title="High power generator for driving transmitters">GGT-30 Receiver</a></p>
-<p><a href="http://localhost:1313/ZongeWebDev/instruments/xmtg/" title="Transmitter Controller">XMT-G Transmitter Controller</a></p>
-<p><a href="http://localhost:1313/ZongeWebDev/instruments/ggt10/" title="Medium Power Generator">ZMG-9 Generator</a></p>
-<p><a href="http://localhost:1313/ZongeWebDev/instruments/ggt30/" title="High Power Transmitter">ZMG-30 Generator</a></p>
-<p><a href="http://localhost:1313/ZongeWebDev/instruments/ant6/" title="Ant-6 Antennas">Ant-6 CSAMT Antenna</a></p>
+<hr>
+<h2 id="case-studies-and-resources">Case Studies and Resources</h2>
+<ul>
+<li>Zonge, K., J. Wynn, and S. Urquhart, 2005, Resistivity, induced polarization, and complex resistivity, <em>in</em> D. K. Butler, ed., Near-surface geophysics: SEG Investigations in Geophysics Series No. 13, Part 1: Concepts and fundamentals, Chapter 9, 265– 300, <a href="http://dx.doi.org/10.1190/1.9781560801719.ch9">http://dx.doi.org/10.1190/1.9781560801719.ch9</a>.</li>
+<li><a href="https://gglresourcescorp.com/news/2024/ggl-identifies-a-1.8-km-by-1-km-induced-polarization-anomaly-at-the-le-champ-copper-molybdenum-gold-porphyry-target-gold-point/">GGL Identifies a 1.8 km by 1 km Induced Polarization Anomaly at the Le Champ Copper-Molybdenum-Gold Porphyry Target, Gold Point Project, Nevada | GGL Resources Corp.</a></li>
+<li><a href="https://strikepointgold.com/strikepoint-cuprite-gold-project-phase-1-exploration-results-large-scale-soil-and-coincidental-geophysical-anomalies-identified/">StrikePoint Cuprite Gold Project Phase 1 Exploration Results: Large Scale Soil and Coincidental Geophysical Anomalies Identified - Strike Point Gold</a></li>
+</ul>
 
                         </div>
                         

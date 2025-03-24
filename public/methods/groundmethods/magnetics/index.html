@@ -36,7 +36,7 @@
 
 
 
-<link href="../../../css/custom.css?1742828239" rel="stylesheet">
+<link href="../../../css/custom.css?1742834023" rel="stylesheet">
 
 
 
@@ -537,26 +537,101 @@
                         
 
                         <div id="post-content">
-                          <h1 id="magnetics">Magnetics</h1>
-<h2 id="theory">Theory</h2>
-<h2 id="strengths-and-weaknesses">Strengths and Weaknesses</h2>
-<h3 id="depth-of-investigation">Depth of investigation:</h3>
-<h3 id="lateral-resolution">Lateral Resolution:</h3>
-<h3 id="straightforward-logistics">Straightforward Logistics:</h3>
-<h3 id="integration-with-other-methods">Integration with other methods:</h3>
-<h3 id="susceptibility-to-cultural-noise">Susceptibility to Cultural Noise</h3>
-<h1 id="logistics">Logistics</h1>
-<h2 id="receiver">Receiver</h2>
-<h2 id="source">Source</h2>
-<h1 id="targets">Targets</h1>
-<h2 id="examples">Examples</h2>
-<h3 id="lithium">Lithium</h3>
-<h3 id="gold">Gold</h3>
-<h3 id="copper">Copper</h3>
-<h3 id="groundwater">Groundwater</h3>
-<h3 id="geothermal">Geothermal</h3>
-<h1 id="references">References</h1>
-<h1 id="required-instruments">Required Instruments</h1>
+                          <h1 id="uav-drone-magnetic-survey-nt">UAV (Drone) Magnetic Survey (nT)</h1>
+<h2 id="method">Method</h2>
+<h3 id="introduction">Introduction</h3>
+<p>Total magnetic intensity varies laterally in proportion to the amount of magnetic minerals present. It can be useful to find both magnetic highs and magnetic lows depending on the application and target type.<br>
+Measurements are made along lines using a total-field magnetometer suspended from an Unmanned Aerial Vehicle (Drone). It is necessary to perform calibration flights for compensation and perform diurnal corrections on the dataset using a magnetic base station. All pilots are FAA part 107 certified and operations are carried out in compliance with Zonge’s UAV SMS program.
+Drone magnetics strikes a balance between helicopter borne surveys and ground surveys. There may be a bit less detail than ground surveys but the draping using an RTK based drone is generally better and so there can be more detail than helicopter surveys. Helicopter surveys are generally the most cost-efficient option for large areas.</p>
+<figure><img src="../../../img/mag_anomalies.jpg" width="800">
+</figure>
+
+<hr>
+<h2 id="applications">Applications</h2>
+<ul>
+<li>Mapping mafic and ultramafic igneous rock types. Generally felsic rocks are not strongly magnetic. Many rocks are weakly magnetic which can still be detectable.</li>
+<li>Detecting magnetite destructive alteration in porphyry and epithermal systems (including geothermal).</li>
+<li>Mapping structure if there is variation in TMI between the hanging and footwall, or if there is observable offset in the mapped features.</li>
+<li>Mapping steel casing in abandoned wells and other magnetic anthropogenic features.</li>
+</ul>
+<hr>
+<h2 id="survey-design">Survey Design</h2>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Parameter</strong></th>
+          <th><strong>Description</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Depth</strong></td>
+          <td>DOI is based on the size of the magnetic body, its intensity, and sources of noise. It is generally safe to assume features that have anomalous TMI can be seen at depth if they are sufficiently large; certainly, if they are as laterally expansive as they are deep. Without doing an inversion depth is based on interpretation of wavelength and gradient of anomalous feature.</td>
+      </tr>
+      <tr>
+          <td><strong>Line-Spacing</strong></td>
+          <td>Typically, 25m-100m depending on the level of detail required. 25m line-spacing is generally only practical in areas where it is possible to fly low.</td>
+      </tr>
+      <tr>
+          <td><strong>Scale</strong></td>
+          <td>Anywhere from 100’s to 1,000’s of line-km is practical. At a certain point if the additional resolution of the drone survey is not required then it may make more sense to use a helicopter.</td>
+      </tr>
+      <tr>
+          <td><strong>Production</strong></td>
+          <td>50-120 line-km/day</td>
+      </tr>
+      <tr>
+          <td><strong>Processing</strong></td>
+          <td>Data are processed and gridded using Oasis Montaj. The MAGMAP module is used for filtering including the RTP and 1VD.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="instrumentation">Instrumentation</h2>
+<ul>
+<li>
+<p>Geometrics MagArrow, GEM DRONEmag, testing other magnetometers</p>
+</li>
+<li>
+<p>DJI M300, M600, working on switching to open-source ArduPilot based drone</p>
+</li>
+<li>
+<p>GEM GSM-19 Overhauser magnetometer for base station</p>
+</li>
+</ul>
+<hr>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li>
+<p>Contoured plans of TMI reduced to pole.</p>
+</li>
+<li>
+<p>Contoured plans of First Vertical Derivative of the TMI reduced to pole.</p>
+</li>
+<li>
+<p>Magnetic inversions can be completed upon request.</p>
+</li>
+</ul>
+<hr>
+<h2 id="survey-life-cycle">Survey Life Cycle</h2>
+<ol>
+<li>Planning, permitting, and FAA flight compliance</li>
+<li>UAV and magnetometer setup and calibration</li>
+<li>Flight execution with QA/QC</li>
+<li>Diurnal correction and data processing</li>
+<li>Advanced filtering and derivative products</li>
+<li>Final map generation and optional modeling</li>
+</ol>
+<figure><img src="../../../img/survey_life_cycle.jpg" width="800">
+</figure>
+
+<hr>
+<h2 id="case-studies-and-resources">Case Studies and Resources</h2>
+<ul>
+<li>[Zonge UAV Mag Projects]</li>
+<li>[Examples from ultramafic terrain mapping]</li>
+<li>[Internal case study resources and white papers]</li>
+</ul>
 
                         </div>
                         

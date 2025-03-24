@@ -36,7 +36,7 @@
 
 
 
-<link href="../../../css/custom.css?1742828239" rel="stylesheet">
+<link href="../../../css/custom.css?1742834023" rel="stylesheet">
 
 
 
@@ -540,45 +540,80 @@
                           <h1 id="controlled-source-audio-magnetotelluric-csamt">Controlled-Source Audio Magnetotelluric (CSAMT)</h1>
 <h2 id="method-ohmm">Method (ohm·m)</h2>
 <h3 id="introduction">Introduction</h3>
-<p>CSAMT measures the resistivity structure of the Earth’s subsurface.<br>
-Measurements are made using grounded electric dipoles and magnetic antennas that receive signals from a distant transmitter dipole across a range of frequencies.<br>
-These measurements vary by frequency and detect contrasts in resistivity caused by changes in geology, such as lithology or fluid content.<br>
-Data are generally collected in the far-field, where depth of investigation is frequency-dependent, but recent 3D CSAMT inversions now incorporate near-field data to improve resolution and depth coverage.<br>
-The processed data produce resistivity models that can be interpreted geologically.</p>
+<p>CSAMT surveys are utilized to measure the calculated resistivity structure of the Earth. A transmitter dipole is deployed at a large distance away from the receiver grid, transmitting a controlled electrical signal over a range of frequencies. The orthogonal components of the electric and magnetic fields are measured at the receiver with grounded dipoles and a magnetic antenna. The resistivity values relate to the geological response of the ground, providing information on resistivity contrasts of more or less resistive rock packages or structures.</p>
+<p>Data are generally collected in the far-field, where depth of investigation is frequency-dependent, but recent 3D CSAMT inversions now incorporate near-field data to improve resolution and depth coverage.</p>
+<p>Zonge is producing 3D CSAMT inversions which includes the near-field data and expands the depth of the model.</p>
 <hr>
+<figure><img src="../../../img/CSAMT_TX_fields.png" width="600"><figcaption>
+      <h4>CSAMT Propagation Zones – Near-field, Transition, Far-field</h4>
+    </figcaption>
+</figure>
+
 <h2 id="applications">Applications</h2>
 <p>CSAMT surveys are a common tool for identifying resistivity contrasts and imaging geologic structures.<br>
 They are effective in both reconnaissance and detailed targeting stages of exploration, and complement other geophysical techniques.</p>
 <p><strong>This method can be applied to:</strong></p>
 <ul>
-<li>Depth to bedrock and geologic structure boundaries</li>
-<li>Identification of silicified zones and fluid pathways</li>
-<li>Mapping faults and shear zones with alteration or brecciation</li>
-<li>Water-table imaging and aquitard mapping</li>
-<li>Detection of subsurface contamination</li>
-</ul>
-<p><strong>Common commodities and resources imaged by CSAMT:</strong></p>
-<ul>
-<li>Geothermal reservoirs</li>
-<li>Base and precious metal deposits</li>
-<li>Groundwater resources</li>
-<li>Hydrocarbon targets</li>
+<li>
+<p>Depth to bedrock and geological structures or lithologies</p>
+</li>
+<li>
+<p>Silicified structures in host rocks or fluid pathways</p>
+</li>
+<li>
+<p>Fault and shear zones with silicification, altered or brecciated material</p>
+</li>
+<li>
+<p>Water-table trends, aquitard imaging</p>
+</li>
+<li>
+<p>Contaminant locations for mineral, hydrology and petroleum investigations</p>
+</li>
 </ul>
 <hr>
 <h2 id="survey-design">Survey Design</h2>
-<p><strong>Depth:</strong><br>
-Typically reaches hundreds of meters, depending on frequency and subsurface resistivity.<br>
-Vertical resolution ~5–20% of profile length.</p>
-<p><strong>Spacing:</strong><br>
-Dipoles usually range from 10–200 m.<br>
-Station spacing influences received signal quality and resolution.</p>
-<p><strong>Scale:</strong><br>
-Surveys may use localized grids or profile lines with 4–6 dipoles per measurement array.</p>
-<p><strong>Cost:</strong><br>
-Moderate to high, depending on site logistics, grid size, and number of stations.</p>
-<p><strong>Timing:</strong><br>
-Production is typically 5–15 receiver arrays per operator per day.</p>
+<table border="1">
+  <thead>
+    <tr>
+      <th style="padding: 10px; text-align: center;"><strong>Parameter</strong></th>
+      <th style="padding: 10px; text-align: left;"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center;"><strong>Depth</strong></td>
+      <td style="padding: 10px; text-align: left;">
+        The depth is dependent on transmitted frequency and resistivity of the subsurface, often in the 100’s of meters range.<br>
+        Vertical resolution is often estimated to be 5–20% of the profile length.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;"><strong>Dipole Length</strong></td>
+      <td style="padding: 10px; text-align: left;">
+        Often 10–200 m.<br>
+        The received signal strength is proportional to the station spacing.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;"><strong>Scale</strong></td>
+      <td style="padding: 10px; text-align: left;">
+        Localized grid or profiles of receiver arrays, 4–6 dipoles acquired per measurement.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;"><strong>Production</strong></td>
+      <td style="padding: 10px; text-align: left;">
+        Profiles are completed on a scale of days, with approximately 5–15 receiver arrays measured per operator per day.
+      </td>
+    </tr>
+  </tbody>
+</table>
 <hr>
+<figure><img src="../../../img/csamt_array_4chn.png" width="800"><figcaption>
+      <h4>CSAMT 4-Channel Array</h4>
+    </figcaption>
+</figure>
+
 <h2 id="instrumentation">Instrumentation</h2>
 <ul>
 <li><strong>Receiver:</strong> GDP-3224 Multi-Function Geophysical Receiver (24-bit, multi-channel)</li>
