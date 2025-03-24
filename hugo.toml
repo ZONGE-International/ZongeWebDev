@@ -89,7 +89,7 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "Drone Magnetics"
-    url        = "/Methods/AirboneMethods/dronemagnetics/"
+    url        = "/Methods/AirboneMethods/airbone_magnetics/"
     weight     = 1
     parent     = "section.airborne"
 
