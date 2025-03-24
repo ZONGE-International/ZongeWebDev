@@ -452,22 +452,22 @@ pluralizelisttitles = false
 ##############################
 	
 [[menu.main]]
-    name       = "About"
+    name       = "About Us"
     identifier = "section.about"
-    url        = "/about/"
+    url        = "about/about/"
     weight     = 5
 
-[[menu.main]]
-    name       = "About Us"
-    url        = "about"
-    weight     = 1
-    parent     = "section.about"
+#[[menu.main]]
+#    name       = "About Us"
+#    url        = "/about/"
+#    weight     = 1
+#    parent     = "section.about"
 
-[[menu.main]]
-    name       = "Our Team"
-    url        = ""
-    weight     = 2
-    parent     = "section.about"
+#[[menu.main]]
+#    name       = "Our Team"
+#    url        = ""
+#    weight     = 2
+#    parent     = "section.about"
 
 ##############################
 # Contact ####################
