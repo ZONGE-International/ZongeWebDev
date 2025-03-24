@@ -100,19 +100,15 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/instrumentskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/crip/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/methods/airbonemethods/airbone_magnetics/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/csamt/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/gravity/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/magnetics/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/ip/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/mt/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/tdem/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/methods/groundmethods/tdip/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methodsskeleton/</loc>
   </url><url>

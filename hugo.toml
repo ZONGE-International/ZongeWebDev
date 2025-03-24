@@ -64,8 +64,8 @@ pluralizelisttitles = false
     post       = 2
 
 [[menu.main]]
-    name       = "Complex Resistivity"
-    url        = "/Methods/GroundMethods/crip/"
+    name       = "Induced Polarization"
+    url        = "/Methods/GroundMethods/ip/"
     weight     = 1
     parent     = "section.ground"
 
@@ -82,27 +82,9 @@ pluralizelisttitles = false
     parent     = "section.ground"
 
 [[menu.main]]
-    name       = "Time Domain EM"
-    url        = "/Methods/GroundMethods/tdem/"
-    weight     = 4
-    parent     = "section.ground"
-
-[[menu.main]]
     name       = "Gravity"
     url        = "/Methods/GroundMethods/gravity/"
-    weight     = 5
-    parent     = "section.ground"
-
-[[menu.main]]
-    name       = "Magnetics"
-    url        = "/Methods/GroundMethods/magnetics/"
-    weight     = 6
-    parent     = "section.ground"
-
-[[menu.main]]
-    name       = "Time Domain IP"
-    url        = "/Methods/GroundMethods/tdip/"
-    weight     = 7
+    weight     = 4
     parent     = "section.ground"
 
 [[menu.main]]
@@ -111,17 +93,6 @@ pluralizelisttitles = false
     weight     = 1
     parent     = "section.airborne"
 
-[[menu.main]]
-    name       = "Semi-Airborne Electromagnetics"
-    url        = "/Methods/AirboneMethods/semiairborneEM/"
-    weight     = 2
-    parent     = "section.airborne"
-
-[[menu.main]]
-    name       = "Drone AFMAG"
-    url        = ""
-    weight     = 3
-    parent     = "section.airborne"
 
 ##############################
 # Targets ####################
