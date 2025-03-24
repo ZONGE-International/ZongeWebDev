@@ -16,6 +16,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/basemetals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/basemetals/</guid>
+      <description>&lt;h1 id=&#34;base-metals-exploration&#34;&gt;Base Metals Exploration&lt;/h1&gt;&#xA;&lt;p&gt;Although we gave copper its own section under targets, we acknowledge that it is usually considered a base metal.&lt;/p&gt;&#xA;&lt;p&gt;The base metals that have not yet been extensively detailed are &lt;strong&gt;lead and zinc&lt;/strong&gt;. “Massive sulfides” are generally a good source. The lead- and zinc-rich portions of a polymetallic deposit are typically more distal to the source than gold, silver, and copper. This holds true whether it is a &lt;strong&gt;VMS (Volcanogenic Massive Sulfide), SEDEX (Sedimentary Exhalative), CRD (Carbonate Replacement Deposit), Porphyry,&lt;/strong&gt; or another polymetallic deposit. The exception might be &lt;strong&gt;Mississippi Valley Type (MVT) deposits,&lt;/strong&gt; which are&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</guid>
@@ -33,7 +40,7 @@
       <link>http://localhost:1313/ZongeWebDev/targets/exploration/gold/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ZongeWebDev/targets/exploration/gold/</guid>
-      <description>&lt;h1 id=&#34;mapping-of-resistivity-for-silicificaiton&#34;&gt;Mapping of resistivity for silicificaiton&lt;/h1&gt;&#xA;&lt;p&gt;This is an edit&lt;/p&gt;&#xA;&lt;h1 id=&#34;induced-polarization-for-sulfides&#34;&gt;Induced Polarization for Sulfides&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mapping-of-resistivity-for-structure&#34;&gt;Mapping of resistivity for structure&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mapping-of-structure-using-magnetics&#34;&gt;Mapping of structure using magnetics&lt;/h1&gt;&#xA;&lt;h1 id=&#34;mineral-systems-understanding-using-mt&#34;&gt;Mineral Systems Understanding Using MT&lt;/h1&gt;</description>
+      <description>&lt;h1 id=&#34;mapping-of-resistivity-for-silicification&#34;&gt;Mapping of Resistivity for Silicification&lt;/h1&gt;&#xA;&lt;p&gt;Since Zonge’s main office is in Nevada, gold exploration is a very important part of our business. We do our best to maintain a product line of instruments and field services that are well suited to this application.&lt;/p&gt;&#xA;&lt;p&gt;Our clients&amp;rsquo; survey goals often include locating structures and delineating alteration. Of course, if we could directly detect gold, we would do that, but although geophysics is cheaper than drilling, it is not a substitute. Gravity and magnetics are often completed during the initial stages of grassroots exploration efforts.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -47,7 +54,7 @@
       <link>http://localhost:1313/ZongeWebDev/targets/exploration/lithium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ZongeWebDev/targets/exploration/lithium/</guid>
-      <description>&lt;p&gt;#Target&lt;/p&gt;&#xA;&lt;p&gt;#Physical Properties&lt;/p&gt;&#xA;&lt;p&gt;#Methods&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;target&#34;&gt;Target&lt;/h1&gt;&#xA;&lt;p&gt;Most of the lithium exploration Zonge has done has been for brine. Generally, this has taken place on the playas of Nevada and Utah. These would be called salars in South America. The most common approach is to run MT and to help target the lowest resistivity portion of the playa. This is generally assumed to correspond to areas of higher TDS. Drilling is necessary to determine if there are anomalously high lithium values present. Gravity is often also undertaken to help understand the basin geometry.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -55,6 +62,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ZongeWebDev/targets/exploration/massivesulfides/</guid>
       <description>&lt;h1 id=&#34;exploration-for-massive-sulfides&#34;&gt;Exploration for Massive Sulfides&lt;/h1&gt;&#xA;&lt;h1 id=&#34;target-type&#34;&gt;Target Type&lt;/h1&gt;&#xA;&lt;h2 id=&#34;porphyry-deposits&#34;&gt;Porphyry Deposits&lt;/h2&gt;&#xA;&lt;h3 id=&#34;induced-polarization&#34;&gt;Induced Polarization&lt;/h3&gt;&#xA;&lt;h4 id=&#34;complex-resistivity&#34;&gt;Complex Resistivity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/tdem/&#34; title=&#34;Time-Domain EM&#34;&gt;TDEM&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;massive-sulfides-and-skarns&#34;&gt;Massive Sulfides and Skarns&lt;/h2&gt;&#xA;&lt;h3 id=&#34;mt&#34;&gt;MT&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/mt/&#34; title=&#34;MT&#34;&gt;Magnetotellurics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;csamt&#34;&gt;CSAMT&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/csamt/&#34; title=&#34;CSAMT&#34;&gt;Controlled Source Audio-Frequency Magnetotellurics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;gravity&#34;&gt;Gravity&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/gravity/&#34; title=&#34;Gravity&#34;&gt;Gravity&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;structure&#34;&gt;Structure&lt;/h1&gt;&#xA;&lt;h3 id=&#34;magnetics&#34;&gt;Magnetics&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ZongeWebDev/methods/groundmethods/magnetics/&#34; title=&#34;Drone Mag&#34;&gt;Drone Magnetics&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ZongeWebDev/targets/exploration/silver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ZongeWebDev/targets/exploration/silver/</guid>
+      <description>&lt;h1 id=&#34;silver-exploration&#34;&gt;Silver Exploration&lt;/h1&gt;&#xA;&lt;p&gt;Although Nevada is the &lt;strong&gt;Silver State&lt;/strong&gt;, it is not the only place where we explore for &lt;strong&gt;epithermal deposits&lt;/strong&gt;. The efficacy of &lt;strong&gt;magnetics, gravity, CSAMT, and IP&lt;/strong&gt; for silver exploration follows the same geophysical principles as gold exploration.&lt;/p&gt;&#xA;&lt;h2 id=&#34;polymetallic-and-crd-deposits&#34;&gt;Polymetallic and CRD Deposits&lt;/h2&gt;&#xA;&lt;p&gt;We also work on many &lt;strong&gt;CRD (Carbonate Replacement Deposits) and polymetallic vein deposits&lt;/strong&gt;. These deposits are often conductive, making them excellent targets for geophysical methods such as:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

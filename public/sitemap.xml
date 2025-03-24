@@ -118,6 +118,8 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/exploration/</loc>
   </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/basemetals/</loc>
+  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/exploration/geothermal/</loc>
@@ -129,6 +131,8 @@
     <loc>http://localhost:1313/ZongeWebDev/targets/exploration/lithium/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/exploration/massivesulfides/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/silver/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/</loc>
   </url><url>
