@@ -4,7 +4,7 @@
 
 ### Introduction
 
-A gravity survey consists of taking measurements of Earth’s gravitational field, which varies based on the density of the material below each measurement point on the surface. As the density of the material increases, so does the acceleration due to gravity at that location. Zonge produces the Complete Bouger Anomaly measurement for each station, by subtracting the theoretical gravity response from the observed with additional height corrections, and produces a density of the representative subsurface variations. A gravity survey may be designed as a grid, profiles, or sparsely populated stations across an area of interest using 1-2 people, a gravimeter, and a base station.
+A gravity survey consists of taking measurements of Earth’s gravitational field, which varies based on the density of the material below each measurement point on the surface. As the density of the material increases, so does the acceleration due to gravity at that location. Zonge produces the Complete Bouger Anomaly value for each station. A gravity survey may be designed as a grid, profiles, or sparsely populated stations across an area of interest using 1-2 people, a gravimeter, and a base station.
 
 ---
 
@@ -14,13 +14,19 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 
 **This can be applied to:**
 
-- identifying structures (hanging vs foot wall zones, shearing zones)
+- identifying structures (hanging vs foot wall zones, shear zones)
+
+- May pick up lithogic differnces in density if there is enough contrast
 
 - Detection of voids (karst terrain)
 
-- Alterations zones (may be detected as a gravity low)
+- Alteration zones 
 
-- Massive body targets 
+- Basin characterization/depth to bedrock
+
+- In the right circumstances, such as massive sulfides, may provide direct detection
+
+- Monitoring of CCUS sites has been a proposed application
 
 ---
 
@@ -38,9 +44,9 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 
 ## Instrumentation
 
-- Lacoste & Romberg G Meters (link)
+- Lacoste & Romberg G Meters
 
-- Scintrex CG5 (link) when higher precision measurements (typical repeatability of 0.01 mGal) are required. 
+- Scintrex CG5 when higher precision measurements (typical repeatability of 0.01 mGal) are required. 
 
 - It is required to use geodetic-grade GPS receivers to obtain accurate position information (most importantly elevation)
 
@@ -58,7 +64,7 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 ## Survey Life Cycle
 
 - A local base station is deployed to provide an absolute gravity measurement, taking a measurement at the start and end of the day which accounts for drift.
-- A crew of 1-2 people per receiver will take measurements (2 stacks measurements) at each station. This may take anywhere from 5-15 min per station. 
+- A crew of 1-2 people per receiver will take measurements (2 stacks measurements) at each station. 
 - Data undergoes QA/QC procedures including evaluation of repeat measurements and loop closures to meet specifications. 
 - The Complete Bouger Anomaly measurement (CBA) is produced through the data-reduction process, which includes correcting for the Free-air (elevation), Bouger (terrain), latitude (Earth’s curvature), and tidal variations. Zonge routinely delivers the first vertical derivative and horizontal gradient of the dataset.
 - Further modeling and interpretation may include completing inversions and trend removal. 
