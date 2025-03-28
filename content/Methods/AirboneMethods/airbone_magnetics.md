@@ -37,7 +37,7 @@ Drone magnetics strikes a balance between helicopter borne surveys and ground su
 
 - Geometrics MagArrow, GEM DRONEmag, testing other magnetometers
 
-- DJI M300, M600, working on switching to open-source ArduPilot based drone
+- DJI M300, working on switching to open-source ArduPilot based drone
 
 - GEM GSM-19 Overhauser magnetometer for base station
 
