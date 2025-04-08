@@ -1,6 +1,6 @@
 #baseurl = "https://devcows.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
-#baseurl = "https://zonge-international.github.io/ZongeWebDev/" 
-baseurl = "http://localhost:1313/ZongeWebDev/" 
+baseurl = "https://zonge-international.github.io/ZongeWebDev/" 
+#baseurl = "http://localhost:1313/ZongeWebDev/" 
 relativeURLs = true
 canonifyURLs = true
 title = "Zonge"
