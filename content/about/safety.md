@@ -1,6 +1,6 @@
 +++
 title = "Safety at Zonge"
-banner = "img/abouts/safety.jpg"
+banner = "img/abouts/ElectricDog-linkedIn.jpg"
 weight = 1
 +++
 
