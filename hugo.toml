@@ -1,5 +1,6 @@
 #baseurl = "https://devcows.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
-baseurl = "https://zonge-international.github.io/ZongeWebDev/" 
+#baseurl = "https://zonge-international.github.io/ZongeWebDev/" 
+baseurl = "http://localhost:1313/ZongeWebDev/" 
 relativeURLs = true
 canonifyURLs = true
 title = "Zonge"
@@ -82,6 +83,12 @@ pluralizelisttitles = false
     parent     = "section.ground"
 
 [[menu.main]]
+    name       = "TEM"
+    url        = "/Methods/GroundMethods/tem/"
+    weight     = 4
+    parent     = "section.ground"
+
+[[menu.main]]
     name       = "Gravity"
     url        = "/Methods/GroundMethods/gravity/"
     weight     = 4
@@ -101,7 +108,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Targets"
     identifier = "menu.targets"
-    url        = "/img/template-homepage.png"
+    url        = "/img/person_w_view.jpg"
     weight     = 3
 
 [[menu.main]]
@@ -195,14 +202,14 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Instruments"
     identifier = "menu.instruments"
-    url        = "/img/receivers/zen_hero.png"
+    url        = "/img/IMG_7813.jpg"
     weight     = 4
 
 [[menu.main]]
     name       = "Generators"
     identifier = "section.generators"
     url        = ""
-    weight     = 1
+    weight     = 4
     parent     = "menu.instruments"
     post       = 1
 	
@@ -218,7 +225,7 @@ pluralizelisttitles = false
     name       = "Receivers"
     identifier = "section.receivers"
     url        = ""
-    weight     = 3
+    weight     = 1
     parent     = "menu.instruments"	
 	post       = 1
 
@@ -226,186 +233,108 @@ pluralizelisttitles = false
     name       = "Sensors"
     identifier = "section.sensors"
     url        = ""
-    weight     = 4
+    weight     = 3
     parent     = "menu.instruments"
 	post       = 2
-
-[[menu.main]]
-    name       = "Software"
-    identifier = "section.software"
-    url        = ""
-    weight     = 5
-    parent     = "menu.instruments"	
-	post       = 1
 
 [[menu.main]]
     name       = "Accessories"
     identifier = "section.accessories"
     url        = "/accessories/"
-    weight     = 6
+    weight     = 5
     parent     = "menu.instruments"
     post       = 2
-
-[[menu.main]]
-    name       = "Systems"
-    identifier = "section.systems"
-    url        = ""
-    weight     = 7
-    parent     = "menu.instruments"	
-	post       = 1
 	
 [[menu.main]]
     name       = "ZMG-9"
-    url        = "/instruments/zmg9/"
+    url        = "/instruments/Generators/zmg9/"
     weight     = 1
     parent     = "section.generators"	
 
 [[menu.main]]
     name       = "ZMG-30"
-    url        = "/instruments/zmg30/"
+    url        = "/instruments/Generators/zmg30/"
     weight     = 2
     parent     = "section.generators"	
 
 [[menu.main]]
     name       = "GGT-10"
-	url        = "/instruments/ggt10/"
+	url        = "/instruments/TX/ggt10/"
     weight     = 1
     parent     = "section.transmitters"
 
 [[menu.main]]
     name       = "GGT-30"
-	url        = "/instruments/ggt30/"
+	url        = "/instruments/TX/ggt30/"
     weight     = 2
     parent     = "section.transmitters"
 	
 [[menu.main]]
     name       = "ZT-30B"
-	url        = "/instruments/zt30b/"
+	url        = "/instruments/TX/ZT30B/"
     weight     = 3
     parent     = "section.transmitters"
 		
 [[menu.main]]
     name       = "XMT-G"
-    url        = "/instruments/xmtg/"
+    url        = "/instruments/TX/XMTG/"
     weight     = 4
     parent     = "section.transmitters"
 
 [[menu.main]]
     name       = "GDP3224"
     identifier = "section.gdp"
-    url        = "/instruments/gdp3224/"
+    url        = "/instruments/RX/GDP3224/"
     weight     = 1
     parent     = "section.receivers"	
 	post       = 1
 	
 [[menu.main]]
-    name       = "Zen"
+    name       = "ZEN"
     identifier = "section.zen"
-    url        = "/instruments/zen/"
+    url        = "/instruments/RX/ZEN/"
     weight     = 2
     parent     = "section.receivers"	
 	post       = 2
 
-[[menu.main]]
-    name       = "Antenna Summary"
-    identifier = "section.antennasummary"
-    url        = "/instruments/antennasummary/"
-    weight     = 1
-    parent     = "section.sensors"	
-	post       = 2	
 
 [[menu.main]]
     name       = "ANT-4"
     identifier = "section.ant4"
-    url        = "/instruments/ant4/"
-    weight     = 2
+    url        = "/instruments/Sensors/ant4/"
+    weight     = 1
     parent     = "section.sensors"	
-	post       = 2	
+	post       = 1
 	
 [[menu.main]]
     name       = "ANT-6"
     identifier = "section.ant6"
-    url        = "/instruments/ant6/"
+    url        = "/instruments/Sensors/ant6/"
+    weight     = 2
+    parent     = "section.sensors"	
+	post       = 2	
+
+[[menu.main]]
+    name       = "ANT-7"
+    identifier = "section.ant7"
+    url        = "/instruments/Sensors/ant7/"
     weight     = 3
     parent     = "section.sensors"	
 	post       = 3	
 
 [[menu.main]]
-    name       = "ANT-64"
-    identifier = "section.ant64"
-    url        = "/instruments/ant64/"
+    name       = "TEM-4"
+    identifier = "section.tem4"
+    url        = "/instruments/Sensors/tem4/"
     weight     = 4
     parent     = "section.sensors"	
 	post       = 4	
 
-[[menu.main]]
-    name       = "TEM-4"
-    identifier = "section.tem4"
-    url        = "/instruments/tem4/"
-    weight     = 5
-    parent     = "section.sensors"	
-	post       = 5	
-
-[[menu.main]]
-    name       = "Processing"
-    identifier = "section.processing"
-    url        = "/instruments/processing/"
-    weight     = 1
-    parent     = "section.software"	
-	post       = 6	
-	
-[[menu.main]]
-    name       = "Inversion"
-    identifier = "section.inversion"
-    url        = "/instruments/inversion/"
-    weight     = 2
-    parent     = "section.software"	
-	post       = 7	
-
-[[menu.main]]
-    name       = "IP/CSEM"
-    identifier = "section.ipcsemsystem"
-    url        = "/instruments/ipcsemsystem/"
-    weight     = 3
-    parent     = "section.systems"	
-	post       = 7	
-	
-[[menu.main]]
-    name       = "CSAMT"
-    identifier = "section.csamtsystem"
-    url        = "/instruments/csamtsystem/"
-    weight     = 1
-    parent     = "section.systems"	
-	post       = 7	
-
-[[menu.main]]
-    name       = "TEM"
-    identifier = "section.temsystem"
-    url        = "/instruments/temsystem/"
-    weight     = 4
-    parent     = "section.systems"	
-	post       = 7	
-
-[[menu.main]]
-    name       = "MT"
-    identifier = "section.mtsystem"
-    url        = "/instruments/mtsystem/"
-    weight     = 2
-    parent     = "section.systems"	
-	post       = 7	
-
-[[menu.main]]
-    name       = "MultiFunction"
-    identifier = "section.multifunction"
-    url        = "/instruments/gdp/"
-    weight     = 5
-    parent     = "section.systems"	
-	post       = 7	
 
 [[menu.main]]
     name       = "Reels"
     identifier = "section.reels"
-    url        = "/instruments/reel/"
+    url        = "/Instruments/Accessories/reels/"
     weight     = 1
     parent     = "section.accessories"	
 	post       = 7	
@@ -413,10 +342,37 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Misc"
     identifier = "section.misc"
-    url        = "/instruments/misc/"
+    url        = "/Instruments/Accessories/misc/"
     weight     = 2
     parent     = "section.accessories"	
 	post       = 7	
+
+##############################
+# Software ################
+##############################
+
+
+[[menu.main]]
+    name       = "Software"
+    identifier = "menu.software"
+    url        = "/img/GDP_MT6.jpg"
+    weight     = 5
+
+[[menu.main]]
+    name       = "Processing"
+    identifier = "section.processing"
+    url        = ""
+    weight     = 1
+    parent     = "menu.software"
+    post       = 1
+	
+[[menu.main]]
+    name       = "Inversion"
+    identifier = "section.inversion"
+    url        = ""
+    weight     = 2
+    parent     = "menu.software"
+	post       = 2
 
 ##############################
 # About ######################
@@ -424,31 +380,35 @@ pluralizelisttitles = false
 	
 [[menu.main]]
     name       = "About Us"
-    identifier = "section.about"
+    identifier = "menu.about"
     url        = "about/about/"
-    weight     = 5
-
-#[[menu.main]]
-#    name       = "About Us"
-#    url        = "/about/"
-#    weight     = 1
-#    parent     = "section.about"
-
-#[[menu.main]]
-#    name       = "Our Team"
-#    url        = ""
-#    weight     = 2
-#    parent     = "section.about"
-
-##############################
-# Contact ####################
-##############################
+    weight     = 6
 
 [[menu.main]]
-    identifier = "contact"
-    name       = "Contact"
+    name       = "About Us"
+    url        = "/about/about/"
+    weight     = 1
+    parent     = "menu.about"
+
+[[menu.main]]
+    name       = "Our Team"
+    url        = "/about/teams/"
+    weight     = 2
+    parent     = "menu.about"
+
+[[menu.main]]
+    name       = "Safety"
+    url        = "/about/safety/"
+    weight     = 3
+    parent     = "menu.about"
+
+[[menu.main]]
+    name       = "Contact Us"
     url        = "/contact/"
-    weight     = 7
+    weight     = 4
+    parent     = "menu.about"
+
+
 
 
 # Top bar social links menu

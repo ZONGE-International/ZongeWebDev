@@ -1,4 +1,8 @@
-# Gravity (mGal)
++++
+title = "Gravity (mGal)"
+banner = "img/methods/gravity/person_w_vista.jpg"
+weight = 1
++++
 
 ## Method
 
@@ -20,7 +24,7 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 
 - Detection of voids (karst terrain)
 
-- Alteration zones 
+- Alteration zones
 
 - Basin characterization/depth to bedrock
 
@@ -32,13 +36,13 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 
 ## Survey Design
 
-| **_Parameter_**     | **_Description_**                                                                                         |
-| ------------------- | --------------------------------------------------------------------------------------------------------- |
-| **Depth**           | The depth is inferred based on the wavelength of the anomaly                                                      |
+| **_Parameter_**     | **_Description_**                                                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Depth**           | The depth is inferred based on the wavelength of the anomaly                                                                          |
 | **Station Spacing** | Optimal station spacings should not be greater than the lateral extent of the target, ideally 1-2x smaller than the target dimension. |
-| **Scale**           | Local to Regional scale survey type                                                             |
-| **Cost**            | Low-cost relative to other geophysical methods.                                                           |
-| **Timing**          | Based on station spacing and terrain, multiple stations acquired per day.             |
+| **Scale**           | Local to Regional scale survey type                                                                                                   |
+| **Cost**            | Low-cost relative to other geophysical methods.                                                                                       |
+| **Timing**          | Based on station spacing and terrain, multiple stations acquired per day.                                                             |
 
 ---
 
@@ -46,10 +50,9 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 
 - Lacoste & Romberg G Meters
 
-- Scintrex CG5 when higher precision measurements (typical repeatability of 0.01 mGal) are required. 
+- Scintrex CG5 when higher precision measurements (typical repeatability of 0.01 mGal) are required.
 
 - It is required to use geodetic-grade GPS receivers to obtain accurate position information (most importantly elevation)
-
 
 ---
 
@@ -58,17 +61,15 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 - Color contoured plan-view maps of Complete Bouger Anomaly (CBA) made at the selected reduction density
 - Contoured plan-view maps of the horizontal gradient and calculated 1st derivative
 
-
 ---
 
 ## Survey Life Cycle
 
 - A local base station is deployed to provide an absolute gravity measurement, taking a measurement at the start and end of the day which accounts for drift.
-- A crew of 1-2 people per receiver will take measurements (2 stacks measurements) at each station. 
-- Data undergoes QA/QC procedures including evaluation of repeat measurements and loop closures to meet specifications. 
+- A crew of 1-2 people per receiver will take measurements (2 stacks measurements) at each station.
+- Data undergoes QA/QC procedures including evaluation of repeat measurements and loop closures to meet specifications.
 - The Complete Bouger Anomaly measurement (CBA) is produced through the data-reduction process, which includes correcting for the Free-air (elevation), Bouger (terrain), latitude (Earth’s curvature), and tidal variations. Zonge routinely delivers the first vertical derivative and horizontal gradient of the dataset.
-- Further modeling and interpretation may include completing inversions and trend removal. 
-
+- Further modeling and interpretation may include completing inversions and trend removal.
 
 ---
 

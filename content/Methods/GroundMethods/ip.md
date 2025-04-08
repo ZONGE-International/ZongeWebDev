@@ -1,4 +1,8 @@
-# Induced Polarization (IP)
++++
+title = "Induced Polarization (IP)"
+banner = "img/methods/ip/tx_tent_2.jpg"
+weight = 1
++++
 
 ## Method
 

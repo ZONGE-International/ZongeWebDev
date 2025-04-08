@@ -14,3 +14,114 @@
 .box-simple {
     min-height: 230px;
 }
+
+.home-carousel {
+    background: url('../img/carousel/Zen_Hero.png') center center no-repeat;
+    background-size: cover;
+}
+
+#heading-breadcrumbs {
+    background: rgba(217, 232, 249, 0.329);
+    padding: 15px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* style.css */
+.fancy-image {
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+/* .navbar-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+} */
+
+
+.navbar-overlay {
+    position: absolute;
+    top: 0px;
+    /* or whatever height your top bar has */
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(2px);
+    transition: background 3s ease;
+}
+
+.navbar-overlay.scrolled {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: background 3s ease;
+}
+
+/* Flip animation */
+@keyframes flip-logo {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        background-color: transparent;
+    }
+}
+
+.breadcrumb-title {
+    display: inline-block;
+    background: rgba(59, 109, 165, 0.8);
+    /* dark transparent background */
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#heading-breadcrumbs .breadcrumb-title {
+    color: #fff;
+}
+
+
+
+.navbar-overlay .navbar-brand {
+    background-color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    color: white !important;
+    margin-top: 0.5rem;
+    animation: flip-logo 0.4s ease-in-out;
+    display: inline-block;
+    /* ensures the transform works correctly */
+    transform-origin: center;
+    /* <- This creates space from the top */
+}
+
+
+
+.navbar-overlay,
+.navbar-overlay.navbar-default,
+.navbar-overlay .navbar,
+.navbar-overlay .navbar-default {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.navbar-overlay .navbar-nav>li>a,
+.navbar-overlay .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar-overlay .navbar-nav>li>a:hover,
+.navbar-overlay .navbar-nav>li.active>a {
+    color: #ffffff !important;
+}

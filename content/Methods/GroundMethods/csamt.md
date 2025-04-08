@@ -1,14 +1,18 @@
-# Controlled-Source Audio Magnetotelluric (CSAMT)
++++
+title = "Controled-Source AMT (CSAMT)"
+banner = "img/methods/csamt/GDP6.jpg"
+weight = 1
++++
 
 ## Method (ohm·m)
 
 ### Introduction
 
-CSAMT surveys are utilized to measure the calculated resistivity structure of the Earth. A transmitter dipole is deployed at a large distance away from the receiver grid, transmitting a controlled electrical signal over a range of frequencies. The orthogonal components of the electric and magnetic fields are measured at the receiver with grounded dipoles and a magnetic antenna. The resistivity values relate to the geological response of the ground, providing information on resistivity contrasts of more or less resistive rock packages or structures. 
+CSAMT surveys are utilized to measure the calculated resistivity structure of the Earth. A transmitter dipole is deployed at a large distance away from the receiver grid, transmitting a controlled electrical signal over a range of frequencies. The orthogonal components of the electric and magnetic fields are measured at the receiver with grounded dipoles and a magnetic antenna. The resistivity values relate to the geological response of the ground, providing information on resistivity contrasts of more or less resistive rock packages or structures.
 
-Data are generally collected in the far-field, where depth of investigation is frequency-dependent, but recent 3D CSAMT inversions now incorporate near-field data to improve resolution and depth coverage.  
+Data are generally collected in the far-field, where depth of investigation is frequency-dependent, but recent 3D CSAMT inversions now incorporate near-field data to improve resolution and depth coverage.
 
-Zonge is producing 3D CSAMT inversions which includes the near-field data and expands the depth of the model. 
+Zonge is producing 3D CSAMT inversions which includes the near-field data and expands the depth of the model.
 
 ---
 

@@ -1,4 +1,8 @@
-# UAV (Drone) Magnetic Survey (nT)
++++
+title = "# UAV (Drone) Magnetic Survey (nT)"
+banner = "img/methods/airbone/Drone.jpg"
+weight = 1
++++
 
 ## Method
 
@@ -28,7 +32,7 @@ Drone magnetics strikes a balance between helicopter borne surveys and ground su
 | **Depth**        | DOI is based on the size of the magnetic body, its intensity, and sources of noise. It is generally safe to assume features that have anomalous TMI can be seen at depth if they are sufficiently large; certainly, if they are as laterally expansive as they are deep. Without doing an inversion depth is based on interpretation of wavelength and gradient of anomalous feature. |
 | **Line-Spacing** | Typically, 25m-100m depending on the level of detail required. 25m line-spacing is generally only practical in areas where it is possible to fly low.                                                                                                                                                                                                                                 |
 | **Scale**        | Anywhere from 100’s to 1,000’s of line-km is practical. At a certain point if the additional resolution of the drone survey is not required then it may make more sense to use a helicopter.                                                                                                                                                                                          |
-| **Production**   | 20x higher than ground surveys                                                                                                                                                                                                                                                                                                                                                           |
+| **Production**   | 20x higher than ground surveys                                                                                                                                                                                                                                                                                                                                                        |
 | **Processing**   | Data are processed and gridded using Oasis Montaj. The MAGMAP module is used for filtering including the RTP and 1VD.                                                                                                                                                                                                                                                                 |
 
 ---
