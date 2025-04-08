@@ -45,7 +45,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Methods"
     identifier = "menu.methods"
-    url        = "/img/MT-model-e13664090974923.png"
+    url        = "/img/mt-model-e13664090974923_m.png"
     weight     = 2
 
 [[menu.main]]
@@ -202,7 +202,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Instruments"
     identifier = "menu.instruments"
-    url        = "/img/IMG_7813.jpg"
+    url        = "/img/img_7813_m.jpg"
     weight     = 4
 
 [[menu.main]]
@@ -355,7 +355,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Software"
     identifier = "menu.software"
-    url        = "/img/GDP_MT6.jpg"
+    url        = "/img/gdp_mt6_m.jpg"
     weight     = 5
 
 [[menu.main]]
