@@ -31,11 +31,11 @@ pluralizelisttitles = false
 
 
 # Main menu
-[[menu.main]]
-    name       = "Home"
-    identifier = "menu.home"
-    url        = "/"
-    weight     = 1
+#[[menu.main]]
+#    name       = "Home"
+#    identifier = "menu.home"
+#    url        = "/"
+#    weight     = 1
 
 ##############################
 # Methods ####################
@@ -114,7 +114,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Exploration"
     identifier = "section.exploration"
-    url        = ""
+    url        = "/targets/exploration/"
     weight     = 1
     parent     = "menu.targets"
     post       = 1
@@ -477,7 +477,7 @@ pluralizelisttitles = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
     about_us = "<p>Zonge is a world leader in the application of electromagnetic methods to subsurface imaging challenges</p>"
-    copyright = "Copyright (c) 2023, Zonge International; all rights reserved."
+    copyright = "© 2025 Zonge International. All rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -542,9 +542,10 @@ pluralizelisttitles = false
     # at 'exampleSite/data/carousel'.
     # For more information take a look at the README.
     enable = true
-    auto_play = true
+    auto_play = false
     slide_speed = 2000
     pagination_speed = 1000
+    
 
 [params.features]
     enable = true
@@ -578,13 +579,13 @@ pluralizelisttitles = false
     subtitle = ""
 
 [params.recent_posts]
-    enable = true
+    enable = false
     title = "Conversations"
     subtitle = "What we are working on, where to find us next, and new ideas"
     hide_summary = false
 
 [params.footer.recent_posts]
-    enable = true
+    enable = false
 
 [taxonomies]
   category = "categories"

@@ -1,10 +1,9 @@
 weight: 4
 title: "Drone Geophysics"
-description: >
-  <ul class="list-style-none">
-    <li>Magnetic Surveys</li>
-    <li>Geologic Structure</li>
-    <li>Abandoned Wells Location</li>
+description: <ul class="list-style-none">
+  <li>Magnetic Surveys</li>
+  <li>Geologic Structure</li>
+  <li>Abandoned Wells Location</li>
   </ul>
 image: "img/carousel/ZongeDroneGeneral.png"
-href: "https://devcows.github.io/hugo-universal-theme/"
+href: "#"

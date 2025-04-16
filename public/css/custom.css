@@ -125,3 +125,51 @@
 .navbar-overlay .navbar-nav>li.active>a {
     color: #ffffff !important;
 }
+
+.homepage.owl-carousel {
+    height: 100% !important;
+    display: inline-flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.custom-flex-row {
+    height: 50% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.carousel-img {
+    height: auto;
+    width: auto;
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.fas.fa-align-justify {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav.navbar-right {
+        background-color: white !important;
+    }
+
+    .navbar-nav.navbar-right>li>a {
+        color: black !important;
+    }
+
+    .navbar-nav.navbar-right>li>a:hover {
+        color: #555 !important;
+        /* optional hover effect */
+    }
+}
+
+button:hover,
+[class*="btn"]:hover,
+.clickable:hover {
+    cursor: pointer;
+}
