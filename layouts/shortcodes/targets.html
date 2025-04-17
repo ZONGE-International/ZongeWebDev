@@ -1,0 +1,107 @@
+<div class="geophysics-shortcode">
+    <style scoped>
+        .geophysics-shortcode {
+            padding: 2rem 0;
+        }
+
+        .geophysics-shortcode h2 {
+            font-size: 1.8rem;
+            color: #2b6cb0;
+            margin-bottom: 0.5rem;
+        }
+
+        .geophysics-shortcode h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2a4365;
+        }
+
+        .geophysics-shortcode .stage-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .geophysics-shortcode .stage {
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .geophysics-shortcode .stage:hover {
+            transform: scale(1.05);
+        }
+
+        .geophysics-shortcode .method-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.85rem;
+        }
+
+        .geophysics-shortcode .method-list li {
+            margin-bottom: 0.4rem;
+            padding-left: 1rem;
+            position: relative;
+            font-size: 1.6rem;
+        }
+
+        .geophysics-shortcode .method-list li::before {
+            content: "\2022";
+            color: #4299e1;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+
+    <div class="stage-container">
+        <div class="stage">
+            <div>
+                <h2>Reconnaissance<br>(Low Resolution)</h2>
+                <ul class="method-list">
+                    <li>Microgravity</li>
+                    <li>Airborne Magnetics</li>
+                    <li>MT (km spacing)</li>
+                    <li>Airborne TEM / Ground TEM</li>
+                    <li>Gradient IP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="stage">
+            <div>
+                <h2>Intermediate<br><br></h2>
+                <ul class="method-list">
+                    <br>
+                    <li>UAV Drone Magnetics</li>
+                    <li>CSAMT/AMT (m spacing)</li>
+                    <li>MMR</li>
+                    <li>Pole-Dipole, large Dipole-Dipole</li>
+                </ul>
+            </div>
+        </div>
+        <div class="stage">
+            <div>
+                <h2>Targeting<br>(High Resolution)</h2>
+                <ul class="method-list">
+                    <li>Regional Gravity</li>
+                    <li>Ground Magnetics</li>
+                    <li>CSAMT/MT</li>
+                    <li>BHEM - NanoTEM</li>
+
+                    <li>Small Dipole IP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

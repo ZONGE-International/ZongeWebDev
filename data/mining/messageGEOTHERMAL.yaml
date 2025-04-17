@@ -1,0 +1,75 @@
+Hydrothermal Systems:
+  Magnetic: |
+    Fracture mapping > Moderate contrast with surrounding rock
+    Magnetite alteration > Sometimes creates weak anomalies
+  Gravity: |
+    Low-density alteration zones > Gravity lows
+    Deep reservoir mapping > Poor sensitivity for fluid zones
+  CSAMT/AMT: |
+    Clay-rich cap rock > Very low resistivity
+    Fault conduits > High resistivity contrast zones
+  MT: |
+    Deep structure imaging > Limited depth resolution in complex terrains
+    Resistive zones > May be masked by conductive overburden
+  IP: |
+    Altered zones > Weak to moderate chargeability
+    Fracture zones > Can show minor effects if sulfides are present
+  EM: |
+    Clay cap detection > High conductivity
+    Fracture networks > Well imaged when water-filled
+
+Enhanced Geothermal:
+  Magnetic: |
+    Heat fractures > Slightly enhanced contrast in some terrains
+  Gravity: |
+    High-density intrusions > Gravity highs over heat sources
+  CSAMT/AMT: |
+    Heat transfer zones > Resistivity contrast around reservoirs
+  MT: |
+    Deep heat source > Detectable in resistivity gradients
+  IP: |
+    Fractured zones > Limited usefulness unless sulfides present
+  EM: |
+    Fracture mapping > Useful for conductive fluid-filled fractures
+
+Volcanic Geothermal System:
+  Magnetic: |
+    Volcanic conduits > Magnetic highs with mafic content
+  Gravity: |
+    Dense lava domes > High gravity signature
+  CSAMT/AMT: |
+    Hydrothermal zones > Low resistivity from clays
+  MT: |
+    Deep magma sources > High resistivity with sharp boundaries
+  IP: |
+    Clay alteration > Moderate chargeability
+  EM: |
+    Hydrothermal plume detection > Strong conductivity zones
+
+Geopressured:
+  Magnetic: |
+    Overpressured faults > Subtle lineament detection
+  Gravity: |
+    Compacted sediments > Gravity gradient across basin edges
+  CSAMT/AMT: |
+    Deep saline aquifers > Low resistivity
+  MT: |
+    Overpressure zones > Resistivity boundary changes
+  IP: |
+    Minimal use > Chargeability not sensitive to fluids
+  EM: |
+    Brine detection > Moderate conductivity signal
+
+Fault-related Geothermal:
+  Magnetic: |
+    Fault offsets > Detected as magnetic breaks
+  Gravity: |
+    Collapsed zones > Gravity lows near surface
+  CSAMT/AMT: |
+    Clay-filled faults > Low resistivity
+  MT: |
+    Major shear zones > Low to moderate resistivity
+  IP: |
+    Altered breccias > Weak to moderate chargeability
+  EM: |
+    Fault permeability zones > Strong conductive contrast

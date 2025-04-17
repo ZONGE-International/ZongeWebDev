@@ -1,0 +1,248 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    #mining {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 2rem;
+        background-color: #f9f9fa;
+    }
+
+    #mining .geo-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.2rem;
+    }
+
+    #mining .geo-cell {
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+        font-size: 1.5rem;
+    }
+
+    #mining .geo-cell:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    #mining .geo-header {
+        color: #34495e;
+        font-weight: bold;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #mining td:nth-child(even) {
+        background-color: #f0f8ff;
+    }
+
+    #mining td:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    #mining .icon-green {
+        color: green;
+    }
+
+    #mining .icon-yellow {
+        color: orange;
+    }
+
+    #mining .icon-blue {
+        color: blue;
+    }
+
+    #mining .custom-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 9999;
+    }
+
+    #mining .custom-modal-overlay.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #mining .custom-modal {
+        background: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        max-width: 900px;
+        max-height: 95vh;
+        height: auto;
+        overflow-y: auto;
+        width: 95%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        position: relative;
+        animation: fadeInUp 0.4s ease forwards;
+        font-size: 1.2rem;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    #mining .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #999;
+    }
+
+    #mining .close-btn:hover {
+        color: #333;
+    }
+
+    #mining .modal-content-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding-top: 1rem;
+    }
+
+    #mining .modal-row {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #mining .modal-label {
+        flex: 0 0 40%;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #mining .modal-value {
+        flex: 1;
+        color: #555;
+    }
+</style>
+
+<div id="mining">
+    <h2 style="margin-bottom: 1rem;">Mining</h2>
+    <div class="geo-table-wrapper" style="overflow-x: auto;">
+        <table class="geo-table">
+            <thead>
+                <tr>
+                    <th class="geo-header">Deposit / Method</th>
+                    <th class="geo-header">Magnetic</th>
+                    <th class="geo-header">Gravity</th>
+                    <th class="geo-header">CSAMT/AMT</th>
+                    <th class="geo-header">MT</th>
+                    <th class="geo-header">IP</th>
+                    <th class="geo-header">EM</th>
+                </tr>
+            </thead>
+            <tbody id="grid-body"></tbody>
+        </table>
+    </div>
+
+    <div class="custom-modal-overlay" id="modalOverlay">
+        <div class="custom-modal">
+            <div class="close-btn" id="closeModal">&times;</div>
+            <h5 id="modalTitle"></h5>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const icons = {
+            green: '<i class="fas fa-face-laugh icon-green"></i>',
+            yellow: '<i class="fas fa-face-meh icon-yellow"></i>',
+            blue: '<i class="fas fa-face-frown icon-blue"></i>'
+        };
+
+        const messages = {
+            green: 'Highly suitable method ✅',
+            yellow: 'Moderately useful method ⚠️',
+            blue: 'Low usefulness for this deposit ❌'
+        };
+
+
+        const messagesByTypeAndMethod = {{ site.Data.mining.messageMINING | jsonify | safeJS
+    }};
+
+
+    const headers = ["Magnetic", "Gravity", "CSAMT/AMT", "MT", "IP", "EM"];
+
+    const data = [
+        { type: 'Epithermal', values: ['green', 'blue', 'green', 'blue', 'yellow', 'blue'] },
+        { type: 'Porphyry Cu-Au', values: ['yellow', 'green', 'yellow', 'yellow', 'yellow', 'green'] },
+        { type: 'Skarn', values: ['yellow', 'green', 'yellow', 'green', 'yellow', 'yellow'] },
+        { type: 'CRD', values: ['green', 'yellow', 'green', 'yellow', 'yellow', 'yellow'] },
+        { type: 'Carlin (Au)', values: ['green', 'green', 'green', 'green', 'yellow', 'blue'] },
+        { type: 'VMS', values: ['green', 'green', 'green', 'green', 'yellow', 'yellow'] },
+        { type: 'IOCG', values: ['green', 'yellow', 'green', 'yellow', 'yellow', 'blue'] },
+        { type: 'Lithium', values: ['yellow', 'green', 'green', 'yellow', 'yellow', 'green'] }
+    ];
+
+    const modal = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    document.getElementById('closeModal').onclick = () => modal.classList.remove('active');
+
+    const tbody = document.getElementById('grid-body');
+    tbody.innerHTML = '';
+
+    data.forEach(row => {
+        let tr = document.createElement('tr');
+        tr.innerHTML = `<td class="geo-header">${row.type}</td>`;
+        row.values.forEach((cell, index) => {
+            let td = document.createElement('td');
+            td.classList.add('geo-cell');
+            const method = headers[index];
+            const customMsg = messagesByTypeAndMethod[row.type]?.[method];
+            const defaultMsg = messages[cell];
+
+            td.onclick = () => {
+                modalTitle.innerHTML = `<span style="font-weight: bold; font-size: 3rem; color: #34495e;">${row.type} → ${method}</span>`;
+                if (customMsg) {
+                    const lines = customMsg.split('\n');
+                    const html = lines.map(line => {
+                        const parts = line.split('>');
+                        return parts.length === 2
+                            ? `<div class="modal-row"><div class="modal-label">${parts[0].trim()}</div><div class="modal-value">${parts[1].trim()}</div></div>`
+                            : `<div>${line.trim()}</div>`;
+                    }).join('');
+                    modalContent.innerHTML = `<div class="modal-content-list">${html}</div>`;
+                } else {
+                    modalContent.innerHTML = `<p style="font-size: 1.2rem;">${defaultMsg}</p>`;
+                }
+                modal.classList.add('active');
+            };
+
+            td.innerHTML = icons[cell];
+            tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+    });
+    }) ();
+</script>

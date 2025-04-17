@@ -1,0 +1,47 @@
+Lithologic and water table:
+  Magnetic: |
+    Magnetite destructive > Loss of magnetic signal
+    Major structures > Magnetic lineaments useful for mapping
+
+  Gravity: |
+    Deep intrusives > Gravity highs
+    Density contrasts > Detectable gravity anomalies in subsurface
+
+  CSAMT/AMT: |
+    Massive silica/silicification > High resistivity
+    Mineralized quartz veins within broad zones of silicification > Resistivity highs
+
+  MT: |
+    Deep intrusives > Moderate resistivity contrast
+    Alteration zoning > Electrical variations with zoning
+    High sulphide content > Reduces resistivity
+
+  IP: |
+    Alteration (low resistivity) > Chargeable if sulphides present
+    Disseminated sulphides (veins) > Moderate chargeability
+
+  EM: |
+    Clay alteration > Reduced resistivity, strong EM response
+
+Contaminants:
+  Magnetic: |
+    Magnetite destructive > May indicate altered zones
+    Major structures > Can control contaminant pathways
+
+  Gravity: |
+    Deep intrusives (source) > Gravity high from dense rocks
+
+  CSAMT/AMT: |
+    Clay-pyrite alteration > Low resistivity
+    Sulphide veining > Moderate resistivity reduction
+
+  MT: |
+    Deep intrusives > Resistive background anomalies
+
+  IP: |
+    High sulphide content > High chargeability
+    Clay alterations (reduced resistivity) > Moderate chargeability
+    Late-stage and postmineral > Variable responses
+
+  EM: |
+    Clay alteration > Reduced resistivity, conductive response

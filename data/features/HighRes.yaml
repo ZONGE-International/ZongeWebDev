@@ -1,0 +1,10 @@
+weight: 3
+name: "Targeting<br>(High-Resolution)"
+icon: "fas fa-search-location"
+url: ""
+description:
+  - Regional Gravity
+  - Ground Magnetics
+  - CSAMT/MT
+  - BHEM - NanoTEM
+  - Small Dipole IP

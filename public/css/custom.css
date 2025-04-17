@@ -173,3 +173,9 @@ button:hover,
 .clickable:hover {
     cursor: pointer;
 }
+
+.navbar a,
+.navbar .dropdown-toggle {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}

@@ -1,0 +1,10 @@
+weight: 2
+name: "Intermediate<br>(Mid-Resolution)"
+icon: "fas fa-binoculars"
+url: ""
+description:
+  - .
+  - UAV Drone Magnetics
+  - CSAMT/AMT (m spacing)
+  - MMR
+  - Pole-Dipole, large Dipole-Dipole

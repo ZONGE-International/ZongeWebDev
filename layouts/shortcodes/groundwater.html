@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<div id="mining">
+    <h2 style="margin-bottom: 1rem;">Geothermal</h2>
+    <div class="geo-table-wrapper" style="overflow-x: auto;">
+        <table class="geo-table">
+            <thead>
+                <tr>
+                    <th class="geo-header">Deposit / Method</th>
+                    <th class="geo-header">Magnetic</th>
+                    <th class="geo-header">Gravity</th>
+                    <th class="geo-header">CSAMT/AMT</th>
+                    <th class="geo-header">MT</th>
+                    <th class="geo-header">IP</th>
+                    <th class="geo-header">EM</th>
+                </tr>
+            </thead>
+            <tbody id="grid-body3"></tbody>
+        </table>
+    </div>
+
+    <div class="custom-modal-overlay" id="modalOverlay">
+        <div class="custom-modal">
+            <div class="close-btn" id="closeModal">&times;</div>
+            <h5 id="modalTitle"></h5>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const icons = {
+            green: '<i class="fas fa-face-laugh icon-green"></i>',
+            yellow: '<i class="fas fa-face-meh icon-yellow"></i>',
+            blue: '<i class="fas fa-face-frown icon-blue"></i>'
+        };
+
+        const messages = {
+            green: 'Highly suitable method ✅',
+            yellow: 'Moderately useful method ⚠️',
+            blue: 'Low usefulness for this deposit ❌'
+        };
+
+        const messagesByTypeAndMethod = {{ site.Data.mining.messageGROUNDWATER | jsonify | safeJS
+    }};
+
+
+    const headers = ["Magnetic", "Gravity", "CSAMT/AMT", "MT", "IP", "EM"];
+
+    const data = [
+        { type: 'Lithologic and water table', values: ['green', 'blue', 'green', 'blue', 'yellow', 'green'] },
+        { type: 'Contaminants', values: ['yellow', 'green', 'yellow', 'yellow', 'yellow', 'green'] }
+    ];
+
+    const modal = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    document.getElementById('closeModal').onclick = () => modal.classList.remove('active');
+
+    const tbody = document.getElementById('grid-body3');
+    tbody.innerHTML = '';
+
+    data.forEach(row => {
+        let tr = document.createElement('tr');
+        tr.innerHTML = `<td class="geo-header">${row.type}</td>`;
+        row.values.forEach((cell, index) => {
+            let td = document.createElement('td');
+            td.classList.add('geo-cell');
+            const method = headers[index];
+            const customMsg = messagesByTypeAndMethod[row.type]?.[method];
+            const defaultMsg = messages[cell];
+
+            td.onclick = () => {
+                modalTitle.innerHTML = `<span style="font-weight: bold; font-size: 3rem; color: #34495e;">${row.type} → ${method}</span>`;
+                if (customMsg) {
+                    const lines = customMsg.split('\n');
+                    const html = lines.map(line => {
+                        const parts = line.split('>');
+                        return parts.length === 2
+                            ? `<div class="modal-row"><div class="modal-label">${parts[0].trim()}</div><div class="modal-value">${parts[1].trim()}</div></div>`
+                            : `<div>${line.trim()}</div>`;
+                    }).join('');
+                    modalContent.innerHTML = `<div class="modal-content-list">${html}</div>`;
+                } else {
+                    modalContent.innerHTML = `<p style="font-size: 1.2rem;">${defaultMsg}</p>`;
+                }
+                modal.classList.add('active');
+            };
+
+            td.innerHTML = icons[cell];
+            tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+    });
+    }) ();
+</script>

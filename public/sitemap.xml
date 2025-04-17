@@ -33,7 +33,7 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/about/safety/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/geothermal/</loc>
+    <loc>http://localhost:1313/ZongeWebDev/targets/targets/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/about/teams/</loc>
   </url><url>
@@ -115,35 +115,11 @@
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methodsskeleton/</loc>
   </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/basemetals/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/copper/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/gold/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/groundwater/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/lithium/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/massivesulfides/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/silver/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/co2/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/heapleach/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/monitoring/saltwaterintrusion/</loc>
-  </url><url>
     <loc>http://localhost:1313/ZongeWebDev/targetskeleton/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/about/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ZongeWebDev/targets/exploration/</loc>
   </url><url>
     <loc>http://localhost:1313/ZongeWebDev/methods/</loc>
   </url><url>

@@ -1,0 +1,425 @@
+Epithermal Systems:
+  Magnetic: |
+    Altered volcanic zones that are magnetite destructive > Magnetic low
+    Major structures > Presents constraints associated with magnetic content
+    Buried intrusives that could be the source of heat/fluid > Magnetic High
+    Identify host volcanic sequences > Magnetic high or banded pattern
+
+  Gravity: |
+    Basement topography and faults/caldera boundaries > 
+    Feeder zones > 
+    Density contrast between basement and cover. Sharp breaks along boundaries > 
+    Silica-rich alteration zones > 
+    Clay Alteration > Slight gravity high due to silicification
+    Deep, buried intrusives > Gravity lows from density reduction
+
+  CSAMT/AMT: |
+    Silica-rich zones > High resistivity (silicification)
+    Clay alteration (argillic) > Low resistivity (conductive clays)
+    Veins and feeders > Resistivity highs from quartz or brecciated pathways
+    Structural boundaries > Sharp resistivity contrasts with faults/contacts
+
+  MT: |
+    Deep alteration zones > 
+    Silicified cap rocks > 
+    Buried intrusions/heat sources > 
+    Major fault zones > 
+    Lithological contrasts > 
+    Crustal scale structures > 
+    Low resistivity from conductive clay/fluids > 
+    High resistivity due to resistive quartz zones > 
+    Moderate to low resistivity > 
+    Conductive zones from fluid pathways and alteration > 
+    Defines basin boundaries, volcanic >
+
+  IP: |
+    Disseminated sulfides > 
+    Clay alteration zones / Alteration halos > 
+    Feeder zones/Breccias > High chargeability
+    Silicified zones/veins > 
+    Oxidized cap/leached zone > 
+    Moderate chargeability, may lower resistivity. Zoning through combined resistivity-chargeability trends >
+
+  EM: |
+    Conductive clay zones > 
+    Silicified or resistive zones > Late-time EM response
+    Sulfide-rich breccias > Weak or absent EM signal (for contrast)
+    Vertical conduits/structures > Moderate to strong response
+    Alteration zonation > Vertical anomalies in EM
+
+Porphyry:
+  Magnetic: |
+    Potassic core (magnetite bearing) > Strong Magnetic high
+    Phyllic alteration zone > Reduced magnetism
+    Argillic/Advanced alteration zones > Magnetic lows from alteration/clay formation
+    Intrusive Center > Central magnetic high (if magnetite is preserved)
+    Ring Fractures > Circular magnetic patterns
+    Zoning of alteration halos > Define alteration shells based on magnetic contrasts
+
+  Gravity: |
+    Intrusive Bodies > 
+    Sills and Dykes > Gravity high
+    Hydrothermal alteration zones > Gravity lows from density reduction in altered rock
+    Fault/Fracture Zones > Local anomalies with contrast in fractured rock
+    Oxide/Leach zones > Gravity low due to low density oxidized/leached minerals
+    Ore zones > 
+    Low Grade Mineralization > Gravity high with higher density ore-bearing zone
+
+  CSAMT/AMT: |
+    Alteration Zones > Low resistivity due to clay, silica, and other.
+    Mineralization > Lower resistivity with mineralized zones (sulfides)
+    Faults/Fracture Zones > Sharp resistivity contrasts with faults
+    Hydrothermal pathways > Conductive zones formed by altered rock
+    Intrusive Bodies > Higher resistivity in contrast to country rock
+    Lithologic boundaries > Resistivity contrasts with contacts or between altered vs unaltered rock.
+
+  MT: |
+    Alteration Zones (Deep) > Low resistivity at depth
+    Mineralization > Low resistivity at depth
+    Faulta/Fracture zones > Resistivity contrast with major fault or feeder systems
+    Hydrothermal pathways > Low resistivity indicating deep pathways
+    Intrusives > Higher resistivity in deep intrusives
+    Lithological boundaries > Maps regional fault zones and fluid
+
+  IP: |
+    Alteration Zones with clay, silica, or sulfide > 
+    Lithological boundaries > 
+    Mineralization as disseminated sulfide minerals > 
+    Vein systems (sulfide rich) > Low resistivity and moderate to high chargeability
+    Hydrothermal pathways with sulfides abundant > 
+    Mineralization along intrusive dikes > Anomalous with sulfide deposition or fluid circulation
+
+  EM: |
+    Sulfide Mineralization (semi-massive) > 
+    Veins/Stockwork zones > 
+    Phyllic/Argillic Alterations > Moderate to strong late-time response
+    Fault/Fracture Zones > Moderate conductivity with clay-rich alteration
+    Conductive overburden > Linear conductive anomalies
+    Deep mineralized or alteration zones > Strong early-time response
+    Intrusive bodies > Late-time slow
+
+Skarn:
+  Magnetic: |
+    Magnetite-rich skarn zones > Magnetic Highs
+    Hematite or Garnet Skarns > Weak or moderate high, depending on oxidation
+    Contact Zones > Contrast between magnetic intrusive and host rocks. Moderate to high, depending on magnetite content
+    Intrusive Bodies > 
+    Altered/decalcified carbonates > Magnetic lows with magnetite destructive
+    Structures > Linear breaks or offsets in magnetic anomalies
+
+  Gravity: |
+    Massive skarn mineralization > 
+    Hematite or sulfide-dominant skarns > 
+    Carbonate Host rocks > Gravity High with high density materials
+    Skarn-altered zones > Moderate to strong gravity anomaly
+    Intrusive source bodies > 
+    Structural features > Low to moderate background gravity (unless altered), Local gravity highs from garnet and pyroxene
+    Covered Skarn targets >
+
+  CSAMT/AMT: |
+    Sulfide rich skarn mineralization > Moderate-to-low resistivity with conductive sulfides
+    Garnet-Pyroxene Skarn (Prograde) > Moderate to high resistivity, depending on alteration and porosity
+    Magnetite-rich Skarn > Moderate resistivity, varies on magnetite connectivity and contrast with host rock
+    Retrograde Skarn > Low resistivity with clays, alteration, sulfides
+    Alteration Zones > Low resistivity with argillic/phyllic zones but higher resistivity with silica-rich zone
+    Carbonate Host Rocks > High resistivity, especially if dry and fractured
+    Intrusive Source > Moderate-high resistivity, depending on presence of alteration halo
+    Structural controls (faults, contacts) > Linear low-resistivity zones from alteration, mineralization, and fluid pathways
+    Covered systems > Conductive zones beneath resistive overburden
+
+  MT: |
+    Deep Intrusive Source > Resistive cores contrast alteration (Conductive) halos
+    Skarn Mineralization (sulfide-rich) > Moderate to low resistivity
+    Retrograde Skarn (Clays, epidote, chlorite) > Low resistivity with alteration and increased porosity
+    Prograde Skarn (Garnet, Pyroxene, Magnetite) > Moderate to high resistivity, if less altered or magnetite-rich
+    Carbonate Host Rocks (unaltered) > High resistivity, especially if dry and fractured
+    Structural features > Linear low-resistivity zones
+    Conductive cap or altered cover > Shallow conductive layers from weathered volcanics or clay-rich
+    Covered systems >
+
+  IP: |
+    Sulfide rich skarn mineralization > 
+    Pyrrhotite and Chalcopyrite Zones > 
+    Magnetite-rich Zones (Baren or Ore-bearing) > High Chargeability with disseminated
+    Prograde (Garnet-pyroxene) > Strong chargeability and moderate to low resistivity
+    Retrograde Skarn with sulfide overprint > Low to moderate chargeability, discriminate sulfide bearing vs magnetite only
+    Alteration Zones > Low chargeability, moderate to high resistivity
+    Structural controls (faults, contacts) > 
+    Covered systems >
+
+  EM: |
+    Massive Sulfide Zones > 
+    Covered systems > 
+    Disseminated Sulfides > 
+    Pyrrhotite-rich Skarn > Strong late-time response
+    Magnetite-Rich Skarn > Weak to moderate response
+    Prograde (Garnet-pyroxene) > Strong, fastly decaying response, especially with massive
+    Retrograde alteration with sulfides > Variable to minimal response, depending on conductivity and interconnectivity of sulfides
+    Dry Prograde Skarn > 
+    Structural (faults) > Moderate
+
+CRD:
+  Magnetic: |
+    Magnetite-rich replacement zones > Magnetic Highs
+    Pyrrhotite-Bearing Sulfide zones > Moderate to high, often with remnant
+    Sphalerite-Galena Dominant zones > Subtle lows
+    Barren Carbonate Host > Mag lows
+    Intrusive Source Bodies (felsic to intermediate) > Moderate to strong High, often zoned
+    Contact Metamorphic zones > Sharp magnetic gradients
+    Structural controls > Linear magnetic breaks or offsets
+    Covered systems > Magnetic highs associated at depth below cover
+
+  Gravity: |
+    Massive Sulfide replacement bodies > 
+    Magnetite Rich CRD zones > Gravity Highs
+    Carbonate hosts (unreplaced) > Strong gravity highs
+    Silicified Zones > Gravity high (baseline)
+    Faults/Fracture zones > Slight increase (silicification), slight decrease (alteration)
+    Intrusive Source > 
+    Covered Systems > Moderate to strong gravity response
+
+  CSAMT/AMT: |
+    Massive sulfide replacement bodies > Low to moderate resistivity (sulfides)
+    Magnetite or Pyrrhotite rich > Moderate resistivity, depending on associated minerals
+    Clay/Silica altered halos > Low resistivity
+    Carbonate host rocks > High resistivity
+    Intrusive source contacts > Sharp contrasts at contact zones
+    Fractures/Faults > Linear low resistivity
+    Covered systems > Conductive beneath resistive cover
+    Silicified core/Jaspperiod > Moderate to high, depending on sulfide content
+
+  MT: |
+    Deep intrusive source bodies > 
+    Feeder structures/faults > Moderate to high resistivity (if felsic), sharp contrast to country rock
+    Massive sulfide replacement bodies > Linear low resistivity zones
+    Clay/Silica altered halos > Moderate to low resistivity
+    Magnetite-rich CRD > High resistivity
+    Covered systems > Moderate – may vary
+    Silicified core/Jaspperiod > Conductive zone beneath resistive cover, moderate to high resistivity with low sulfide content
+
+  IP: |
+    Disseminated sulfide halos > 
+    Pyrite-Rich zones > 
+    Non-conductive sulfide (galena, sphalerite) > Moderate chargeability of distal or halo mineralization
+    Silicified or jasperiod > Very high chargeability
+    Clay/sericite altered zones > Moderate to low chargeability
+    Carbonate host rocks (unaltered) > Low chargeability, with high resistivity
+
+  EM: |
+    Massive sulfide replacement bodies > 
+    Covered systems > 
+    Disseminated sulfide halos > 
+    Pyrrhotite-Rich zone > Strong, slow decaying
+    Non-conductive sulfide (galena, sphalerite) > Weak or no response
+    Clay/graphite bearing altered zones > Strong response due to pyrrhotite, poor response (weak conductor)
+    Carbonate host rocks (unaltered) > 
+    Structural controls/feeder faults > Moderate to strong response, indicate fluid
+
+Carlin (Au):
+  Magnetic: |
+    Silicified host rocks > 
+    Carbonate host rocks > 
+    Feeder structures > 
+    Faults and structural breaks > 
+    Carbon rich units or decalcified zones > 
+    Magnetite bearing sediments or volcanics > 
+    Altered intrusive centers > 
+    Magnetic Low (with destructive) > 
+    Generally non-magnetic > 
+    Magnetic Highs > 
+    Linear magnetic lows or breaks > 
+    Often magnetic lows > 
+    Moderate to high magnetic response > 
+    Disrupted or demagnetized >
+
+  Gravity: |
+    Silicified zones > 
+    Decalcified/argillized > 
+    Carbonate host rocks > 
+    Clastic/volcano-clastic overburden > 
+    Faults/collapsed breccias > 
+    Igneous intrusions > 
+    Gravity high > 
+    Gravity low (with clay/dissolution) > 
+    Moderate gravity background > 
+    Gravity low > 
+    Gradient observed > 
+    Gravity high (if denser than country rock) >
+
+  CSAMT/AMT: |
+    Silicified zones > 
+    Decalcified/altered zones > 
+    Carbonate host rock > 
+    Structural zones/faults/collapse breccias > 
+    Overburden/cover >
+
+VMS:
+  Magnetic: |
+    Massive Sulfide zones > Magnetic Low (with destructivity)
+    Alteration halos (propylitic, sericitic) > Magnetic low with alteration (often reducing)
+    Stratiform sulfide bodies > Magnetic Low
+    Hydrothermal alteration zones > Magnetic low (destructive)
+    Structural features (faults, folds) > Linear magnetic low or breaks
+    Volcanic host rocks > Moderate to high (depends on rock composition)
+    Overburden/cover > Weak to no response
+
+  Gravity: |
+    Massive Sulfide zones > Gravity low contrast with host
+    Alteration halos (propylitic, sericitic) > Gravity low with alteration
+    Stratiform sulfide bodies > Gravity gradient
+    Hydrothermal alteration zones > Gravity contrast with host rock
+    Structural features (faults, folds) > Moderate gravity
+    Volcanic host rocks > Gravity low (Depending on thickness)
+    Overburden/cover > Gravity low with low density sulfides
+
+  CSAMT/AMT: |
+    Massive sulfides > Low resistivity due to metallic content
+    Silicified zones > High resistivity
+    Chlorite/sericite alteration zones > Low resistivity
+    Sulfide-bearing feeders > Moderate to low resistivity
+    Layered volcanic sequences > Resistivity contrast
+    Covered targets > Low resistivity zones beneath resistive cover
+
+  MT: |
+    Conductive massive sulfides > Very low resistivity at depth
+    Clay-rich alteration zones > Moderate to low resistivity
+    Structural corridors > Linear conductive zones
+    Felsic-mafic contacts > Resistivity contrasts
+    Volcanogenic sequences > Deep conductive signatures
+    Covered systems > Conductive anomalies beneath insulating layers
+
+  IP: |
+    Disseminated sulfide halos > High chargeability
+    Pyrite and chalcopyrite zones > Moderate to high chargeability
+    Silicified or barren zones > Low chargeability
+    Structural feeders > Elevated chargeability where sulfides accumulate
+    Covered systems > Detectable chargeability anomalies under regolith
+
+  EM: |
+    Massive sulfide bodies > Strong, fast-decaying EM response
+    Stringer and disseminated zones > Moderate EM response
+    Pyrrhotite-rich units > Strong late-time EM response
+    Alteration halos > Weak to moderate EM
+    Structural conduits > Vertical conductive trends
+    Covered systems > EM signatures at depth depending on conductivity and contrast
+
+IOCG:
+  Magnetic: |
+    Iron Oxide (Hematite)/Alteration zones > Magnetic low with destruction of magnetite
+    Copper mineralization > Weak to no response
+    Gold mineralization > 
+    Magnetite-hematite rich zones > 
+    Faults/breccias > Magnetic Low or no response
+    Skarn or calc-silicate alteration > Magnetic Low or no response
+    Copper-gold rich breccia > Magnetic high
+    Overburden and cover > Linear magnetic anomalies
+    Magnetic low with destructive >
+
+  Gravity: |
+    Iron Oxide (Hematite)/Alteration zones > 
+    Copper mineralization > 
+    Gold mineralization > 
+    Magnetite-hematite rich zones > 
+    Faults/breccias > 
+    Skarn or calc-silicate alteration > 
+    Copper-gold rich breccia > 
+    Overburden and cover > 
+    Gravity low (low iron oxide) > 
+    Gravity low to moderate contrast with host rock >
+
+  CSAMT/AMT: |
+    Iron Oxide (Hematite)/Alteration zones > High resistivity (hematite)
+    Copper mineralization > Moderate resistivity (depending on associated alteration)
+    Gold mineralization > High resistivity (with silica alteration)
+    Magnetite-hematite rich zones > Low resistivity
+    Faults/breccias > Linear resistivity contrast, with fluid pathways
+    Skarn or calc-silicate alteration > Varies depending on silica vs calcite vs pyroxene
+    Copper-gold rich breccia > Low to moderate depending on mineralization type
+    Overburden and cover > Low resistivity with moisture, clay, or conductive mineral content
+
+  MT: |
+    Iron Oxide (Hematite)/Alteration zones > Low resistivity (magnetite-rich)
+    Copper mineralization > Linear resistivity contrast, with fluid pathways
+    Gold mineralization > Varies depending on silica vs calcite vs pyroxene
+    Magnetite-hematite rich zones > Low to moderate depending on mineralization type
+    Faults/breccias > Low resistivity with moisture, clay, or conductive mineral content
+    Skarn or calc-silicate alteration > 
+    Copper-gold rich breccia > High resistivity
+    Overburden and cover >
+
+  IP: |
+    Iron Oxide (Hematite)/Alteration zones > Moderate chargeability
+    Copper mineralization > Moderate chargeability
+    Gold mineralization > High chargeability
+    Magnetite-hematite rich zones > High Chargeability
+    Faults/breccias > Low chargeability
+    Skarn or calc-silicate alteration > 
+    Copper-gold rich breccia > High chargeability
+    Overburden and cover > Low chargeability
+
+  EM: |
+    Iron Oxide (Hematite)/Alteration zones > Strong conductivity
+    Copper mineralization > Moderate to strong conductivity
+    Gold mineralization > Moderate conductivity
+    Magnetite-hematite rich zones > Moderate to high conductivity
+    Faults/breccias > Strong conductivity
+    Skarn or calc-silicate alteration > Moderate conductivity
+    Copper-gold rich breccia > Weak response from non-conductive alteration
+    Overburden and cover > 
+    Feeder dikes/intrusive sills > 
+    High resistivity > 
+    Low resistivity (clays, sulfides, porosity) > 
+    Moderate to high > 
+    Linear/low resistivity zones > 
+    Strong low resistivity > 
+    Moderate to high resistivity (depending on composition)
+
+Lithium:
+  Magnetic: |
+    Pegmatites (non-magnetic) > Magnetic lows or null response
+    Host granites or greenstone belts > Background magnetic variations
+    Structural controls (shears/faults) > Magnetic breaks or lineaments
+    Mafic enclaves or dykes > Magnetic highs
+    Clay-altered zones > Magnetic lows
+    Covered systems > Subtle contrasts beneath cover
+
+  Gravity: |
+    Pegmatite bodies (low density) > Gravity lows
+    Dense host rocks (mafic/ultramafic) > Gravity highs
+    Fault zones > Variable gravity, may show contrast
+    Clay alteration > Slight gravity lows
+    Covered systems > Gravity contrast depending on cover and host density
+
+  CSAMT/AMT: |
+    Pegmatites >
+    Clay-stone Lithium >
+    Brine Lithium >
+    Structural controls >
+    Hydrothermal alteration >
+    Li-bearing heavilty weathered zones >
+    High resistivity, dry and coarse >
+    Low resistivity with clay/mositure >
+    Very low resistivity conductive brines >
+    Low resistivity if faults conduit fluid flow >
+    Low resistivity clay alteration >
+    Low resistivity, moisture and clay >
+
+  MT: |
+    Lithium brine aquifers > Strong low resistivity
+    Fault zones and feeders > Conductive zones due to fluid pathways
+    Pegmatite bodies > High resistivity if unaltered
+    Clay alteration zones > Moderate to low resistivity
+    Covered systems > Conductive zones at depth with low resistivity
+
+  IP: |
+    Clay altered zones > Moderate chargeability
+    Disseminated conductive minerals > Moderate to high chargeability
+    Pegmatite bodies > Low to moderate chargeability depending on alteration
+    Structural zones > Anomalous trends if sulfides present
+
+  EM: |
+    Lithium brines (high conductivity) > Strong late-time response
+    Pegmatites > Weak response
+    Structural conduits > Moderate response with fluid content
+    Clay alteration zones > Moderate response
+    Covered targets > Variable depending on brine, clay or resistive units
