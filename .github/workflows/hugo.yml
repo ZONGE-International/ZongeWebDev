@@ -47,6 +47,14 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Ensure Hugo Universal theme is present
+        run: |
+          if [ ! -d "themes/universal" ]; then
+            echo "Universal theme not found. Cloning..."
+            git clone --depth=1 https://github.com/devcows/hugo-universal-theme.git themes/universal
+          else
+            echo "Universal theme already present."
+          fi
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
