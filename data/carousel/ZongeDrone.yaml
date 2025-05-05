@@ -1,4 +1,4 @@
-weight: 4
+weight: 5
 title: "Drone Geophysics"
 description: <ul class="list-style-none">
   <li>Magnetic Surveys</li>
@@ -6,4 +6,4 @@ description: <ul class="list-style-none">
   <li>Abandoned Wells Location</li>
   </ul>
 image: "img/carousel/ZongeDroneGeneral.png"
-href: "#"
+href: "/Methods/AirboneMethods/airbone_magnetics/"

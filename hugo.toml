@@ -108,7 +108,36 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Targets"
     identifier = "menu.targets"
-    url        = "/Targets/targets/"
+    url        = "/img/Alaska-reinterp-3D.png"
+    weight     = 3
+
+[[menu.main]]
+    name       = "Targets"
+    identifier = "section.targets"
+    url        = ""
+    weight     = 1
+    parent     = "menu.targets"
+    post       = 1
+
+[[menu.main]]
+    name       = "Mining"
+    identifier = "section.mining"
+    url        = "/Targets/mining/"
+    parent     = "section.targets"
+    weight     = 1
+
+[[menu.main]]
+    name       = "Geothermal"
+    identifier = "section.geothermal"
+    url        = "/Targets/geothermal/"
+    parent     = "section.targets"
+    weight     = 2
+
+[[menu.main]]
+    name       = "Groundwater"
+    identifier = "section.groundwater"
+    url        = "/Targets/groundwater/"
+    parent     = "section.targets"
     weight     = 3
 
 
@@ -391,7 +420,7 @@ pluralizelisttitles = false
     #   5. change `enableRecaptchaInContactForm` is to true
     #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
     #
-    enableRecaptchaInContactForm = false
+    enableRecaptchaInContactForm = true
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
     about_us = "<p>Zonge is a world leader in the application of electromagnetic methods to subsurface imaging challenges</p>"
@@ -444,14 +473,14 @@ pluralizelisttitles = false
 #    search = true
 
 [params.carouselCustomers]
-    items = 6
-    auto_play = false
+    items = 5
+    auto_play = true
     slide_speed = 2000
     pagination_speed = 1000
 
 [params.carouselTestimonials]
     items = 4
-    auto_play = false
+    auto_play = true
     slide_speed = 2000
     pagination_speed = 1000
 
@@ -460,7 +489,7 @@ pluralizelisttitles = false
     # at 'exampleSite/data/carousel'.
     # For more information take a look at the README.
     enable = true
-    auto_play = false
+    auto_play = true
     slide_speed = 2000
     pagination_speed = 1000
     

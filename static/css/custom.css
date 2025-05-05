@@ -134,7 +134,7 @@
 }
 
 .custom-flex-row {
-    height: 50% !important;
+    height: 100% !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -178,4 +178,17 @@ button:hover,
 .navbar .dropdown-toggle {
     text-decoration: none !important;
     border-bottom: none !important;
+}
+
+/* Center and position owl-pagination at the bottom of the carousel */
+.owl-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.homepage.owl-carousel {
+    position: relative;
 }
