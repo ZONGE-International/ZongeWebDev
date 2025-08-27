@@ -302,24 +302,9 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Software"
     identifier = "menu.software"
-    url        = "/img/gdp_mt6_m.jpg"
+    url        = "/Software/software/"
     weight     = 5
 
-[[menu.main]]
-    name       = "Processing"
-    identifier = "section.processing"
-    url        = ""
-    weight     = 1
-    parent     = "menu.software"
-    post       = 1
-	
-[[menu.main]]
-    name       = "Inversion"
-    identifier = "section.inversion"
-    url        = ""
-    weight     = 2
-    parent     = "menu.software"
-	post       = 2
 
 ##############################
 # About ######################
