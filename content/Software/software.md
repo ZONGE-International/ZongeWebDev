@@ -133,13 +133,10 @@ weight = 1
         <td>Utilities: Color Contour &amp; Cole–Cole</td>
         <td data-label="Description">Plotting utilities and Cole–Cole fitting for IP/CR data.</td>
       </tr>
-
-      <!-- ===== Example placeholders for more items you may add =====
       <tr><td>CCINV</td><td data-label="Description">Cole–Cole inversion for time/frequency-domain IP data.</td></tr>
       <tr><td>S2DPLOT</td><td data-label="Description">Simple 2-D plotting of sections and plan-views from model grids.</td></tr>
       <tr><td>MODSECT</td><td data-label="Description">Section builder/visualizer for model layers and constraints.</td></tr>
       <tr><td>TEMTRIM</td><td data-label="Description">Skips noisy decay gates and trims outliers in TEM stacks.</td></tr>
-      -->
     </tbody>
   </table>
 </div>
