@@ -81,8 +81,6 @@ weight = 1
 </style>
 
 <div class="zg-softwrap">
-  <h2>Zonge Software Programs</h2>
-  <div class="zg-note">Each program has a one-line description. Add/remove rows as needed.</div>
 
   <table class="zg-table">
     <thead>
