@@ -20,6 +20,29 @@
     background-size: cover;
 }
 
+/* Keep homepage hero exactly viewport height (no extra page scroll). */
+.home-hero {
+    height: 100dvh;
+    min-height: 100vh;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+}
+
+.home-hero .home-carousel,
+.home-hero .homepage.owl-carousel,
+.home-hero .owl-wrapper-outer,
+.home-hero .owl-wrapper,
+.home-hero .owl-item,
+.home-hero .item,
+.home-hero .row {
+    height: 100%;
+}
+
+.home-hero .home-carousel .owl-carousel {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 #heading-breadcrumbs {
     background: rgba(217, 232, 249, 0.329);
     padding: 15px 0;
@@ -94,10 +117,10 @@
 
 
 .navbar-overlay .navbar-brand {
-    background-color: #ffffff;
+    background-color: #ffffffae;
     padding: 0.8rem 1.5rem;
     border-radius: 6px;
-    color: white !important;
+    color: rgba(255, 255, 255, 0.705) !important;
     margin-top: 0.5rem;
     animation: flip-logo 0.4s ease-in-out;
     display: inline-block;
@@ -128,25 +151,52 @@
 
 .homepage.owl-carousel {
     height: 100% !important;
-    display: inline-flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
+    display: block !important;
+    position: relative;
 }
 
 .custom-flex-row {
     height: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
+}
+
+.carousel-slide-row {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-media-col,
+.carousel-only-image-col,
+.carousel-single-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-single-content {
+    max-width: 960px;
+    width: 100%;
 }
 
 .carousel-img {
+    width: 100%;
     height: auto;
-    width: auto;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 680px;
+    max-height: 70vh;
     object-fit: contain;
     margin: 0 auto;
+}
+
+.carousel-home-logo {
+    width: auto;
+    max-width: 320px;
+    max-height: 120px;
 }
 
 .fas.fa-align-justify {
@@ -154,6 +204,56 @@
 }
 
 @media (max-width: 767px) {
+    .carousel-slide-row {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 16px 12px 64px;
+    }
+
+    .carousel-text-col,
+    .carousel-media-col,
+    .carousel-single-col,
+    .carousel-only-image-col {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .carousel-text-col {
+        order: 1;
+    }
+
+    .carousel-media-col {
+        order: 2;
+    }
+
+    .carousel-text-col h1 {
+        font-size: 42px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .carousel-text-col ul,
+    .carousel-text-col p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .carousel-media-col .carousel-img {
+        max-width: 68vw;
+        max-height: 28vh;
+    }
+
+    .carousel-home-logo {
+        max-width: 220px;
+        max-height: 82px;
+    }
+
+    .carousel-single-content {
+        max-width: 100%;
+    }
+
     .navbar-nav.navbar-right {
         background-color: white !important;
     }
@@ -165,6 +265,22 @@
     .navbar-nav.navbar-right>li>a:hover {
         color: #555 !important;
         /* optional hover effect */
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-slide-row {
+        flex-direction: row;
+    }
+
+    .carousel-text-col {
+        flex: 0 0 41.6667%;
+        max-width: 41.6667%;
+    }
+
+    .carousel-media-col {
+        flex: 0 0 58.3333%;
+        max-width: 58.3333%;
     }
 }
 
@@ -180,6 +296,24 @@ button:hover,
     border-bottom: none !important;
 }
 
+.menu-link-new {
+    font-weight: 700;
+}
+
+.menu-badge-new {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 6px;
+    border-radius: 999px;
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: rgba(255, 153, 0, 0.85);
+    vertical-align: middle;
+}
+
 /* Center and position owl-pagination at the bottom of the carousel */
 .owl-pagination {
     position: absolute;
@@ -187,8 +321,4 @@ button:hover,
     left: 50%;
     transform: translateX(-50%);
     z-index: 50;
-}
-
-.homepage.owl-carousel {
-    position: relative;
 }

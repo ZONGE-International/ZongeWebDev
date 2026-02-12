@@ -60,7 +60,7 @@ IP is generally a follow-up survey from magnetic or gravity information that gui
 
 {{< figure src="/img/IP_n_a-spc.png" title="" width=800 >}}
 
-<h3 style="text-align:center; color:blue;">Let’s talk about it! Contact us today</h3>
+<h3 style="text-align:center; color:blue;"><a href="/contact/">Let’s talk about it! Contact us today</a></h3>
 
 ## Instrumentation
 

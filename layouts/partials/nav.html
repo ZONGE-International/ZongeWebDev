@@ -71,7 +71,11 @@
                       {{ if .HasChildren }}
                       <ul>
                         {{ range .Children.ByWeight }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li>
+                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
+                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
+                          </a>
+                        </li>
                         {{- end }}
                       </ul>
                       {{ end }}
@@ -82,11 +86,15 @@
                       {{ range .Children.ByWeight }}
                       {{ $column := printf "%s" .Post }}
                       {{ if eq $column "2" }}
-                      <h5>{{ .Name }}</code></h5>
+                      <h5>{{ .Name }}</h5>
                       {{ if .HasChildren }}
                       <ul>
                         {{ range .Children.ByWeight }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li>
+                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
+                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
+                          </a>
+                        </li>
                         {{ end }}
                       </ul>
                       {{ end }}
@@ -98,11 +106,15 @@
                       {{ range .Children }}
                       {{ $column := printf "%s" .Post }}
                       {{ if eq $column "3" }}
-                      <h5>{{ .Name }}</code></h5>
+                      <h5>{{ .Name }}</h5>
                       {{ if .HasChildren }}
                       <ul>
                         {{ range .Children.ByWeight }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li>
+                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
+                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
+                          </a>
+                        </li>
                         {{ end }}
                       </ul>
                       {{ end }}
@@ -113,11 +125,15 @@
                       {{ range .Children }}
                       {{ $column := printf "%s" .Post }}
                       {{ if eq $column "4" }}
-                      <h5>{{ .Name }}</code></h5>
+                      <h5>{{ .Name }}</h5>
                       {{ if .HasChildren }}
                       <ul>
                         {{ range .Children.ByWeight }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li>
+                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
+                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
+                          </a>
+                        </li>
                         {{ end }}
                       </ul>
                       {{ end }}
@@ -132,7 +148,11 @@
             {{ else }}
             <ul class="dropdown-menu">
               {{ range .Children.ByWeight }}
-              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              <li>
+                <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
+                  {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
+                </a>
+              </li>
               {{ end }}
             </ul>
             {{ end }}

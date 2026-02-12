@@ -1,6 +1,7 @@
 +++
 title = "Contact"
 id = "contact"
+banner = "img/abouts/Equip.jpg"
 +++
 
 # What can we help you with?

@@ -31,7 +31,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.155.3
+      THEME_REPO: https://github.com/devcows/hugo-universal-theme.git
+      THEME_COMMIT: 2e695e87e5d1ff23a28919f4ea7ce1a75276ac66
     steps:
       - name: Install Hugo CLI
         run: |
@@ -50,11 +52,13 @@ jobs:
       - name: Ensure Hugo Universal theme is present
         run: |
           if [ ! -d "themes/hugo-universal-theme" ]; then
-            echo "Universal theme not found. Cloning..."
-            git clone --depth=1 https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
+            echo "Universal theme not found. Cloning pinned commit..."
+            git clone "${THEME_REPO}" themes/hugo-universal-theme
           else
-            echo "Universal theme already present."
+            echo "Universal theme already present. Ensuring pinned commit."
           fi
+          git -C themes/hugo-universal-theme fetch --depth=1 origin "${THEME_COMMIT}"
+          git -C themes/hugo-universal-theme checkout --force "${THEME_COMMIT}"
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo

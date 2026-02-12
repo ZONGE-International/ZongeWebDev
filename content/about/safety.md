@@ -29,7 +29,7 @@ We rigorously follow the **GGSSA** framework to ensure that:
 
 ## 📄 Want to know more?
 
-[Download our full Safety Guidelines (PDF)](#){ .btn .btn-primary target="\_blank" }
+[Request our full Safety Guidelines (PDF)](/contact/)
 
 ---
 

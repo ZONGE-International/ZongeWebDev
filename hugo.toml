@@ -152,21 +152,6 @@ pluralizelisttitles = false
     url        = "/img/img_7813_m.jpg"
     weight     = 4
 
-[[menu.main]]
-    name       = "Generators"
-    identifier = "section.generators"
-    url        = ""
-    weight     = 4
-    parent     = "menu.instruments"
-    post       = 1
-	
-[[menu.main]]
-    name       = "Transmitters"
-    identifier = "section.transmitters"
-    url        = ""
-    weight     = 2
-    parent     = "menu.instruments"
-	post       = 2
 
 [[menu.main]]
     name       = "Receivers"
@@ -177,6 +162,14 @@ pluralizelisttitles = false
 	post       = 1
 
 [[menu.main]]
+    name       = "Transmitters"
+    identifier = "section.transmitters"
+    url        = ""
+    weight     = 2
+    parent     = "menu.instruments"
+	post       = 2
+
+[[menu.main]]
     name       = "Sensors"
     identifier = "section.sensors"
     url        = ""
@@ -185,13 +178,13 @@ pluralizelisttitles = false
 	post       = 2
 
 [[menu.main]]
-    name       = "Accessories"
-    identifier = "section.accessories"
-    url        = "/accessories/"
-    weight     = 5
+    name       = "Generators"
+    identifier = "section.generators"
+    url        = ""
+    weight     = 4
     parent     = "menu.instruments"
-    post       = 2
-	
+    post       = 1
+
 [[menu.main]]
     name       = "ZMG-9"
     url        = "/instruments/Generators/zmg9/"
@@ -205,27 +198,36 @@ pluralizelisttitles = false
     parent     = "section.generators"	
 
 [[menu.main]]
+    name       = "ZT-100"
+    identifier = "product.new.zt100"
+	url        = "/instruments/TX/zt100/"
+    weight     = 1
+    parent     = "section.transmitters"
+
+
+[[menu.main]]
     name       = "GGT-10"
 	url        = "/instruments/TX/ggt10/"
-    weight     = 1
+    weight     = 2
     parent     = "section.transmitters"
 
 [[menu.main]]
     name       = "GGT-30"
 	url        = "/instruments/TX/ggt30/"
-    weight     = 2
+    weight     = 3
     parent     = "section.transmitters"
 	
 [[menu.main]]
     name       = "ZT-30B"
 	url        = "/instruments/TX/ZT30B/"
-    weight     = 3
+    weight     = 4
     parent     = "section.transmitters"
 		
 [[menu.main]]
-    name       = "XMT-G"
+    name       = "XMT-R"
+    identifier = "product.new.xmtr"
     url        = "/instruments/TX/XMTG/"
-    weight     = 4
+    weight     = 5
     parent     = "section.transmitters"
 
 [[menu.main]]
@@ -278,22 +280,6 @@ pluralizelisttitles = false
 	post       = 4	
 
 
-[[menu.main]]
-    name       = "Reels"
-    identifier = "section.reels"
-    url        = "/Instruments/Accessories/reels/"
-    weight     = 1
-    parent     = "section.accessories"	
-	post       = 7	
-
-[[menu.main]]
-    name       = "Misc"
-    identifier = "section.misc"
-    url        = "/Instruments/Accessories/misc/"
-    weight     = 2
-    parent     = "section.accessories"	
-	post       = 7	
-
 ##############################
 # Software ################
 ##############################
@@ -320,12 +306,6 @@ pluralizelisttitles = false
     name       = "About Us"
     url        = "/about/about/"
     weight     = 1
-    parent     = "menu.about"
-
-[[menu.main]]
-    name       = "Our Team"
-    url        = "/about/teams/"
-    weight     = 2
     parent     = "menu.about"
 
 [[menu.main]]
@@ -365,7 +345,7 @@ pluralizelisttitles = false
     defaultDescription = "Zonge International"
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
-    enableGoogleMaps = true
+    enableGoogleMaps = false
     googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
 
     latitude = "32.27012"
@@ -388,7 +368,7 @@ pluralizelisttitles = false
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io endpoint url
-    formspree_action = "https://formspree.io/sample/of/endpoint"
+    formspree_action = "mailto:contact@zonge.com"
     contact_form_ajax = false
 
     # Formspree form supports Google reCAPTCHA Key (type v2).
@@ -405,11 +385,11 @@ pluralizelisttitles = false
     #   5. change `enableRecaptchaInContactForm` is to true
     #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
     #
-    enableRecaptchaInContactForm = true
+    enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
     about_us = "<p>Zonge is a world leader in the application of electromagnetic methods to subsurface imaging challenges</p>"
-    copyright = "© 2025 Zonge International. All rights reserved."
+    copyright = "© 2026 Zonge International. All rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -440,7 +420,7 @@ pluralizelisttitles = false
       """
 
 [permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
+    blog = "/blog/:year/:month/:day/:contentbasename/"
 
 # Enable or disable top bar with social icons
 [params.topbar]

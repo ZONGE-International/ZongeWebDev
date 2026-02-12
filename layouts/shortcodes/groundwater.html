@@ -106,9 +106,16 @@
 
     #mining .close-btn {
         position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 1.5rem;
+        top: 12px;
+        right: 14px;
+        font-size: 2.4rem;
+        line-height: 1;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
         cursor: pointer;
         color: #999;
     }
@@ -141,6 +148,13 @@
     #mining .modal-value {
         flex: 1;
         color: #555;
+    }
+
+    #mining .modal-title-text {
+        font-weight: bold;
+        font-size: clamp(1.25rem, 3vw, 2rem);
+        color: #34495e;
+        line-height: 1.25;
     }
 </style>
 
@@ -200,7 +214,12 @@
     const modal = document.getElementById('modalOverlay');
     const modalTitle = document.getElementById('modalTitle');
     const modalContent = document.getElementById('modalContent');
-    document.getElementById('closeModal').onclick = () => modal.classList.remove('active');
+    const closeModalBtn = document.getElementById('closeModal');
+    const closeModal = () => modal.classList.remove('active');
+    closeModalBtn.onclick = closeModal;
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
 
     const tbody = document.getElementById('grid-body3');
     tbody.innerHTML = '';
@@ -216,7 +235,7 @@
             const defaultMsg = messages[cell];
 
             td.onclick = () => {
-                modalTitle.innerHTML = `<span style="font-weight: bold; font-size: 3rem; color: #34495e;">${row.type} → ${method}</span>`;
+                modalTitle.innerHTML = `<span class="modal-title-text">${row.type} → ${method}</span>`;
                 if (customMsg) {
                     const lines = customMsg.split('\n');
                     const html = lines.map(line => {
