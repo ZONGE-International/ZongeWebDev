@@ -77,6 +77,13 @@ _________________________________________________________ -->
             {{ if isset .Site.Params "copyright" }}
             <p class="text-center">{{ .Site.Params.copyright | safeHTML }}</p>
             {{ end }}
+            {{ if isset .Site.Params "legacy_site_url" }}
+            <p class="text-center">
+                <a href="{{ .Site.Params.legacy_site_url }}" target="_blank" rel="noopener noreferrer">
+                    {{ default "Visit Legacy Website" .Site.Params.legacy_site_label }}
+                </a>
+            </p>
+            {{ end }}
         </div>
     </div>
 </div>

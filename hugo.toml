@@ -406,6 +406,8 @@ pluralizelisttitles = false
     logo_small = "img/logo.png"
 
     contact_url = "/contact"
+    legacy_site_url = "https://legacy.zonge.com"
+    legacy_site_label = "Visit Legacy Website"
     address = """<p class="text-uppercase"><strong>Zonge International, Inc</strong>
         <br>
 		<br>3475 N Dodge Blvd
