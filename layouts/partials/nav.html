@@ -47,10 +47,22 @@
           {{ end }}
           {{ end }}
 
+          {{ if eq (index .Params "suppress_active") true }}
+          {{ $active = "" }}
+          {{ end }}
+
           {{ if .HasChildren }}
           <!-- Check if the first child marks a menu section identifier -->
           {{ $hasSections := (hasPrefix (index .Children 0).Identifier "section.") }}
-          <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{end}} {{ $active }}">
+          {{ $compactMegaMenu := and $hasSections .Params.compact }}
+          {{ $showMenuImage := false }}
+          {{ $columnClass := "col-sm-3" }}
+          {{ if $compactMegaMenu }}
+          {{ $columnClass = "col-sm-6" }}
+          {{ else if not $showMenuImage }}
+          {{ $columnClass = "col-sm-6" }}
+          {{ end }}
+          <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{end}}{{ if $compactMegaMenu }} mega-menu-compact{{ end }} {{ $active }}">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
             {{ if $hasSections }}
@@ -58,12 +70,12 @@
               <li>
                 <div class="yamm-content">
                   <div class="row">
-                    {{ if ne .URL "" }}
+                    {{ if $showMenuImage }}
                     <div class="col-sm-6">
                       <img src="{{ .URL }}" class="img-responsive hidden-xs" />
                     </div>
                     {{ end }}
-                    <div class="col-sm-3">
+                    <div class="{{ $columnClass }}">
                       {{ range .Children.ByWeight }}
                       {{ $column := printf "%s" .Post }}
                       {{ if eq $column "1" }}
@@ -72,9 +84,7 @@
                       <ul>
                         {{ range .Children.ByWeight }}
                         <li>
-                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
-                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
-                          </a>
+                          {{ partial "menu-link.html" . }}
                         </li>
                         {{- end }}
                       </ul>
@@ -82,7 +92,7 @@
                       {{ end }}
                       {{ end }}
                     </div>
-                    <div class="col-sm-3">
+                    <div class="{{ $columnClass }}">
                       {{ range .Children.ByWeight }}
                       {{ $column := printf "%s" .Post }}
                       {{ if eq $column "2" }}
@@ -91,9 +101,7 @@
                       <ul>
                         {{ range .Children.ByWeight }}
                         <li>
-                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
-                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
-                          </a>
+                          {{ partial "menu-link.html" . }}
                         </li>
                         {{ end }}
                       </ul>
@@ -101,7 +109,7 @@
                       {{ end }}
                       {{ end }}
                     </div>
-                    {{ if eq .URL "" }}
+                    {{ if and (not $showMenuImage) (not $compactMegaMenu) }}
                     <div class="col-sm-3">
                       {{ range .Children }}
                       {{ $column := printf "%s" .Post }}
@@ -111,9 +119,7 @@
                       <ul>
                         {{ range .Children.ByWeight }}
                         <li>
-                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
-                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
-                          </a>
+                          {{ partial "menu-link.html" . }}
                         </li>
                         {{ end }}
                       </ul>
@@ -130,9 +136,7 @@
                       <ul>
                         {{ range .Children.ByWeight }}
                         <li>
-                          <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
-                            {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
-                          </a>
+                          {{ partial "menu-link.html" . }}
                         </li>
                         {{ end }}
                       </ul>
@@ -149,9 +153,7 @@
             <ul class="dropdown-menu">
               {{ range .Children.ByWeight }}
               <li>
-                <a href="{{ .URL }}"{{ if hasPrefix .Identifier "product.new." }} class="menu-link-new"{{ end }}>
-                  {{ .Name }}{{ if hasPrefix .Identifier "product.new." }} <span class="menu-badge-new">NEW</span>{{ end }}
-                </a>
+                {{ partial "menu-link.html" . }}
               </li>
               {{ end }}
             </ul>

@@ -1,6 +1,6 @@
-<div id="heading-breadcrumbs" style="background-image: url('{{ .Params.banner | absURL }}'); 
+<div id="heading-breadcrumbs" class="{{ if eq (lower .Section) "methods" }}methods-breadcrumbs{{ end }}" style="background-image: url('{{ .Params.banner | absURL }}'); 
             background-size: cover; 
-            background-position: center; 
+            background-position: {{ .Params.banner_position | default "center" }}; 
             padding: 200px 0; 
             position: relative; 
             min-height: 500px;">

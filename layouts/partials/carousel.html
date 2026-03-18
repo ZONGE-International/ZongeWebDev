@@ -5,12 +5,15 @@
     <div class="home-carousel" style="height: 100%; width: 100%;">
         <div class="dark-mask"></div>
         <div class="homepage owl-carousel" data-autoplay="{{ default true .Site.Params.CarouselHomepage.auto_play }}"
+            data-autoplay-delay="{{ default 5500 .Site.Params.CarouselHomepage.auto_play_delay }}"
             data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"
             data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
             {{ range sort .Site.Data.carousel "weight" }}
+            {{ if default false .homepage }}
             <div class="item custom-flex-row">
                 {{ if .href }}
-                <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
+                <a href="{{ .href }}"{{ if hasPrefix .href "http" }} target="_blank" rel="noopener"{{ end }}
+                    title="{{ .title | safeHTML }}">
                     {{ end }}
                     <div class="row carousel-slide-row">
                         {{ if or .title .description }}
@@ -31,12 +34,14 @@
                             {{ .description | safeHTML }}
                         </div>
                         <div class="col-sm-7 carousel-media-col">
-                            <img class="img-responsive carousel-img" src="{{ .image }}" alt="">
+                            <img class="img-responsive carousel-img" src="{{ .image }}"
+                                alt="{{ if .image_alt }}{{ .image_alt }}{{ else }}{{ .title | plainify }}{{ end }}">
                         </div>
                         {{ end }}
                         {{ else }}
                         <div class="col-sm-12 carousel-only-image-col">
-                            <img class="img-responsive carousel-img" src="{{ .image }}" alt="">
+                            <img class="img-responsive carousel-img" src="{{ .image }}"
+                                alt="{{ if .image_alt }}{{ .image_alt }}{{ else }}{{ .title | plainify }}{{ end }}">
                         </div>
                         {{ end }}
                     </div>
@@ -44,6 +49,7 @@
                 </a>
                 {{ end }}
             </div>
+            {{ end }}
             {{ end }}
         </div>
         <!-- /.project owl-slider -->

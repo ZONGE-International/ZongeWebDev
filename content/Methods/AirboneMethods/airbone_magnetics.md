@@ -1,5 +1,5 @@
 +++
-title = "# UAV (Drone) Magnetic Survey (nT)"
+title = "UAV (Drone) Magnetic Surveys"
 banner = "img/methods/airbone/Drone.jpg"
 weight = 1
 +++
@@ -8,70 +8,43 @@ weight = 1
 
 ### Introduction
 
-Total magnetic intensity varies laterally in proportion to the amount of magnetic minerals present. It can be useful to find both magnetic highs and magnetic lows depending on the application and target type.  
-Measurements are made along lines using a total-field magnetometer suspended from an Unmanned Aerial Vehicle (Drone). It is necessary to perform calibration flights for compensation and perform diurnal corrections on the dataset using a magnetic base station. All pilots are FAA part 107 certified and operations are carried out in compliance with Zonge’s UAV SMS program.
-Drone magnetics strikes a balance between helicopter borne surveys and ground surveys. There may be a bit less detail than ground surveys but the draping using an RTK based drone is generally better and so there can be more detail than helicopter surveys. Helicopter surveys are generally the most cost-efficient option for large areas.
+UAV magnetic surveys measure variations in total magnetic intensity that reflect changes in magnetic mineral content, structure, and alteration. Data are acquired along planned flight lines using a total-field magnetometer suspended from an unmanned aerial vehicle.
+
+Drone platforms bridge the gap between helicopter and ground magnetic surveys. They can deliver tighter drape and higher local resolution than many airborne programs, while covering more ground than conventional foot-based acquisition in difficult terrain.
+
+Zonge completes compensation and calibration flights, applies diurnal corrections using a magnetic base station, and operates under established FAA and internal UAV safety procedures.
 
 {{< figure src="/img/mag_anomalies.jpg" title="" width=800 >}}
 
----
-
 ## Applications
 
-- Mapping mafic and ultramafic igneous rock types. Generally felsic rocks are not strongly magnetic. Many rocks are weakly magnetic which can still be detectable.
-- Detecting magnetite destructive alteration in porphyry and epithermal systems (including geothermal).
-- Mapping structure if there is variation in TMI between the hanging and footwall, or if there is observable offset in the mapped features.
+- Mapping mafic and ultramafic rock units and other magnetic lithologic contrasts
+- Detecting magnetite-destructive alteration in porphyry, epithermal, and geothermal settings
+- Mapping structure where magnetic units are offset across faults or contacts
 - Mapping steel casing in abandoned wells and other magnetic anthropogenic features.
-
----
 
 ## Survey Design
 
-| **Parameter**    | **Description**                                                                                                                                                                                                                                                                                                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Depth**        | DOI is based on the size of the magnetic body, its intensity, and sources of noise. It is generally safe to assume features that have anomalous TMI can be seen at depth if they are sufficiently large; certainly, if they are as laterally expansive as they are deep. Without doing an inversion depth is based on interpretation of wavelength and gradient of anomalous feature. |
-| **Line-Spacing** | Typically, 25m-100m depending on the level of detail required. 25m line-spacing is generally only practical in areas where it is possible to fly low.                                                                                                                                                                                                                                 |
-| **Scale**        | Anywhere from 100’s to 1,000’s of line-km is practical. At a certain point if the additional resolution of the drone survey is not required then it may make more sense to use a helicopter.                                                                                                                                                                                          |
-| **Production**   | 20x higher than ground surveys                                                                                                                                                                                                                                                                                                                                                        |
-| **Processing**   | Data are processed and gridded using Oasis Montaj. The MAGMAP module is used for filtering including the RTP and 1VD.                                                                                                                                                                                                                                                                 |
-
----
+| **Parameter** | **Description** |
+| --- | --- |
+| **Depth** | Depth of investigation depends on body size, magnetic contrast, sensor height, and the noise environment. |
+| **Line Spacing** | Typical line spacing ranges from 25-100 m depending on target size and the required level of detail. |
+| **Scale** | Programs can range from small detailed surveys to broad line-kilometer campaigns where drone acquisition remains practical. |
+| **Production** | Drone magnetics can significantly outpace ground magnetic programs in suitable terrain. |
+| **Processing** | Data are processed and gridded in Oasis Montaj with filtering workflows that may include RTP and first vertical derivative products. |
 
 ## Instrumentation
 
-- Geometrics MagArrow, GEM DRONEmag, testing other magnetometers
-
-- DJI M300, working on switching to open-source ArduPilot based drone
-
-- GEM GSM-19 Overhauser magnetometer for base station
-
----
+- **Airborne Magnetometers:** Geometrics MagArrow, GEM DRONEmag, and other project-specific sensors
+- **UAV Platforms:** DJI M300 and evolving open-source flight platforms where appropriate
+- **Base Station:** GEM GSM-19 Overhauser magnetometer
 
 ## Deliverables
 
-- Contoured plans of TMI reduced to pole.
-
-- Contoured plans of First Vertical Derivative of the TMI reduced to pole.
-
-- Magnetic inversions can be completed upon request.
-
----
-
-## Survey Life Cycle
-
-1. Planning, permitting, and FAA flight compliance
-2. UAV and magnetometer setup and calibration
-3. Flight execution with QA/QC
-4. Diurnal correction and data processing
-5. Advanced filtering and derivative products
-6. Final map generation and optional modeling
-
-{{< figure src="/img/survey_life_cycle.jpg" title="" width=800 >}}
-
----
+- Contoured total magnetic intensity products, including reduced-to-pole grids where appropriate
+- First vertical derivative and related filtered products
+- Optional magnetic inversion products when survey objectives support modeling
 
 ## Case Studies and Resources
 
-- [Zonge UAV Mag Projects]
-- [Examples from ultramafic terrain mapping]
-- [Internal case study resources and white papers]
+- Contact Zonge for UAV magnetic survey examples, terrain-specific planning guidance, and representative deliverables.

@@ -1,0 +1,22 @@
+{{ $item := . }}
+{{ $badgeText := index $item.Params "badge" }}
+{{ $badgeTone := index $item.Params "badge_style" }}
+
+{{ if and (not $badgeText) (hasPrefix $item.Identifier "product.new.") }}
+{{ $badgeText = "NEW" }}
+{{ $badgeTone = "new" }}
+{{ end }}
+
+{{ $badgeToneClass := "default" }}
+{{ if $badgeTone }}
+{{ $badgeToneClass = ($badgeTone | urlize) }}
+{{ end }}
+
+{{ $linkClass := "" }}
+{{ if $badgeText }}
+{{ $linkClass = "menu-link-badged" }}
+{{ end }}
+
+<a href="{{ $item.URL }}"{{ if $linkClass }} class="{{ $linkClass }}"{{ end }}>
+  {{ $item.Name }}{{ if $badgeText }} <span class="menu-badge menu-badge-{{ $badgeToneClass }}">{{ $badgeText }}</span>{{ end }}
+</a>

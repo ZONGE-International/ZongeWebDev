@@ -47,6 +47,8 @@ pluralizelisttitles = false
     identifier = "menu.methods"
     url        = "/img/mt-model-e13664090974923_m.png"
     weight     = 2
+    [menu.main.params]
+        compact = true
 
 [[menu.main]]
     name       = "Ground Methods"
@@ -71,7 +73,7 @@ pluralizelisttitles = false
     parent     = "section.ground"
 
 [[menu.main]]
-    name       = "Controlled Source AMT"
+    name       = "Controlled-Source AMT"
     url        = "/Methods/GroundMethods/csamt/"
     weight     = 2
     parent     = "section.ground"
@@ -110,6 +112,8 @@ pluralizelisttitles = false
     identifier = "menu.targets"
     url        = "/img/Alaska-reinterp-3D.png"
     weight     = 3
+    [menu.main.params]
+        compact = true
 
 [[menu.main]]
     name       = "Targets"
@@ -149,8 +153,10 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Instruments"
     identifier = "menu.instruments"
-    url        = "/img/img_7813_m.jpg"
+    url        = ""
     weight     = 4
+    [menu.main.params]
+        compact = true
 
 
 [[menu.main]]
@@ -192,13 +198,16 @@ pluralizelisttitles = false
     parent     = "section.generators"	
 
 [[menu.main]]
-    name       = "ZMG-30"
+    name       = "ZMG-30DLE"
     url        = "/instruments/Generators/zmg30/"
     weight     = 2
-    parent     = "section.generators"	
+    parent     = "section.generators"
+    [menu.main.params]
+        badge = "not currently available"
+        badge_style = "unavailable"
 
 [[menu.main]]
-    name       = "ZT-100"
+    name       = "ZT-100B"
     identifier = "product.new.zt100"
 	url        = "/instruments/TX/zt100/"
     weight     = 1
@@ -206,13 +215,13 @@ pluralizelisttitles = false
 
 
 [[menu.main]]
-    name       = "GGT-10"
+    name       = "GGT-10B"
 	url        = "/instruments/TX/ggt10/"
     weight     = 2
     parent     = "section.transmitters"
 
 [[menu.main]]
-    name       = "GGT-30"
+    name       = "GGT-30B"
 	url        = "/instruments/TX/ggt30/"
     weight     = 3
     parent     = "section.transmitters"
@@ -224,8 +233,8 @@ pluralizelisttitles = false
     parent     = "section.transmitters"
 		
 [[menu.main]]
-    name       = "XMT-R"
-    identifier = "product.new.xmtr"
+    name       = "XMT-G"
+    identifier = "product.new.xmtg"
     url        = "/instruments/TX/XMTG/"
     weight     = 5
     parent     = "section.transmitters"
@@ -290,6 +299,8 @@ pluralizelisttitles = false
     identifier = "menu.software"
     url        = "/Software/software/"
     weight     = 5
+    [menu.main.params]
+        suppress_active = true
 
 
 ##############################
@@ -328,7 +339,7 @@ pluralizelisttitles = false
 [[menu.topbar]]
     weight = 1
     name = "Phone"
-    url = "tel:+1 (520)327-5501"
+    url = "tel:+15203275501"
     pre = "<i class='fas fa-2x fa-phone'></i>"
 
 [[menu.topbar]]
@@ -410,14 +421,28 @@ pluralizelisttitles = false
     legacy_site_label = "Visit Legacy Website"
     address = """<p class="text-uppercase"><strong>Zonge International, Inc</strong>
         <br>
-		<br>3475 N Dodge Blvd
-        <br>Tucson, AZ 85716
+		<br><strong>Tucson Office</strong>
+        <br>Phone: <a href="tel:+15203275501">(520) 327-5501</a>
         <br>		
-		<br>9595 Prototype Ct
-        <br>Reno, NV 89521
+		<br><strong>Reno Office</strong>
+        <br>Phone: <a href="tel:+17753557707">(775) 355-7707</a>
         <br>
    
-		
+			
+      </p>
+      """
+    contact_page_address = """<p class="text-uppercase"><strong>Zonge International, Inc</strong>
+        <br>
+		<br><strong>Tucson Office</strong>
+		<br>3475 N Dodge Blvd
+        <br>Tucson, AZ 85716
+        <br>Phone: <a href="tel:+15203275501">(520) 327-5501</a>
+        <br>
+		<br><strong>Reno Office</strong>
+		<br>9595 Prototype Ct
+        <br>Reno, NV 89521
+        <br>Phone: <a href="tel:+17753557707">(775) 355-7707</a>
+        <br>
       </p>
       """
 
@@ -427,8 +452,8 @@ pluralizelisttitles = false
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = false
-    text = """<p class="hidden-sm hidden-xs">Contact us at +1 (520)327-5501 or zonge@zonge.com</p>
-      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+    text = """<p class="hidden-sm hidden-xs">Contact Tucson at (520) 327-5501, Reno at (775) 355-7707, or email zonge@zonge.com</p>
+      <p class="hidden-md hidden-lg"><a href="tel:+15203275501" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
       <a href="mailto:zonge@zonge.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
       """
@@ -457,6 +482,7 @@ pluralizelisttitles = false
     # For more information take a look at the README.
     enable = true
     auto_play = true
+    auto_play_delay = 5500
     slide_speed = 2000
     pagination_speed = 1000
     

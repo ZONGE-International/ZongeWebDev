@@ -1,19 +1,21 @@
 +++
-title = "ZMG-30B"
+title = "ZMG-30DLE"
 banner = "img/power/zmg30b.png"
 weight = 1
 +++
 
-#Description
-Rugged 30 KVA desiel engine, designed specfically for geophysical applications.
+The ZMG-30DLE is a legacy 30 KVA diesel generator package for geophysical applications.
 
-#Specifications
-Width:
-Length:
-Height:
+## Availability
 
-#Supporting Documents
-[Download Specification sheet for ZMG-30](/documents/zmg30.pdf)
+This unit is not currently available.
 
-#Related Instruments
-[GGT30]({{< ref "ggt30" >}} '30 KW Transmitter')
+For most new deployments, Zonge recommends a [ZT-100B Geophysical Transmitter](/instruments/tx/zt100/) with a 3-phase generator and power supply instead.
+
+## Supporting Documents
+
+[Download legacy specification sheet for ZMG-30](/documents/zmg30.pdf)
+
+## Related Instruments
+
+- [GGT-30B]({{< ref "ggt30" >}})

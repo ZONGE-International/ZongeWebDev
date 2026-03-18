@@ -81,6 +81,7 @@ weight = 1
 </style>
 
 <div class="zg-softwrap">
+  <p class="zg-note">Descriptions are shown where available.</p>
 
   <table class="zg-table">
     <thead>
@@ -90,10 +91,13 @@ weight = 1
       </tr>
     </thead>
     <tbody>
-      <!-- ===== Your rows (duplicate/modify) ===== -->
       <tr>
         <td>CSAVGW</td>
         <td data-label="Description">Averages and performs QC on CSAMT/NSAMT electromagnetic data.</td>
+      </tr>
+      <tr>
+        <td>TDAVGW</td>
+        <td data-label="Description">&mdash;</td>
       </tr>
       <tr>
         <td>TEMAVGW</td>
@@ -104,37 +108,37 @@ weight = 1
         <td data-label="Description">Processes complex resistivity (CR) data; compatible with GDP-3224 and ZEN receivers.</td>
       </tr>
       <tr>
-        <td>CSINV</td>
-        <td data-label="Description">Inversion software for CSAMT/NSAMT resistivity modeling.</td>
+        <td>HEMAVGW</td>
+        <td data-label="Description">&mdash;</td>
       </tr>
       <tr>
-        <td>CSPLOT</td>
-        <td data-label="Description">Contour/section plotting tool for CSAMT/MT model outputs.</td>
+        <td>MTFT</td>
+        <td data-label="Description">&mdash;</td>
       </tr>
       <tr>
         <td>MTEDIT</td>
         <td data-label="Description">Reviewing and averaging magnetotelluric impedance data.</td>
       </tr>
       <tr>
-        <td>CSV2OUT</td>
-        <td data-label="Description">Utility for converting CSV data to standard output formats.</td>
+        <td>SCS2D</td>
+        <td data-label="Description">&mdash;</td>
       </tr>
       <tr>
-        <td>TEM Modeling Software</td>
-        <td data-label="Description">Smooth-model TEM inversion to generate resistivity-vs-depth profiles.</td>
+        <td>TS2DIP</td>
+        <td data-label="Description">&mdash;</td>
       </tr>
       <tr>
-        <td>Modeling AMT/CSAMT</td>
-        <td data-label="Description">Generates resistivity sections from AMT/CSAMT field data.</td>
+        <td>SCSINV</td>
+        <td data-label="Description">&mdash;</td>
       </tr>
       <tr>
-        <td>Utilities: Color Contour &amp; Cole–Cole</td>
-        <td data-label="Description">Plotting utilities and Cole–Cole fitting for IP/CR data.</td>
+        <td>STEMINV</td>
+        <td data-label="Description">&mdash;</td>
       </tr>
-      <tr><td>CCINV</td><td data-label="Description">Cole–Cole inversion for time/frequency-domain IP data.</td></tr>
-      <tr><td>S2DPLOT</td><td data-label="Description">Simple 2-D plotting of sections and plan-views from model grids.</td></tr>
-      <tr><td>MODSECT</td><td data-label="Description">Section builder/visualizer for model layers and constraints.</td></tr>
-      <tr><td>TEMTRIM</td><td data-label="Description">Skips noisy decay gates and trims outliers in TEM stacks.</td></tr>
+      <tr>
+        <td>ASTATIC</td>
+        <td data-label="Description">&mdash;</td>
+      </tr>
     </tbody>
   </table>
 </div>

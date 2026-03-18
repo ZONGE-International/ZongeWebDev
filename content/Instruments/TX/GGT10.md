@@ -1,5 +1,5 @@
 +++
-title = "GGT-10"
+title = "GGT-10B"
 banner = "img/instruments/generators/ggt10b.png"
 weight = 1
 +++
@@ -94,4 +94,4 @@ The GGT-10B is a broadband, constant-current, time and frequency domain, medium-
 
 # Supporting Documents
 
-[Download Specification sheet for GGT-10](/documents/GGT-10.pdf)
+[Download Specification sheet for GGT-10B](/documents/ggt10b.pdf)
