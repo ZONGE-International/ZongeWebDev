@@ -8,7 +8,7 @@ weight = 1
 
 ### Introduction
 
-Controlled-source audio magnetotellurics (CSAMT) measures subsurface resistivity by transmitting a controlled signal from a distant grounded dipole and recording orthogonal electric and magnetic field components across a range of frequencies. The resulting resistivity response is used to map lithologic contrasts, structures, alteration zones, and hydrogeologic boundaries.
+Controlled-source audio magnetotellurics (CSAMT) measures the resistivity of the Earth by transmitting a controlled signal from a distant grounded dipole and recording orthogonal electric and magnetic field components across a range of frequencies. The resulting resistivity response is used to map lithologic contrasts, structures, alteration zones, and hydrogeologic boundaries.
 
 {{< figure src="/img/CSAMT_TX_fields.png" title="" width=600 >}}
 

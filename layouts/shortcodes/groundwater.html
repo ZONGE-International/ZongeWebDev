@@ -44,16 +44,44 @@
         background-color: #ffffff;
     }
 
-    #mining .icon-green {
-        color: green;
+    #mining .water-glass {
+        position: relative;
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 1.2rem;
+        height: 2rem;
     }
 
-    #mining .icon-yellow {
-        color: orange;
+    #mining .water-glass-body {
+        position: absolute;
+        inset: 0.1rem 0.12rem 0.12rem 0.12rem;
+        border: 2px solid #5b6b7a;
+        border-top-width: 0.18rem;
+        border-radius: 0 0 0.28rem 0.28rem;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(236, 244, 249, 0.95) 100%);
+        overflow: hidden;
+        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.7);
     }
 
-    #mining .icon-blue {
-        color: blue;
+    #mining .water-glass-fill {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, #9be7ff 0%, #219ebc 100%);
+    }
+
+    #mining .water-glass.level-3 .water-glass-fill {
+        height: 100%;
+    }
+
+    #mining .water-glass.level-2 .water-glass-fill {
+        height: 50%;
+    }
+
+    #mining .water-glass.level-1 .water-glass-fill {
+        height: 0;
     }
 
     #mining .custom-modal-overlay {
@@ -189,15 +217,15 @@
 <script>
     (function () {
         const icons = {
-            green: '<i class="fas fa-face-laugh icon-green"></i>',
-            yellow: '<i class="fas fa-face-meh icon-yellow"></i>',
-            blue: '<i class="fas fa-face-frown icon-blue"></i>'
+            green: '<span class="water-glass level-3" aria-label="Good suitability"><span class="water-glass-body"><span class="water-glass-fill"></span></span></span>',
+            yellow: '<span class="water-glass level-2" aria-label="Okay suitability"><span class="water-glass-body"><span class="water-glass-fill"></span></span></span>',
+            blue: '<span class="water-glass level-1" aria-label="Not good suitability"><span class="water-glass-body"><span class="water-glass-fill"></span></span></span>'
         };
 
         const messages = {
-            green: 'Highly suitable method ✅',
-            yellow: 'Moderately useful method ⚠️',
-            blue: 'Low usefulness for this deposit ❌'
+            green: 'Full glass: good suitability',
+            yellow: 'Half-full glass: okay suitability',
+            blue: 'Empty glass: not good suitability'
         };
 
         const messagesByTypeAndMethod = {{ site.Data.mining.messageGROUNDWATER | jsonify | safeJS
@@ -207,8 +235,7 @@
     const headers = ["Magnetic", "Gravity", "CSAMT/AMT", "MT", "IP", "EM"];
 
     const data = [
-        { type: 'Lithologic and water table', values: ['green', 'blue', 'green', 'blue', 'yellow', 'green'] },
-        { type: 'Contaminants', values: ['yellow', 'green', 'yellow', 'yellow', 'yellow', 'green'] }
+        { type: 'Groundwater', values: ['blue', 'yellow', 'green', 'yellow', 'yellow', 'green'] }
     ];
 
     const modal = document.getElementById('modalOverlay');

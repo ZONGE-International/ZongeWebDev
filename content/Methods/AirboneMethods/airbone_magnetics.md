@@ -8,11 +8,11 @@ weight = 1
 
 ### Introduction
 
-UAV magnetic surveys measure variations in total magnetic intensity that reflect changes in magnetic mineral content, structure, and alteration. Data are acquired along planned flight lines using a total-field magnetometer suspended from an unmanned aerial vehicle.
+Measurements are made along lines using a total-field magnetometer suspended from an Unmanned Aerial Vehicle (Drone).
 
-Drone platforms bridge the gap between helicopter and ground magnetic surveys. They can deliver tighter drape and higher local resolution than many airborne programs, while covering more ground than conventional foot-based acquisition in difficult terrain.
+All pilots are FAA Part 107 certified, and operations are carried out in compliance with Zonge's UAV SMS program.
 
-Zonge completes compensation and calibration flights, applies diurnal corrections using a magnetic base station, and operates under established FAA and internal UAV safety procedures.
+Drone magnetics strikes a balance between helicopter-borne surveys and ground surveys. There may be slightly less detail than ground surveys, but draping with an RTK-based drone is generally better, so there can be more detail than helicopter surveys.
 
 {{< figure src="/img/mag_anomalies.jpg" title="" width=800 >}}
 
@@ -25,18 +25,17 @@ Zonge completes compensation and calibration flights, applies diurnal correction
 
 ## Survey Design
 
-| **Parameter** | **Description** |
-| --- | --- |
-| **Depth** | Depth of investigation depends on body size, magnetic contrast, sensor height, and the noise environment. |
-| **Line Spacing** | Typical line spacing ranges from 25-100 m depending on target size and the required level of detail. |
-| **Scale** | Programs can range from small detailed surveys to broad line-kilometer campaigns where drone acquisition remains practical. |
-| **Production** | Drone magnetics can significantly outpace ground magnetic programs in suitable terrain. |
-| **Processing** | Data are processed and gridded in Oasis Montaj with filtering workflows that may include RTP and first vertical derivative products. |
+| **Parameter**    | **Description**                                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Depth**        | Depth of investigation depends on body size, magnetic contrast, sensor height, and the noise environment.                            |
+| **Line Spacing** | Typical line spacing ranges from 25-100 m depending on target size and the required level of detail.                                 |
+| **Scale**        | Programs can range from small detailed surveys to broad line-kilometer campaigns where drone acquisition remains practical.          |
+| **Production**   | Drone magnetics can significantly outpace ground magnetic programs in suitable terrain.                                              |
+| **Processing**   | Data are processed and gridded in Oasis Montaj with filtering workflows that may include RTP and first vertical derivative products. |
 
 ## Instrumentation
 
-- **Airborne Magnetometers:** Geometrics MagArrow, GEM DRONEmag, and other project-specific sensors
-- **UAV Platforms:** DJI M300 and evolving open-source flight platforms where appropriate
+- **Airborne Magnetometers:** Geometrics MagArrow
 - **Base Station:** GEM GSM-19 Overhauser magnetometer
 
 ## Deliverables

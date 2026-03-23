@@ -44,16 +44,49 @@
         background-color: #ffffff;
     }
 
-    #mining .icon-green {
-        color: green;
+    #mining .rating-bars {
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 0.22rem;
+        min-height: 2rem;
     }
 
-    #mining .icon-yellow {
-        color: orange;
+    #mining .rating-bar {
+        width: 0.38rem;
+        border-radius: 999px;
+        opacity: 0.28;
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35), 0 1px 2px rgba(0, 0, 0, 0.18);
     }
 
-    #mining .icon-blue {
-        color: blue;
+    #mining .rating-bars .rating-bar:nth-child(1) {
+        height: 0.9rem;
+    }
+
+    #mining .rating-bars .rating-bar:nth-child(2) {
+        height: 1.25rem;
+    }
+
+    #mining .rating-bars .rating-bar:nth-child(3) {
+        height: 1.65rem;
+    }
+
+    #mining .rating-bars.rating-gold .rating-bar {
+        background: linear-gradient(180deg, #f9e18a 0%, #c99a1d 100%);
+    }
+
+    #mining .rating-bars.rating-silver .rating-bar {
+        background: linear-gradient(180deg, #f4f6f8 0%, #9aa6b2 100%);
+    }
+
+    #mining .rating-bars.rating-copper .rating-bar {
+        background: linear-gradient(180deg, #e9b08b 0%, #a5542a 100%);
+    }
+
+    #mining .rating-bars[data-level="1"] .rating-bar:nth-child(1),
+    #mining .rating-bars[data-level="2"] .rating-bar:nth-child(-n+2),
+    #mining .rating-bars[data-level="3"] .rating-bar {
+        opacity: 1;
     }
 
     #mining .custom-modal-overlay {
@@ -189,15 +222,15 @@
 <script>
     (function () {
         const icons = {
-            green: '<i class="fas fa-face-laugh icon-green"></i>',
-            yellow: '<i class="fas fa-face-meh icon-yellow"></i>',
-            blue: '<i class="fas fa-face-frown icon-blue"></i>'
+            green: '<span class="rating-bars rating-gold" data-level="3" aria-label="Gold rating"><span class="rating-bar"></span><span class="rating-bar"></span><span class="rating-bar"></span></span>',
+            yellow: '<span class="rating-bars rating-silver" data-level="2" aria-label="Silver rating"><span class="rating-bar"></span><span class="rating-bar"></span><span class="rating-bar"></span></span>',
+            blue: '<span class="rating-bars rating-copper" data-level="1" aria-label="Copper rating"><span class="rating-bar"></span><span class="rating-bar"></span><span class="rating-bar"></span></span>'
         };
 
         const messages = {
-            green: 'Highly suitable method ✅',
-            yellow: 'Moderately useful method ⚠️',
-            blue: 'Low usefulness for this deposit ❌'
+            green: 'Gold rating: highly suitable method',
+            yellow: 'Silver rating: moderately useful method',
+            blue: 'Copper rating: lower usefulness for this deposit'
         };
 
 
@@ -208,14 +241,14 @@
     const headers = ["Magnetic", "Gravity", "CSAMT/AMT", "MT", "IP", "EM"];
 
     const data = [
-        { type: 'Epithermal', values: ['green', 'blue', 'green', 'blue', 'yellow', 'blue'] },
-        { type: 'Porphyry Cu-Au', values: ['yellow', 'green', 'yellow', 'yellow', 'yellow', 'green'] },
-        { type: 'Skarn', values: ['yellow', 'green', 'yellow', 'green', 'yellow', 'yellow'] },
-        { type: 'CRD', values: ['green', 'yellow', 'green', 'yellow', 'yellow', 'yellow'] },
-        { type: 'Carlin (Au)', values: ['green', 'green', 'green', 'green', 'yellow', 'blue'] },
-        { type: 'VMS', values: ['green', 'green', 'green', 'green', 'yellow', 'yellow'] },
+        { type: 'Epithermal', lookupKey: 'Epithermal Systems', values: ['yellow', 'yellow', 'green', 'yellow', 'green', 'blue'] },
+        { type: 'Porphyry Cu-Au', lookupKey: 'Porphyry', values: ['green', 'yellow', 'yellow', 'green', 'green', 'blue'] },
+        { type: 'Skarn', values: ['green', 'yellow', 'yellow', 'yellow', 'green', 'green'] },
+        { type: 'CRD', values: ['yellow', 'yellow', 'green', 'yellow', 'yellow', 'green'] },
+        { type: 'Carlin (Au)', values: ['blue', 'green', 'green', 'yellow', 'yellow', 'blue'] },
+        { type: 'VMS', values: ['yellow', 'green', 'yellow', 'blue', 'blue', 'green'] },
         { type: 'IOCG', values: ['green', 'yellow', 'green', 'yellow', 'yellow', 'blue'] },
-        { type: 'Lithium', values: ['yellow', 'green', 'green', 'yellow', 'yellow', 'green'] }
+        { type: 'Lithium', values: ['blue', 'green', 'green', 'green', 'blue', 'green'] }
     ];
 
     const modal = document.getElementById('modalOverlay');
@@ -238,7 +271,8 @@
             let td = document.createElement('td');
             td.classList.add('geo-cell');
             const method = headers[index];
-            const customMsg = messagesByTypeAndMethod[row.type]?.[method];
+            const lookupKey = row.lookupKey || row.type;
+            const customMsg = messagesByTypeAndMethod[lookupKey]?.[method];
             const defaultMsg = messages[cell];
 
             td.onclick = () => {

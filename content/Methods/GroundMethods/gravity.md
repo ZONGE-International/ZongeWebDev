@@ -1,6 +1,6 @@
 +++
 title = "Gravity"
-banner = "img/methods/gravity/person_w_vista.jpg"
+banner = "img/methods/gravity/TEM.jpeg"
 weight = 1
 +++
 
@@ -26,17 +26,17 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 
 ## Survey Design
 
-| **Parameter** | **Description** |
-| --- | --- |
-| **Depth** | Depth is inferred from anomaly wavelength, density contrast, and the geometry of the causative body. |
+| **Parameter**       | **Description**                                                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Depth**           | Depth is inferred from anomaly wavelength, density contrast, and the geometry of the causative body.                                             |
 | **Station Spacing** | Station spacing should generally be no greater than the lateral extent of the target and is ideally 1-2 times smaller than the target dimension. |
-| **Scale** | Gravity surveys are effective from local investigations to large regional programs. |
-| **Cost** | Gravity is typically low cost relative to many other geophysical methods. |
-| **Production** | Daily production depends on spacing, terrain, access, and required repeatability. |
+| **Scale**           | Gravity surveys are effective from local investigations to large regional programs.                                                              |
+| **Cost**            | Gravity is typically low cost relative to many other geophysical methods.                                                                        |
+| **Production**      | Daily production depends on spacing, terrain, access, and required repeatability.                                                                |
 
 ## Instrumentation
 
-- **Gravity Meters:** LaCoste & Romberg gravimeters and Scintrex CG-5 instruments where higher precision is required
+- **Gravity Meters:** LCG-6, LaCoste & Romberg gravimeters and Scintrex CG-5 instruments where higher precision is required
 - **Positioning:** Geodetic-grade GPS systems for accurate station location and elevation control
 
 ## Deliverables
@@ -44,6 +44,7 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 - Color-contoured plan-view maps of complete Bouguer anomaly at the selected reduction density
 - Plan-view maps of horizontal gradient and first derivative products
 - Additional modeling and interpretation outputs where project scope includes inversion or residual analysis
+- 3D Inversion results
 
 ## Case Studies and Resources
 

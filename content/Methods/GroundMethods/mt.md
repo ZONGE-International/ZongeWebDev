@@ -1,6 +1,6 @@
 +++
 title = "Magnetotellurics (MT/AMT)"
-banner = "img/methods/mt/IMG_7843.jpg"
+banner = "img/methods/mt/MT-page-candidate.jpg"
 weight = 1
 +++
 
@@ -25,15 +25,16 @@ MT is especially valuable in low-noise environments and in areas where conductiv
 
 ## Survey Design
 
-| **Parameter** | **Description** |
-| --- | --- |
-| **Depth** | Depth depends on frequency content and subsurface resistivity structure, ranging from shallow AMT targets to deep MT investigations. |
-| **Station Spacing** | Station spacing is commonly 10-200 m for detailed work, with wider spacing used for regional programs. |
-| **Scale** | Surveys may be acquired as profiles, localized grids, or larger regional arrays. |
-| **Production** | Stations are commonly occupied for hours to overnight, with daily production dependent on layout, access, and recording time. |
+| **Parameter**       | **Description**                                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Depth**           | Depth depends on frequency content and subsurface resistivity structure, ranging from shallow AMT targets to deep MT investigations. |
+| **Station Spacing** | Station spacing is commonly 10-200 m for detailed work, with wider spacing used for regional programs.                               |
+| **Scale**           | Surveys may be acquired as profiles, localized grids, or larger regional arrays.                                                     |
+| **Production**      | Stations are commonly occupied for hours to overnight, with daily production dependent on layout, access, and recording time.        |
 
-{{< figure src="/img/MT_Station.png" title="MT Station" width=800 >}}
-{{< figure src="/img/Mt_Survey Design.jpg" title="MT Survey Design" width=800 >}}
+##
+
+{{< figure src="/img/MT_Station.png" title="" width=800 >}}
 
 ## Instrumentation
 
@@ -43,9 +44,8 @@ MT is especially valuable in low-noise environments and in areas where conductiv
 
 ## Deliverables
 
-- Processed MT data including sounding plots and EDI files
-- Two-dimensional inversions as sections of inversion resistivity versus depth
-- Three-dimensional resistivity models and horizontal depth or elevation slices where survey scale supports 3D inversion
+- AVGs, EDIs, etc
+- 2D and 3D inversion results
 
 ## Case Studies and Resources
 

@@ -1,47 +1,29 @@
-Lithologic and water table:
+Groundwater:
   Magnetic: |
-    Magnetite destructive > Loss of magnetic signal
-    Major structures > Magnetic lineaments useful for mapping
+    Likely not a top choice except for specific situations where magnetic volcanic rocks are involved in the hyrdrgeoloic setting
 
   Gravity: |
-    Deep intrusives > Gravity highs
-    Density contrasts > Detectable gravity anomalies in subsurface
+    Structures/Faults > Linear gradients/breaks
+    Aquifer monitoring > Time lapse “4D” gravity surveys could help monitor changes in the water table but requires absolute gravimeters and stricter field procedures than other gravity surveys.
 
   CSAMT/AMT: |
-    Massive silica/silicification > High resistivity
-    Mineralized quartz veins within broad zones of silicification > Resistivity highs
+    Aquifers > Low to moderate resistivity with porous sediments
+    Structures > Resistivity contrast with low resistivity fluid-filled fractures, may show up as static effect
+    Aquitards > High resistivity with silicification, low resistivity with clay
+    Basin characterization > Good for mapping bedrock
 
   MT: |
-    Deep intrusives > Moderate resistivity contrast
-    Alteration zoning > Electrical variations with zoning
-    High sulphide content > Reduces resistivity
+    Aquifers > Low to moderate resistivity with porous sediments
+    Structures > Resistivity contrast with low resistivity fluid-filled fractures, may show up as static effect
+    Aquitards > High resistivity with silicification, low resistivity with clay
+    Basin characterization > Good for mapping bedrock
 
   IP: |
-    Alteration (low resistivity) > Chargeable if sulphides present
-    Disseminated sulphides (veins) > Moderate chargeability
+    Aquitards > Mapping of clay, moderate to high chargeability and low resistivity
+    Water table > May help map the water table for shallow applications
 
   EM: |
-    Clay alteration > Reduced resistivity, strong EM response
-
-Contaminants:
-  Magnetic: |
-    Magnetite destructive > May indicate altered zones
-    Major structures > Can control contaminant pathways
-
-  Gravity: |
-    Deep intrusives (source) > Gravity high from dense rocks
-
-  CSAMT/AMT: |
-    Clay-pyrite alteration > Low resistivity
-    Sulphide veining > Moderate resistivity reduction
-
-  MT: |
-    Deep intrusives > Resistive background anomalies
-
-  IP: |
-    High sulphide content > High chargeability
-    Clay alterations (reduced resistivity) > Moderate chargeability
-    Late-stage and postmineral > Variable responses
-
-  EM: |
-    Clay alteration > Reduced resistivity, conductive response
+    Fluid filled faults > High conductivity observed in early-time
+    Reservoirs > Low resistivity, strong late time
+    Aquitards/Structure control > Sharp contrasts in profile
+    Water table > Likely best method to help pick water table

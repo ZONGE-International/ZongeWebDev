@@ -1,36 +1,47 @@
 Hydrothermal Systems:
   Magnetic: |
-    Fracture mapping > Moderate contrast with surrounding rock
-    Magnetite alteration > Sometimes creates weak anomalies
+    Hydrothermal Alteration > Magnetic lows to magnetite destruction
+    Structures/Faults > Breaks in magnetic signature
+    Intrusives > Magnetic high if magnetite-rich
+    Cap rocks/clay > Broad, subtle magnetic lows
   Gravity: |
-    Low-density alteration zones > Gravity lows
-    Deep reservoir mapping > Poor sensitivity for fluid zones
+    Hydrothermal Alteration > Gravity lows
+    Structures/Faults > Linear gradients/breaks
+    Intrusives > Gravity highs or a contrast to host rock
+    Cap rocks/clay > Broad gravity low
   CSAMT/AMT: |
-    Clay-rich cap rock > Very low resistivity
-    Fault conduits > High resistivity contrast zones
+    Reservoirs > Low resistivity with hot, saline fluids
+    Structures > Resistivity contrast but low in general due to fluid-filled fractures
+    Cap rocks/clay > High resistivity with silicification, low resistivity with clay
+    Sinters > High resistivity with silicification
   MT: |
-    Deep structure imaging > Limited depth resolution in complex terrains
-    Resistive zones > May be masked by conductive overburden
+    Deep Reservoirs > Low resistivity with hot, saline fluids
+    Structures > Resistivity contrast between fluid-filled fractures
+    Magmatic bodies/heat source > Low resistivity at depth
+    Cap rocks/clay > High resistivity with silicification, low resistivity with clay
   IP: |
-    Altered zones > Weak to moderate chargeability
-    Fracture zones > Can show minor effects if sulfides are present
+    Geothermal reservoirs > Can highlight chargeable zones at margins with alteration
+    Sinters > High resistivity with low chargeability
+    Alteration > Moderate increase in chargeability with clay presence
+    Sulfide Zones > Moderate chargeability
   EM: |
-    Clay cap detection > High conductivity
-    Fracture networks > Well imaged when water-filled
+    Shallow high-conductivity zones > Strong early-time response
+    Fluid filled faults > High conductivity observed in early-time
+    Saline Reservoirs > Low resistivity, strong late time
 
 Enhanced Geothermal:
   Magnetic: |
-    Heat fractures > Slightly enhanced contrast in some terrains
+    Perhaps only useful in a regional sense
   Gravity: |
-    High-density intrusions > Gravity highs over heat sources
+    Could be useful for mapping basement rock
   CSAMT/AMT: |
-    Heat transfer zones > Resistivity contrast around reservoirs
+    Likely not useful too deep
   MT: |
-    Deep heat source > Detectable in resistivity gradients
+    Good for mapping the basement rocks beneath the basin fill
   IP: |
-    Fractured zones > Limited usefulness unless sulfides present
+    Likely not useful too deep
   EM: |
-    Fracture mapping > Useful for conductive fluid-filled fractures
+    Likely not useful, MT is a better option
 
 Volcanic Geothermal System:
   Magnetic: |
