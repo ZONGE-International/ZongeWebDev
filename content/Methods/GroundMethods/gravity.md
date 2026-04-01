@@ -1,6 +1,6 @@
 +++
 title = "Gravity"
-banner = "img/methods/gravity/TEM.jpeg"
+banner = "img/methods/gravity/Gravity.png"
 weight = 1
 +++
 

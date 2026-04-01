@@ -20,7 +20,7 @@ Through time-series processing, Zonge evaluates the nature of the IP response in
 
 We obtain information on the variation of the resistivity (ohm\*m) and chargeability (msec) or phase (mrad) with depth, and surveys are designed with various array configurations, such as Dipole-Dipole, Pole-Dipole, or as a 3D array.
 
-{{< figure src="/img/IP_resistivity.png" width=800 >}}
+{{< figure src="/img/IP_resistivity.png" width=800 panel="light" >}}
 
 ## Applications
 
@@ -31,7 +31,7 @@ IP is most effective when chargeability can be compared directly with resistivit
 - Mapping of clays, alteration, and gravel horizons in mineral and groundwater investigations
 - Delineation of dissolved solids, porosity changes, and other hydrogeologic variations
 
-{{< figure src="/img/Relative_Ip_Res_responses.png" title="" width=800 >}}
+{{< figure src="/img/Relative_Ip_Res_responses.png" title="" width=800 panel="light" >}}
 
 ## Survey Design
 

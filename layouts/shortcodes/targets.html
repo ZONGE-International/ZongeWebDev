@@ -6,7 +6,7 @@
 
         .geophysics-shortcode h2 {
             font-size: 1.8rem;
-            color: #2b6cb0;
+            color: #dcedff;
             margin-bottom: 0.5rem;
         }
 
@@ -14,7 +14,7 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 2rem;
-            color: #2a4365;
+            color: #f5f9ff;
         }
 
         .geophysics-shortcode .stage-container {
@@ -25,9 +25,10 @@
         }
 
         .geophysics-shortcode .stage {
-            background: white;
-            border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(180deg, rgba(10, 22, 40, 0.96), rgba(8, 18, 33, 0.96));
+            border: 1px solid rgba(117, 152, 199, 0.16);
+            border-radius: 28px;
+            box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
             width: 300px;
             height: 300px;
             display: flex;
@@ -39,7 +40,7 @@
         }
 
         .geophysics-shortcode .stage:hover {
-            transform: scale(1.05);
+            transform: translateY(-4px);
         }
 
         .geophysics-shortcode .method-list {
@@ -57,11 +58,15 @@
 
         .geophysics-shortcode .method-list li::before {
             content: "\2022";
-            color: #4299e1;
+            color: #6cbcff;
             font-weight: bold;
             display: inline-block;
             width: 1em;
             margin-left: -1em;
+        }
+
+        .geophysics-shortcode .method-list li {
+            color: rgba(223, 232, 245, 0.82);
         }
     </style>
 

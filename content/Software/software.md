@@ -4,141 +4,75 @@ banner = "img/person_w_vista.jpg"
 weight = 1
 +++
 
-# Zonge Software Programs
+<div class="zonge-software-page">
+  <div class="zonge-software-intro">
+    <p class="zonge-software-eyebrow">Processing and Interpretation</p>
+    <h1>Zonge Software Programs</h1>
+    <p class="zonge-software-lead">A focused catalog of Zonge processing and interpretation tools used across electromagnetic, resistivity, and magnetotelluric workflows.</p>
+  </div>
 
-<style>
-/* ===== Zonge-style software table ===== */
-.zg-softwrap {
-  --zg-border:#e2e8f0;      /* light gray */
-  --zg-head:#f7fafc;        /* header bg */
-  --zg-zebra:#fbfdff;       /* zebra rows */
-  --zg-text:#1a202c;        /* dark text */
-  --zg-muted:#4a5568;       /* muted text */
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  color: var(--zg-text);
-  margin: 1.5rem 0;
-}
-.zg-softwrap h2{
-  margin:0 0 .5rem 0;
-  font-size: clamp(1.25rem, 2vw, 1.6rem);
-}
-.zg-note{font-size:.92rem;color:var(--zg-muted);margin:.25rem 0 1rem}
+  <div class="zonge-software-note">
+    <strong>Note:</strong> Descriptions are based on public Zonge documentation and published references; where no explicit public description was available, the wording is a careful inference from the program name and cited workflow context.
+  </div>
 
-.zg-table{
-  width:100%;
-  border-collapse: collapse;
-  border: 1px solid var(--zg-border);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 1px 0 rgba(0,0,0,.03);
-}
-.zg-table th, .zg-table td{
-  padding: .75rem 1rem;
-  vertical-align: top;
-  border-bottom:1px solid var(--zg-border);
-}
-.zg-table th{
-  background: var(--zg-head);
-  text-align:left;
-  font-weight: 600;
-  letter-spacing:.02em;
-}
-.zg-table td:first-child{
-  white-space:nowrap;
-  font-variant-numeric: tabular-nums;
-  font-weight:600;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-.zg-table tr:nth-child(even) td{
-  background: var(--zg-zebra);
-}
-.zg-table tr:hover td{
-  background: #f1f5f9;
-}
-@media (max-width: 720px){
-  .zg-table thead{display:none;}
-  .zg-table, .zg-table tbody, .zg-row, .zg-table tr, .zg-table td{display:block;width:100%}
-  .zg-table tr{border-bottom:1px solid var(--zg-border)}
-  .zg-table td{
-    border:none;
-    padding:.55rem .9rem;
-  }
-  .zg-table td:first-child{
-    padding-top:.8rem;
-    font-size:1rem;
-  }
-  .zg-table td[data-label]::before{
-    content: attr(data-label) " ";
-    display:block;
-    font-size:.8rem;
-    color:var(--zg-muted);
-    margin-bottom:.15rem;
-    font-weight:600;
-    letter-spacing:.02em;
-    text-transform:uppercase;
-  }
-}
-</style>
-
-<div class="zg-softwrap">
-  <p class="zg-note">Descriptions are shown where available.</p>
-
-  <table class="zg-table">
-    <thead>
-      <tr>
-        <th>Program</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>CSAVGW</td>
-        <td data-label="Description">Averages and performs QC on CSAMT/NSAMT electromagnetic data.</td>
-      </tr>
-      <tr>
-        <td>TDAVGW</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-      <tr>
-        <td>TEMAVGW</td>
-        <td data-label="Description">Averages and QC’s transient electromagnetic (TEM) field data from .raw, .dnt, .cac, and .zdb formats.</td>
-      </tr>
-      <tr>
-        <td>CRAVGW</td>
-        <td data-label="Description">Processes complex resistivity (CR) data; compatible with GDP-3224 and ZEN receivers.</td>
-      </tr>
-      <tr>
-        <td>HEMAVGW</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-      <tr>
-        <td>MTFT</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-      <tr>
-        <td>MTEDIT</td>
-        <td data-label="Description">Reviewing and averaging magnetotelluric impedance data.</td>
-      </tr>
-      <tr>
-        <td>SCS2D</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-      <tr>
-        <td>TS2DIP</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-      <tr>
-        <td>SCSINV</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-      <tr>
-        <td>STEMINV</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-      <tr>
-        <td>ASTATIC</td>
-        <td data-label="Description">&mdash;</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="zonge-software-table-wrap">
+    <table class="zonge-software-table">
+      <thead>
+        <tr>
+          <th>Program</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CSAVGW</td>
+          <td>Averages raw CSAMT data and supports quality control before interpretation.</td>
+        </tr>
+        <tr>
+          <td>TDAVGW</td>
+          <td>Averages and quality-checks time-domain IP field data in multiple export formats.</td>
+        </tr>
+        <tr>
+          <td>TEMAVGW</td>
+          <td>Averages and quality-checks TEM field data from `.raw`, `.dnt`, `.cac`, and `.zdb` files.</td>
+        </tr>
+        <tr>
+          <td>CRAVGW</td>
+          <td>Averages and quality-checks complex resistivity field data from Zonge IP/CR systems.</td>
+        </tr>
+        <tr>
+          <td>HEMAVGW</td>
+          <td>Averages and quality-checks EM field data </td>
+        </tr>
+        <tr>
+          <td>MTFT</td>
+          <td>Processes MT time-series data into spectral coefficients for downstream impedance analysis.</td>
+        </tr>
+        <tr>
+          <td>MTEDIT</td>
+          <td>Reviews MT spectral data and calculates averaged impedance and apparent resistivity with interactive QC editing.</td>
+        </tr>
+        <tr>
+          <td>SCS2D</td>
+          <td>Performs 2D inversion of CSAMT, AMT, and MT data to create resistivity-depth sections.</td>
+        </tr>
+        <tr>
+          <td>TS2DIP</td>
+          <td>Performs 2D inversion and modeling of IP and resistivity data for section-based interpretation.</td>
+        </tr>
+        <tr>
+          <td>SCSINV</td>
+          <td>Runs smooth-model 1D CSAMT inversion to build stitched resistivity-depth images along a line.</td>
+        </tr>
+        <tr>
+          <td>STEMINV</td>
+          <td>Performs smooth-model 1D inversion of TEM soundings into layered-earth resistivity models.</td>
+        </tr>
+        <tr>
+          <td>ASTATIC</td>
+          <td>Applies MT static correction and converts survey outputs into formats such as SEG and EDI.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

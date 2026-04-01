@@ -241,6 +241,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    transform: translateY(-10px);
 }
 
 .carousel-text-col {
@@ -356,6 +357,7 @@
         justify-content: center;
         text-align: center;
         padding: 16px 12px 64px;
+        transform: translateY(-6px);
     }
 
     .carousel-text-col,
@@ -763,7 +765,7 @@ button:hover,
 }
 
 .zonge-safety-page {
-    color: #1a202c;
+    color: #dbe7f6;
 }
 
 .zonge-safety-hero {
@@ -780,14 +782,284 @@ button:hover,
     width: 72px;
     height: 72px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #e8f1ff, #d7e9ff);
-    color: #2f6ecb;
+    background: linear-gradient(180deg, rgba(20, 47, 83, 0.96), rgba(14, 31, 57, 0.96));
+    border: 1px solid rgba(124, 168, 225, 0.18);
+    color: #79b8ff;
     font-size: 30px;
-    box-shadow: 0 10px 24px rgba(47, 110, 203, 0.12);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
 }
 
 .zonge-safety-hero h1 {
     margin: 0 0 8px;
+    color: #f8fbff;
+}
+
+#content.zonge-immersive-content {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top left, rgba(52, 112, 198, 0.16), transparent 28%),
+        radial-gradient(circle at 88% 16%, rgba(90, 173, 255, 0.12), transparent 22%),
+        linear-gradient(180deg, #050c17 0%, #08111d 28%, #0a1421 100%);
+}
+
+#content.zonge-immersive-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(6, 12, 23, 0) 0, rgba(6, 12, 23, 0.42) 12%, rgba(6, 12, 23, 0.84) 28%, rgba(6, 12, 23, 0.98) 100%),
+        radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.08) 0 1px, transparent 1.8px);
+    background-size: auto, 160px 160px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.zonge-section-shell {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    padding-bottom: 88px;
+}
+
+.zonge-section-main {
+    padding: 34px 38px 42px;
+    border: 1px solid rgba(109, 146, 196, 0.18);
+    border-top-color: rgba(170, 205, 255, 0.28);
+    border-radius: 30px;
+    background:
+        linear-gradient(180deg, rgba(8, 18, 33, 0.92) 0%, rgba(8, 16, 30, 0.97) 100%);
+    box-shadow:
+        0 28px 70px rgba(0, 0, 0, 0.34),
+        inset 0 1px 0 rgba(188, 215, 255, 0.1),
+        0 -8px 24px rgba(66, 136, 214, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.zonge-section-prose {
+    color: rgba(228, 236, 248, 0.88);
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.zonge-section-prose> :first-child {
+    margin-top: 0;
+}
+
+.zonge-section-prose h1,
+.zonge-section-prose h2,
+.zonge-section-prose h3,
+.zonge-section-prose h4 {
+    color: #f8fbff;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.zonge-section-prose h2 {
+    position: relative;
+    margin-top: 46px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.zonge-section-prose h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 92px;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #5eb2ff 0%, rgba(94, 178, 255, 0.18) 100%);
+    box-shadow: 0 0 24px rgba(94, 178, 255, 0.28);
+}
+
+.zonge-section-prose h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 23px;
+    color: #b8d9ff;
+}
+
+.zonge-section-prose p,
+.zonge-section-prose li {
+    color: rgba(223, 232, 245, 0.84);
+}
+
+.zonge-section-prose p {
+    margin-bottom: 18px;
+}
+
+.zonge-section-prose strong {
+    color: #f4f8ff;
+}
+
+.zonge-section-prose a {
+    color: #7fc5ff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(127, 197, 255, 0.28);
+    transition: color 180ms ease, border-color 180ms ease;
+}
+
+.zonge-section-prose a:hover,
+.zonge-section-prose a:focus {
+    color: #c6e6ff;
+    border-color: rgba(198, 230, 255, 0.65);
+}
+
+.zonge-section-prose ul,
+.zonge-section-prose ol {
+    margin: 0 0 24px;
+    padding-left: 24px;
+}
+
+.zonge-section-prose li {
+    padding-left: 8px;
+    margin-bottom: 8px;
+}
+
+.zonge-section-prose hr {
+    border-color: rgba(136, 169, 214, 0.16);
+}
+
+.zonge-section-prose blockquote {
+    margin: 28px 0;
+    padding: 18px 22px;
+    border-left: 3px solid #67b8ff;
+    border-radius: 0 18px 18px 0;
+    background: linear-gradient(90deg, rgba(12, 28, 49, 0.88), rgba(12, 28, 49, 0.35));
+    color: #dbe8f7;
+}
+
+.zonge-section-prose table {
+    width: 100%;
+    margin: 30px 0;
+    overflow: hidden;
+    border-collapse: collapse;
+    border: 1px solid rgba(117, 152, 199, 0.18);
+    border-radius: 18px;
+    background: rgba(7, 16, 31, 0.72);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+}
+
+.zonge-section-prose thead {
+    background: linear-gradient(180deg, rgba(20, 44, 74, 0.92) 0%, rgba(15, 35, 61, 0.92) 100%);
+}
+
+.zonge-section-prose th,
+.zonge-section-prose td {
+    padding: 14px 18px;
+    border: 1px solid rgba(117, 152, 199, 0.12);
+    vertical-align: top;
+}
+
+.zonge-section-prose th {
+    color: #f8fbff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.zonge-section-prose td {
+    color: rgba(223, 232, 245, 0.84);
+}
+
+.zonge-section-prose tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.zonge-section-prose .figure,
+.zonge-section-prose figure {
+    margin: 34px auto;
+    padding: 18px;
+    border: 1px solid rgba(120, 159, 212, 0.16);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(10, 21, 38, 0.92), rgba(8, 17, 31, 0.92));
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.22);
+    text-align: center;
+}
+
+.zonge-section-prose .zonge-inline-figure-light {
+    background: #ffffff;
+    border-color: rgba(184, 198, 219, 0.4);
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
+}
+
+.zonge-section-prose .zonge-inline-figure-light img {
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+.zonge-section-prose .zonge-inline-figure-light figcaption {
+    color: #5d6978;
+}
+
+.zonge-section-prose img {
+    border-radius: 16px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
+}
+
+.zonge-section-prose figcaption,
+.zonge-section-prose .figure-caption {
+    margin-top: 12px;
+    color: rgba(194, 211, 234, 0.72);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
+
+.zonge-section-prose code {
+    color: #d7ecff;
+    background: rgba(102, 176, 255, 0.12);
+}
+
+.zonge-section-prose pre {
+    border: 1px solid rgba(117, 152, 199, 0.16);
+    border-radius: 18px;
+    background: #07101d;
+}
+
+#heading-breadcrumbs.section-breadcrumbs {
+    overflow: hidden;
+    background-color: #07111f;
+    margin-bottom: 0;
+}
+
+#heading-breadcrumbs.section-breadcrumbs::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 18% 20%, rgba(98, 167, 255, 0.2), transparent 28%),
+        radial-gradient(circle at 84% 24%, rgba(107, 129, 255, 0.16), transparent 24%),
+        linear-gradient(180deg, rgba(4, 9, 18, 0.2), rgba(4, 9, 18, 0.78));
+    z-index: 0;
+    pointer-events: none;
+}
+
+#heading-breadcrumbs.section-breadcrumbs .container {
+    max-width: 1080px;
+}
+
+#heading-breadcrumbs.section-breadcrumbs .breadcrumb-title {
+    display: inline-block;
+    min-width: min(100%, 680px);
+    padding: 1.35rem 1.6rem;
+    border: 1px solid rgba(140, 177, 228, 0.18);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(7, 17, 31, 0.62) 0%, rgba(8, 19, 34, 0.44) 100%);
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(208, 227, 255, 0.08);
+    text-shadow: 0 10px 28px rgba(4, 8, 18, 0.65);
+    letter-spacing: 0.08em;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    line-height: 1.05;
+    text-transform: uppercase;
 }
 
 #heading-breadcrumbs.methods-breadcrumbs {
@@ -833,28 +1105,31 @@ button:hover,
     margin: 0;
     font-size: 18px;
     line-height: 1.6;
-    color: #4a5568;
+    color: rgba(219, 231, 246, 0.8);
 }
 
 .zonge-safety-callout {
     margin-bottom: 24px;
     padding: 20px 24px;
-    border-left: 6px solid #2f6ecb;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #f6faff, #eef5ff);
-    box-shadow: 0 8px 24px rgba(32, 70, 120, 0.08);
+    border: 1px solid rgba(111, 165, 235, 0.18);
+    border-left: 6px solid #4d9cff;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(14, 31, 56, 0.96), rgba(10, 23, 43, 0.96));
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.2);
 }
 
 .zonge-safety-callout h2,
 .zonge-safety-principles h2 {
     margin-top: 0;
     margin-bottom: 10px;
+    color: #f8fbff;
 }
 
 .zonge-safety-callout p {
     margin: 0;
     font-size: 16px;
     line-height: 1.7;
+    color: rgba(223, 232, 245, 0.84);
 }
 
 .zonge-safety-grid {
@@ -867,10 +1142,10 @@ button:hover,
 .zonge-safety-card {
     height: 100%;
     padding: 20px;
-    border: 1px solid #e3ebf5;
-    border-radius: 16px;
-    background: #ffffff;
-    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+    border: 1px solid rgba(117, 152, 199, 0.16);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(11, 25, 46, 0.96), rgba(8, 19, 35, 0.96));
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.2);
 }
 
 .zonge-safety-card-icon {
@@ -881,8 +1156,8 @@ button:hover,
     height: 48px;
     margin-bottom: 14px;
     border-radius: 14px;
-    background: #edf4ff;
-    color: #2f6ecb;
+    background: linear-gradient(180deg, rgba(23, 49, 85, 0.96), rgba(15, 33, 61, 0.96));
+    color: #75b6ff;
     font-size: 20px;
 }
 
@@ -890,20 +1165,84 @@ button:hover,
     margin-top: 0;
     margin-bottom: 8px;
     font-size: 22px;
+    color: #bfe0ff;
 }
 
 .zonge-safety-card p {
     margin: 0;
-    color: #5b6573;
+    color: rgba(223, 232, 245, 0.8);
     line-height: 1.65;
+}
+
+@media (max-width: 991px) {
+    .zonge-section-shell {
+        margin-top: 40px;
+        padding-bottom: 72px;
+    }
+
+    .zonge-section-main {
+        padding: 26px 24px 30px;
+        border-radius: 24px;
+    }
+
+    .zonge-section-prose {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .zonge-section-prose h2 {
+        font-size: 26px;
+        margin-top: 34px;
+    }
+
+    .zonge-section-prose h3 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 767px) {
+    #heading-breadcrumbs.section-breadcrumbs {
+        min-height: 380px !important;
+        padding: 150px 0 120px !important;
+    }
+
+    #heading-breadcrumbs.section-breadcrumbs .breadcrumb-title {
+        width: 100%;
+        min-width: 0;
+        padding: 1.1rem 1rem;
+        border-radius: 20px;
+        font-size: clamp(1.7rem, 9vw, 2.6rem);
+        letter-spacing: 0.06em;
+    }
+
+    .zonge-section-shell {
+        margin-top: 40px;
+        padding-bottom: 56px;
+    }
+
+    .zonge-section-main {
+        padding: 22px 18px 26px;
+        border-radius: 20px;
+    }
+
+    .zonge-section-prose ul,
+    .zonge-section-prose ol {
+        padding-left: 20px;
+    }
+
+    .zonge-section-prose th,
+    .zonge-section-prose td {
+        padding: 11px 12px;
+    }
 }
 
 .zonge-safety-principles {
     margin-bottom: 24px;
     padding: 22px 24px;
-    border-radius: 16px;
-    background: #f8fbff;
-    border: 1px solid #e7eef8;
+    border-radius: 20px;
+    border: 1px solid rgba(117, 152, 199, 0.16);
+    background: linear-gradient(180deg, rgba(10, 23, 43, 0.96), rgba(8, 18, 33, 0.96));
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
 }
 
 .zonge-safety-principles ul {
@@ -916,7 +1255,7 @@ button:hover,
     position: relative;
     margin-bottom: 12px;
     padding-left: 30px;
-    color: #344256;
+    color: rgba(223, 232, 245, 0.82);
     line-height: 1.6;
 }
 
@@ -925,22 +1264,340 @@ button:hover,
 }
 
 .zonge-safety-principles li::before {
-    content: "\\f00c";
+    content: "\f00c";
     position: absolute;
     left: 0;
     top: 1px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: #2f6ecb;
+    color: #72b6ff;
 }
 
 .zonge-safety-footer {
     padding: 18px 22px;
-    border-left: 6px solid #2f6ecb;
-    border-radius: 14px;
-    background: #ffffff;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
-    color: #445266;
+    border-left: 6px solid #4d9cff;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(13, 29, 53, 0.96), rgba(9, 21, 40, 0.96));
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+    color: #d9e7f7;
+}
+
+.zonge-contact-page {
+    position: relative;
+    z-index: 2;
+    padding-top: 24px;
+    padding-bottom: 56px;
+    overflow: hidden;
+}
+
+.zonge-contact-main-col,
+.zonge-contact-side-col {
+    margin-bottom: 24px;
+}
+
+.zonge-contact-panel {
+    padding: 28px 30px;
+    border: 1px solid rgba(117, 152, 199, 0.16);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(10, 22, 40, 0.96), rgba(8, 18, 33, 0.96));
+    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
+    margin-bottom: 24px;
+}
+
+.zonge-contact-copy h1,
+.zonge-contact-copy h2,
+.zonge-contact-copy h3,
+.zonge-contact-section-heading h3 {
+    margin-top: 0;
+    color: #f8fbff;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.zonge-contact-copy h1 {
+    margin-bottom: 20px;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 1.05;
+}
+
+.zonge-contact-copy p,
+.zonge-contact-section-heading p,
+.zonge-contact-address-copy,
+.zonge-contact-address-copy p {
+    color: rgba(223, 232, 245, 0.82);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.zonge-contact-copy p:last-child,
+.zonge-contact-section-heading p:last-child {
+    margin-bottom: 0;
+}
+
+.zonge-contact-copy a,
+.zonge-contact-address-copy a {
+    color: #8bc9ff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(139, 201, 255, 0.24);
+}
+
+.zonge-contact-copy a:hover,
+.zonge-contact-copy a:focus,
+.zonge-contact-address-copy a:hover,
+.zonge-contact-address-copy a:focus {
+    color: #d6eeff;
+    border-bottom-color: rgba(214, 238, 255, 0.58);
+}
+
+.zonge-contact-form-panel {
+    margin-top: 0;
+}
+
+.zonge-contact-section-heading {
+    margin-bottom: 22px;
+}
+
+.zonge-contact-section-heading h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.zonge-contact-section-heading-compact h3 {
+    font-size: 24px;
+}
+
+.zonge-contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.zonge-contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #dceafb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.zonge-contact-form .form-control {
+    height: 52px;
+    border: 1px solid rgba(121, 161, 212, 0.18);
+    border-radius: 16px;
+    background: rgba(7, 17, 31, 0.84);
+    color: #eff6ff;
+    box-shadow: inset 0 1px 0 rgba(194, 214, 243, 0.04);
+    transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.zonge-contact-form textarea.form-control {
+    min-height: 180px;
+    padding-top: 14px;
+    resize: vertical;
+}
+
+.zonge-contact-form .form-control::placeholder {
+    color: rgba(190, 206, 228, 0.52);
+}
+
+.zonge-contact-form .form-control:focus {
+    border-color: rgba(112, 182, 255, 0.58);
+    background: rgba(8, 20, 37, 0.94);
+    box-shadow: 0 0 0 4px rgba(92, 170, 255, 0.12);
+}
+
+.zonge-contact-submit {
+    min-width: 220px;
+    margin-top: 8px;
+    padding: 14px 24px;
+    border: 1px solid rgba(111, 167, 235, 0.24);
+    border-radius: 999px;
+    background: linear-gradient(135deg, #2e6fbe, #5aa9ff);
+    color: #fff !important;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 18px 36px rgba(40, 105, 182, 0.28);
+}
+
+.zonge-contact-submit:hover,
+.zonge-contact-submit:focus {
+    background: linear-gradient(135deg, #387ed3, #74b8ff);
+    color: #fff !important;
+}
+
+.zonge-contact-submit i {
+    margin-right: 10px;
+}
+
+.zonge-contact-address-copy {
+    padding: 18px 20px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(8, 18, 33, 0.72), rgba(7, 15, 28, 0.72));
+    border: 1px solid rgba(117, 152, 199, 0.12);
+}
+
+.zonge-contact-address-copy .text-uppercase {
+    text-transform: none !important;
+    letter-spacing: normal;
+}
+
+.zonge-contact-address-copy strong {
+    display: inline-block;
+    margin-top: 4px;
+    color: #f5f9ff;
+    font-size: 1.05em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.zonge-contact-address-copy br+strong {
+    margin-top: 18px;
+}
+
+.zonge-software-page {
+    color: #dce8f7;
+}
+
+.zonge-software-intro {
+    margin-bottom: 28px;
+}
+
+.zonge-software-eyebrow {
+    margin: 0 0 10px;
+    color: #8dc8ff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.zonge-software-page h1 {
+    margin: 0 0 14px;
+    color: #f7fbff;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.04;
+}
+
+.zonge-software-lead {
+    max-width: 820px;
+    margin: 0;
+    color: rgba(223, 232, 245, 0.82);
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.zonge-software-note {
+    margin-bottom: 22px;
+    padding: 14px 18px;
+    border: 1px solid rgba(111, 167, 235, 0.14);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(13, 29, 53, 0.86), rgba(10, 23, 43, 0.86));
+    color: rgba(223, 232, 245, 0.82);
+}
+
+.zonge-software-note strong {
+    color: #f5f9ff;
+}
+
+.zonge-software-table-wrap {
+    overflow: hidden;
+    border: 1px solid rgba(117, 152, 199, 0.16);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(10, 22, 40, 0.98), rgba(8, 18, 33, 0.98));
+    box-shadow: 0 24px 52px rgba(0, 0, 0, 0.22);
+}
+
+.zonge-software-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    background: transparent;
+}
+
+.zonge-software-table thead {
+    background: linear-gradient(180deg, rgba(18, 44, 76, 0.96), rgba(15, 35, 61, 0.96));
+}
+
+.zonge-software-table th,
+.zonge-software-table td {
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(117, 152, 199, 0.12);
+    vertical-align: top;
+    text-align: left;
+}
+
+.zonge-software-table th {
+    color: #f7fbff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.zonge-software-table tbody tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.zonge-software-table tbody tr:hover td {
+    background: rgba(98, 167, 255, 0.05);
+}
+
+.zonge-software-table td:first-child {
+    width: 24%;
+    color: #f2f7ff;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.zonge-software-table td:nth-child(2) {
+    width: 76%;
+    color: rgba(223, 232, 245, 0.82);
+}
+
+.zonge-software-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border: 1px solid rgba(152, 176, 209, 0.18);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #c8d9ef;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.zonge-software-badge-live {
+    border-color: rgba(102, 191, 255, 0.18);
+    background: rgba(78, 162, 255, 0.12);
+    color: #9ed6ff;
+}
+
+@media (max-width: 767px) {
+    .zonge-software-page h1 {
+        font-size: clamp(1.9rem, 9vw, 2.8rem);
+    }
+
+    .zonge-software-lead {
+        font-size: 16px;
+    }
+
+    .zonge-software-table-wrap {
+        overflow-x: auto;
+    }
+
+    .zonge-software-table {
+        min-width: 680px;
+    }
+
+    .zonge-software-table th,
+    .zonge-software-table td {
+        padding: 14px 14px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -953,6 +1610,32 @@ button:hover,
         width: 60px;
         height: 60px;
         font-size: 26px;
+    }
+
+    .zonge-contact-panel {
+        padding: 22px 18px;
+        border-radius: 20px;
+    }
+
+    .zonge-contact-copy h1 {
+        font-size: clamp(1.8rem, 9vw, 2.6rem);
+    }
+
+    .zonge-contact-section-heading h3 {
+        font-size: 22px;
+    }
+
+    .zonge-contact-form .form-control {
+        height: 48px;
+    }
+
+    .zonge-contact-form textarea.form-control {
+        min-height: 150px;
+    }
+
+    .zonge-contact-submit {
+        width: 100%;
+        min-width: 0;
     }
 }
 

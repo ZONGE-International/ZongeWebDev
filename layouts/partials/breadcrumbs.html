@@ -1,4 +1,6 @@
-<div id="heading-breadcrumbs" class="{{ if eq (lower .Section) "methods" }}methods-breadcrumbs{{ end }}" style="background-image: url('{{ .Params.banner | absURL }}'); 
+{{ $section := lower .Section }}
+{{ $themedSection := in (slice "methods" "instruments" "targets" "software" "about" "contact") $section }}
+<div id="heading-breadcrumbs" class="{{ if $themedSection }}section-breadcrumbs{{ end }} {{ if eq $section "methods" }}methods-breadcrumbs{{ end }}" style="background-image: url('{{ .Params.banner | absURL }}'); 
             background-size: cover; 
             background-position: {{ .Params.banner_position | default "center" }}; 
             padding: 200px 0; 

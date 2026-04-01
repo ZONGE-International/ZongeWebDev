@@ -4,44 +4,64 @@
     #mining {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 2rem;
-        background-color: #f9f9fa;
+        border: 1px solid rgba(117, 152, 199, 0.16);
+        border-radius: 24px;
+        background: linear-gradient(180deg, rgba(10, 22, 40, 0.96), rgba(8, 18, 33, 0.96));
+        box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
     }
 
     #mining .geo-table {
         width: 100%;
-        border-collapse: collapse;
-        font-size: 1.2rem;
+        border-collapse: separate;
+        border-spacing: 0;
+        font-size: 1.05rem;
+        overflow: hidden;
+        border: 1px solid rgba(117, 152, 199, 0.14);
+        border-radius: 20px;
     }
 
     #mining .geo-cell {
-        padding: 1.5rem;
-        border-radius: 0.5rem;
+        padding: 1.25rem;
         text-align: center;
         cursor: pointer;
-        transition: transform 0.3s;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
         font-size: 1.5rem;
+        border-right: 1px solid rgba(117, 152, 199, 0.12);
+        border-bottom: 1px solid rgba(117, 152, 199, 0.12);
     }
 
     #mining .geo-cell:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+        box-shadow: inset 0 0 0 1px rgba(123, 191, 255, 0.18);
     }
 
     #mining .geo-header {
-        color: #34495e;
+        color: #eaf3ff;
         font-weight: bold;
         padding: 1rem;
-        border-radius: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: center;
+        background: linear-gradient(180deg, rgba(18, 44, 76, 0.96), rgba(15, 35, 61, 0.96));
+        border-right: 1px solid rgba(117, 152, 199, 0.14);
+        border-bottom: 1px solid rgba(117, 152, 199, 0.14);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
     }
 
     #mining td:nth-child(even) {
-        background-color: #f0f8ff;
+        background-color: rgba(13, 29, 53, 0.84);
     }
 
     #mining td:nth-child(odd) {
-        background-color: #ffffff;
+        background-color: rgba(9, 21, 39, 0.84);
+    }
+
+    #mining tbody .geo-header {
+        background: rgba(12, 29, 52, 0.94);
+        color: #f5f9ff;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1.15rem;
     }
 
     #mining .rating-bars {
@@ -111,9 +131,10 @@
     }
 
     #mining .custom-modal {
-        background: white;
+        background: linear-gradient(180deg, rgba(10, 22, 40, 0.98), rgba(8, 18, 33, 0.98));
         padding: 2rem;
         border-radius: 1rem;
+        border: 1px solid rgba(117, 152, 199, 0.16);
         max-width: 900px;
         max-height: 95vh;
         height: auto;
@@ -154,7 +175,7 @@
     }
 
     #mining .close-btn:hover {
-        color: #333;
+        color: #fff;
     }
 
     #mining .modal-content-list {
@@ -175,18 +196,18 @@
     #mining .modal-label {
         flex: 0 0 40%;
         font-weight: bold;
-        color: #333;
+        color: #dceafb;
     }
 
     #mining .modal-value {
         flex: 1;
-        color: #555;
+        color: rgba(223, 232, 245, 0.82);
     }
 
     #mining .modal-title-text {
         font-weight: bold;
         font-size: clamp(1.25rem, 3vw, 2rem);
-        color: #34495e;
+        color: #f7fbff;
         line-height: 1.25;
     }
 </style>

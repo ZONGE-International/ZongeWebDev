@@ -1,0 +1,12 @@
+{{ $src := .Get "src" }}
+{{ $title := .Get "title" }}
+{{ $alt := .Get "alt" | default $title | default "Figure" }}
+{{ $width := .Get "width" }}
+{{ $panel := .Get "panel" | default "default" }}
+
+<figure class="zonge-inline-figure{{ if eq $panel "light" }} zonge-inline-figure-light{{ end }}">
+  <img src="{{ $src }}" alt="{{ $alt }}" class="img-responsive"{{ with $width }} style="max-width: {{ . }}px; width: 100%;"{{ end }}>
+  {{ with $title }}
+  <figcaption>{{ . }}</figcaption>
+  {{ end }}
+</figure>

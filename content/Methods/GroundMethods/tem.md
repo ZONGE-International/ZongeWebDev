@@ -1,6 +1,6 @@
 +++
 title = "Transient Electromagnetics (TEM)"
-banner = "img/methods/tem/TEM2_landscape.jpeg"
+banner = "img/methods/tem/TEM_glacier.jpg"
 weight = 1
 +++
 
