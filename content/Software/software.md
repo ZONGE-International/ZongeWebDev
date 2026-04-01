@@ -8,11 +8,7 @@ weight = 1
   <div class="zonge-software-intro">
     <p class="zonge-software-eyebrow">Processing and Interpretation</p>
     <h1>Zonge Software Programs</h1>
-    <p class="zonge-software-lead">A focused catalog of Zonge processing and interpretation tools used across electromagnetic, resistivity, and magnetotelluric workflows.</p>
-  </div>
-
-  <div class="zonge-software-note">
-    <strong>Note:</strong> Descriptions are based on public Zonge documentation and published references; where no explicit public description was available, the wording is a careful inference from the program name and cited workflow context.
+    <p class="zonge-software-lead">A focused catalog of Zonge processing and interpretation tools used across EM processing workflows.</p>
   </div>
 
   <div class="zonge-software-table-wrap">
