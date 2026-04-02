@@ -15,7 +15,7 @@
 
     {{ partial "breadcrumbs.html" . }}
 
-    {{ $immersiveSection := in (slice "methods" "instruments" "targets" "software" "about" "contact") (lower .Section) }}
+    {{ $immersiveSection := or (in (slice "methods" "instruments" "targets" "software" "about" "contact") (lower .Section)) (eq .Params.id "contact") }}
     <div id="content" class="{{ if $immersiveSection }}zonge-immersive-content{{ end }}">
       {{ if isset .Params "id" }}
 

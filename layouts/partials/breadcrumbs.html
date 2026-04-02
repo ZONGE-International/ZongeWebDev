@@ -1,5 +1,5 @@
 {{ $section := lower .Section }}
-{{ $themedSection := in (slice "methods" "instruments" "targets" "software" "about" "contact") $section }}
+{{ $themedSection := or (in (slice "methods" "instruments" "targets" "software" "about" "contact") $section) (eq .Params.id "contact") }}
 <div id="heading-breadcrumbs" class="{{ if $themedSection }}section-breadcrumbs{{ end }} {{ if eq $section "methods" }}methods-breadcrumbs{{ end }}" style="background-image: url('{{ .Params.banner | absURL }}'); 
             background-size: cover; 
             background-position: {{ .Params.banner_position | default "center" }}; 

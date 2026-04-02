@@ -1,6 +1,6 @@
 +++
 title = "Transient Electromagnetics (TEM)"
-banner = "img/methods/tem/TEM_glacier.jpg"
+banner = "img/methods/tem/tem-glacier-banner.jpg"
 weight = 1
 +++
 
@@ -14,7 +14,7 @@ Decay responses are sampled in discrete time gates that range from microseconds 
 
 TEM survey geometry is designed around target orientation, expected depth, and desired coupling. Standard TEM systems are used for shallow to deep investigations, while NanoTEM systems are optimized for very shallow imaging with very fast transmitter turnoff.
 
-{{< figure src="/img/methods/tem/TEM_Intro_Diagram.png" title="Secondary EM responses from conductors" width=800 >}}
+{{< figure src="/img/methods/tem/tem-intro-diagram.webp" title="Secondary EM responses from conductors" width=800 >}}
 
 ## Applications
 

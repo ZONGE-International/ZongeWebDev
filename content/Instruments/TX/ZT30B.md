@@ -1,6 +1,6 @@
 +++
 title = "ZT-30B Geophysical Transmitter"
-banner = "img/power/zt30b.png"
+banner = "img/power/zt-30b-transmitter.webp"
 weight = 1
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "UAV (Drone) Magnetic Surveys"
-banner = "img/methods/airbone/Drone.jpg"
+banner = "img/methods/airbone/drone-geophysics-banner.webp"
 weight = 1
 +++
 

@@ -233,9 +233,9 @@ pluralizelisttitles = false
     parent     = "section.transmitters"
 		
 [[menu.main]]
-    name       = "XMT-G"
-    identifier = "product.new.xmtg"
-    url        = "/instruments/TX/XMTG/"
+    name       = "XMT-R"
+    identifier = "product.new.xmtr"
+    url        = "/instruments/tx/xmtr/"
     weight     = 5
     parent     = "section.transmitters"
 
@@ -259,7 +259,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "ANT-4"
     identifier = "section.ant4"
-    url        = "/instruments/Sensors/ant4/"
+    url        = "/instruments/sensors/ant4/"
     weight     = 1
     parent     = "section.sensors"	
 	post       = 1
@@ -267,7 +267,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "ANT-6"
     identifier = "section.ant6"
-    url        = "/instruments/Sensors/ant6/"
+    url        = "/instruments/sensors/ant6/"
     weight     = 2
     parent     = "section.sensors"	
 	post       = 2	
@@ -275,18 +275,26 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "ANT-7"
     identifier = "section.ant7"
-    url        = "/instruments/Sensors/ant7/"
+    url        = "/instruments/sensors/ant7/"
     weight     = 3
     parent     = "section.sensors"	
 	post       = 3	
 
 [[menu.main]]
+    name       = "ANT-9 Borehole"
+    identifier = "section.ant9"
+    url        = "/instruments/sensors/ant9/"
+    weight     = 4
+    parent     = "section.sensors"
+	post       = 4
+
+[[menu.main]]
     name       = "TEM-4"
     identifier = "section.tem4"
-    url        = "/instruments/Sensors/tem4/"
-    weight     = 4
+    url        = "/instruments/sensors/tem4/"
+    weight     = 5
     parent     = "section.sensors"	
-	post       = 4	
+	post       = 5	
 
 
 ##############################

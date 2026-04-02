@@ -1,6 +1,6 @@
 +++
 title = "About Zonge"
-banner = "img/abouts/History-1-Ken_GDP3.jpg"
+banner = "img/abouts/company-history-ken-zonge-gdp3.jpg"
 weight = 1
 +++
 

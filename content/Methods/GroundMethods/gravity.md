@@ -1,6 +1,6 @@
 +++
 title = "Gravity"
-banner = "img/methods/gravity/Gravity.png"
+banner = "img/methods/gravity/gravity-method-banner.webp"
 weight = 1
 +++
 

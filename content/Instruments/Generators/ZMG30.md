@@ -1,6 +1,6 @@
 +++
 title = "ZMG-30DLE"
-banner = "img/power/zmg30b.png"
+banner = "img/power/zmg-30b-generator.webp"
 weight = 1
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "Misc"
-banner = "img/misc/Reels.jpg"
+banner = "img/misc/cable-reels.jpg"
 weight = 1
 +++
 

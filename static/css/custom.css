@@ -16,7 +16,7 @@
 }
 
 .home-carousel {
-    background: url('../img/carousel/pete-night-sky.png') center center no-repeat;
+    background: url('../img/carousel/home-hero-night-sky.webp') center center no-repeat;
     background-size: cover;
 }
 
@@ -742,12 +742,18 @@ button:hover,
     .navbar .dropdown.mega-menu-compact .dropdown-menu {
         left: 50%;
         right: auto;
-        width: min(560px, calc(100vw - 30px));
+        width: min(680px, calc(100vw - 30px));
         transform: translateX(-50%);
+        max-height: min(78vh, 620px);
+        overflow-y: auto;
     }
 
     .navbar .dropdown.mega-menu-compact .yamm-content {
         padding: 18px 24px;
+    }
+
+    .navbar .dropdown.mega-menu-compact .yamm-content>.row {
+        align-items: flex-start;
     }
 
     .navbar .dropdown.mega-menu-compact .yamm-content h5 {

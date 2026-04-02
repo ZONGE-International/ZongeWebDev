@@ -2,10 +2,11 @@
 {{ $title := .Get "title" }}
 {{ $alt := .Get "alt" | default $title | default "Figure" }}
 {{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
 {{ $panel := .Get "panel" | default "default" }}
 
-<figure class="zonge-inline-figure{{ if eq $panel "light" }} zonge-inline-figure-light{{ end }}">
-  <img src="{{ $src }}" alt="{{ $alt }}" class="img-responsive"{{ with $width }} style="max-width: {{ . }}px; width: 100%;"{{ end }}>
+<figure class="zonge-inline-figure{{ if eq $panel "light" }} zonge-inline-figure-light{{ end }}"{{ with $width }} style="max-width: {{ . }}px; margin-left: auto; margin-right: auto;"{{ end }}>
+  <img src="{{ $src }}" alt="{{ $alt }}" class="img-responsive"{{ if or $width $height }} style="{{ with $width }}max-width: {{ . }}px; width: 100%;{{ end }}{{ with $height }} max-height: {{ . }}px; height: auto;{{ end }}"{{ end }}>
   {{ with $title }}
   <figcaption>{{ . }}</figcaption>
   {{ end }}

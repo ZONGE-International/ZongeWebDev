@@ -1,6 +1,6 @@
 +++
 title = "Safety at Zonge"
-banner = "img/abouts/safety.png"
+banner = "img/abouts/field-safety-banner.webp"
 weight = 1
 +++
 

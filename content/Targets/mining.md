@@ -1,6 +1,6 @@
 +++
 title = "Targets"
-banner = "img/person_w_view.jpg"
+banner = "img/surveyor-overlook.webp"
 weight = 1
 +++
 
@@ -8,7 +8,7 @@ weight = 1
 
 Appling our geophysical methods to mining exploration is where our expertise runs deepest. We use these tools to uncover ore bodies, structures, and alteration zones, giving you a cost-effective picture of what lies beneath. Our approach is fully customizable to meet the unique demands of your project, and we’re always refining our techniques to deliver practical, proven results. With us, you get experience, innovation, and exploration strategies that work.
 
-{{< figure src="/img/targets/Targets_Diagram.png" title="" width=1000 >}}
+{{< figure src="/img/targets/targets-diagram.webp" title="" width=1000 >}}
 
 ##
 

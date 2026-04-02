@@ -1,7 +1,7 @@
 +++
 title = "Contact"
 id = "contact"
-banner = "img/abouts/contact-dog.jpg"
+banner = "img/abouts/contact-dog.webp"
 banner_position = "center 42%"
 +++
 

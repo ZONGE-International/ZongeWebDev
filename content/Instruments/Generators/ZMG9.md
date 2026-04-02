@@ -1,6 +1,6 @@
 +++
 title = "ZMG-9A"
-banner = "img/power/zmg9.png"
+banner = "img/power/zmg-9-generator.png"
 weight = 1
 +++
 

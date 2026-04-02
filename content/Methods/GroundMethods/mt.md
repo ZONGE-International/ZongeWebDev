@@ -1,6 +1,6 @@
 +++
 title = "Magnetotellurics (MT/AMT)"
-banner = "img/methods/mt/MT-page-candidate.jpg"
+banner = "img/methods/mt/magnetotellurics-banner.jpg"
 weight = 1
 +++
 
@@ -34,7 +34,7 @@ MT is especially valuable in low-noise environments and in areas where conductiv
 
 ##
 
-{{< figure src="/img/MT_Station.png" title="" width=800 >}}
+{{< figure src="/img/mt-station-diagram.webp" title="" width=800 >}}
 
 ## Instrumentation
 

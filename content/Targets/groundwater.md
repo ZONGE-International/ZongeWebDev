@@ -1,6 +1,6 @@
 +++
 title = "Targets"
-banner = "img/groundwater.jpeg"
+banner = "img/groundwater-target-banner.jpg"
 weight = 1
 +++
 

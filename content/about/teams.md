@@ -1,6 +1,6 @@
 +++
 title = "Teams"
-banner = "img/abouts/Equip.jpg"
+banner = "img/abouts/team-equipment.jpg"
 weight = 1
 +++
 

@@ -1,22 +1,39 @@
 +++
-title = "ANT/6 Magnetic Antenna"
-banner = "img/antennas/ANT_Image.png"
-weight = 1
+title = "ANT-6 Induction Magnetometer"
+banner = "img/antennas/ant-sensor-banner.webp"
+weight = 2
 +++
 
-#Description
-The ANT/6 is a low noise sensor designed for accurate measurement of the magnetic field from 1 to 10 kHz. Using Triple-Nested magnetic feedback amplifier technology and including carefully designed mu-metal cores, this antenna is designed to be a highly flexible instrument, built to withstand the difficult conditions encountered in the field environment.
+## Overview
 
-##Specifications
+The ANT-6 is a multipurpose low-noise induction magnetometer designed for AMT and CSAMT work across a wide audio-frequency bandwidth. Its compact form factor, battery-powered operation, and stable transfer function make it a practical field sensor for crews that need strong performance from `0.1 Hz` into the `10 kHz` range.
 
-###Dimensions:
-Length: 91.0 cm ( 36.0 in)
-Diameter: 4.8 cm ( 1.875 in)
-Weight: 3.2 kg ( 7.0 lb)
+{{< figure src="/img/antennas/ant6response.jpg" title="ANT-6 response plot." width=760 panel="light" >}}
 
-###Response:
+## Where It Fits
 
-<img src="/img/antennas/ant6response.jpg" class="fancy-image" alt="ANT/4 Magnetic Antenna">
+- AMT programs
+- CSAMT surveys
+- Broadband magnetic field acquisition
+- Campaigns where compact, battery-powered sensors are preferred
 
-##Supporting Documents
-[Download Specification sheet for ANT-6](/documents/ant6.pdf)
+## Key Specifications
+
+- Optimal frequency range: `0.1 Hz to 10 kHz`
+- Sensitivity: `250 mV/nT`
+- Noise at `1 Hz`: `240 fT/sqrt(Hz)`
+- High-pass corner: `1 Hz`
+- Low-pass corner: `10 kHz`, `3 pole`
+- Length: `919 mm`
+- Weight: `3 kg`
+- Power supply: `3 x 9 V batteries`
+- Supply current: `5.6 mA`
+- Standard connector: `PT02A-4-8S`
+
+## Why Customers Choose It
+
+The ANT-6 is well suited when projects need wide-band audio-frequency coverage in a proven field package. It offers a strong balance of sensitivity, portability, and ease of deployment for everyday AMT and CSAMT operations.
+
+## Supporting Documents
+
+- [Download ANT-6 specification sheet and operating notes](/documents/ant6.pdf)

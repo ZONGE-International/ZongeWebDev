@@ -1,6 +1,6 @@
 +++
 title = "Software"
-banner = "img/person_w_vista.jpg"
+banner = "img/surveyor-vista.webp"
 weight = 1
 +++
 

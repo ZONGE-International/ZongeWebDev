@@ -1,6 +1,6 @@
 +++
 title = "ZEN High-Res Receiver"
-banner = "img/receivers/zenhero.png"
+banner = "img/receivers/zen-receiver-hero.png"
 weight = 1
 +++
 
