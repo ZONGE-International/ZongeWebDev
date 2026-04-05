@@ -211,6 +211,18 @@
     transform: scaleX(1);
 }
 
+.navbar-overlay .navbar-nav>li.menu-item-linkedin>a::after,
+.navbar-overlay .navbar-nav>li.menu-item-linkedin:hover>a::after,
+.navbar-overlay .navbar-nav>li.menu-item-linkedin.active>a::after,
+.navbar-overlay .navbar-nav>li.menu-item-linkedin.open>a::after {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.navbar-overlay .navbar-nav>li.menu-item-linkedin>a i {
+    font-size: 1.2em;
+}
+
 .navbar-overlay .navbar-nav>li.active>a,
 .navbar-overlay .navbar-nav>li.active>a:hover,
 .navbar-overlay .navbar-nav>li.active>a:focus,

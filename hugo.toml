@@ -322,6 +322,13 @@ pluralizelisttitles = false
     weight     = 6
 
 [[menu.main]]
+    name       = "LinkedIn"
+    identifier = "linkedin"
+    url        = "https://www.linkedin.com/company/zonge-international/"
+    weight     = 7
+    pre        = "<i class='fab fa-linkedin' aria-hidden='true'></i>"
+
+[[menu.main]]
     name       = "About Us"
     url        = "/about/about/"
     weight     = 1
@@ -355,6 +362,12 @@ pluralizelisttitles = false
     name = "Email"
     url = "mailto:zonge@zonge.com"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[[menu.topbar]]
+    weight = 10
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/zonge-international/"
+    pre = "<i class='fab fa-2x fa-linkedin'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
@@ -435,6 +448,9 @@ pluralizelisttitles = false
 		<br><strong>Reno Office</strong>
         <br>Phone: <a href="tel:+17753557707">(775) 355-7707</a>
         <br>
+		<br><strong>Mexico Office</strong>
+        <br>Phone: <a href="tel:+15202702974">+1-520-270-2974</a>
+        <br>
    
 			
       </p>
@@ -450,6 +466,10 @@ pluralizelisttitles = false
 		<br>9595 Prototype Ct
         <br>Reno, NV 89521
         <br>Phone: <a href="tel:+17753557707">(775) 355-7707</a>
+        <br>
+		<br><strong>Mexico Office</strong>
+		<br>Hermosillo, Sonora, Mexico
+        <br>Phone: <a href="tel:+15202702974">+1-520-270-2974</a>
         <br>
       </p>
       """

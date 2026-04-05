@@ -29,6 +29,11 @@
           {{ range .Site.Menus.main.ByWeight }}
           {{ $topLevel := replace .URL "/" "" }}
           {{ $active := "" }}
+          {{ $menuItemClass := "" }}
+
+          {{ if .Identifier }}
+          {{ $menuItemClass = printf "menu-item-%s" (.Identifier | urlize) }}
+          {{ end }}
 
           {{ if eq $current.RelPermalink .URL }}
           {{ $active = "active" }}
@@ -62,7 +67,7 @@
           {{ else if not $showMenuImage }}
           {{ $columnClass = "col-sm-6" }}
           {{ end }}
-          <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{end}}{{ if $compactMegaMenu }} mega-menu-compact{{ end }} {{ $active }}">
+          <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{end}}{{ if $compactMegaMenu }} mega-menu-compact{{ end }} {{ $active }}{{ if $menuItemClass }} {{ $menuItemClass }}{{ end }}">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
             {{ if $hasSections }}
@@ -160,8 +165,14 @@
             {{ end }}
           </li>
           {{ else }}
-          <li class="dropdown {{ $active }}">
-            <a href="{{ .URL }}">{{ .Name }}</a>
+          <li class="dropdown {{ $active }}{{ if $menuItemClass }} {{ $menuItemClass }}{{ end }}">
+            <a href="{{ .URL }}">
+              {{ if .Pre }}
+              {{ .Pre | safeHTML }}<span class="sr-only">{{ .Name }}</span>
+              {{ else }}
+              {{ .Name }}
+              {{ end }}
+            </a>
           </li>
           {{ end }}
           {{ end }}

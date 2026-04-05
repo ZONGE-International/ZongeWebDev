@@ -87,7 +87,9 @@
     </div>
     <!-- /#content -->
 
+    {{ if ne .Params.id "contact" }}
     {{ partial "footer.html" . }}
+    {{ end }}
 
   </div>
   <!-- /#all -->
