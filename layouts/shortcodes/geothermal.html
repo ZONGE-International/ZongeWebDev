@@ -276,7 +276,7 @@
             blue: 'Blue thermometer: low suitability'
         };
 
-        const messagesByTypeAndMethod = {{ site.Data.mining.messageGEOTHERMAL | jsonify | safeJS
+        const messagesByTypeAndMethod = {{ hugo.Data.mining.messageGEOTHERMAL | jsonify | safeJS
     }};
 
     const headers = ["Magnetic", "Gravity", "CSAMT/AMT", "MT", "IP", "EM"];

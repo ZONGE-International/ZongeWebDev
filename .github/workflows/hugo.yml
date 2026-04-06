@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.155.3
+      HUGO_VERSION: 0.160.0
       THEME_REPO: https://github.com/devcows/hugo-universal-theme.git
       THEME_COMMIT: 2e695e87e5d1ff23a28919f4ea7ce1a75276ac66
     steps:
@@ -42,13 +42,18 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout with submodules
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: recursive # Ensures submodules are pulled
           fetch-depth: 0 # Necessary for submodules
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25.8.1
+          cache: npm
       - name: Ensure Hugo Universal theme is present
         run: |
           if [ ! -d "themes/hugo-universal-theme" ]; then

@@ -7,51 +7,42 @@
                 </div>
             </section>
 
-            {{ if isset .Site.Params "formspree_action" }}
-            <section class="zonge-contact-panel zonge-contact-form-panel">
+            <section class="zonge-contact-panel zonge-contact-email-panel">
                 <div class="zonge-contact-section-heading">
-                    <h3>{{ i18n "contactForm" }}</h3>
-                    <p>Tell us about your project, support need, or instrument question and we will route it to the right team.</p>
+                    <h3>Email Zonge</h3>
+                    <p>For project inquiries, product support, or instrument questions, send us an email and we will route it to the right team.</p>
                 </div>
-
-                <div id="contact-message"></div>
-
-                <form class="zonge-contact-form{{ with .Site.Params.contact_form_ajax }} contact-form-ajax{{ end }}" method="post"
-                    action="{{ .Site.Params.formspree_action }}">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="name">{{ i18n "contactName" }}</label>
-                                <input type="text" class="form-control" name="name" id="name" required>
+                <div class="zonge-contact-email-card">
+                    <form id="zonge-mailto-form" class="zonge-contact-form" action="#" method="get">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="mailto-name">{{ i18n "contactName" }}</label>
+                                    <input type="text" class="form-control" name="name" id="mailto-name" autocomplete="name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="mailto-email">{{ i18n "contactMail" }}</label>
+                                    <input type="email" class="form-control" name="email" id="mailto-email" autocomplete="email" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="mailto-message">{{ i18n "contactMessage" }}</label>
+                                    <textarea id="mailto-message" class="form-control" name="message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button id="zonge-email-link" type="submit" class="btn btn-template-main zonge-contact-submit">
+                                    <i class="far fa-envelope"></i><span>Email Us</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="email">{{ i18n "contactMail" }}</label>
-                                <input type="email" autocomplete="email" class="form-control" name="email" id="email" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="message">{{ i18n "contactMessage" }}</label>
-                                <textarea id="message" class="form-control" name="message" required></textarea>
-                            </div>
-                        </div>
-                        {{ if and .Site.Params.enableRecaptchaInContactForm .Site.Params.googleRecaptchaKey }}
-                        <div class="col-sm-12">
-                            <div class="g-recaptcha" data-sitekey="{{ .Site.Params.googleRecaptchaKey }}"></div>
-                            <br />
-                        </div>
-                        {{ end }}
-                        <div class="col-sm-12">
-                            <button type="submit" class="btn btn-template-main zonge-contact-submit">
-                                <i class="far fa-envelope"></i>{{ i18n "contactSend" }}
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                    <p class="zonge-contact-email-note">If your mail app does not open automatically, call one of the offices listed here and we will help right away.</p>
+                </div>
             </section>
-            {{ end }}
         </div>
 
         <div class="col-md-5 zonge-contact-side-col">
@@ -66,8 +57,70 @@
                 </div>
             </section>
             {{ end }}
+
+            {{ range site.Menus.topbar }}
+            {{ if eq .Name "LinkedIn" }}
+            <section class="zonge-contact-panel zonge-contact-social-panel">
+                <div class="zonge-contact-section-heading zonge-contact-section-heading-compact">
+                    <h3>Follow Zonge</h3>
+                    <p>Stay connected for company updates, field highlights, and product news.</p>
+                </div>
+                <a class="zonge-contact-social-link" href="{{ .URL }}" target="_blank" rel="noopener" aria-label="Follow Zonge on LinkedIn">
+                    <span class="zonge-contact-social-icon" aria-hidden="true">
+                        <i class="fab fa-linkedin-in"></i>
+                    </span>
+                    <span class="zonge-contact-social-copy">
+                        <strong>LinkedIn</strong>
+                        <span>Visit our company page</span>
+                    </span>
+                </a>
+            </section>
+            {{ end }}
+            {{ end }}
         </div>
     </div>
 </div>
 
 {{ partial "map.html" . }}
+
+<script>
+    (function () {
+        var codes = [122, 111, 110, 103, 101, 64, 122, 111, 110, 103, 101, 46, 99, 111, 109];
+        var email = codes.map(function (code) { return String.fromCharCode(code); }).join("");
+        var form = document.getElementById("zonge-mailto-form");
+        var button = document.getElementById("zonge-email-link");
+
+        if (!form || !button) {
+            return;
+        }
+
+        button.setAttribute("aria-label", "Email " + email);
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var name = document.getElementById("mailto-name").value.trim();
+            var sender = document.getElementById("mailto-email").value.trim();
+            var message = document.getElementById("mailto-message").value.trim();
+            var subject = "Website inquiry";
+            var lines = [];
+
+            if (name) {
+                lines.push("Name: " + name);
+            }
+
+            if (sender) {
+                lines.push("Email: " + sender);
+            }
+
+            if (lines.length) {
+                lines.push("");
+            }
+
+            lines.push(message || "Hello Zonge,");
+
+            var body = lines.join("\n");
+            window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        });
+    })();
+</script>

@@ -1,0 +1,25 @@
+{{ if and .File (eq .Section "about") (eq .File.BaseFileName "about") }}
+{{ $gallery := slice }}
+{{ if fileExists "static/img/historical" }}
+  {{ range readDir "static/img/historical" }}
+    {{ if and (not .IsDir) (findRE `(?i)\.(avif|gif|jpe?g|png|webp)$` .Name) }}
+      {{ $gallery = $gallery | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $gallery) 0 }}
+<section class="zonge-history-gallery">
+  <div class="zonge-history-gallery__rail" aria-label="Historical photo gallery">
+    {{ range $gallery }}
+    {{ $src := printf "/img/historical/%s" .Name | relURL }}
+    <figure class="zonge-history-gallery__card">
+      <a class="zonge-history-gallery__link" href="{{ $src }}" target="_blank" rel="noopener">
+        <img src="{{ $src }}" alt="{{ .Name | strings.TrimSuffix (path.Ext .Name) | replaceRE `[-_]+` ` ` | title }}">
+      </a>
+      <figcaption>{{ .Name | strings.TrimSuffix (path.Ext .Name) | replaceRE `[-_]+` ` ` | title }}</figcaption>
+    </figure>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

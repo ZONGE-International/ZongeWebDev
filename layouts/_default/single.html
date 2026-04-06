@@ -51,6 +51,7 @@
             <div id="post-content" class="{{ if $immersiveSection }}zonge-section-prose{{ end }}">
               {{ .Content }}
             </div>
+            {{ partial "about-history-gallery.html" . }}
             <!-- /#post-content -->
             {{ if .Site.Config.Services.Disqus.Shortname }}
             <div id="comments">
