@@ -49,11 +49,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 25.8.1
-          cache: npm
       - name: Ensure Hugo Universal theme is present
         run: |
           if [ ! -d "themes/hugo-universal-theme" ]; then
@@ -64,8 +59,6 @@ jobs:
           fi
           git -C themes/hugo-universal-theme fetch --depth=1 origin "${THEME_COMMIT}"
           git -C themes/hugo-universal-theme checkout --force "${THEME_COMMIT}"
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
