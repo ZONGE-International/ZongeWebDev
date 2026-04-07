@@ -337,6 +337,10 @@
 }
 
 @media (max-width: 767px) {
+    body.mobile-nav-open {
+        overflow: hidden;
+    }
+
     .navbar-overlay {
         background: var(--nav-shell-bg-scrolled);
         backdrop-filter: blur(18px);
@@ -436,7 +440,11 @@
         border-radius: 22px;
         background: var(--nav-panel-bg);
         box-shadow: var(--nav-shadow);
-        overflow: hidden;
+        max-height: calc(100vh - 92px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
     }
 
     .navbar-nav.navbar-right {
@@ -469,6 +477,8 @@
         border: none;
         background: transparent;
         box-shadow: none;
+        max-height: none;
+        overflow: visible;
     }
 
     .navbar-overlay .navbar-nav .open .dropdown-menu .row,

@@ -195,4 +195,25 @@
   </div>
 </header>
 
+<script>
+  (function () {
+    const navigation = document.getElementById('navigation');
+    if (!navigation) return;
+
+    const syncMobileNavState = () => {
+      const isMobile = window.innerWidth < 768;
+      const isOpen = navigation.classList.contains('in') || navigation.classList.contains('show');
+      document.body.classList.toggle('mobile-nav-open', isMobile && isOpen);
+    };
+
+    const observer = new MutationObserver(syncMobileNavState);
+    observer.observe(navigation, { attributes: true, attributeFilter: ['class'] });
+
+    window.addEventListener('resize', syncMobileNavState);
+    window.addEventListener('orientationchange', syncMobileNavState);
+    document.addEventListener('click', syncMobileNavState);
+    syncMobileNavState();
+  })();
+</script>
+
 <!-- *** NAVBAR END ***-->
