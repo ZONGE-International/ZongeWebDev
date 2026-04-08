@@ -37,3 +37,4 @@ The ANT-6 is well suited when projects need wide-band audio-frequency coverage i
 ## Supporting Documents
 
 - [Download ANT-6 specification sheet and operating notes](/documents/ant6.pdf)
+- [Download ANT-6 Strait specification sheet](/documents/ant6_strait.pdf)
