@@ -10,8 +10,11 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 # Enable comments by entering your Disqus shortname
 # disqusShortname = "devcows"
-# Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+
+[services]
+    # Enable Google Analytics by entering your tracking code
+    [services.googleAnalytics]
+        id = "G-B7SVCQZ8GK"
 
 #Allow download using html
 [markup.goldmark.renderer]
