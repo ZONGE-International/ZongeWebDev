@@ -1,0 +1,203 @@
+{{- $siteTitle := .Site.Title | default "Zonge" -}}
+{{- $siteURL := .Site.BaseURL | absURL -}}
+{{- $pageTitle := .Title | plainify -}}
+{{- $pageURL := .Permalink | absURL -}}
+{{- $description := .Description | plainify -}}
+{{- if and (not $description) .Summary -}}
+  {{- $description = .Summary | plainify | truncate 220 -}}
+{{- end -}}
+{{- if and (not $description) .Plain -}}
+  {{- $description = .Plain | plainify | truncate 220 -}}
+{{- end -}}
+{{- if not $description -}}
+  {{- $description = .Site.Params.defaultDescription | plainify -}}
+{{- end -}}
+{{- $section := lower .Section -}}
+{{- $isHome := .IsHome -}}
+{{- $isBlog := eq $section "blog" -}}
+{{- $isContact := or (eq $section "contact") (eq (printf "%v" .Params.id) "contact") -}}
+{{- $isProduct := eq $section "instruments" -}}
+{{- $isService := or (eq $section "methods") (eq $section "targets") (eq $section "software") -}}
+{{- $pageType := "WebPage" -}}
+{{- if $isHome -}}
+  {{- $pageType = "CollectionPage" -}}
+{{- else if $isBlog -}}
+  {{- $pageType = "Article" -}}
+{{- else if eq $section "about" -}}
+  {{- $pageType = "AboutPage" -}}
+{{- else if $isContact -}}
+  {{- $pageType = "ContactPage" -}}
+{{- end -}}
+{{- $sectionNames := dict
+  "about" "About"
+  "blog" "Blog"
+  "contact" "Contact"
+  "instruments" "Instruments"
+  "methods" "Methods"
+  "software" "Software"
+  "targets" "Targets"
+-}}
+
+{{- $organizationNode := dict
+  "@type" "Organization"
+  "@id" (printf "%s#organization" $siteURL)
+  "name" "Zonge International, Inc"
+  "url" $siteURL
+  "logo" (printf "%simg/logo.png" $siteURL)
+  "email" "zonge@zonge.com"
+  "telephone" "+1-520-327-5501"
+  "sameAs" (slice "https://www.linkedin.com/company/zonge-international/")
+  "address" (slice
+    (dict
+      "@type" "PostalAddress"
+      "streetAddress" "3475 N Dodge Blvd"
+      "addressLocality" "Tucson"
+      "addressRegion" "AZ"
+      "postalCode" "85716"
+      "addressCountry" "US"
+    )
+    (dict
+      "@type" "PostalAddress"
+      "streetAddress" "9595 Prototype Ct"
+      "addressLocality" "Reno"
+      "addressRegion" "NV"
+      "postalCode" "89521"
+      "addressCountry" "US"
+    )
+    (dict
+      "@type" "PostalAddress"
+      "addressLocality" "Hermosillo"
+      "addressRegion" "Sonora"
+      "addressCountry" "MX"
+    )
+  )
+-}}
+
+{{- $websiteNode := dict
+  "@type" "WebSite"
+  "@id" (printf "%s#website" $siteURL)
+  "url" $siteURL
+  "name" $siteTitle
+  "publisher" (dict "@id" (printf "%s#organization" $siteURL))
+-}}
+
+{{- $pageNode := dict
+  "@type" $pageType
+  "@id" (printf "%s#webpage" $pageURL)
+  "url" $pageURL
+  "name" $pageTitle
+  "description" $description
+  "isPartOf" (dict "@id" (printf "%s#website" $siteURL))
+  "about" (dict "@id" (printf "%s#organization" $siteURL))
+  "publisher" (dict "@id" (printf "%s#organization" $siteURL))
+-}}
+
+{{- with .Params.banner -}}
+  {{- $pageNode = merge $pageNode (dict "primaryImageOfPage" (printf "%s" (. | absURL))) -}}
+{{- end -}}
+{{- with .Lastmod -}}
+  {{- $pageNode = merge $pageNode (dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00")) -}}
+{{- end -}}
+
+{{- $graph := slice $organizationNode $websiteNode $pageNode -}}
+
+{{- if and (not $isHome) (ne .Kind "section") -}}
+  {{- $breadcrumbItems := slice (dict
+    "@type" "ListItem"
+    "position" 1
+    "name" "Home"
+    "item" $siteURL
+  ) -}}
+  {{- $position := 2 -}}
+  {{- range .Ancestors.Reverse -}}
+    {{- if not .IsHome -}}
+      {{- $breadcrumbItems = $breadcrumbItems | append (dict
+        "@type" "ListItem"
+        "position" $position
+        "name" (index $sectionNames (lower .Section) | default (replace (.Title | plainify) "Abouts" "About"))
+        "item" (.Permalink | absURL)
+      ) -}}
+      {{- $position = add $position 1 -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $breadcrumbItems = $breadcrumbItems | append (dict
+    "@type" "ListItem"
+    "position" $position
+    "name" $pageTitle
+    "item" $pageURL
+  ) -}}
+  {{- $graph = $graph | append (dict
+    "@type" "BreadcrumbList"
+    "@id" (printf "%s#breadcrumb" $pageURL)
+    "itemListElement" $breadcrumbItems
+  ) -}}
+{{- end -}}
+
+{{- if and $isProduct (eq .Kind "page") -}}
+  {{- $productNode := dict
+    "@type" "Product"
+    "@id" (printf "%s#product" $pageURL)
+    "name" $pageTitle
+    "description" $description
+    "brand" (dict "@type" "Brand" "name" "Zonge")
+    "manufacturer" (dict "@id" (printf "%s#organization" $siteURL))
+    "url" $pageURL
+    "mainEntityOfPage" (dict "@id" (printf "%s#webpage" $pageURL))
+    "category" "Geophysical Instrumentation"
+  -}}
+  {{- with .Params.banner -}}
+    {{- $productNode = merge $productNode (dict "image" (. | absURL)) -}}
+  {{- end -}}
+  {{- $graph = $graph | append $productNode -}}
+{{- else if and $isService (eq .Kind "page") -}}
+  {{- $serviceType := cond (eq $section "software") "Geophysical Software" "Geophysical Service" -}}
+  {{- $serviceNode := dict
+    "@type" "Service"
+    "@id" (printf "%s#service" $pageURL)
+    "name" $pageTitle
+    "description" $description
+    "serviceType" $serviceType
+    "provider" (dict "@id" (printf "%s#organization" $siteURL))
+    "url" $pageURL
+    "mainEntityOfPage" (dict "@id" (printf "%s#webpage" $pageURL))
+    "areaServed" (slice
+      (dict "@type" "Country" "name" "United States")
+      (dict "@type" "Country" "name" "Mexico")
+    )
+  -}}
+  {{- with .Params.banner -}}
+    {{- $serviceNode = merge $serviceNode (dict "image" (. | absURL)) -}}
+  {{- end -}}
+  {{- $graph = $graph | append $serviceNode -}}
+{{- else if and $isBlog (eq .Kind "page") -}}
+  {{- $articleNode := dict
+    "@type" "Article"
+    "@id" (printf "%s#article" $pageURL)
+    "headline" $pageTitle
+    "description" $description
+    "mainEntityOfPage" (dict "@id" (printf "%s#webpage" $pageURL))
+    "author" (dict "@id" (printf "%s#organization" $siteURL))
+    "publisher" (dict "@id" (printf "%s#organization" $siteURL))
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  -}}
+  {{- with .Params.banner -}}
+    {{- $articleNode = merge $articleNode (dict "image" (. | absURL)) -}}
+  {{- end -}}
+  {{- $graph = $graph | append $articleNode -}}
+{{- end -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@graph" $graph
+-}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- $sectionNames := dict
+  "about" "About"
+  "blog" "Blog"
+  "contact" "Contact"
+  "instruments" "Instruments"
+  "methods" "Methods"
+  "software" "Software"
+  "targets" "Targets"
+-}}
