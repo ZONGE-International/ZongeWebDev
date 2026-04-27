@@ -133,7 +133,8 @@
   ) -}}
 {{- end -}}
 
-{{- if and $isProduct (eq .Kind "page") -}}
+{{- $hasProductRichResultData := or .Params.offers .Params.review .Params.aggregateRating -}}
+{{- if and $isProduct (eq .Kind "page") $hasProductRichResultData -}}
   {{- $productNode := dict
     "@type" "Product"
     "@id" (printf "%s#product" $pageURL)
