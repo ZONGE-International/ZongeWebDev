@@ -1422,8 +1422,61 @@ button:hover,
     width: 100%;
 }
 
+.zonge-contact-direct-emails {
+    padding: 18px 18px 20px;
+    border: 1px solid rgba(117, 152, 199, 0.14);
+    border-radius: 16px;
+    background: rgba(6, 16, 30, 0.74);
+}
+
+.zonge-contact-direct-emails dl {
+    margin: 0;
+}
+
+.zonge-contact-direct-emails dt {
+    margin: 16px 0 4px;
+    color: #dceafb;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.zonge-contact-direct-emails dt:first-child {
+    margin-top: 0;
+}
+
+.zonge-contact-direct-emails dd {
+    margin: 0;
+    color: rgba(223, 232, 245, 0.82);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.zonge-contact-direct-emails a {
+    color: #8bc9ff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(139, 201, 255, 0.24);
+}
+
+.zonge-contact-direct-emails a:hover,
+.zonge-contact-direct-emails a:focus {
+    color: #d6eeff;
+    border-bottom-color: rgba(214, 238, 255, 0.58);
+}
+
 .zonge-contact-form .form-group {
     margin-bottom: 20px;
+}
+
+.zonge-contact-honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .zonge-contact-form label {
@@ -1480,6 +1533,12 @@ button:hover,
 .zonge-contact-submit:focus {
     background: linear-gradient(135deg, #387ed3, #74b8ff);
     color: #fff !important;
+}
+
+.zonge-contact-submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.58;
+    box-shadow: none;
 }
 
 .zonge-contact-submit i {
@@ -1737,6 +1796,10 @@ button:hover,
 
     .zonge-contact-section-heading h3 {
         font-size: 22px;
+    }
+
+    .zonge-contact-email-card {
+        padding: 18px;
     }
 
     .zonge-contact-form .form-control {

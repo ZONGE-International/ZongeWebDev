@@ -362,7 +362,7 @@ pluralizelisttitles = false
 [[menu.topbar]]
     weight = 5
     name = "Email"
-    url = "mailto:zonge@zonge.com"
+    url = "/contact/"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [[menu.topbar]]
@@ -388,21 +388,22 @@ pluralizelisttitles = false
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
 
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 50 emails each month for free.
+    # Since this template is static, the contact form uses Formspree as a protected
+    # POST endpoint. Formspree forwards accepted submissions to the configured mailbox
+    # without exposing it in the public HTML.
     #
     # What you need to do for the setup?
     #
-    # - register your account to https://formspree.io/register
-    # - login and create new form
-    # - set your form's endpoint url under 'formspree_action' below
+    # - create a form at https://formspree.io/
+    # - set the recipient mailbox in the Formspree dashboard
+    # - enable spam filtering and reCAPTCHA if desired
+    # - set the endpoint url under 'formspree_action' below
     # - upload the generated site to your server
     # - test a dummy email yourself
     # - you're done. Happy mailing!
     #
-    # Enable the contact form by entering your Formspree.io endpoint url
-    formspree_action = "mailto:contact@zonge.com"
+    # Enable the contact form by entering your Formspree endpoint URL.
+    formspree_action = "https://formspree.io/f/mqenowdq"
     contact_form_ajax = false
 
     # Formspree form supports Google reCAPTCHA Key (type v2).
@@ -482,9 +483,9 @@ pluralizelisttitles = false
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = false
-    text = """<p class="hidden-sm hidden-xs">Contact Tucson at (520) 327-5501, Reno at (775) 355-7707, or email zonge@zonge.com</p>
+    text = """<p class="hidden-sm hidden-xs">Contact Tucson at (520) 327-5501, Reno at (775) 355-7707, or use our protected contact form.</p>
       <p class="hidden-md hidden-lg"><a href="tel:+15203275501" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:zonge@zonge.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+      <a href="/contact/" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
       """
 
