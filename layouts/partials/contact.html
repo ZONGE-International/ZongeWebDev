@@ -39,6 +39,27 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
+                                    <label for="contact-inquiry-type">Inquiry Type</label>
+                                    <select class="form-control" name="inquiry_type" id="contact-inquiry-type" required>
+                                        <option value="">Select an inquiry type</option>
+                                        <optgroup label="Instruments &amp; Equipment">
+                                            <option value="Instruments & Equipment - Sales & Training">Sales &amp; Training</option>
+                                            <option value="Instruments & Equipment - Service & Repair">Service &amp; Repair</option>
+                                            <option value="Instruments & Equipment - GDP users upgrade to 24-bit">GDP users upgrade to 24-bit</option>
+                                        </optgroup>
+                                        <optgroup label="Geophysics Survey Expertise">
+                                            <option value="Geophysics Survey Expertise - Mineral & Geothermal">Mineral &amp; Geothermal</option>
+                                            <option value="Geophysics Survey Expertise - Petroleum">Petroleum</option>
+                                            <option value="Geophysics Survey Expertise - Geotechnical">Geotechnical</option>
+                                            <option value="Geophysics Survey Expertise - Groundwater">Groundwater</option>
+                                            <option value="Geophysics Survey Expertise - Environmental">Environmental</option>
+                                            <option value="Geophysics Survey Expertise - UXO & Border Security">UXO &amp; Border Security</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
                                     <label for="contact-message">{{ i18n "contactMessage" }}</label>
                                     <textarea id="contact-message" class="form-control" name="message" required></textarea>
                                 </div>
