@@ -14,6 +14,7 @@
                 </div>
                 {{- $formAction := strings.TrimSpace (default "" .Site.Params.formspree_action) -}}
                 {{- $formReady := and $formAction (not (strings.HasPrefix $formAction "mailto:")) -}}
+                {{- $turnstileSiteKey := strings.TrimSpace (default "" .Site.Params.turnstile_site_key) -}}
                 <div class="zonge-contact-email-card">
                     <form id="zonge-contact-form" class="zonge-contact-form" action="{{ if $formReady }}{{ $formAction }}{{ else }}#{{ end }}" method="post">
                         <input type="hidden" name="_subject" value="Website inquiry">
@@ -41,6 +42,11 @@
                                     <textarea id="contact-message" class="form-control" name="message" required></textarea>
                                 </div>
                             </div>
+                            {{ if and $formReady $turnstileSiteKey }}
+                            <div class="col-sm-12">
+                                <div class="zonge-contact-turnstile cf-turnstile" data-sitekey="{{ $turnstileSiteKey }}" data-theme="dark"></div>
+                            </div>
+                            {{ end }}
                             <div class="col-sm-12">
                                 <button type="submit" class="btn btn-template-main zonge-contact-submit"{{ if not $formReady }} disabled{{ end }}>
                                     <i class="far fa-envelope"></i><span>Send Message</span>
@@ -108,3 +114,7 @@
 </div>
 
 {{ partial "map.html" . }}
+
+{{- if and (strings.TrimSpace (default "" .Site.Params.formspree_action)) (strings.TrimSpace (default "" .Site.Params.turnstile_site_key)) -}}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{{- end -}}
