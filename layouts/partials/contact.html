@@ -15,6 +15,7 @@
                 {{- $formAction := strings.TrimSpace (default "" .Site.Params.formspree_action) -}}
                 {{- $formReady := and $formAction (not (strings.HasPrefix $formAction "mailto:")) -}}
                 {{- $turnstileSiteKey := strings.TrimSpace (default "" .Site.Params.turnstile_site_key) -}}
+                {{- $turnstileReady := and $formReady $turnstileSiteKey -}}
                 <div class="zonge-contact-email-card">
                     <form id="zonge-contact-form" class="zonge-contact-form" action="{{ if $formReady }}{{ $formAction }}{{ else }}#{{ end }}" method="post">
                         <input type="hidden" name="_subject" value="Website inquiry">
@@ -42,13 +43,13 @@
                                     <textarea id="contact-message" class="form-control" name="message" required></textarea>
                                 </div>
                             </div>
-                            {{ if and $formReady $turnstileSiteKey }}
+                            {{ if $turnstileReady }}
                             <div class="col-sm-12">
-                                <div class="zonge-contact-turnstile cf-turnstile" data-sitekey="{{ $turnstileSiteKey }}" data-theme="dark"></div>
+                                <div id="zonge-turnstile" class="zonge-contact-turnstile" data-sitekey="{{ $turnstileSiteKey }}"></div>
                             </div>
                             {{ end }}
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-template-main zonge-contact-submit"{{ if not $formReady }} disabled{{ end }}>
+                                <button id="zonge-contact-submit" type="submit" class="btn btn-template-main zonge-contact-submit"{{ if or (not $formReady) $turnstileReady }} disabled{{ end }}>
                                     <i class="far fa-envelope"></i><span>Send Message</span>
                                 </button>
                             </div>
@@ -116,5 +117,42 @@
 {{ partial "map.html" . }}
 
 {{- if and (strings.TrimSpace (default "" .Site.Params.formspree_action)) (strings.TrimSpace (default "" .Site.Params.turnstile_site_key)) -}}
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+    window.zongeTurnstileReady = function () {
+        var container = document.getElementById("zonge-turnstile");
+        var form = document.getElementById("zonge-contact-form");
+        var submit = document.getElementById("zonge-contact-submit");
+
+        if (!container || !form || !submit || !window.turnstile) {
+            return;
+        }
+
+        var setToken = function (token) {
+            var input = form.querySelector('input[name="cf-turnstile-response"]');
+
+            if (!input) {
+                input = document.createElement("input");
+                input.type = "hidden";
+                input.name = "cf-turnstile-response";
+                form.appendChild(input);
+            }
+
+            input.value = token || "";
+            submit.disabled = !token;
+        };
+
+        window.turnstile.render(container, {
+            sitekey: container.getAttribute("data-sitekey"),
+            theme: "dark",
+            callback: setToken,
+            "expired-callback": function () {
+                setToken("");
+            },
+            "error-callback": function () {
+                setToken("");
+            }
+        });
+    };
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=zongeTurnstileReady" async defer></script>
 {{- end -}}
