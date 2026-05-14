@@ -17,6 +17,7 @@
                 <div class="zonge-contact-email-card">
                     <form id="zonge-contact-form" class="zonge-contact-form" action="{{ if $formReady }}{{ $formAction }}{{ else }}#{{ end }}" method="post">
                         <input type="hidden" name="_subject" value="Website inquiry">
+                        <input type="hidden" name="_next" value="{{ "thanks/" | absURL }}">
                         <div class="zonge-contact-honeypot" aria-hidden="true">
                             <label for="contact-company">Company website</label>
                             <input type="text" name="_gotcha" id="contact-company" tabindex="-1" autocomplete="off">
