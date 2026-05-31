@@ -1,4 +1,4 @@
-{{ if and .File (eq .Section "about") (eq .File.BaseFileName "about") }}
+{{ if and .File (eq .Section "about") (or (eq .File.BaseFileName "about") (eq .File.BaseFileName "_index")) }}
 {{ $gallery := slice }}
 {{ if fileExists "static/img/historical" }}
   {{ range readDir "static/img/historical" }}
