@@ -1,5 +1,6 @@
 +++
 title = "Zonge Instruments"
+description = "Zonge geophysical receivers, transmitters, generators, and sensors for electrical and electromagnetic field surveys."
 banner = "img/instruments/tx/zt100_banner.webp"
 aliases = ["/instruments/instrumentation/"]
 weight = 1
