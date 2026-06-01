@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "headers.html" . }}
+  {{ partial "custom_headers.html" . }}
+</head>
+
+<body class="{{ if .Section }}section-{{ lower .Section }}{{ end }} kind-{{ .Kind }}">
+  <div id="all">
+
+    {{ partial "top.html" . }}
+
+    {{ partial "nav.html" . }}
+
+    {{ partial "breadcrumbs.html" . }}
+
+    <div id="content" class="zonge-immersive-content">
+      <div class="container zonge-section-shell">
+        <div class="row">
+          <div class="col-md-12 zonge-section-main" id="blog-post">
+            <div id="post-content" class="zonge-section-prose">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+  </div>
+
+  {{ partial "scripts.html" . }}
+
+</body>
+
+</html>
