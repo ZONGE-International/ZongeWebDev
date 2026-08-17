@@ -1,6 +1,8 @@
 +++
 title = "UAV (Drone) Magnetic Surveys"
-banner = "img/methods/airbone/drone-geophysics-banner.webp"
+banner = "img/methods/airbone/drone-night-survey-hero.webp"
+banner_position = "center 68%"
+banner_alt = "UAV magnetic survey crew working at night beneath a star-filled sky"
 weight = 1
 +++
 
@@ -13,6 +15,8 @@ Measurements are made along lines using a total-field magnetometer suspended fro
 All pilots are FAA Part 107 certified, and operations are carried out in compliance with Zonge's UAV SMS program.
 
 Drone magnetics strikes a balance between helicopter-borne surveys and ground surveys. There may be slightly less detail than ground surveys, but draping with an RTK-based drone is generally better, so there can be more detail than helicopter surveys.
+
+{{< figure src="/img/methods/airbone/drone-night-field-operations.webp" title="Night field operations during a UAV geophysical survey." alt="Survey trucks and field crew working at night beneath a star-filled sky" width=1100 >}}
 
 {{< figure src="/img/mag_anomalies.jpg" title="" width=800 >}}
 
