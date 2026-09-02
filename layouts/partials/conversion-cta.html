@@ -19,7 +19,7 @@
       {{- $heading = "Need help choosing instrumentation?" -}}
       {{- $body = "Tell Zonge about your survey setup and the equipment you are considering." -}}
     {{- end -}}
-    {{- $label = "Ask about instrumentation" -}}
+    {{- $label = "Request a quote" -}}
     {{- $icon = "fa-screwdriver-wrench" -}}
   {{- else if eq $section "methods" -}}
     {{- $heading = printf "Discuss %s with Zonge" (.Title | plainify) -}}
@@ -35,7 +35,7 @@
         {{- $intent = "mineral-geothermal" -}}
       {{- end -}}
     {{- end -}}
-    {{- $label = "Discuss your project" -}}
+    {{- $label = "Talk to a geophysicist" -}}
     {{- $icon = "fa-layer-group" -}}
   {{- else if eq $section "software" -}}
     {{- $intent = "software-support" -}}

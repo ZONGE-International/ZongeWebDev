@@ -1,5 +1,7 @@
 +++
 title = "Gravity"
+seo_title = "Gravity Surveys | Geophysical Services | Zonge"
+description = "Gravity surveys map subsurface density contrasts for structural geology, basin characterization, void detection, and exploration targets."
 banner = "img/methods/gravity/gravity-method-banner.webp"
 weight = 1
 +++

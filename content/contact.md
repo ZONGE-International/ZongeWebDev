@@ -1,5 +1,7 @@
 +++
 title = "Contact"
+seo_title = "Contact Zonge | Geophysical Services, Instruments & Support"
+description = "Contact Zonge for geophysical field services, project planning, instrument sales, training, software support, service, and repair."
 id = "contact"
 banner = "img/abouts/contact-dog.webp"
 banner_position = "center 42%"
