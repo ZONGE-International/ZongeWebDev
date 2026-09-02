@@ -1,9 +1,6 @@
 +++
 title = "Geophysical Survey Methods"
 description = "Zonge applies electrical, electromagnetic, magnetic, and gravity methods to image subsurface geology and support exploration decisions."
-robots = "noindex,follow"
+banner = "img/mt-model-e13664090974923_m.png"
 aliases = ["/methodsskeleton/"]
-
-[sitemap]
-disable = true
 +++

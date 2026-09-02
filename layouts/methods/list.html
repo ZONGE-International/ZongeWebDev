@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+
+<head>
+  {{ partial "headers.html" . }}
+  {{ partial "custom_headers.html" . }}
+</head>
+
+<body class="{{ if .Section }}section-{{ lower .Section }}{{ end }} kind-{{ .Kind }}">
+  <div id="all">
+
+    {{ partial "top.html" . }}
+
+    {{ partial "nav.html" . }}
+
+    {{ partial "breadcrumbs.html" . }}
+
+    <div id="content" class="zonge-immersive-content">
+      <div class="container zonge-section-shell">
+        <div class="row">
+          <div class="col-md-12 zonge-section-main" id="blog-post">
+            <div id="post-content" class="zonge-section-prose">
+              {{ with .Content }}{{ . }}{{ end }}
+              {{ with .Description }}
+              <p class="lead">{{ . }}</p>
+              {{ end }}
+
+              {{ $methods := .RegularPagesRecursive.ByTitle }}
+              {{ if gt (len $methods) 0 }}
+              <div class="row">
+                {{ range $index, $method := $methods }}
+                {{ $summary := partial "page-description.html" . }}
+                {{ $summary = $summary | replaceRE `^Method\s+Introduction\s+` "" }}
+                <article class="col-md-4 col-sm-6">
+                  <div class="box-image-text blog">
+                    <div class="top">
+                      <div class="image" style="overflow: hidden">
+                        {{ with .Params.banner }}
+                        <a href="{{ $method.RelPermalink }}"><img src="{{ . | relURL }}" class="img-responsive" alt="{{ default $method.Title $method.Params.banner_alt }}"></a>
+                        {{ else }}
+                        <a href="{{ .RelPermalink }}"><img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="{{ .Title }}"></a>
+                        {{ end }}
+                      </div>
+                      <div class="bg"></div>
+                      <div class="text">
+                        <p class="buttons">
+                          <a href="{{ .RelPermalink }}" class="btn btn-template-transparent-primary"><i class="fas fa-link" aria-hidden="true"></i> View method</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                      <p class="intro">{{ $summary }}</p>
+                      <p class="read-more"><a href="{{ .RelPermalink }}" class="btn btn-template-main">Explore method</a></p>
+                    </div>
+                  </div>
+                </article>
+                {{ if eq (mod (add $index 1) 3) 0 }}<div class="clearfix visible-md-block visible-lg-block"></div>{{ end }}
+                {{ if eq (mod (add $index 1) 2) 0 }}<div class="clearfix visible-sm-block"></div>{{ end }}
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+  </div>
+
+  {{ partial "scripts.html" . }}
+  {{ partial "conversion-tracking.html" . }}
+
+</body>
+
+</html>

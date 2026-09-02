@@ -143,6 +143,7 @@
         var sourcePageInput = document.getElementById("contact-source-page");
         var sourceIntentInput = document.getElementById("contact-source-intent");
         var sourceChannelInput = document.getElementById("contact-source-channel");
+        var submissionIdInput = document.getElementById("contact-submission-id");
 
         if (selectedIntent && inquiryType) {
             inquiryType.value = intentMap[selectedIntent];
@@ -182,6 +183,9 @@
             }
 
             var submissionId = "contact-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10);
+            if (submissionIdInput) {
+                submissionIdInput.value = submissionId;
+            }
             var leadContext = {
                 submission_id: submissionId,
                 inquiry_type: cleanValue(inquiryType ? inquiryType.value : "", 100),
