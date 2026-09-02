@@ -1,17 +1,11 @@
+{{- $is404 := or (eq .Kind "404") (eq .RelPermalink "/404.html") -}}
+{{- if not $is404 -}}
 {{- $siteTitle := .Site.Title | default "Zonge" -}}
 {{- $siteURL := .Site.BaseURL | absURL -}}
-{{- $pageTitle := .Title | plainify -}}
+{{- $pageTitle := default .Title .Params.seo_title | plainify -}}
 {{- $pageURL := .Permalink | absURL -}}
-{{- $description := .Description | plainify -}}
-{{- if and (not $description) .Summary -}}
-  {{- $description = .Summary | plainify | truncate 220 -}}
-{{- end -}}
-{{- if and (not $description) .Plain -}}
-  {{- $description = .Plain | plainify | truncate 220 -}}
-{{- end -}}
-{{- if not $description -}}
-  {{- $description = .Site.Params.defaultDescription | plainify -}}
-{{- end -}}
+{{- $description := partial "page-description.html" . -}}
+{{- $hasReliableLastmod := or (isset .Params "lastmod") .GitInfo -}}
 {{- $section := lower .Section -}}
 {{- $isHome := .IsHome -}}
 {{- $isBlog := eq $section "blog" -}}
@@ -21,12 +15,12 @@
 {{- $pageType := "WebPage" -}}
 {{- if $isHome -}}
   {{- $pageType = "CollectionPage" -}}
-{{- else if $isBlog -}}
-  {{- $pageType = "Article" -}}
-{{- else if eq $section "about" -}}
-  {{- $pageType = "AboutPage" -}}
 {{- else if $isContact -}}
   {{- $pageType = "ContactPage" -}}
+{{- else if eq $section "about" -}}
+  {{- $pageType = "AboutPage" -}}
+{{- else if eq .Kind "section" -}}
+  {{- $pageType = "CollectionPage" -}}
 {{- end -}}
 {{- $sectionNames := dict
   "about" "About"
@@ -92,10 +86,13 @@
 -}}
 
 {{- with .Params.banner -}}
-  {{- $pageNode = merge $pageNode (dict "primaryImageOfPage" (printf "%s" (. | absURL))) -}}
+  {{- $pageNode = merge $pageNode (dict "primaryImageOfPage" (dict
+    "@type" "ImageObject"
+    "url" (. | absURL)
+  )) -}}
 {{- end -}}
-{{- with .Lastmod -}}
-  {{- $pageNode = merge $pageNode (dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00")) -}}
+{{- if $hasReliableLastmod -}}
+  {{- $pageNode = merge $pageNode (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
 {{- end -}}
 
 {{- $graph := slice $organizationNode $websiteNode $pageNode -}}
@@ -148,8 +145,17 @@
   {{- with .Params.banner -}}
     {{- $productNode = merge $productNode (dict "image" (. | absURL)) -}}
   {{- end -}}
+  {{- with .Params.offers -}}
+    {{- $productNode = merge $productNode (dict "offers" .) -}}
+  {{- end -}}
+  {{- with .Params.review -}}
+    {{- $productNode = merge $productNode (dict "review" .) -}}
+  {{- end -}}
+  {{- with .Params.aggregateRating -}}
+    {{- $productNode = merge $productNode (dict "aggregateRating" .) -}}
+  {{- end -}}
   {{- $graph = $graph | append $productNode -}}
-{{- else if and $isService (eq .Kind "page") -}}
+{{- else if and $isService (or (eq .Kind "page") (and (eq .Kind "section") .Content)) -}}
   {{- $serviceType := cond (eq $section "software") "Geophysical Software" "Geophysical Service" -}}
   {{- $serviceNode := dict
     "@type" "Service"
@@ -160,10 +166,6 @@
     "provider" (dict "@id" (printf "%s#organization" $siteURL))
     "url" $pageURL
     "mainEntityOfPage" (dict "@id" (printf "%s#webpage" $pageURL))
-    "areaServed" (slice
-      (dict "@type" "Country" "name" "United States")
-      (dict "@type" "Country" "name" "Mexico")
-    )
   -}}
   {{- with .Params.banner -}}
     {{- $serviceNode = merge $serviceNode (dict "image" (. | absURL)) -}}
@@ -179,8 +181,10 @@
     "author" (dict "@id" (printf "%s#organization" $siteURL))
     "publisher" (dict "@id" (printf "%s#organization" $siteURL))
     "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
-    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
   -}}
+  {{- if $hasReliableLastmod -}}
+    {{- $articleNode = merge $articleNode (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
+  {{- end -}}
   {{- with .Params.banner -}}
     {{- $articleNode = merge $articleNode (dict "image" (. | absURL)) -}}
   {{- end -}}
@@ -192,12 +196,4 @@
   "@graph" $graph
 -}}
 <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
-{{- $sectionNames := dict
-  "about" "About"
-  "blog" "Blog"
-  "contact" "Contact"
-  "instruments" "Instruments"
-  "methods" "Methods"
-  "software" "Software"
-  "targets" "Targets"
--}}
+{{- end -}}

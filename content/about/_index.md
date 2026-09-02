@@ -2,7 +2,7 @@
 title = "About Zonge"
 banner = "img/abouts/company-history-ken-zonge-gdp3.jpg"
 url = "/about/"
-aliases = ["/about/about/"]
+aliases = ["/about/about/", "/about/news/", "/about/teams/"]
 weight = 1
 +++
 

@@ -16,7 +16,7 @@ The production site is deployed through GitHub Pages from the workflow in [.gith
 - [`layouts/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/layouts) contains template overrides, partials, and shortcodes.
 - [`data/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/data) contains structured YAML data used by carousels, testimonials, target tables, and other reusable content.
 - [`static/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/static) contains images, downloadable documents, CSS, and other public assets.
-- [`themes/hugo-universal-theme/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/themes/hugo-universal-theme) is the theme dependency tracked as a git submodule.
+- [`themes/hugo-universal-theme/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/themes/hugo-universal-theme) is the ignored local theme checkout. CI fetches the pinned revision declared in the deployment workflow.
 - [`hugo.toml`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/hugo.toml) contains site configuration, menus, params, and base URL settings.
 - [`public/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/public) is the generated output directory.
 
@@ -24,14 +24,15 @@ The production site is deployed through GitHub Pages from the workflow in [.gith
 
 Install:
 
-- Hugo Extended `0.160.0` or newer
+- Hugo Extended `0.165.0` (the version pinned in CI)
 - Dart Sass
 - Git
 
-If you clone the repository fresh, initialize the theme submodule:
+If you clone the repository fresh, create the local theme checkout at the same pinned revision used by CI:
 
 ```bash
-git submodule update --init --recursive
+git clone https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
+git -C themes/hugo-universal-theme checkout d3000904ec2dfe7cae2a2d09320444cfccd3f5fc
 ```
 
 ## Local development
@@ -85,7 +86,7 @@ Deployment is handled by GitHub Actions on pushes to `main`.
 The workflow:
 
 1. Installs Hugo Extended and Dart Sass
-2. Checks out the repository and theme submodule
+2. Checks out the repository
 3. Ensures the theme is pinned to the expected commit
 4. Builds the site with Hugo
 5. Uploads `public/` to GitHub Pages

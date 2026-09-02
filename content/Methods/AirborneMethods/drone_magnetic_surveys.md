@@ -1,5 +1,11 @@
 +++
 title = "UAV (Drone) Magnetic Surveys"
+description = "UAV magnetic surveys provide efficient, high-resolution mapping of magnetic contrasts, structures, alteration, and buried infrastructure."
+url = "/methods/airborne-methods/drone-magnetic-surveys/"
+aliases = [
+  "/methods/airbonemethods/airbone_magnetics/",
+  "/methods/airbornemethods/airborne_magnetics/"
+]
 banner = "img/methods/airbone/drone-night-survey-hero.webp"
 banner_position = "center 68%"
 banner_alt = "UAV magnetic survey crew working at night beneath a star-filled sky"
@@ -26,6 +32,8 @@ Drone magnetics strikes a balance between helicopter-borne surveys and ground su
 - Detecting magnetite-destructive alteration in porphyry, epithermal, and geothermal settings
 - Mapping structure where magnetic units are offset across faults or contacts
 - Mapping steel casing in abandoned wells and other magnetic anthropogenic features.
+
+Related applications: [mining exploration](/targets/mining/) and [geothermal exploration](/targets/geothermal/).
 
 ## Survey Design
 

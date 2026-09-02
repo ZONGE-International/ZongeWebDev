@@ -1,0 +1,35 @@
+{{- $description := default "" .Description | markdownify | plainify | strings.TrimSpace -}}
+{{- if not $description -}}
+  {{- $description = default "" .Summary | plainify | strings.TrimSpace -}}
+{{- end -}}
+{{- if not $description -}}
+  {{- $description = default "" .Plain | plainify | strings.TrimSpace -}}
+{{- end -}}
+{{- if not $description -}}
+  {{- $contextTitle := .Title | markdownify | plainify | strings.TrimSpace -}}
+  {{- $contextTitleLower := lower $contextTitle -}}
+  {{- if and (eq .Kind "section") (eq (lower .Section) "blog") -}}
+    {{- $description = "Technical articles, field updates, and geophysical instrumentation news from Zonge International." -}}
+  {{- else if eq .Kind "taxonomy" -}}
+    {{- if eq $contextTitleLower "authors" -}}
+      {{- $description = "Browse technical articles and company updates by Zonge authors." -}}
+    {{- else if eq $contextTitleLower "categories" -}}
+      {{- $description = "Browse Zonge technical articles by category." -}}
+    {{- else if eq $contextTitleLower "tags" -}}
+      {{- $description = "Browse Zonge technical articles by topic." -}}
+    {{- else -}}
+      {{- $description = printf "Browse Zonge technical articles organized by %s." $contextTitle -}}
+    {{- end -}}
+  {{- else if eq .Kind "term" -}}
+    {{- if and (eq (lower .Data.Plural) "authors") (eq $contextTitleLower "zonge") -}}
+      {{- $description = "Browse technical articles and company updates published by Zonge." -}}
+    {{- else -}}
+      {{- $description = printf "Browse Zonge technical articles related to %s." $contextTitle -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $description -}}
+  {{- $description = default "" .Site.Params.defaultDescription | markdownify | plainify | strings.TrimSpace -}}
+{{- end -}}
+{{- $description = $description | htmlUnescape | replaceRE `\s+` " " -}}
+{{- return ($description | truncate 180) -}}

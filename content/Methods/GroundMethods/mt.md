@@ -23,6 +23,8 @@ MT is especially valuable in low-noise environments and in areas where conductiv
 - Structural mapping beneath conductive overburden or alluvial cover
 - Regional framework studies that benefit from depth continuity across broad scales
 
+Related applications: [mining exploration](/targets/mining/), [geothermal exploration](/targets/geothermal/), and [groundwater exploration](/targets/groundwater/).
+
 ## Survey Design
 
 | **Parameter**       | **Description**                                                                                                                      |
@@ -38,8 +40,8 @@ MT is especially valuable in low-noise environments and in areas where conductiv
 
 ## Instrumentation
 
-- **Receivers:** ZEN Receiver and GDP-3224 Multi-Function Geophysical Receiver for AMT programs
-- **Magnetic Antennas:** ANT/4 and related field-proven magnetic sensors
+- **Receivers:** [ZEN Receiver](/instruments/rx/zen/) and [GDP-3224 Multi-Function Geophysical Receiver](/instruments/rx/gdp3224/) for AMT programs
+- **Magnetic Antennas:** [ANT-4](/instruments/sensors/ant4/) and related field-proven magnetic sensors
 - **Electric Field Sensors:** Grounded dipoles sized to survey objectives and target depth
 
 ## Deliverables

@@ -31,6 +31,8 @@ IP is most effective when chargeability can be compared directly with resistivit
 - Mapping of clays, alteration, and gravel horizons in mineral and groundwater investigations
 - Delineation of dissolved solids, porosity changes, and other hydrogeologic variations
 
+Related applications: [mining exploration](/targets/mining/) and [groundwater exploration](/targets/groundwater/).
+
 {{< figure src="/img/ip-relative-response-diagram.webp" title="" width=800 panel="light" >}}
 
 ## Survey Design
@@ -45,9 +47,9 @@ IP is most effective when chargeability can be compared directly with resistivit
 
 ## Instrumentation
 
-- **Receivers:** ZEN High-Res Receiver and GDP-3224 Multi-Function Geophysical Receiver
-- **Transmitters:** ZT100, GGT-30 and GGT-10
-- **Generators:** ZMG-30 and ZMG-9
+- **Receivers:** [ZEN High-Res Receiver](/instruments/rx/zen/) and [GDP-3224 Multi-Function Geophysical Receiver](/instruments/rx/gdp3224/)
+- **Transmitters:** [ZT-100B](/instruments/tx/zt100/), [GGT-30B](/instruments/tx/ggt30/), and [GGT-10B](/instruments/tx/ggt10/)
+- **Generators:** [ZMG-30DLE](/instruments/generators/zmg30/) and [ZMG-9A](/instruments/generators/zmg9/)
 
 ## Deliverables
 

@@ -31,9 +31,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.160.0
+      HUGO_VERSION: 0.165.0
       THEME_REPO: https://github.com/devcows/hugo-universal-theme.git
-      THEME_COMMIT: 2e695e87e5d1ff23a28919f4ea7ce1a75276ac66
+      THEME_COMMIT: d3000904ec2dfe7cae2a2d09320444cfccd3f5fc
     steps:
       - name: Install Hugo CLI
         run: |
@@ -41,11 +41,10 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: Checkout with submodules
+      - name: Checkout repository
         uses: actions/checkout@v5
         with:
-          submodules: recursive # Ensures submodules are pulled
-          fetch-depth: 0 # Necessary for submodules
+          fetch-depth: 0 # Required for Git-backed last-modified dates
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

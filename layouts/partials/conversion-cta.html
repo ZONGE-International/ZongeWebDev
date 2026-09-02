@@ -1,0 +1,72 @@
+{{- $section := lower .Section -}}
+{{- $eligibleSection := in (slice "instruments" "methods" "targets" "software") $section -}}
+{{- $eligibleKind := or (eq .Kind "page") (and (eq .Kind "section") (in (slice "instruments" "software" "targets") $section)) -}}
+{{- $ctaEnabled := ne .Params.conversion_cta false -}}
+
+{{- if and $eligibleSection $eligibleKind $ctaEnabled -}}
+  {{- $context := $section -}}
+  {{- $intent := "survey-planning" -}}
+  {{- $heading := "Discuss your project with Zonge" -}}
+  {{- $body := "Share your objectives, site conditions, and timing so the team can understand your inquiry." -}}
+  {{- $label := "Talk to a geophysicist" -}}
+  {{- $icon := "fa-comments" -}}
+
+  {{- if eq $section "instruments" -}}
+    {{- $intent = "instrument-sales" -}}
+    {{- $heading = "Need help with this instrument?" -}}
+    {{- $body = "Tell Zonge what equipment you are considering and how you plan to use it." -}}
+    {{- if eq .Kind "section" -}}
+      {{- $heading = "Need help choosing instrumentation?" -}}
+      {{- $body = "Tell Zonge about your survey setup and the equipment you are considering." -}}
+    {{- end -}}
+    {{- $label = "Ask about instrumentation" -}}
+    {{- $icon = "fa-screwdriver-wrench" -}}
+  {{- else if eq $section "methods" -}}
+    {{- $heading = printf "Discuss %s with Zonge" (.Title | plainify) -}}
+    {{- $body = "Share your survey objectives, site conditions, and timing with Zonge’s geophysics team." -}}
+    {{- $label = "Talk to a geophysicist" -}}
+    {{- $icon = "fa-map-location-dot" -}}
+  {{- else if eq $section "targets" -}}
+    {{- with .File -}}
+      {{- $targetName := lower .ContentBaseName -}}
+      {{- if eq $targetName "groundwater" -}}
+        {{- $intent = "groundwater" -}}
+      {{- else if in (slice "geothermal" "mining") $targetName -}}
+        {{- $intent = "mineral-geothermal" -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $label = "Discuss your project" -}}
+    {{- $icon = "fa-layer-group" -}}
+  {{- else if eq $section "software" -}}
+    {{- $intent = "software-support" -}}
+    {{- $heading = "Need help with Zonge software?" -}}
+    {{- $body = "Tell Zonge which program and processing workflow you are working with." -}}
+    {{- $label = "Request software support" -}}
+    {{- $icon = "fa-laptop-code" -}}
+  {{- end -}}
+
+  {{- $contactPath := "/contact/" | relURL -}}
+  {{- $contactURL := printf "%s?intent=%s&source=%s" $contactPath ($intent | urlquery) (.RelPermalink | urlquery) -}}
+  {{- $ctaID := printf "%s-primary" $context -}}
+  <aside class="zonge-conversion-cta" aria-labelledby="zonge-conversion-cta-heading">
+    <div class="zonge-conversion-cta__icon" aria-hidden="true">
+      <i class="fas {{ $icon }}"></i>
+    </div>
+    <div class="zonge-conversion-cta__content">
+      <p class="zonge-conversion-cta__eyebrow">Next step</p>
+      <h2 id="zonge-conversion-cta-heading">{{ $heading }}</h2>
+      <p>{{ $body }}</p>
+    </div>
+    <a
+      class="btn btn-template-main zonge-conversion-cta__button"
+      href="{{ $contactURL | safeURL }}"
+      data-zonge-cta="primary"
+      data-cta-id="{{ $ctaID }}"
+      data-cta-context="{{ $context }}"
+      data-cta-source="{{ .RelPermalink }}"
+    >
+      <span>{{ $label }}</span>
+      <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </aside>
+{{- end -}}

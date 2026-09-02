@@ -24,6 +24,8 @@ Gravity surveys are a common tool for identifying density contrasts in the subsu
 - Direct detection support in favorable massive sulfide settings
 - Monitoring concepts for CCUS and other reservoir-scale applications
 
+Related applications: [mining exploration](/targets/mining/), [geothermal exploration](/targets/geothermal/), and [groundwater exploration](/targets/groundwater/).
+
 ## Survey Design
 
 | **Parameter**       | **Description**                                                                                                                                  |

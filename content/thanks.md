@@ -3,6 +3,10 @@ title = "Thank You"
 url = "/thanks/"
 banner = "img/abouts/contact-dog.webp"
 banner_position = "center 42%"
+robots = "noindex,follow"
+
+[sitemap]
+disable = true
 +++
 
 <div class="zonge-thanks-page">

@@ -17,9 +17,12 @@
                 {{- $turnstileSiteKey := strings.TrimSpace (default "" .Site.Params.turnstile_site_key) -}}
                 {{- $turnstileReady := and $formReady $turnstileSiteKey -}}
                 <div class="zonge-contact-email-card">
-                    <form id="zonge-contact-form" class="zonge-contact-form" action="{{ if $formReady }}{{ $formAction }}{{ else }}#{{ end }}" method="post">
+                    <form id="zonge-contact-form" class="zonge-contact-form" action="{{ if $formReady }}{{ $formAction }}{{ else }}#{{ end }}" method="post" data-form-ready="{{ if $formReady }}true{{ else }}false{{ end }}">
                         <input type="hidden" name="_subject" value="Website inquiry">
                         <input type="hidden" name="_next" value="{{ "thanks/" | absURL }}">
+                        <input type="hidden" name="source_page" id="contact-source-page" value="Not available">
+                        <input type="hidden" name="source_intent" id="contact-source-intent" value="Not specified">
+                        <input type="hidden" name="source_channel" id="contact-source-channel" value="Direct or external visit">
                         <div class="zonge-contact-honeypot" aria-hidden="true">
                             <label for="contact-company">Company website</label>
                             <input type="text" name="_gotcha" id="contact-company" tabindex="-1" autocomplete="off">
@@ -43,18 +46,41 @@
                                     <select class="form-control" name="inquiry_type" id="contact-inquiry-type" required>
                                         <option value="">Select an inquiry type</option>
                                         <optgroup label="Instruments &amp; Equipment">
-                                            <option value="Instruments & Equipment - Sales & Training">Sales &amp; Training</option>
-                                            <option value="Instruments & Equipment - Service & Repair">Service &amp; Repair</option>
-                                            <option value="Instruments & Equipment - GDP users upgrade to 24-bit">GDP users upgrade to 24-bit</option>
+                                            <option value="Instruments &amp; Equipment - Sales &amp; Training">Sales &amp; Training</option>
+                                            <option value="Instruments &amp; Equipment - Service &amp; Repair">Service &amp; Repair</option>
+                                            <option value="Instruments &amp; Equipment - GDP users upgrade to 24-bit">GDP users upgrade to 24-bit</option>
                                         </optgroup>
                                         <optgroup label="Geophysics Survey Expertise">
-                                            <option value="Geophysics Survey Expertise - Mineral & Geothermal">Mineral &amp; Geothermal</option>
+                                            <option value="Geophysics Survey Expertise - Project Planning">Project Planning</option>
+                                            <option value="Geophysics Survey Expertise - Mineral &amp; Geothermal">Mineral &amp; Geothermal</option>
                                             <option value="Geophysics Survey Expertise - Petroleum">Petroleum</option>
                                             <option value="Geophysics Survey Expertise - Geotechnical">Geotechnical</option>
                                             <option value="Geophysics Survey Expertise - Groundwater">Groundwater</option>
                                             <option value="Geophysics Survey Expertise - Environmental">Environmental</option>
-                                            <option value="Geophysics Survey Expertise - UXO & Border Security">UXO &amp; Border Security</option>
+                                            <option value="Geophysics Survey Expertise - UXO &amp; Border Security">UXO &amp; Border Security</option>
                                         </optgroup>
+                                        <optgroup label="Software &amp; Data">
+                                            <option value="Software &amp; Data - Software Support">Software Support</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="contact-country">Country <span class="zonge-form-optional">(optional)</span></label>
+                                    <input type="text" class="form-control" name="country" id="contact-country" autocomplete="country-name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="contact-timeline">Project Timeline <span class="zonge-form-optional">(optional)</span></label>
+                                    <select class="form-control" name="project_timeline" id="contact-timeline">
+                                        <option value="">Select a timeline</option>
+                                        <option value="As soon as possible">As soon as possible</option>
+                                        <option value="Within 1-3 months">Within 1–3 months</option>
+                                        <option value="Within 3-6 months">Within 3–6 months</option>
+                                        <option value="6+ months">6+ months</option>
+                                        <option value="Planning or unsure">Planning or unsure</option>
                                     </select>
                                 </div>
                             </div>

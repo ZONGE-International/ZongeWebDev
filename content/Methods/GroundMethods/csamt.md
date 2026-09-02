@@ -22,6 +22,8 @@ CSAMT is widely used to image resistivity structure where geologic targets are c
 - Water-table trends, aquitards, and groundwater framework mapping
 - Mineral, geothermal.
 
+Related applications: [mining exploration](/targets/mining/), [geothermal exploration](/targets/geothermal/), and [groundwater exploration](/targets/groundwater/).
+
 ## Survey Design
 
 | **Parameter**     | **Description**                                                                                                              |
@@ -33,10 +35,10 @@ CSAMT is widely used to image resistivity structure where geologic targets are c
 
 ## Instrumentation
 
-- **Receiver:** GDP-3224 Multi-Function Geophysical Receiver (24-bit, multi-channel)
-- **Magnetic Antenna:** ANT/6
-- **Transmitters:** GGT-30 and GGT-10
-- **Generators:** ZMG-30 or ZMG-9
+- **Receiver:** [GDP-3224 Multi-Function Geophysical Receiver](/instruments/rx/gdp3224/) (24-bit, multi-channel)
+- **Magnetic Antenna:** [ANT-6](/instruments/sensors/ant6/)
+- **Transmitters:** [GGT-30B](/instruments/tx/ggt30/) and [GGT-10B](/instruments/tx/ggt10/)
+- **Generators:** [ZMG-30DLE](/instruments/generators/zmg30/) or [ZMG-9A](/instruments/generators/zmg9/)
 
 ## Deliverables
 

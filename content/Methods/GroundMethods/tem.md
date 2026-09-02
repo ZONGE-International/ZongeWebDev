@@ -26,6 +26,8 @@ TEM is widely used where conductive bodies are the primary target and where surv
 - Salt-water intrusion mapping
 - Groundwater and hydrogeologic structure mapping
 
+Related applications: [mining exploration](/targets/mining/) and [groundwater exploration](/targets/groundwater/).
+
 ## Survey Design
 
 | **Parameter**       | **Description**                                                                                                                                   |
@@ -37,9 +39,9 @@ TEM is widely used where conductive bodies are the primary target and where surv
 
 ## Instrumentation
 
-- **Receiver**: GDP-3224 Multi-Function Geophysical Receiver
-- **Magnetic Antenna**: TEM/4, NanoTEM
-- **Transmitters**: ZT-100 (with off-shelf generator), GGT-10, GGT-30, ZT-30, and NT-20
+- **Receiver**: [GDP-3224 Multi-Function Geophysical Receiver](/instruments/rx/gdp3224/)
+- **Magnetic Antenna**: [TEM-4](/instruments/sensors/tem4/), NanoTEM
+- **Transmitters**: [ZT-100B](/instruments/tx/zt100/) (with off-shelf generator), [GGT-10B](/instruments/tx/ggt10/), [GGT-30B](/instruments/tx/ggt30/), [ZT-30B](/instruments/tx/zt30b/), and [NT-20](/instruments/nt20/)
 
 ## Deliverables
 

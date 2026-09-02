@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Locale }}">
 
 <head>
   {{ partial "headers.html" . }}
@@ -22,6 +22,7 @@
             <div id="post-content" class="zonge-section-prose">
               {{ .Content }}
             </div>
+            {{ partial "conversion-cta.html" . }}
           </div>
         </div>
       </div>
@@ -32,6 +33,7 @@
   </div>
 
   {{ partial "scripts.html" . }}
+  {{ partial "conversion-tracking.html" . }}
 
 </body>
 

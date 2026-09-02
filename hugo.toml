@@ -1,11 +1,13 @@
 baseurl = "https://www.zonge.com/" 
 #baseurl = "http://localhost:1313/ZongeWebDev/" 
+enableRobotsTXT = true
+enableGitInfo = true
 relativeURLs = true
 canonifyURLs = true
 title = "Zonge"
 theme = "hugo-universal-theme"
 #themesDir = "./."
-languageCode = "en-us"
+locale = "en-US"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
 # Enable comments by entering your Disqus shortname
@@ -28,6 +30,11 @@ paginate = 10
 
 # not pluralize title pages by default
 pluralizelisttitles = false
+
+# Use the last commit that changed each source file, with front matter dates as
+# fallbacks when Git history is unavailable. CI checks out full history for this.
+[frontmatter]
+    lastmod = [":git", "lastmod", "date", "publishDate"]
 
 [menu]
 
@@ -100,7 +107,7 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "Drone Magnetics"
-    url        = "/Methods/AirboneMethods/airbone_magnetics/"
+    url        = "/methods/airborne-methods/drone-magnetic-surveys/"
     weight     = 1
     parent     = "section.airborne"
 
@@ -307,7 +314,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Software"
     identifier = "menu.software"
-    url        = "/Software/software/"
+    url        = "/software/"
     weight     = 5
     [menu.main.params]
         suppress_active = true
@@ -374,9 +381,8 @@ pluralizelisttitles = false
 [params]
     viewMorePostLink = "/blog/"
     author = "Zonge"
-    defaultKeywords = ["devcows", "hugo", "go"]
     mainSections = ["blog"]
-    defaultDescription = "Zonge International"
+    defaultDescription = "Zonge International provides geophysical survey services, instruments, software, and technical support for subsurface exploration."
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
     enableGoogleMaps = false

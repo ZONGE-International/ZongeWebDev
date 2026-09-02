@@ -1,5 +1,6 @@
 +++
-title = "Targets"
+title = "Mining Geophysical Survey Services"
+description = "Geophysical survey services for mapping mineralized bodies, structures, alteration zones, and other subsurface exploration targets."
 banner = "img/surveyor-overlook.webp"
 weight = 1
 +++
@@ -17,3 +18,7 @@ Appling our geophysical methods to mining exploration is where our expertise run
 ##
 
 \*One note CSAMT and MT are similar in their utility applied to various deposit types it’s only a matter of common depth to the target as to why one would be ranked higher than the other.
+
+## Related Survey Methods
+
+Explore [UAV magnetic surveys](/methods/airborne-methods/drone-magnetic-surveys/), [gravity](/methods/groundmethods/gravity/), [CSAMT](/methods/groundmethods/csamt/), [MT/AMT](/methods/groundmethods/mt/), [induced polarization](/methods/groundmethods/ip/), and [TEM](/methods/groundmethods/tem/).
