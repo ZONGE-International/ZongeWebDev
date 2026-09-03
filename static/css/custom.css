@@ -332,6 +332,153 @@
     box-shadow: 0 3px 10px rgba(255, 90, 0, 0.35);
 }
 
+.carousel-event-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 14px;
+    padding: 7px 12px;
+    border: 1px solid rgba(130, 198, 255, 0.32);
+    border-radius: 999px;
+    background: rgba(20, 72, 125, 0.42);
+    color: #a9dcff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.home-carousel .carousel-text-col .carousel-event-meta {
+    width: auto;
+    max-width: 38ch;
+    line-height: 1.55;
+}
+
+.carousel-event-meta strong,
+.carousel-event-meta span {
+    display: block;
+}
+
+.carousel-event-meta strong {
+    margin-bottom: 4px;
+    color: #f7fbff;
+}
+
+.carousel-event-meta span {
+    color: rgba(224, 237, 252, 0.84);
+}
+
+.carousel-event-booth {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 8px 12px;
+    border: 1px solid rgba(124, 195, 255, 0.28);
+    border-radius: 999px;
+    background: rgba(75, 154, 224, 0.15);
+    color: #c1e4ff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.carousel-event-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.carousel-event-cta i {
+    transition: transform 180ms ease;
+}
+
+.carousel-event-slide>a:hover .carousel-event-cta i,
+.carousel-event-slide>a:focus .carousel-event-cta i {
+    transform: translateX(5px);
+}
+
+.carousel-event-calendar {
+    width: min(100%, 390px);
+    overflow: hidden;
+    border: 1px solid rgba(139, 195, 255, 0.3);
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at 18% 10%, rgba(111, 190, 255, 0.2), transparent 36%),
+        linear-gradient(155deg, rgba(15, 42, 73, 0.96), rgba(7, 20, 38, 0.98));
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.36),
+        inset 0 1px 0 rgba(220, 238, 255, 0.12);
+    text-align: center;
+    transform: rotate(1.5deg);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.carousel-event-slide>a:hover .carousel-event-calendar,
+.carousel-event-slide>a:focus .carousel-event-calendar {
+    box-shadow:
+        0 34px 78px rgba(0, 0, 0, 0.42),
+        inset 0 1px 0 rgba(220, 238, 255, 0.16);
+    transform: rotate(0deg) translateY(-4px);
+}
+
+.carousel-event-calendar__label {
+    display: block;
+    padding: 14px 18px;
+    background: linear-gradient(90deg, #287bc9, #65b9fb);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.carousel-event-calendar__date {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 13px;
+    padding: 32px 18px 27px;
+}
+
+.carousel-event-calendar__month,
+.carousel-event-calendar__year {
+    color: #a9d8ff;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.carousel-event-calendar__days {
+    color: #fff;
+    font-size: 66px;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    line-height: 0.9;
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.carousel-event-calendar__place {
+    display: block;
+    padding: 15px 18px 17px;
+    border-top: 1px solid rgba(139, 195, 255, 0.16);
+    color: rgba(224, 238, 255, 0.8);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.carousel-event-calendar__place i {
+    margin-right: 6px;
+    color: #75c2ff;
+}
+
 .fas.fa-align-justify {
     color: white;
 }
@@ -425,6 +572,65 @@
         margin-left: 8px;
         padding: 3px 8px;
         font-size: 0.42em;
+    }
+
+    .carousel-event-slide .carousel-text-col h1 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .carousel-event-kicker {
+        margin-bottom: 10px;
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    .home-carousel .carousel-text-col .carousel-event-meta {
+        max-width: 31ch;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .carousel-event-booth {
+        margin-top: 11px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .carousel-event-cta {
+        margin-top: 14px;
+        font-size: 12px;
+    }
+
+    .carousel-event-calendar {
+        width: min(76vw, 270px);
+        margin-top: 18px;
+        border-radius: 22px;
+        transform: none;
+    }
+
+    .carousel-event-calendar__label {
+        padding: 8px 14px;
+        font-size: 10px;
+    }
+
+    .carousel-event-calendar__date {
+        gap: 9px;
+        padding: 17px 12px 14px;
+    }
+
+    .carousel-event-calendar__month,
+    .carousel-event-calendar__year {
+        font-size: 12px;
+    }
+
+    .carousel-event-calendar__days {
+        font-size: 42px;
+    }
+
+    .carousel-event-calendar__place {
+        padding: 9px 12px 11px;
+        font-size: 11px;
     }
 
     .carousel-single-content {
