@@ -344,6 +344,12 @@ pluralizelisttitles = false
     parent     = "menu.about"
 
 [[menu.main]]
+    name       = "Upcoming Events"
+    url        = "/events/"
+    weight     = 2
+    parent     = "menu.about"
+
+[[menu.main]]
     name       = "Safety"
     url        = "/about/safety/"
     weight     = 3

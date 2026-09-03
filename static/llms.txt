@@ -5,6 +5,7 @@
 ## Primary pages
 
 - [About Zonge](https://www.zonge.com/about/): Company background, history, and locations.
+- [Upcoming events](https://www.zonge.com/events/): Conferences and trade shows where visitors can meet the Zonge team.
 - [Contact Zonge](https://www.zonge.com/contact/): Office phone numbers and the website inquiry form.
 - [Geophysical instruments](https://www.zonge.com/instruments/): Receivers, transmitters, generators, and sensors.
 - [Geophysical software](https://www.zonge.com/software/): Processing, quality-control, modeling, and interpretation programs.
