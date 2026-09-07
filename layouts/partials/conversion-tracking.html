@@ -1,0 +1,9 @@
+{{- $section := lower .Section -}}
+{{- $needsConversionTracking := or
+  (in (slice "instruments" "methods" "targets" "software") $section)
+  (eq (printf "%v" .Params.id) "contact")
+  (eq .RelPermalink "/thanks/")
+-}}
+{{- if $needsConversionTracking }}
+<script src="{{ "js/conversion-tracking.js" | relURL }}" data-zonge-conversion-tracking data-thanks-url="{{ "/thanks/" | absURL }}" defer></script>
+{{- end }}

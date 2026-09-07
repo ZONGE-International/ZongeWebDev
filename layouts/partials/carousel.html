@@ -1,0 +1,97 @@
+{{ if default true .Site.Params.CarouselHomepage.enable }}
+{{ if isset hugo.Data "carousel" }}
+{{ if gt (len hugo.Data.carousel) 0 }}
+<section class="home-hero no-mb">
+    <div class="home-carousel" style="height: 100%; width: 100%;">
+        <div class="dark-mask"></div>
+        <div class="homepage owl-carousel" data-autoplay="{{ default true .Site.Params.CarouselHomepage.auto_play }}"
+            data-autoplay-delay="{{ default 5500 .Site.Params.CarouselHomepage.auto_play_delay }}"
+            data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"
+            data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
+            {{ $today := now.UTC.Format "2006-01-02" }}
+            {{ $upcomingEvents := slice }}
+            {{ if isset hugo.Data "events" }}
+            {{ $upcomingEvents = sort (where hugo.Data.events "end_date" "ge" $today) "start_date" }}
+            {{ end }}
+            {{ if gt (len $upcomingEvents) 0 }}
+            {{ $nextEvent := index $upcomingEvents 0 }}
+            <div class="item custom-flex-row carousel-event-slide">
+                <a href="{{ "/events/" | relURL }}" title="View upcoming Zonge events">
+                    <div class="row carousel-slide-row">
+                        <div class="col-sm-5 right carousel-text-col">
+                            <span class="carousel-event-kicker"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Next event</span>
+                            <h1>{{ $nextEvent.short_name }}</h1>
+                            <p class="carousel-event-meta">
+                                <strong>{{ $nextEvent.date_display }}</strong>
+                                <span>{{ $nextEvent.venue }} &nbsp;&bull;&nbsp; {{ $nextEvent.location }}</span>
+                            </p>
+                            {{ with $nextEvent.booth }}
+                            <span class="carousel-event-booth"><i class="fa-solid fa-store" aria-hidden="true"></i> Booth: {{ . }}</span>
+                            {{ end }}
+                            <span class="carousel-event-cta">View event details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-sm-7 carousel-media-col carousel-event-visual" aria-hidden="true">
+                            <div class="carousel-event-calendar">
+                                <span class="carousel-event-calendar__label">Meet Zonge</span>
+                                <div class="carousel-event-calendar__date">
+                                    <span class="carousel-event-calendar__month">{{ $nextEvent.month }}</span>
+                                    <strong class="carousel-event-calendar__days">{{ $nextEvent.days }}</strong>
+                                    <span class="carousel-event-calendar__year">{{ $nextEvent.year }}</span>
+                                </div>
+                                <span class="carousel-event-calendar__place"><i class="fa-solid fa-location-dot"></i> {{ $nextEvent.location }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+            {{ range sort hugo.Data.carousel "weight" }}
+            {{ if default false .homepage }}
+            <div class="item custom-flex-row">
+                {{ if .href }}
+                <a href="{{ .href }}"{{ if hasPrefix .href "http" }} target="_blank" rel="noopener"{{ end }}
+                    title="{{ .title | safeHTML }}">
+                    {{ end }}
+                    <div class="row carousel-slide-row">
+                        {{ if or .title .description }}
+                        {{ if not .image }}
+                        <div class="col-sm-12 carousel-single-col">
+                            <div class="text-center p-4 carousel-single-content">
+                                <h1>{{ .title | safeHTML }}</h1>
+                                {{ .description | safeHTML }}
+                                <div class="mt-3">
+                                    <img class="img-responsive carousel-img carousel-home-logo" src="img/zonge-logo-tag-white-200x100.png"
+                                        alt="Default Logo">
+                                </div>
+                            </div>
+                        </div>
+                        {{ else }}
+                        <div class="col-sm-5 right carousel-text-col">
+                            <h1>{{ .title | safeHTML }}</h1>
+                            {{ .description | safeHTML }}
+                        </div>
+                        <div class="col-sm-7 carousel-media-col">
+                            <img class="img-responsive carousel-img" src="{{ .image }}"
+                                alt="{{ if .image_alt }}{{ .image_alt }}{{ else }}{{ .title | plainify }}{{ end }}">
+                        </div>
+                        {{ end }}
+                        {{ else }}
+                        <div class="col-sm-12 carousel-only-image-col">
+                            <img class="img-responsive carousel-img" src="{{ .image }}"
+                                alt="{{ if .image_alt }}{{ .image_alt }}{{ else }}{{ .title | plainify }}{{ end }}">
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ if .href }}
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+        <!-- /.project owl-slider -->
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,10 @@
++++
+title = "IP is CSEM"
+date = "2023-12-04T13:47:08+02:00"
+tags = ["methods"]
+categories = ["csem"]
+authors = ["Zonge"]
+banner = "img/banners/CSEM1.jpg"
++++
+
+Induced Polarization is a special case of the Controlled Source Electromagnetic (CSEM) method where the resistivity is a function of frequency.  By modeling the entire physics of the EM response, covering the entire frequency range, can both inprove the interpretability of the IP response and extend the depth of investigation of investigation.

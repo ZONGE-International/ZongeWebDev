@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+<head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
+<body class="section-methods kind-section">
+{{ partial "nav.html" . }}
+<section class="precision-catalog-intro precision-wrap"><p class="precision-eyebrow">Geophysical services</p><h1>The right method.<br>A clearer picture.</h1><p>{{ .Description }}</p></section>
+<main id="content" class="precision-wrap precision-methods">
+  {{ with .Content }}<div class="zonge-section-prose">{{ . }}</div>{{ end }}
+  <div class="precision-method-grid">{{ range .RegularPagesRecursive.ByTitle }}{{ $method := . }}
+    <article class="precision-method-card"><a href="{{ .RelPermalink }}" class="precision-method-image">{{ with .Params.banner }}<img src="{{ . | relURL }}" alt="{{ $method.Title }} field equipment and survey environment" loading="lazy">{{ end }}</a><div><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><p>{{ partial "page-description.html" . | replaceRE `^Method\s+Introduction\s+` "" | truncate 190 }}</p><a class="precision-text-link" href="{{ .RelPermalink }}">Explore method <span>↗</span></a></div></article>
+  {{ end }}</div>
+  <aside class="precision-method-cta"><h2>Every site asks a different question.</h2><p>Talk to our team about the methods that fit your geology, access, and project objectives.</p><a class="precision-button" href="{{ "/contact/" | relURL }}?intent=survey-planning">Discuss your survey <span>↗</span></a></aside>
+</main>
+{{ partial "footer.html" . }}{{ partial "scripts.html" . }}{{ partial "conversion-tracking.html" . }}
+</body></html>

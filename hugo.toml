@@ -1,0 +1,563 @@
+baseurl = "https://www.zonge.com/" 
+#baseurl = "http://localhost:1313/ZongeWebDev/" 
+enableRobotsTXT = true
+enableGitInfo = true
+relativeURLs = true
+canonifyURLs = true
+title = "Zonge"
+theme = "hugo-universal-theme"
+#themesDir = "./."
+locale = "en-US"
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "en"
+# Enable comments by entering your Disqus shortname
+# disqusShortname = "devcows"
+
+[services]
+    # Enable Google Analytics by entering your tracking code
+    [services.googleAnalytics]
+        id = "G-B7SVCQZ8GK"
+
+#Allow download using html
+[markup.goldmark.renderer]
+unsafe = true
+
+# number of words of summarized post content (default 70)
+summaryLength = 70
+
+# Define the number of posts per page
+paginate = 10
+
+# not pluralize title pages by default
+pluralizelisttitles = false
+
+# Use the last commit that changed each source file, with front matter dates as
+# fallbacks when Git history is unavailable. CI checks out full history for this.
+[frontmatter]
+    lastmod = [":git", "lastmod", "date", "publishDate"]
+
+[menu]
+
+
+# Main menu
+#[[menu.main]]
+#    name       = "Home"
+#    identifier = "menu.home"
+#    url        = "/"
+#    weight     = 1
+
+##############################
+# Methods ####################
+##############################
+
+
+[[menu.main]]
+    name       = "Methods"
+    identifier = "menu.methods"
+    url        = "/img/mt-model-e13664090974923_m.png"
+    weight     = 2
+    [menu.main.params]
+        compact = true
+
+[[menu.main]]
+    name       = "Ground Methods"
+    identifier = "section.ground"
+    url        = ""
+    weight     = 1
+    parent     = "menu.methods"
+    post       = 1
+
+[[menu.main]]
+    name       = "Airborne Methods"
+    identifier = "section.airborne"
+    url        = ""
+    weight     = 2
+    parent     = "menu.methods"
+    post       = 2
+
+[[menu.main]]
+    name       = "Induced Polarization"
+    url        = "/Methods/GroundMethods/ip/"
+    weight     = 1
+    parent     = "section.ground"
+
+[[menu.main]]
+    name       = "Controlled-Source AMT"
+    url        = "/Methods/GroundMethods/csamt/"
+    weight     = 2
+    parent     = "section.ground"
+
+[[menu.main]]
+    name       = "Magnetotellurics"
+    url        = "/Methods/GroundMethods/mt/"
+    weight     = 3
+    parent     = "section.ground"
+
+[[menu.main]]
+    name       = "TEM"
+    url        = "/Methods/GroundMethods/tem/"
+    weight     = 4
+    parent     = "section.ground"
+
+[[menu.main]]
+    name       = "Gravity"
+    url        = "/Methods/GroundMethods/gravity/"
+    weight     = 4
+    parent     = "section.ground"
+
+[[menu.main]]
+    name       = "Drone Magnetics"
+    url        = "/methods/airborne-methods/drone-magnetic-surveys/"
+    weight     = 1
+    parent     = "section.airborne"
+
+
+##############################
+# Targets ####################
+##############################
+
+[[menu.main]]
+    name       = "Targets"
+    identifier = "menu.targets"
+    url        = "/img/Alaska-reinterp-3D.png"
+    weight     = 3
+    [menu.main.params]
+        compact = true
+
+[[menu.main]]
+    name       = "Targets"
+    identifier = "section.targets"
+    url        = ""
+    weight     = 1
+    parent     = "menu.targets"
+    post       = 1
+
+[[menu.main]]
+    name       = "Mining"
+    identifier = "section.mining"
+    url        = "/Targets/mining/"
+    parent     = "section.targets"
+    weight     = 1
+
+[[menu.main]]
+    name       = "Geothermal"
+    identifier = "section.geothermal"
+    url        = "/Targets/geothermal/"
+    parent     = "section.targets"
+    weight     = 2
+
+[[menu.main]]
+    name       = "Groundwater"
+    identifier = "section.groundwater"
+    url        = "/Targets/groundwater/"
+    parent     = "section.targets"
+    weight     = 3
+
+
+##############################
+# Instruments ################
+##############################
+
+
+[[menu.main]]
+    name       = "Instruments"
+    identifier = "menu.instruments"
+    url        = ""
+    weight     = 4
+    [menu.main.params]
+        compact = true
+
+
+[[menu.main]]
+    name       = "Receivers"
+    identifier = "section.receivers"
+    url        = ""
+    weight     = 1
+    parent     = "menu.instruments"	
+	post       = 1
+
+[[menu.main]]
+    name       = "Transmitters"
+    identifier = "section.transmitters"
+    url        = ""
+    weight     = 2
+    parent     = "menu.instruments"
+	post       = 2
+
+[[menu.main]]
+    name       = "Sensors"
+    identifier = "section.sensors"
+    url        = ""
+    weight     = 3
+    parent     = "menu.instruments"
+	post       = 2
+
+[[menu.main]]
+    name       = "Generators"
+    identifier = "section.generators"
+    url        = ""
+    weight     = 4
+    parent     = "menu.instruments"
+    post       = 1
+
+[[menu.main]]
+    name       = "ZMG-9"
+    url        = "/instruments/Generators/zmg9/"
+    weight     = 1
+    parent     = "section.generators"	
+
+[[menu.main]]
+    name       = "ZMG-30DLE"
+    url        = "/instruments/Generators/zmg30/"
+    weight     = 2
+    parent     = "section.generators"
+    [menu.main.params]
+        badge = "not currently available"
+        badge_style = "unavailable"
+
+[[menu.main]]
+    name       = "ZT-100B"
+    identifier = "product.new.zt100"
+	url        = "/instruments/TX/zt100/"
+    weight     = 1
+    parent     = "section.transmitters"
+
+
+[[menu.main]]
+    name       = "GGT-10B"
+	url        = "/instruments/TX/ggt10/"
+    weight     = 2
+    parent     = "section.transmitters"
+
+[[menu.main]]
+    name       = "GGT-30B"
+	url        = "/instruments/TX/ggt30/"
+    weight     = 3
+    parent     = "section.transmitters"
+	
+[[menu.main]]
+    name       = "ZT-30B"
+	url        = "/instruments/TX/ZT30B/"
+    weight     = 4
+    parent     = "section.transmitters"
+		
+[[menu.main]]
+    name       = "XMT-R"
+    identifier = "product.new.xmtr"
+    url        = "/instruments/tx/xmtr/"
+    weight     = 5
+    parent     = "section.transmitters"
+
+[[menu.main]]
+    name       = "GDP3224"
+    identifier = "section.gdp"
+    url        = "/instruments/RX/GDP3224/"
+    weight     = 1
+    parent     = "section.receivers"	
+	post       = 1
+	
+[[menu.main]]
+    name       = "ZEN"
+    identifier = "section.zen"
+    url        = "/instruments/RX/ZEN/"
+    weight     = 2
+    parent     = "section.receivers"	
+	post       = 2
+
+
+[[menu.main]]
+    name       = "ANT-4"
+    identifier = "section.ant4"
+    url        = "/instruments/sensors/ant4/"
+    weight     = 1
+    parent     = "section.sensors"	
+	post       = 1
+	
+[[menu.main]]
+    name       = "ANT-6"
+    identifier = "section.ant6"
+    url        = "/instruments/sensors/ant6/"
+    weight     = 2
+    parent     = "section.sensors"	
+	post       = 2	
+
+[[menu.main]]
+    name       = "ANT-7"
+    identifier = "section.ant7"
+    url        = "/instruments/sensors/ant7/"
+    weight     = 3
+    parent     = "section.sensors"	
+	post       = 3	
+
+[[menu.main]]
+    name       = "ANT-9 Borehole"
+    identifier = "section.ant9"
+    url        = "/instruments/sensors/ant9/"
+    weight     = 4
+    parent     = "section.sensors"
+	post       = 4
+
+[[menu.main]]
+    name       = "TEM-4"
+    identifier = "section.tem4"
+    url        = "/instruments/sensors/tem4/"
+    weight     = 5
+    parent     = "section.sensors"	
+	post       = 5	
+
+
+##############################
+# Software ################
+##############################
+
+
+[[menu.main]]
+    name       = "Software"
+    identifier = "menu.software"
+    url        = "/software/"
+    weight     = 5
+    [menu.main.params]
+        suppress_active = true
+
+
+##############################
+# About ######################
+##############################
+	
+[[menu.main]]
+    name       = "About Us"
+    identifier = "menu.about"
+    url        = "/about/"
+    weight     = 6
+
+[[menu.main]]
+    name       = "LinkedIn"
+    identifier = "linkedin"
+    url        = "https://www.linkedin.com/company/zonge-international/"
+    weight     = 7
+    pre        = "<i class='fab fa-linkedin' aria-hidden='true'></i>"
+
+[[menu.main]]
+    name       = "About Us"
+    url        = "/about/"
+    weight     = 1
+    parent     = "menu.about"
+
+[[menu.main]]
+    name       = "Upcoming Events"
+    url        = "/events/"
+    weight     = 2
+    parent     = "menu.about"
+
+[[menu.main]]
+    name       = "Safety"
+    url        = "/about/safety/"
+    weight     = 3
+    parent     = "menu.about"
+
+[[menu.main]]
+    name       = "Contact Us"
+    url        = "/contact/"
+    weight     = 4
+    parent     = "menu.about"
+
+
+
+
+# Top bar social links menu
+
+[[menu.topbar]]
+    weight = 1
+    name = "Phone"
+    url = "tel:+15203275501"
+    pre = "<i class='fas fa-2x fa-phone'></i>"
+
+[[menu.topbar]]
+    weight = 5
+    name = "Email"
+    url = "/contact/"
+    pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[[menu.topbar]]
+    weight = 10
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/zonge-international/"
+    pre = "<i class='fab fa-2x fa-linkedin'></i>"
+
+[params]
+    viewMorePostLink = "/blog/"
+    author = "Zonge"
+    mainSections = ["blog"]
+    defaultDescription = "Zonge International provides geophysical survey services, instruments, software, and technical support for subsurface exploration."
+
+    # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
+    enableGoogleMaps = false
+    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+
+    latitude = "32.27012"
+    longitude = "-110.91468"
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "blue"
+
+    # Since this template is static, the contact form uses Formspree as a protected
+    # POST endpoint. Formspree forwards accepted submissions to the configured mailbox
+    # without exposing it in the public HTML.
+    #
+    # What you need to do for the setup?
+    #
+    # - create a form at https://formspree.io/
+    # - set the recipient mailbox in the Formspree dashboard
+    # - enable spam filtering and reCAPTCHA if desired
+    # - set the endpoint url under 'formspree_action' below
+    # - upload the generated site to your server
+    # - test a dummy email yourself
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree endpoint URL.
+    formspree_action = "https://formspree.io/f/mqenowdq"
+    contact_form_ajax = false
+
+    # Turnstile protects the Formspree contact form without exposing the private key.
+    # The public site key renders the widget here; the secret key belongs in Formspree.
+    turnstile_site_key = "0x4AAAAAADPZR3LNAtZ9lGiL"
+
+    about_us = "<p>Zonge is a world leader in the application of electromagnetic methods to subsurface imaging challenges</p>"
+    copyright = "© 2026 Zonge International. All rights reserved."
+
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
+
+    dropdown_mouse_over = false
+
+    disabled_logo = false
+    logo_text = "Zonge International"
+
+    #logo = "img/zonge_logo_tag_289_200x100.png"
+	logo = "img/logo.png"
+	
+    #logo_small = "img/logo-small.png"
+    logo_small = "img/logo.png"
+
+    contact_url = "/contact/"
+    legacy_site_url = "https://legacy.zonge.com"
+    legacy_site_label = "Visit Legacy Website"
+    address = """<p class="text-uppercase"><strong>Zonge International, Inc</strong>
+        <br>
+		<br><strong>Tucson Office</strong>
+        <br>Phone: <a href="tel:+15203275501">(520) 327-5501</a>
+        <br>		
+		<br><strong>Reno Office</strong>
+        <br>Phone: <a href="tel:+17753557707">(775) 355-7707</a>
+        <br>
+		<br><strong>Mexico Office</strong>
+        <br>Phone: <a href="tel:+15202702974">+1-520-270-2974</a>
+        <br>
+   
+			
+      </p>
+      """
+    contact_page_address = """<p class="text-uppercase"><strong>Zonge International, Inc</strong>
+        <br>
+		<br><strong>Tucson Office</strong>
+		<br>3475 N Dodge Blvd
+        <br>Tucson, AZ 85716
+        <br>Phone: <a href="tel:+15203275501">(520) 327-5501</a>
+        <br>
+		<br><strong>Reno Office</strong>
+		<br>9595 Prototype Ct
+        <br>Reno, NV 89521
+        <br>Phone: <a href="tel:+17753557707">(775) 355-7707</a>
+        <br>
+		<br><strong>Mexico Office</strong>
+		<br>Hermosillo, Sonora, Mexico
+        <br>Phone: <a href="tel:+15202702974">+1-520-270-2974</a>
+        <br>
+      </p>
+      """
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:contentbasename/"
+
+# Enable or disable top bar with social icons
+[params.topbar]
+    enable = false
+    text = """<p class="hidden-sm hidden-xs">Contact Tucson at (520) 327-5501, Reno at (775) 355-7707, or use our protected contact form.</p>
+      <p class="hidden-md hidden-lg"><a href="tel:+15203275501" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+      <a href="/contact/" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+      </p>
+      """
+
+# Enable and disable widgets for the right sidebar
+#[params.widgets]
+#    categories = true
+#    tags = true
+#    search = true
+
+[params.carouselCustomers]
+    items = 5
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselTestimonials]
+    items = 4
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselHomepage]
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more information take a look at the README.
+    enable = true
+    auto_play = true
+    auto_play_delay = 5500
+    slide_speed = 2000
+    pagination_speed = 1000
+    
+
+[params.features]
+    enable = true
+    cols = 3 # Default: 3, Available values 2,3,4,6
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more information take a look at the README.
+
+[params.testimonials]
+    enable = false
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more information take a look at the README.
+    title = "Conversations"
+    subtitle = "News and conversations "
+
+[params.see_more]
+    enable = false
+    icon = "far fa-file-alt"
+    title = "Do you want to see more?"
+    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url = "#"
+    link_text = "Check other homepages"
+
+[params.clients]
+    enable = false
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more information take a look at the README.
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = false
+    title = "Conversations"
+    subtitle = "What we are working on, where to find us next, and new ideas"
+    hide_summary = false
+
+[params.footer.recent_posts]
+    enable = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"

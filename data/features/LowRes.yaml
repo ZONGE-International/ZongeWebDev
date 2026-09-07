@@ -1,0 +1,10 @@
+weight: 1
+name: "Reconnaissance<br>(Low-Resolution)"
+icon: "fas fa-globe"
+url: ""
+description:
+  - Microgravity
+  - Airborne Magnetics
+  - MT (km spacing)
+  - Airborne TEM / Ground TEM
+  - Gradient IP

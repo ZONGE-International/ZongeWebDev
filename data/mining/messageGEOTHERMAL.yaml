@@ -1,0 +1,44 @@
+Hydrothermal Systems:
+  Magnetic: |
+    Hydrothermal Alteration > Magnetic lows to magnetite destruction
+    Structures/Faults > Breaks in magnetic signature
+    Intrusives > Magnetic high if magnetite-rich
+    Cap rocks/clay > Broad, subtle magnetic lows
+  Gravity: |
+    Hydrothermal Alteration > Gravity lows
+    Structures/Faults > Linear gradients/breaks
+    Intrusives > Gravity highs or a contrast to host rock
+    Cap rocks/clay > Broad gravity low
+  CSAMT/AMT: |
+    Reservoirs > Low resistivity with hot, saline fluids
+    Structures > Resistivity contrast but low in general due to fluid-filled fractures
+    Cap rocks/clay > High resistivity with silicification, low resistivity with clay
+    Sinters > High resistivity with silicification
+  MT: |
+    Deep Reservoirs > Low resistivity with hot, saline fluids
+    Structures > Resistivity contrast between fluid-filled fractures
+    Magmatic bodies/heat source > Low resistivity at depth
+    Cap rocks/clay > High resistivity with silicification, low resistivity with clay
+  IP: |
+    Geothermal reservoirs > Can highlight chargeable zones at margins with alteration
+    Sinters > High resistivity with low chargeability
+    Alteration > Moderate increase in chargeability with clay presence
+    Sulfide Zones > Moderate chargeability
+  EM: |
+    Shallow high-conductivity zones > Strong early-time response
+    Fluid filled faults > High conductivity observed in early-time
+    Saline Reservoirs > Low resistivity, strong late time
+
+Enhanced Geothermal:
+  Magnetic: |
+    Perhaps only useful in a regional sense
+  Gravity: |
+    Could be useful for mapping basement rock
+  CSAMT/AMT: |
+    Likely not useful too deep
+  MT: |
+    Good for mapping the basement rocks beneath the basin fill
+  IP: |
+    Likely not useful too deep
+  EM: |
+    Likely not useful, MT is a better option

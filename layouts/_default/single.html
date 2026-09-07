@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+<head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
+<body class="section-{{ lower .Section }} kind-{{ .Kind }}">
+{{ partial "nav.html" . }}
+{{ partial "breadcrumbs.html" . }}
+<main id="content" class="zonge-immersive-content">
+  {{ if isset .Params "id" }}
+    {{ partial .Params.id . }}
+  {{ else }}
+  <div class="precision-wrap precision-reading-layout">
+    {{ partial "precision-toc.html" . }}
+    <article class="precision-article" id="blog-post">
+      {{ if and .Date (eq .Section "blog") }}<p class="precision-eyebrow">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
+      <div id="post-content" class="zonge-section-prose">{{ .Content }}</div>
+      {{ partial "about-history-gallery.html" . }}
+      {{ partial "conversion-cta.html" . }}
+      {{ if .Site.Config.Services.Disqus.Shortname }}<div id="comments">{{ template "_internal/disqus.html" . }}</div>{{ end }}
+    </article>
+  </div>
+  {{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+{{ partial "conversion-tracking.html" . }}
+</body></html>

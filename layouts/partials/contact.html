@@ -1,0 +1,192 @@
+<div class="container zonge-contact-page" id="contact">
+    <div class="row zonge-contact-grid">
+        <div class="col-md-7 zonge-contact-main-col">
+            <section class="zonge-contact-panel zonge-contact-intro">
+                <div class="zonge-contact-copy">
+                    {{ .Content }}
+                </div>
+            </section>
+
+            <section class="zonge-contact-panel zonge-contact-email-panel">
+                <div class="zonge-contact-section-heading">
+                    <h3>Email Zonge</h3>
+                    <p>For project inquiries, product support, or instrument questions, send us an email and we will route it to the right team.</p>
+                </div>
+                {{- $formAction := strings.TrimSpace (default "" .Site.Params.formspree_action) -}}
+                {{- $formReady := and $formAction (not (strings.HasPrefix $formAction "mailto:")) (not .Site.Params.design_review) -}}
+                {{- $turnstileSiteKey := strings.TrimSpace (default "" .Site.Params.turnstile_site_key) -}}
+                {{- $turnstileReady := and $formReady $turnstileSiteKey -}}
+                <div class="zonge-contact-email-card">
+                    <form id="zonge-contact-form" class="zonge-contact-form" action="{{ if $formReady }}{{ $formAction }}{{ else }}#{{ end }}" method="post" data-form-ready="{{ if $formReady }}true{{ else }}false{{ end }}">
+                        <input type="hidden" name="_subject" value="Website inquiry">
+                        <input type="hidden" name="_next" value="{{ "thanks/" | absURL }}">
+                        <input type="hidden" name="source_page" id="contact-source-page" value="Not available">
+                        <input type="hidden" name="source_intent" id="contact-source-intent" value="Not specified">
+                        <input type="hidden" name="source_channel" id="contact-source-channel" value="Direct or external visit">
+                        <input type="hidden" name="submission_id" id="contact-submission-id" value="">
+                        <div class="zonge-contact-honeypot" aria-hidden="true">
+                            <label for="contact-company">Company website</label>
+                            <input type="text" name="_gotcha" id="contact-company" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="contact-name">{{ i18n "contactName" }}</label>
+                                    <input type="text" class="form-control" name="name" id="contact-name" autocomplete="name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="contact-email">{{ i18n "contactMail" }}</label>
+                                    <input type="email" class="form-control" name="email" id="contact-email" autocomplete="email" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="contact-inquiry-type">Inquiry Type</label>
+                                    <select class="form-control" name="inquiry_type" id="contact-inquiry-type" required>
+                                        <option value="">Select an inquiry type</option>
+                                        <optgroup label="Instruments &amp; Equipment">
+                                            <option value="Instruments &amp; Equipment - Sales &amp; Training">Sales &amp; Training</option>
+                                            <option value="Instruments &amp; Equipment - Service &amp; Repair">Service &amp; Repair</option>
+                                            <option value="Instruments &amp; Equipment - GDP users upgrade to 24-bit">GDP users upgrade to 24-bit</option>
+                                        </optgroup>
+                                        <optgroup label="Geophysics Survey Expertise">
+                                            <option value="Geophysics Survey Expertise - Project Planning">Project Planning</option>
+                                            <option value="Geophysics Survey Expertise - Mineral &amp; Geothermal">Mineral &amp; Geothermal</option>
+                                            <option value="Geophysics Survey Expertise - Petroleum">Petroleum</option>
+                                            <option value="Geophysics Survey Expertise - Geotechnical">Geotechnical</option>
+                                            <option value="Geophysics Survey Expertise - Groundwater">Groundwater</option>
+                                            <option value="Geophysics Survey Expertise - Environmental">Environmental</option>
+                                            <option value="Geophysics Survey Expertise - UXO &amp; Border Security">UXO &amp; Border Security</option>
+                                        </optgroup>
+                                        <optgroup label="Software &amp; Data">
+                                            <option value="Software &amp; Data - Software Support">Software Support</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="contact-country">Country <span class="zonge-form-optional">(optional)</span></label>
+                                    <input type="text" class="form-control" name="country" id="contact-country" autocomplete="country-name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="contact-timeline">Project Timeline <span class="zonge-form-optional">(optional)</span></label>
+                                    <select class="form-control" name="project_timeline" id="contact-timeline">
+                                        <option value="">Select a timeline</option>
+                                        <option value="As soon as possible">As soon as possible</option>
+                                        <option value="Within 1-3 months">Within 1–3 months</option>
+                                        <option value="Within 3-6 months">Within 3–6 months</option>
+                                        <option value="6+ months">6+ months</option>
+                                        <option value="Planning or unsure">Planning or unsure</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="contact-message">{{ i18n "contactMessage" }}</label>
+                                    <textarea id="contact-message" class="form-control" name="message" required></textarea>
+                                </div>
+                            </div>
+                            {{ if $turnstileReady }}
+                            <div class="col-sm-12">
+                                <div id="zonge-turnstile" class="zonge-contact-turnstile" data-sitekey="{{ $turnstileSiteKey }}"></div>
+                            </div>
+                            {{ end }}
+                            <div class="col-sm-12">
+                                <button id="zonge-contact-submit" type="submit" class="btn btn-template-main zonge-contact-submit"{{ if or (not $formReady) $turnstileReady }} disabled{{ end }}>
+                                    <i class="far fa-envelope"></i><span>Send Message</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    {{ if $formReady }}
+                    <p class="zonge-contact-email-note">Your message is sent through our protected contact form and routed to the right team.</p>
+                    {{ else }}
+                    <p class="zonge-contact-email-note">{{ if .Site.Params.design_review }}Design review: form submission is disabled in this preview.{{ else }}Contact form delivery is not configured yet. Please call one of the offices listed here and we will help right away.{{ end }}</p>
+                    {{ end }}
+                </div>
+            </section>
+        </div>
+
+        <div class="col-md-5 zonge-contact-side-col">
+            {{ if or (isset .Site.Params "contact_page_address") (isset .Site.Params "address") }}
+            <section class="zonge-contact-panel zonge-contact-address-panel">
+                <div class="zonge-contact-section-heading zonge-contact-section-heading-compact">
+                    <h3>{{ i18n "contactAddrTitle" }}</h3>
+                    <p>Reach the office that best matches your project or support request.</p>
+                </div>
+                <div class="zonge-contact-address-copy">
+                    {{ default .Site.Params.address .Site.Params.contact_page_address | safeHTML }}
+                </div>
+            </section>
+            {{ end }}
+
+            {{ range site.Menus.topbar }}
+            {{ if eq .Name "LinkedIn" }}
+            <section class="zonge-contact-panel zonge-contact-social-panel">
+                <div class="zonge-contact-section-heading zonge-contact-section-heading-compact">
+                    <h3>Follow Zonge</h3>
+                    <p>Stay connected for company updates, field highlights, and product news.</p>
+                </div>
+                <a class="zonge-contact-social-link" href="{{ .URL }}" target="_blank" rel="noopener" aria-label="Follow Zonge on LinkedIn">
+                    <span class="zonge-contact-social-icon" aria-hidden="true">
+                        <i class="fab fa-linkedin-in"></i>
+                    </span>
+                    <span class="zonge-contact-social-copy">
+                        <strong>LinkedIn</strong>
+                        <span>Visit our company page</span>
+                    </span>
+                </a>
+            </section>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ partial "map.html" . }}
+
+{{- if and (not .Site.Params.design_review) (strings.TrimSpace (default "" .Site.Params.formspree_action)) (strings.TrimSpace (default "" .Site.Params.turnstile_site_key)) -}}
+<script>
+    window.zongeTurnstileReady = function () {
+        var container = document.getElementById("zonge-turnstile");
+        var form = document.getElementById("zonge-contact-form");
+        var submit = document.getElementById("zonge-contact-submit");
+
+        if (!container || !form || !submit || !window.turnstile) {
+            return;
+        }
+
+        var setToken = function (token) {
+            var input = form.querySelector('input[name="cf-turnstile-response"]');
+
+            if (!input) {
+                input = document.createElement("input");
+                input.type = "hidden";
+                input.name = "cf-turnstile-response";
+                form.appendChild(input);
+            }
+
+            input.value = token || "";
+            submit.disabled = !token;
+        };
+
+        window.turnstile.render(container, {
+            sitekey: container.getAttribute("data-sitekey"),
+            theme: "dark",
+            callback: setToken,
+            "expired-callback": function () {
+                setToken("");
+            },
+            "error-callback": function () {
+                setToken("");
+            }
+        });
+    };
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=zongeTurnstileReady" async defer></script>
+{{- end -}}

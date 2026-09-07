@@ -1,0 +1,9 @@
+weight: 6
+title: "Drone Geophysics"
+description: <ul class="list-style-none">
+  <li>Magnetic Surveys</li>
+  <li>Geologic Structure</li>
+  <li>Abandoned Wells Location</li>
+  </ul>
+image: "img/carousel/drone-geophysics-hero.png"
+href: "/methods/airborne-methods/drone-magnetic-surveys/"

@@ -1,0 +1,4 @@
+baseURL = "https://zonge-design-review-2027.materre.chatgpt.site/"
+publishDir = "dist"
+[params]
+design_review = true

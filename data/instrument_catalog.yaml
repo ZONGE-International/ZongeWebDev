@@ -1,0 +1,82 @@
+- name: ZEN
+  group: Receivers
+  path: /instruments/rx/zen/
+  image: img/receivers/zen-receiver-hero.png
+  description: A high-resolution receiver for controlled- and natural-source electrical and electromagnetic data.
+  specification: /documents/zen.pdf
+- name: GDP-3224
+  group: Receivers
+  path: /instruments/rx/gdp3224/
+  image: img/receivers/gdp-3224-receiver.webp
+  description: A multi-channel, 24-bit receiver platform for geophysical data acquisition.
+  specification: /documents/gdp3224.pdf
+- name: ZT-100B
+  group: Transmitters
+  path: /instruments/tx/zt100/
+  image: img/power/zt-100b-transmitter.png
+  description: A configurable transmitter platform with GPS synchronization, local controls, and Wi-Fi browser operation.
+  specification: /documents/ZT100-B_spec_sheet_2026-04-09.pdf
+- name: XMT-R
+  group: Transmitters
+  path: /instruments/tx/xmtr/
+  image: img/instruments/tx/xmtr-hardware-controls.webp
+  description: Transmitter control with local hardware controls and a remote web interface.
+- name: GGT-10B
+  group: Transmitters
+  path: /instruments/tx/ggt10/
+  image: img/instruments/generators/ggt10b.png
+  description: A generator and transmitter package for geophysical fieldwork.
+  specification: /documents/ggt10b.pdf
+- name: GGT-30B
+  group: Transmitters
+  path: /instruments/tx/ggt30/
+  image: img/power/ggt-30b-transmitter.webp
+  description: A higher-power generator and transmitter package for demanding survey configurations.
+  specification: /documents/ggt30b.pdf
+- name: ZT-30B
+  group: Transmitters
+  path: /instruments/tx/zt30b/
+  image: img/power/zt-30b-transmitter.webp
+  description: A geophysical transmitter for established Zonge survey workflows.
+  specification: /documents/zt30b.pdf
+- name: NT-20
+  group: Transmitters
+  path: /instruments/nt20/
+  description: A transmitter for shallow transient electromagnetic field acquisition.
+  specification: /documents/nt20.pdf
+- name: ZMG-9
+  group: Generators
+  path: /instruments/generators/zmg9/
+  image: img/power/zmg-9-generator.png
+  description: A portable generator package for geophysical transmitter systems.
+- name: ZMG-30DLE
+  group: Generators
+  path: /instruments/generators/zmg30/
+  image: img/power/zmg-30b-generator.webp
+  description: Legacy 30 KVA diesel generator. Not currently available for new deployments.
+  status: Legacy
+- name: ANT-4
+  group: Sensors
+  path: /instruments/sensors/ant4/
+  description: Magnetic antenna specifications and operating information.
+  specification: /documents/ant4.pdf
+- name: ANT-6
+  group: Sensors
+  path: /instruments/sensors/ant6/
+  description: Magnetic antenna specifications and operating information.
+  specification: /documents/ant6.pdf
+- name: ANT-7
+  group: Sensors
+  path: /instruments/sensors/ant7/
+  description: Magnetic antenna specifications and operating information.
+  specification: /documents/ant7.pdf
+- name: ANT-9 Borehole
+  group: Sensors
+  path: /instruments/sensors/ant9/
+  description: Borehole antenna specifications and operating information.
+  specification: /documents/ant9-borehole.pdf
+- name: TEM-4
+  group: Sensors
+  path: /instruments/sensors/tem4/
+  description: Transient electromagnetic sensor specifications and operating information.
+  specification: /documents/tem4.pdf

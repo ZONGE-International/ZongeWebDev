@@ -1,0 +1,102 @@
+# Zonge Website
+
+This repository contains the Hugo source for the Zonge International website.
+
+The site is built with:
+
+- [Hugo Extended](https://gohugo.io/)
+- the [`hugo-universal-theme`](https://github.com/devcows/hugo-universal-theme) theme
+- repository-managed content, data files, layouts, and static assets
+
+The production site is deployed through GitHub Pages from the workflow in [.github/workflows/hugo.yml](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/.github/workflows/hugo.yml).
+
+## Project structure
+
+- [`content/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/content) contains site pages and section content in Markdown.
+- [`layouts/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/layouts) contains template overrides, partials, and shortcodes.
+- [`data/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/data) contains structured YAML data used by carousels, testimonials, target tables, and other reusable content.
+- [`static/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/static) contains images, downloadable documents, CSS, and other public assets.
+- [`themes/hugo-universal-theme/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/themes/hugo-universal-theme) is the ignored local theme checkout. CI fetches the pinned revision declared in the deployment workflow.
+- [`hugo.toml`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/hugo.toml) contains site configuration, menus, params, and base URL settings.
+- [`public/`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/public) is the generated output directory.
+
+## Prerequisites
+
+Install:
+
+- Hugo Extended `0.165.0` (the version pinned in CI)
+- Dart Sass
+- Git
+
+If you clone the repository fresh, create the local theme checkout at the same pinned revision used by CI:
+
+```bash
+git clone https://github.com/devcows/hugo-universal-theme.git themes/hugo-universal-theme
+git -C themes/hugo-universal-theme checkout d3000904ec2dfe7cae2a2d09320444cfccd3f5fc
+```
+
+## Local development
+
+Run the site locally with:
+
+```bash
+hugo server --disableFastRender
+```
+
+By default Hugo serves the site at `http://localhost:1313/`.
+
+Useful commands:
+
+```bash
+hugo
+```
+
+Builds the production output into `public/`.
+
+```bash
+hugo server -D
+```
+
+Serves draft content locally if drafts are added in the future.
+
+## Content editing notes
+
+- Add or update pages in `content/`.
+- Update menus, global settings, and site metadata in `hugo.toml`.
+- Update reusable homepage and target-table content in `data/`.
+- Update custom UI behavior and styling in `layouts/` and `static/css/custom.css`.
+- Keep downloadable PDFs and packaged files in `static/documents/`.
+
+The target comparison popups are implemented as shortcode templates:
+
+- [`layouts/shortcodes/mining.html`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/layouts/shortcodes/mining.html)
+- [`layouts/shortcodes/geothermal.html`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/layouts/shortcodes/geothermal.html)
+- [`layouts/shortcodes/groundwater.html`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/layouts/shortcodes/groundwater.html)
+
+Their supporting explanation text lives in:
+
+- [`data/mining/messageMINING.yaml`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/data/mining/messageMINING.yaml)
+- [`data/mining/messageGEOTHERMAL.yaml`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/data/mining/messageGEOTHERMAL.yaml)
+- [`data/mining/messageGROUNDWATER.yaml`](/Users/admin/Documents/PRO/GEOPHYZ/ZONGE/ENGINEER/DEV/ZONGE_WEBSITE/ZongeWebDev/data/mining/messageGROUNDWATER.yaml)
+
+## Deployment
+
+Deployment is handled by GitHub Actions on pushes to `main`.
+
+The workflow:
+
+1. Installs Hugo Extended and Dart Sass
+2. Checks out the repository
+3. Ensures the theme is pinned to the expected commit
+4. Builds the site with Hugo
+5. Uploads `public/` to GitHub Pages
+
+If you need to trigger a deployment manually, use the `workflow_dispatch` option in the GitHub Actions UI.
+
+## Notes
+
+- Preserve the legacy `/gdp3224/` and `/legacy/Contacts.html` aliases when editing their destination pages. Hugo emits HTML redirects with canonical tags; these are not server-side HTTP 301 responses on GitHub Pages.
+- `static/documents/zmg30.pdf` and `static/documents/ZMG-9.pdf` preserve previously crawled download URLs. Both are copies of `power.pdf`, which includes specifications for ZMG-30DLE and ZMG-9A. Keep these compatibility copies synchronized if that document changes; current page links should use `/documents/power.pdf`.
+- This repository does not currently use a Node.js build pipeline.
+- The GitHub Pages base URL is configured in `hugo.toml` and overridden in CI during the Pages build step.
+- `public/` is generated output and can be rebuilt at any time from source.
