@@ -16,7 +16,7 @@ Height:
 
 # Supporting Documents
 
-[Download Specification sheet for ZMG-9](#)
+[Download the ZMG-9A specification sheet](/documents/power.pdf)
 
 # Related Instruments
 

@@ -23,6 +23,13 @@
 
                     <div class="col-md-9" id="blog-listing-medium">
 
+                        {{ if eq .Kind "taxonomy" }}
+                        <ul class="taxonomy-terms">
+                            {{ range .Data.Terms.Alphabetical }}
+                            <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+                            {{ end }}
+                        </ul>
+                        {{ else }}
                         {{ $paginator := .Paginate (where .Data.Pages "Type" "in" .Site.Params.mainSections) }}
                         {{ range $paginator.Pages }}
                         <section class="post">
@@ -43,13 +50,13 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           {{ if isset .Params "authors" }}
-                                          {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a href="{{ (printf "%s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
+                                          {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a href="{{ (printf "authors/%s/" ($author | urlize)) | relLangURL }}">{{ $author }}</a>{{ end }}
                                           {{ end }}
                                           {{ if isset .Params "categories" }}
                                           {{ if gt (len .Params.categories) 0 }}
                                           in
                                           {{ range $index, $category := .Params.categories }}{{ if $index }}, {{ end }}
-                                              <a href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}">{{ $category }}</a>{{ end }}
+                                              <a href="{{ "categories/" | relLangURL }}{{ with . }}{{ . | urlize | lower }}/{{ end }}">{{ $category }}</a>{{ end }}
                                           {{ end }}
                                           {{ end }}
 
@@ -89,6 +96,7 @@
                             <li class="next disabled"><a href="#">{{ i18n "older" }} &rarr;</a></li>
                             {{ end }}
                         </ul>
+                        {{ end }}
                     </div>
                     <!-- /.col-md-9 -->
 

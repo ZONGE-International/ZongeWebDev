@@ -95,6 +95,8 @@ If you need to trigger a deployment manually, use the `workflow_dispatch` option
 
 ## Notes
 
+- Preserve the legacy `/gdp3224/` and `/legacy/Contacts.html` aliases when editing their destination pages. Hugo emits HTML redirects with canonical tags; these are not server-side HTTP 301 responses on GitHub Pages.
+- `static/documents/zmg30.pdf` and `static/documents/ZMG-9.pdf` preserve previously crawled download URLs. Both are copies of `power.pdf`, which includes specifications for ZMG-30DLE and ZMG-9A. Keep these compatibility copies synchronized if that document changes; current page links should use `/documents/power.pdf`.
 - This repository does not currently use a Node.js build pipeline.
 - The GitHub Pages base URL is configured in `hugo.toml` and overridden in CI during the Pages build step.
 - `public/` is generated output and can be rebuilt at any time from source.

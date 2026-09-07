@@ -2,7 +2,7 @@
 title = "Roundup Vancouver"
 date = "2023-12-07T21:29:20+02:00"
 tags = ["meeting"]
-categories = [""]
+categories = []
 banner = "img/banners/AMERoundup.jpg"
 authors = ["Zonge"]
 +++

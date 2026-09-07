@@ -439,7 +439,7 @@ pluralizelisttitles = false
     #logo_small = "img/logo-small.png"
     logo_small = "img/logo.png"
 
-    contact_url = "/contact"
+    contact_url = "/contact/"
     legacy_site_url = "https://legacy.zonge.com"
     legacy_site_label = "Visit Legacy Website"
     address = """<p class="text-uppercase"><strong>Zonge International, Inc</strong>
