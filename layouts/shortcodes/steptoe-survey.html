@@ -1,0 +1,7 @@
+{{ $original := resources.Get "img/review/steptoe-survey-stations.png" }}
+{{ $preview := $original.Resize "1200x webp q85" }}
+{{ $small := $original.Resize "600x webp q85" }}
+<figure class="precision-source-figure">
+  <a href="{{ $original.Permalink }}" aria-label="Open the full-resolution Steptoe Valley survey station map"><img src="{{ $preview.Permalink }}" srcset="{{ $small.Permalink }} 600w, {{ $preview.Permalink }} 1200w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1000px) calc(100vw - 80px), 900px" alt="Steptoe Valley topographic map with 40 MT stations and CSEM transmitter locations" width="{{ $preview.Width }}" height="{{ $preview.Height }}" loading="lazy" decoding="async"></a>
+  <figcaption><strong>Steptoe Valley · 2022 survey layout</strong><br>Map by Zonge International, from <a href="https://doi.org/10.15121/2282349">Schwering et al. (2023), Geothermal Data Repository</a>. Resized for display under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.<br><a href="{{ $original.Permalink }}">View full-resolution original <span aria-hidden="true">↗</span></a></figcaption>
+</figure>

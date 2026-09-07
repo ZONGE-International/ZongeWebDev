@@ -27,7 +27,9 @@ Read the 2013 Stanford Geothermal Workshop paper, [*The Evolving Role of MT in G
 
 ### Steptoe Valley, Nevada
 
-As part of a Sandia National Laboratories-led geothermal research project, Zonge International conducted a combined 40-station MT and CSEM survey and processed the resulting data in northern Steptoe Valley, Nevada. The public overview presents the broader investigation and its findings: [Geophysical Imaging at Steptoe Valley, Nevada](https://storymaps.arcgis.com/stories/fdba3f1084b7469b87d4f6822c60311c).
+As part of a Sandia National Laboratories-led geothermal research project, Zonge International conducted a combined 40-station MT and CSEM survey in September–October 2022 and processed the resulting data in northern Steptoe Valley, Nevada. The public overview presents the broader investigation and its findings: [Geophysical Imaging at Steptoe Valley, Nevada](https://storymaps.arcgis.com/stories/fdba3f1084b7469b87d4f6822c60311c).
+
+{{< steptoe-survey >}}
 
 ## Related Survey Methods
 

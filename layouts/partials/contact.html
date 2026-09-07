@@ -1,16 +1,10 @@
 <div class="container zonge-contact-page" id="contact">
     <div class="row zonge-contact-grid">
         <div class="col-md-7 zonge-contact-main-col">
-            <section class="zonge-contact-panel zonge-contact-intro">
-                <div class="zonge-contact-copy">
-                    {{ .Content }}
-                </div>
-            </section>
-
             <section class="zonge-contact-panel zonge-contact-email-panel">
                 <div class="zonge-contact-section-heading">
-                    <h3>Email Zonge</h3>
-                    <p>For project inquiries, product support, or instrument questions, send us an email and we will route it to the right team.</p>
+                    <h2>Send an inquiry</h2>
+                    <p>Tell us about your project. We’ll connect you with the right team.</p>
                 </div>
                 {{- $formAction := strings.TrimSpace (default "" .Site.Params.formspree_action) -}}
                 {{- $formReady := and $formAction (not (strings.HasPrefix $formAction "mailto:")) (not .Site.Params.design_review) -}}
@@ -113,6 +107,13 @@
         </div>
 
         <div class="col-md-5 zonge-contact-side-col">
+            <section class="zonge-contact-panel zonge-contact-intro">
+                <div class="zonge-contact-copy">
+                    {{ .Content }}
+                </div>
+            </section>
+
+
             {{ if or (isset .Site.Params "contact_page_address") (isset .Site.Params "address") }}
             <section class="zonge-contact-panel zonge-contact-address-panel">
                 <div class="zonge-contact-section-heading zonge-contact-section-heading-compact">
