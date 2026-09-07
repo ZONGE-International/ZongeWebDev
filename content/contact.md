@@ -1,19 +1,32 @@
 +++
-title = "Contact"
+title = "Contact Zonge"
 aliases = ["/legacy/Contacts.html"]
 seo_title = "Contact Zonge | Geophysical Services, Instruments & Support"
 description = "Contact Zonge for geophysical field services, project planning, instrument sales, training, software support, service, and repair."
 id = "contact"
+hero_summary = "Talk with our team about surveys, instruments, or technical support."
 banner = "img/abouts/contact-dog.webp"
 banner_position = "center 42%"
+
+[[offices]]
+name = "Reno"
+role = "Field services, sales & legacy data"
+phone = "(775) 355-7707"
+phone_uri = "tel:+17753557707"
+quick_label = "Sales & surveys"
+address = ["9595 Prototype Ct", "Reno, NV 89521"]
+
+[[offices]]
+name = "Tucson"
+role = "Product support, service & repair"
+phone = "(520) 327-5501"
+phone_uri = "tel:+15203275501"
+quick_label = "Product support"
+address = ["3475 N Dodge Blvd", "Tucson, AZ 85716"]
+
+[[offices]]
+name = "Mexico"
+phone = "+1-520-270-2974"
+phone_uri = "tel:+15202702974"
+address = ["Hermosillo, Sonora, Mexico"]
 +++
-
-# What can we help you with?
-
-For field services, legacy data, or new instrument purchases, please contact our **Reno office** at [(775) 355-7707](tel:+17753557707).
-
-For product support, please contact our **Tucson office** at [(520) 327-5501](tel:+15203275501).
-
-Have questions concerning how geophysics might advance your project or need assistance in configuring a suite of instruments to meet your local challenges?
-
-Please feel free to contact us and we will do our best to assist you.

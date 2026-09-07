@@ -1,5 +1,6 @@
 +++
 title = "Transient Electromagnetics (TEM)"
+description = "TEM measures the decay of an induced electromagnetic response to investigate conductive mineral targets, groundwater, and subsurface resistivity."
 banner = "img/methods/tem/tem-glacier-banner.jpg"
 weight = 1
 +++

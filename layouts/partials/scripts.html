@@ -17,3 +17,6 @@
 
 <!-- owl carousel -->
 <script src="{{ "js/owl.carousel.min.js" | relURL }}"></script>
+
+{{ $evolutionScriptVersion := substr (crypto.SHA256 (readFile "static/js/evolution.js")) 0 12 }}
+<script src="{{ "js/evolution.js" | relURL }}?v={{ $evolutionScriptVersion }}" defer></script>

@@ -1,0 +1,3 @@
+{{ if and .TableOfContents (gt (len (findRE "<li>" .TableOfContents)) 2) }}
+<aside class="precision-toc"><details open><summary>On this page</summary>{{ .TableOfContents }}</details></aside>
+{{ end }}

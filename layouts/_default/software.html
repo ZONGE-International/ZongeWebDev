@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+<head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
+<body class="section-software kind-section precision-software-page">
+{{ partial "nav.html" . }}
+<main id="content">
+  <section class="precision-software-hero precision-software-hero-focused">
+    <div class="precision-wrap precision-software-hero-grid">
+      <div><p class="precision-eyebrow">Zonge software / Processing &amp; interpretation</p><h1>From measurements<br>to a <em>model.</em></h1><p>Quality control, processing, and inversion tools for electrical and electromagnetic geophysics.</p><div class="precision-actions"><a class="precision-button" href="#software-tools">Browse software <span aria-hidden="true">↓</span></a><a class="precision-text-link" href="{{ "/contact/" | relURL }}?intent=software-support&amp;source={{ .RelPermalink | urlquery }}">Ask about access <span aria-hidden="true">↗</span></a></div></div>
+      <nav class="precision-software-nav precision-software-task-grid" aria-label="Software tasks">
+        {{ range $i,$group := hugo.Data.software_catalog }}
+        <a href="#{{ .id }}">
+          <svg viewBox="0 0 48 32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{{ if eq $i 0 }}<path d="M2 19h7l4-12 6 23 6-20 4 9h7M34 7l4 4 8-9"/>{{ else if eq $i 1 }}<path d="M3 6h42M3 16h42M3 26h42"/><circle cx="15" cy="6" r="3"/><circle cx="32" cy="16" r="3"/><circle cx="21" cy="26" r="3"/>{{ else if eq $i 2 }}<path d="M24 2 3 12l21 10 21-10L24 2ZM3 17l21 10 21-10M3 22l21 10 21-10"/>{{ else }}<path d="M3 7h27m-7-6 7 6-7 6M45 25H18m7-6-7 6 7 6M5 20v10M1 25h8M39 2v10M34 7h10"/>{{ end }}</g></svg>
+          <strong>{{ .title }}</strong><span class="precision-software-task-meta">{{ len .programs }} {{ if eq (len .programs) 1 }}program{{ else }}programs{{ end }} <span aria-hidden="true">↘</span></span>
+        </a>
+        {{ end }}
+      </nav>
+    </div>
+  </section>
+  <section class="precision-wrap precision-software-catalog" id="software-tools">
+    <div class="precision-software-heading"><p class="precision-eyebrow">Choose your tool</p><h2>Software for your workflow.</h2><p class="precision-software-access">Choose a program to ask Zonge about access, compatibility, and support. Your request will include the program name.</p></div>
+    {{ range $i,$group := hugo.Data.software_catalog }}
+    <section class="precision-software-group" id="{{ .id }}">
+      <div class="precision-software-group-heading"><p class="precision-eyebrow">0{{ add $i 1 }} / Workflow</p><h2>{{ .title }}</h2><p>{{ .description }}</p></div>
+      <div class="precision-software-programs">
+        {{ range .programs }}
+        <article class="precision-software-program"><h3>{{ .name }}</h3><div class="precision-software-program-detail"><p>{{ .description | markdownify }}</p><a class="precision-software-request" href="{{ "/contact/" | relURL }}?intent=software-support&amp;program={{ .name | urlquery }}&amp;source={{ $.RelPermalink | urlquery }}">Request {{ .name }} <span aria-hidden="true">↗</span></a></div></article>
+        {{ end }}
+        {{ if eq $i 0 }}<details class="precision-software-example"><summary>From the field: MT response example <span aria-hidden="true">+</span></summary>{{ partial "software-response.html" $ }}</details>{{ end }}
+      </div>
+    </section>
+    {{ end }}
+    {{ partial "conversion-cta.html" . }}
+  </section>
+</main>
+{{ partial "footer.html" . }}{{ partial "scripts.html" . }}{{ partial "conversion-tracking.html" . }}
+</body></html>

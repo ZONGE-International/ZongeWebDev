@@ -1,5 +1,6 @@
 +++
 title = "Magnetotellurics (MT/AMT)"
+description = "MT and AMT use natural electromagnetic fields to image subsurface resistivity for mineral, geothermal, groundwater, and regional geologic investigations."
 banner = "img/methods/mt/magnetotellurics-banner.jpg"
 weight = 1
 +++

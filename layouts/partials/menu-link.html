@@ -1,4 +1,9 @@
-{{ $item := . }}
+{{ $item := .item }}
+{{ $page := .page }}
+{{ $target := site.GetPage (lower $item.URL) }}
+{{ $href := $item.URL | relURL }}
+{{ with $target }}{{ $href = .RelPermalink }}{{ end }}
+{{ $active := and $target (eq $page.RelPermalink $target.RelPermalink) }}
 {{ $badgeText := index $item.Params "badge" }}
 {{ $badgeTone := index $item.Params "badge_style" }}
 
@@ -17,6 +22,6 @@
 {{ $linkClass = "menu-link-badged" }}
 {{ end }}
 
-<a href="{{ $item.URL }}"{{ if $linkClass }} class="{{ $linkClass }}"{{ end }}>
+<a href="{{ $href }}"{{ if or $linkClass $active }} class="{{ $linkClass }}{{ if $active }} is-current{{ end }}"{{ end }}{{ if $active }} aria-current="page"{{ end }}>
   {{ $item.Name }}{{ if $badgeText }} <span class="menu-badge menu-badge-{{ $badgeToneClass }}">{{ $badgeText }}</span>{{ end }}
 </a>

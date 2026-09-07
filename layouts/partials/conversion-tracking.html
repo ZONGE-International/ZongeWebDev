@@ -5,5 +5,5 @@
   (eq .RelPermalink "/thanks/")
 -}}
 {{- if $needsConversionTracking }}
-<script src="{{ "js/conversion-tracking.js" | relURL }}" data-zonge-conversion-tracking data-thanks-url="{{ "/thanks/" | absURL }}" defer></script>
+<script src="{{ "js/conversion-tracking.js" | relURL }}?v={{ readFile "static/js/conversion-tracking.js" | md5 }}" data-zonge-conversion-tracking data-thanks-url="{{ "/thanks/" | absURL }}" defer></script>
 {{- end }}

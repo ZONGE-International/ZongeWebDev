@@ -1,5 +1,6 @@
 +++
 title = "Controlled-Source AMT (CSAMT)"
+description = "CSAMT uses a controlled electromagnetic signal to map subsurface resistivity, revealing geologic structures, alteration zones, and groundwater boundaries."
 banner = "img/methods/csamt-helicopter-banner.webp"
 weight = 1
 +++
