@@ -34,9 +34,7 @@ Related applications: [mining exploration](/targets/mining/), [geothermal explor
 | **Scale**           | Surveys may be acquired as profiles, localized grids, or larger regional arrays.                                                     |
 | **Production**      | Stations are commonly occupied for hours to overnight, with daily production dependent on layout, access, and recording time.        |
 
-##
-
-{{< figure src="/img/mt-station-diagram.webp" title="" width=800 >}}
+{{< figure src="/img/methods/mt/mt-natural-source-diagram-1200.webp" detail="/img/methods/mt/mt-natural-source-diagram-2400.webp" title="Magnetotellurics: natural-source resistivity imaging" alt="MT diagram showing natural electromagnetic sources, electric and magnetic field measurements, and illustrative subsurface targets from near surface to crustal depths." width=1100 panel="light" >}}
 
 ## Instrumentation
 

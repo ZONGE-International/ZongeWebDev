@@ -14,7 +14,7 @@ Decay responses are sampled in discrete time gates that range from microseconds 
 
 TEM survey geometry is designed around target orientation, expected depth, and desired coupling. Standard TEM systems are used for shallow to deep investigations, while NanoTEM systems are optimized for very shallow imaging with very fast transmitter turnoff.
 
-{{< figure src="/img/methods/tem/tem-intro-diagram.webp" title="Secondary EM responses from conductors" width=800 >}}
+{{< figure src="/img/methods/tem/tem-sounding-diagram-1200.webp" detail="/img/methods/tem/tem-sounding-diagram-2400.webp" title="In-loop transient electromagnetic sounding" alt="TEM survey diagram showing a transmitter loop, receiver, induced eddy currents, and the decaying response of a conductive target." width=1100 panel="light" >}}
 
 ## Applications
 

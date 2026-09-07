@@ -10,7 +10,7 @@ weight = 1
 
 Controlled-source audio magnetotellurics (CSAMT) measures the resistivity of the Earth by transmitting a controlled signal from a distant grounded dipole and recording orthogonal electric and magnetic field components across a range of frequencies. The resulting resistivity response is used to map lithologic contrasts, structures, alteration zones, and hydrogeologic boundaries.
 
-{{< figure src="/img/csamt-transmitter-fields.png" title="" width=600 >}}
+{{< figure src="/img/methods/csamt/csamt-survey-diagram-1200.webp" detail="/img/methods/csamt/csamt-survey-diagram-2400.webp" title="CSAMT transmitter geometry and receiver arrays" alt="CSAMT diagram showing a distant grounded transmitter dipole, electromagnetic field zones, and scalar and vector receiver configurations." width=1100 panel="light" >}}
 
 ## Applications
 

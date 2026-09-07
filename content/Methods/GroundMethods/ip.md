@@ -20,7 +20,7 @@ Through time-series processing, Zonge evaluates the nature of the IP response in
 
 We obtain information on the variation of the resistivity (ohm\*m) and chargeability (msec) or phase (mrad) with depth, and surveys are designed with various array configurations, such as Dipole-Dipole, Pole-Dipole, or as a 3D array.
 
-{{< figure src="/img/ip-resistivity-diagram.webp" width=800 panel="light" >}}
+{{< figure src="/img/methods/ip/ip-dipole-dipole-diagram-1200.webp" detail="/img/methods/ip/ip-dipole-dipole-diagram-2400.webp" title="Dipole-dipole induced polarization: array geometry and n-spacings" alt="Dipole-dipole IP diagram showing current and potential electrodes, n-spacing plot levels, and time-domain chargeability measurements." width=1100 panel="light" >}}
 
 ## Applications
 
