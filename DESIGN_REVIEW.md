@@ -41,4 +41,19 @@ The shareable review is hosted separately at https://zonge-international.github.
 
 ## Validation of this refinement
 
-Review and production builds pass. All 76 generated HTML files were checked for preview indexing settings, duplicate IDs, and 3,696 internal link/asset references; all 15 product pages have images, key facts, and current-page navigation. Inline JavaScript syntax checks pass. Review form submission and analytics remain disabled; the production configuration retains the Formspree/Turnstile flow. Desktop Chrome inspection covered the homepage sequence, NT-20 page, grouped instrument menu, and Escape-to-close behavior. Responsive styles are implemented, but a complete phone-device visual check remains outstanding because native browser control repeatedly lost its active window during responsive testing.
+Review and production builds pass. All 76 generated HTML files were checked for preview indexing settings, duplicate IDs, and 3,696 internal link/asset references; all 15 product pages have images, key facts, and current-page navigation. Inline JavaScript syntax checks pass. Review form submission and analytics remain disabled; the production configuration retains the Formspree/Turnstile flow. Desktop Chrome inspection covered the homepage sequence, NT-20 page, grouped instrument menu, and Escape-to-close behavior.
+
+### Phone validation — completed September 7, 2026
+
+An isolated Playwright run completed 317 checks with no failures after fixes. Browser-based device emulation covered:
+
+| Engine | Portrait widths | Additional coverage |
+| --- | --- | --- |
+| Chromium 153 | 320, 375, 390, 412, 430 px | All 50 content pages checked at 320 px for page-level overflow and broken images |
+| WebKit 26.6 | 375, 390, 430 px | 844 × 390 landscape, including navigation through the long instrument menu |
+
+Tested menu opening, grouped navigation, same-page category links, automatic menu dismissal, Escape behavior, product navigation, inquiry-context prefill, form entry, readable touch controls, and preview submission safeguards. All three application-matrix explanations were checked in both engines for touch opening, viewport containment, keyboard opening, Escape, tap dismissal, and focus restoration. The CSAMT diagram was verified after scrolling and image decode. Screenshots were inspected for homepage composition, catalog/product facts, sensor labeling, tables, and dialogs.
+
+The phone pass corrected oversized menu rows, small method-link touch areas, unnecessary software-table horizontal scrolling, inconsistent catalog fact widths, and joined words in a responsive heading. It also added a visible sensor-family caption and a mobile scroll hint on intentionally wide comparison matrices.
+
+This is browser emulation and visual testing; physical-device keyboards, screen-reader behavior, and real cellular performance were not measured.

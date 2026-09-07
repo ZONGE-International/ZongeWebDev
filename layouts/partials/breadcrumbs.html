@@ -10,7 +10,7 @@
     {{ with $product.status }}<p class="precision-status">{{ . }} equipment</p>{{ end }}
     {{ with $product.highlights }}<dl class="precision-product-facts">{{ range . }}<div><dt>{{ .value }}</dt><dd>{{ .label }}</dd></div>{{ end }}</dl>{{ end }}
     <div class="precision-actions"><a class="precision-button" href="{{ "/contact/" | relURL }}?intent=instrument-sales&amp;source={{ .RelPermalink | urlquery }}">{{ if $product.status }}Ask about support{{ else }}Discuss your setup{{ end }} <span>↗</span></a>{{ with $product.specification }}<a class="precision-text-link" href="{{ . | relURL }}">Specifications <span>↓</span></a>{{ end }}</div></div>
-    {{ $image := $product.image | default .Params.banner }}{{ with $image }}<div class="precision-product-photo"><img src="{{ . | relURL }}" alt="{{ if eq $product.group "Sensors" }}Zonge magnetic antenna and sensor family{{ else }}{{ $product.name }} geophysical instrument{{ end }}" fetchpriority="high"></div>{{ end }}
+    {{ $image := $product.image | default .Params.banner }}{{ with $image }}<div class="precision-product-photo{{ if eq $product.group "Sensors" }} has-family-caption{{ end }}"><img src="{{ . | relURL }}" alt="{{ if eq $product.group "Sensors" }}Zonge magnetic antenna and sensor family{{ else }}{{ $product.name }} geophysical instrument{{ end }}" fetchpriority="high">{{ if eq $product.group "Sensors" }}<p class="precision-family-caption">Zonge sensor family</p>{{ end }}</div>{{ end }}
   </div>
 </section>
 {{ else }}
