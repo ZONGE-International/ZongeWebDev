@@ -58,7 +58,8 @@
 <!-- Project stylesheet -->
 <link href="{{ "css/custom.css" | relURL }}?{{ now.Unix }}" rel="stylesheet">
 <link href="{{ "css/precision.css" | relURL }}" rel="stylesheet">
-<link href="{{ "css/refinement.css" | relURL }}" rel="stylesheet">
+{{ $refinementVersion := substr (crypto.SHA256 (readFile "static/css/refinement.css")) 0 12 }}
+<link href="{{ "css/refinement.css" | relURL }}?v={{ $refinementVersion }}" rel="stylesheet">
 
 <!-- Responsivity for older IE -->
 {{ `
