@@ -2,7 +2,7 @@
 {{ $banner := .Params.banner }}
 {{ if eq .Params.id "contact" }}{{ $banner = "" }}{{ end }}
 {{ $product := false }}
-{{ range hugo.Data.instrument_catalog }}{{ if eq .path $.RelPermalink }}{{ $product = . }}{{ end }}{{ end }}
+{{ range hugo.Data.instrument_catalog }}{{ if strings.HasSuffix $.RelPermalink .path }}{{ $product = . }}{{ end }}{{ end }}
 {{ if and $product (eq .Kind "page") }}
 <section class="precision-product-hero">
   <div class="precision-wrap precision-product-hero-grid">

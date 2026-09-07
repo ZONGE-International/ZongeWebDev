@@ -21,8 +21,8 @@ Existing routes, downloadable documents, company history, audio, contact destina
 
 ## Preview configuration
 
-Run `hugo server --environment review` for the review environment. It adds a review ribbon, excludes the preview from search indexing, disables analytics, and disables contact-form submission. `hugo --environment review --destination dist` builds the separate hosted preview.
+Run `hugo server --environment review` for the review environment. It adds a review ribbon, excludes the preview from search indexing, disables analytics, and disables contact-form submission. `bash scripts/build-review.sh` builds the separate GitHub Pages preview into `dist/`.
 
 The normal production configuration keeps the contact form and analytics behavior. The production GitHub Pages workflow is restricted to `main`, including manual runs. This branch has not been merged into `main` or deployed to zonge.com.
 
-The `.openai/hosting.json` and `config/review/` files identify the separate review host. Revisit review-host configuration before a final production merge.
+The shareable review is hosted separately at https://zonge-international.github.io/zonge-design-review-2027/. The generated preview repository is separate from the production repository. The review branch and draft pull request remain the source of truth for approval.
