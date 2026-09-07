@@ -2,6 +2,7 @@
   group: Receivers
   path: /instruments/rx/zen/
   image: img/receivers/zen-receiver-hero.png
+  photo_style: landscape
   description: A high-resolution receiver for controlled- and natural-source electrical and electromagnetic data.
   specification: /documents/zen.pdf
   highlights:
@@ -40,7 +41,7 @@
 - name: XMT-R
   group: Transmitters
   path: /instruments/tx/xmtr/
-  image: img/instruments/tx/xmtr-hardware-controls.webp
+  image: img/instruments/tx/xmtr-hardware-controls_raw.webp
   description: Transmitter control with local hardware controls and a remote web interface.
   highlights:
     - value: "GPS"
@@ -52,7 +53,7 @@
 - name: GGT-10B
   group: Transmitters
   path: /instruments/tx/ggt10/
-  image: img/instruments/generators/ggt10b.png
+  image: img/review/ggt10b-transmitter.jpg
   description: A constant-current transmitter for controlled-source electrical and electromagnetic surveys.
   specification: /documents/ggt10b.pdf
   highlights:
@@ -176,6 +177,7 @@
     - value: "35.5 mm"
       label: "Maximum diameter"
 - name: TEM-4
+  image: img/banners/tem-4.jpg
   group: Sensors
   path: /instruments/sensors/tem4/
   description: A single-channel antenna for TEM and CSAMT, with horizontal or vertical deployment.

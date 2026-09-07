@@ -60,6 +60,8 @@
 <link href="{{ "css/precision.css" | relURL }}" rel="stylesheet">
 {{ $refinementVersion := substr (crypto.SHA256 (readFile "static/css/refinement.css")) 0 12 }}
 <link href="{{ "css/refinement.css" | relURL }}?v={{ $refinementVersion }}" rel="stylesheet">
+{{ $evolutionVersion := substr (crypto.SHA256 (readFile "static/css/evolution.css")) 0 12 }}
+<link href="{{ "css/evolution.css" | relURL }}?v={{ $evolutionVersion }}" rel="stylesheet">
 
 <!-- Responsivity for older IE -->
 {{ `

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "quality-control",
+    "title": "Quality control",
+    "description": "Review and average field data before interpretation.",
+    "programs": [
+      {
+        "name": "CSAVGW",
+        "description": "Averages raw [CSAMT](/methods/groundmethods/csamt/) data and supports quality control before interpretation."
+      },
+      {
+        "name": "TDAVGW",
+        "description": "Averages and quality-checks time-domain [IP](/methods/groundmethods/ip/) field data in multiple export formats."
+      },
+      {
+        "name": "TEMAVGW",
+        "description": "Averages and quality-checks [TEM](/methods/groundmethods/tem/) field data from `.raw`, `.dnt`, `.cac`, and `.zdb` files."
+      },
+      {
+        "name": "CRAVGW",
+        "description": "Averages and quality-checks complex resistivity field data from Zonge [IP/CR](/methods/groundmethods/ip/) systems."
+      },
+      {
+        "name": "HEMAVGW",
+        "description": "Averages and quality-checks EM field data."
+      },
+      {
+        "name": "MTEDIT",
+        "description": "Reviews [MT](/methods/groundmethods/mt/) spectral data and calculates averaged impedance and apparent resistivity with interactive QC editing."
+      }
+    ]
+  },
+  {
+    "id": "processing",
+    "title": "Processing",
+    "description": "Convert MT time series into spectral coefficients for impedance analysis.",
+    "programs": [
+      {
+        "name": "MTFT",
+        "description": "Processes [MT](/methods/groundmethods/mt/) time-series data into spectral coefficients for downstream impedance analysis."
+      }
+    ]
+  },
+  {
+    "id": "modeling",
+    "title": "Modeling & inversion",
+    "description": "Build resistivity models and sections from survey data.",
+    "programs": [
+      {
+        "name": "SCS2D",
+        "description": "Performs 2D inversion of [CSAMT](/methods/groundmethods/csamt/), AMT, and [MT](/methods/groundmethods/mt/) data to create resistivity-depth sections."
+      },
+      {
+        "name": "TS2DIP",
+        "description": "Performs 2D inversion and modeling of [IP](/methods/groundmethods/ip/) and resistivity data for section-based interpretation."
+      },
+      {
+        "name": "SCSINV",
+        "description": "Runs smooth-model 1D [CSAMT](/methods/groundmethods/csamt/) inversion to build stitched resistivity-depth images along a line."
+      },
+      {
+        "name": "STEMINV",
+        "description": "Performs smooth-model 1D inversion of [TEM](/methods/groundmethods/tem/) soundings into layered-earth resistivity models."
+      }
+    ]
+  },
+  {
+    "id": "correction",
+    "title": "Correction & export",
+    "description": "Apply MT static correction and prepare outputs for other workflows.",
+    "programs": [
+      {
+        "name": "ASTATIC",
+        "description": "Applies [MT](/methods/groundmethods/mt/) static correction and converts survey outputs into formats such as SEG and EDI."
+      }
+    ]
+  }
+]

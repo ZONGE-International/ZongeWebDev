@@ -3,15 +3,18 @@
 <head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
 <body class="section-instruments kind-section">
 {{ partial "nav.html" . }}
-<section class="precision-catalog-intro precision-wrap"><p class="precision-eyebrow">Zonge instrumentation</p><h1>Engineered for<br>what's out there.</h1><p>Receivers, transmitters, generators, and sensors. Built for field crews, supported by the people who design them.</p><nav class="precision-category-nav" aria-label="Instrument categories">{{ range slice "Receivers" "Transmitters" "Generators" "Sensors" }}<a href="#{{ . | urlize }}">{{ . }} <span>↓</span></a>{{ end }}</nav></section>
-<main id="content" class="precision-wrap precision-catalog">
+<section class="precision-catalog-intro precision-wrap"><div><p class="precision-eyebrow">Zonge instrumentation</p><h1>Built for the field.</h1></div><p>Find the receiver, transmitter, power system, or sensor for your next survey.</p></section>
+<div class="precision-catalog-tools"><nav class="precision-wrap precision-category-nav" aria-label="Instrument categories"><a href="#all-instruments" data-instrument-filter="all" aria-current="true">All instruments <span>15</span></a>{{ range slice "Receivers" "Transmitters" "Generators" "Sensors" }}<a href="#{{ . | urlize }}" data-instrument-filter="{{ . | urlize }}">{{ . }} <span>{{ len (where hugo.Data.instrument_catalog "group" .) }}</span></a>{{ end }}</nav></div>
+<main id="content" class="precision-wrap precision-catalog" data-instrument-catalog>
+  <div id="all-instruments"></div>
+  <p class="precision-filter-status" aria-live="polite" aria-atomic="true"></p>
   {{ range slice "Receivers" "Transmitters" "Generators" "Sensors" }}
   {{ $group := . }}<section class="precision-catalog-group" id="{{ . | urlize }}"><div class="precision-group-heading"><h2>{{ . }}</h2><p>{{ if eq . "Receivers" }}Capture the signal. Understand the subsurface.{{ else if eq . "Transmitters" }}Controlled-source power for your survey.{{ else if eq . "Generators" }}Power systems and legacy equipment support.{{ else }}Magnetic and electromagnetic sensing.{{ end }}</p></div>
     {{ if eq . "Sensors" }}<div class="precision-sensor-image"><img src="{{ "img/antennas/ant-sensor-banner.webp" | relURL }}" alt="Zonge magnetic antenna and sensor family" loading="lazy"></div>{{ end }}
-    <div class="precision-product-grid{{ if eq . "Sensors" }} precision-product-grid-compact{{ end }}">
+    <div class="precision-product-grid{{ if in (slice "Receivers" "Generators") . }} precision-product-grid-pair{{ end }}{{ if eq . "Sensors" }} precision-product-grid-compact{{ end }}">
     {{ range where hugo.Data.instrument_catalog "group" $group }}
       {{ $page := site.GetPage .path }}
-      <article class="precision-product-card">
+      <article class="precision-product-card{{ with .photo_style }} photo-{{ . }}{{ end }}">
         {{ if ne $group "Sensors" }}{{ $image := .image | default $page.Params.banner }}{{ with $image }}<a class="precision-card-photo" href="{{ $page.RelPermalink }}" aria-label="Explore {{ $page.Title }}"><img src="{{ . | relURL }}" alt="{{ $page.Title }}" loading="lazy"></a>{{ end }}{{ end }}
         <div class="precision-card-copy"><p class="precision-eyebrow">{{ .group }}{{ with .status }} · {{ . }}{{ end }}</p><h3><a href="{{ .path | relURL }}">{{ .name }} <span aria-hidden="true">↗</span></a></h3><p>{{ .description }}</p>{{ with .highlights }}<dl class="precision-card-facts">{{ range first 2 . }}<div><dt>{{ .value }}</dt><dd>{{ .label }}</dd></div>{{ end }}</dl>{{ end }}{{ with .specification }}<a class="precision-spec-link" href="{{ . | relURL }}">Specification sheet ↓</a>{{ end }}</div>
       </article>

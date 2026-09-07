@@ -12,7 +12,7 @@
     {{ partial "precision-toc.html" . }}
     <article class="precision-article" id="blog-post">
       {{ if and .Date (eq .Section "blog") }}<p class="precision-eyebrow">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
-      <div id="post-content" class="zonge-section-prose">{{ .Content }}</div>
+      <div id="post-content" class="zonge-section-prose"{{ if eq (lower .Section) "instruments" }} data-instrument-details{{ end }}>{{ .Content }}</div>
       {{ partial "about-history-gallery.html" . }}
       {{ partial "conversion-cta.html" . }}
       {{ if .Site.Config.Services.Disqus.Shortname }}<div id="comments">{{ template "_internal/disqus.html" . }}</div>{{ end }}

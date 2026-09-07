@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+<head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
+<body class="section-software kind-section precision-software-page">
+{{ partial "nav.html" . }}
+<main id="content">
+  <section class="precision-software-hero"><div class="precision-wrap precision-software-hero-grid"><div><p class="precision-eyebrow">Zonge software / Processing &amp; interpretation</p><h1>From measurements<br>to a <em>model.</em></h1><p>Quality control, processing, and inversion tools for electrical and electromagnetic geophysics.</p><a class="precision-button" href="#software-tools">Find your software <span aria-hidden="true">↓</span></a></div><figure><img src="{{ "img/mt-model-e13664090974923_m.png" | relURL }}" alt="MT resistivity model displayed with terrain and boreholes" width="1024" height="657" fetchpriority="high"><figcaption>MT resistivity model · Zonge image library</figcaption></figure></div></section>
+  <section class="precision-wrap precision-software-catalog" id="software-tools"><div class="precision-software-heading"><p class="precision-eyebrow">Choose your task</p><h2>Tools for each step.</h2></div><nav class="precision-software-nav" aria-label="Software tasks">{{ range $i,$group := hugo.Data.software_catalog }}<a href="#{{ .id }}"><span>0{{ add $i 1 }}</span>{{ .title }} <span aria-hidden="true">↓</span></a>{{ end }}</nav>
+  {{ range $i,$group := hugo.Data.software_catalog }}<section class="precision-software-group" id="{{ .id }}"><div class="precision-software-group-heading"><p class="precision-eyebrow">0{{ add $i 1 }} / Workflow</p><h2>{{ .title }}</h2><p>{{ .description }}</p></div><div class="precision-software-programs">{{ range .programs }}<article class="precision-software-program"><h3>{{ .name }}</h3><p>{{ .description | markdownify }}</p></article>{{ end }}</div></section>{{ end }}
+  {{ partial "conversion-cta.html" . }}</section>
+</main>
+{{ partial "footer.html" . }}{{ partial "scripts.html" . }}{{ partial "conversion-tracking.html" . }}
+</body></html>
