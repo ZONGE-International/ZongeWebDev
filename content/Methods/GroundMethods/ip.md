@@ -1,5 +1,6 @@
 +++
 title = "Induced Polarization (IP)"
+description = "IP surveys map chargeability and resistivity to investigate mineralization, alteration, geologic structures, and groundwater targets."
 banner = "img/methods/ip/ip-transmitter-tent-banner.jpg"
 weight = 1
 +++

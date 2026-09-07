@@ -9,6 +9,7 @@ This branch proposes a new visual direction for the existing Hugo website. It ke
 - Technical pages: clear instrument photography, compact page introductions, readable text, and navigation within longer pages.
 - Shared design: restrained navy and blue, IBM Plex typography, lighter content surfaces, simpler figures and tables, and a consistent navigation and footer.
 - Application matrices: a consistent suitability scale and keyboard-operable explanations. Underlying ratings and technical explanations are unchanged.
+- Visitor paths: direct method shortcuts, concise method introductions and survey inquiry links, plus receiver, sensor, and catalog links alongside the ZT-100B spotlight. These refinements preserve the broader product and application choices while making technical destinations easier to reach.
 
 The homepage uses a lossless WebP of the earliest available night-sky PNG, recovered from `2848272:static/img/carousel/pete-night-sky.png` (1366 × 768). It preserves the photograph's wider original frame and avoids the previous 1170 × 673 image's lossy compression. This is the largest source found in repository history; a larger photographic master would still improve sharpness on high-density desktop displays. The earlier compressed asset remains available for existing references.
 

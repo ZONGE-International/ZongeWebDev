@@ -3,7 +3,7 @@
 <head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
 <body class="section-methods kind-section">
 {{ partial "nav.html" . }}
-<section class="precision-catalog-intro precision-wrap"><p class="precision-eyebrow">Geophysical services</p><h1>The right method.<br>A clearer picture.</h1><p>{{ .Description }}</p></section>
+<section class="precision-catalog-intro precision-wrap"><p class="precision-eyebrow">Geophysical services</p><h1>The right method.<br>A clearer picture.</h1><p>{{ .Description }}</p><nav class="precision-category-nav" aria-label="Survey methods">{{ range slice (dict "label" "CSAMT" "path" "/methods/groundmethods/csamt/") (dict "label" "MT / AMT" "path" "/methods/groundmethods/mt/") (dict "label" "IP" "path" "/methods/groundmethods/ip/") (dict "label" "TEM" "path" "/methods/groundmethods/tem/") (dict "label" "Gravity" "path" "/methods/groundmethods/gravity/") (dict "label" "Drone magnetics" "path" "/methods/airborne-methods/drone-magnetic-surveys/") }}<a href="{{ .path | relURL }}">{{ .label }} <span aria-hidden="true">↗</span></a>{{ end }}</nav></section>
 <main id="content" class="precision-wrap precision-methods">
   {{ with .Content }}<div class="zonge-section-prose">{{ . }}</div>{{ end }}
   <div class="precision-method-grid">{{ range .RegularPagesRecursive.ByTitle }}{{ $method := . }}
