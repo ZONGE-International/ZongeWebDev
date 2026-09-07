@@ -13,7 +13,7 @@
                     <p>For project inquiries, product support, or instrument questions, send us an email and we will route it to the right team.</p>
                 </div>
                 {{- $formAction := strings.TrimSpace (default "" .Site.Params.formspree_action) -}}
-                {{- $formReady := and $formAction (not (strings.HasPrefix $formAction "mailto:")) -}}
+                {{- $formReady := and $formAction (not (strings.HasPrefix $formAction "mailto:")) (not .Site.Params.design_review) -}}
                 {{- $turnstileSiteKey := strings.TrimSpace (default "" .Site.Params.turnstile_site_key) -}}
                 {{- $turnstileReady := and $formReady $turnstileSiteKey -}}
                 <div class="zonge-contact-email-card">
@@ -106,7 +106,7 @@
                     {{ if $formReady }}
                     <p class="zonge-contact-email-note">Your message is sent through our protected contact form and routed to the right team.</p>
                     {{ else }}
-                    <p class="zonge-contact-email-note">Contact form delivery is not configured yet. Please call one of the offices listed here and we will help right away.</p>
+                    <p class="zonge-contact-email-note">{{ if .Site.Params.design_review }}Design review: form submission is disabled in this preview.{{ else }}Contact form delivery is not configured yet. Please call one of the offices listed here and we will help right away.{{ end }}</p>
                     {{ end }}
                 </div>
             </section>
@@ -150,7 +150,7 @@
 
 {{ partial "map.html" . }}
 
-{{- if and (strings.TrimSpace (default "" .Site.Params.formspree_action)) (strings.TrimSpace (default "" .Site.Params.turnstile_site_key)) -}}
+{{- if and (not .Site.Params.design_review) (strings.TrimSpace (default "" .Site.Params.formspree_action)) (strings.TrimSpace (default "" .Site.Params.turnstile_site_key)) -}}
 <script>
     window.zongeTurnstileReady = function () {
         var container = document.getElementById("zonge-turnstile");

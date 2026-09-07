@@ -1,9 +1,10 @@
-{{- if hugo.IsProduction }}
+{{- if and hugo.IsProduction (not .Site.Params.design_review) }}
 {{ template "_internal/google_analytics.html" . }}
 {{- end }}
 <meta charset="utf-8">
 {{- $is404 := or (eq .Kind "404") (eq .RelPermalink "/404.html") -}}
 {{- $robots := cond $is404 "noindex,follow" (default "index,follow" .Params.robots) -}}
+{{- if .Site.Params.design_review }}{{ $robots = "noindex,nofollow" }}{{ end -}}
 <meta name="robots" content="{{ $robots }}">
 {{- if strings.Contains $robots "noindex" }}
 <meta name="googlebot" content="{{ $robots }}">
@@ -36,7 +37,9 @@
 {{ hugo.Generator }}
 
 <!-- Font -->
-<link href="//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Bootstrap and Font Awesome CSS -->
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.7.2/css/all.css">
@@ -54,6 +57,7 @@
 
 <!-- Project stylesheet -->
 <link href="{{ "css/custom.css" | relURL }}?{{ now.Unix }}" rel="stylesheet">
+<link href="{{ "css/precision.css" | relURL }}" rel="stylesheet">
 
 <!-- Responsivity for older IE -->
 {{ `

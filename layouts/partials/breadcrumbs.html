@@ -1,22 +1,23 @@
 {{ $section := lower .Section }}
-{{ $themedSection := or (in (slice "methods" "instruments" "targets" "software" "about" "contact") $section) (eq .Params.id "contact") }}
-<div id="heading-breadcrumbs" class="{{ if $themedSection }}section-breadcrumbs{{ end }} {{ if eq $section "methods" }}methods-breadcrumbs{{ end }}" style="background-image: url('{{ .Params.banner | absURL }}'); 
-            background-size: cover; 
-            background-position: {{ .Params.banner_position | default "center" }}; 
-            padding: 200px 0; 
-            position: relative; 
-            min-height: 500px;">
-
-    <!-- Overlay sombre -->
-    <div
-        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.4); z-index: 0;">
-    </div>
-
-    <div class="container" style="position: relative; z-index: 1;">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1 class="breadcrumb-title">{{ .Title }}</h1>
-            </div>
-        </div>
-    </div>
-</div>
+{{ $banner := .Params.banner }}
+{{ if eq .Params.id "contact" }}{{ $banner = "" }}{{ end }}
+{{ $product := false }}
+{{ range hugo.Data.instrument_catalog }}{{ if eq .path $.RelPermalink }}{{ $product = . }}{{ end }}{{ end }}
+{{ if and $product (eq .Kind "page") }}
+<section class="precision-product-hero">
+  <div class="precision-wrap precision-product-hero-grid">
+    <div><a class="precision-eyebrow" href="{{ "/instruments/" | relURL }}">Instruments / {{ $product.group }}</a><h1>{{ $product.name }}</h1><p class="precision-product-summary">{{ $product.description }}</p>
+    {{ with $product.status }}<p class="precision-status">{{ . }} equipment</p>{{ end }}
+    {{ if eq $product.name "ZT-100B" }}<dl class="precision-spec-strip"><div><dt>100 A</dt><dd>Rated current</dd></div><div><dt>1,200 V</dt><dd>Rated voltage</dd></div><div><dt>GPS</dt><dd>Synchronized</dd></div></dl>{{ end }}
+    <div class="precision-actions"><a class="precision-button" href="{{ "/contact/" | relURL }}?intent=instrument-sales&amp;source={{ .RelPermalink | urlquery }}">{{ if $product.status }}Ask about support{{ else }}Discuss your setup{{ end }} <span>↗</span></a>{{ with $product.specification }}<a class="precision-text-link" href="{{ . | relURL }}">Specifications <span>↓</span></a>{{ end }}</div></div>
+    {{ $image := $product.image | default .Params.banner }}{{ with $image }}<div class="precision-product-photo"><img src="{{ . | relURL }}" alt="{{ $product.name }} geophysical instrument" fetchpriority="high"></div>{{ end }}
+  </div>
+</section>
+{{ else }}
+<section class="precision-page-hero{{ if $banner }} has-image{{ end }}">
+  <div class="precision-wrap precision-page-hero-grid">
+    <div class="precision-page-heading"><p class="precision-eyebrow">Zonge International{{ with $section }} / {{ . | humanize }}{{ end }}</p><h1>{{ .Title }}</h1>{{ with .Description }}<p>{{ . }}</p>{{ end }}</div>
+    {{ with $banner }}<div class="precision-page-photo"><img src="{{ . | relURL }}" alt="{{ default $.Title $.Params.banner_alt }}" fetchpriority="high"{{ with $.Params.banner_position }} style="object-position:{{ . }}"{{ end }}></div>{{ end }}
+  </div>
+</section>
+{{ end }}

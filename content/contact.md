@@ -8,7 +8,7 @@ banner = "img/abouts/contact-dog.webp"
 banner_position = "center 42%"
 +++
 
-# What can we help you with?
+## What can we help you with?
 
 For field services, legacy data, or new instrument purchases, please contact our **Reno office** at [(775) 355-7707](tel:+17753557707).
 

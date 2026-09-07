@@ -1,219 +1,57 @@
-<header class="navbar-affixed-top navbar-overlay" data-spy="affix" data-offset-top="62">
-  <div class="navbar navbar-default yamm {{ if .Site.Params.dropdown_mouse_over }}mouseover{{ end }}" role="navigation"
-    id="navbar">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand home" href="{{ "" | relLangURL }}">
-          {{ if default false .Site.Params.disabled_logo }}
-          <h4>{{ .Site.Params.logo_text }}</h4>
-          {{ else }}
-          <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm" />
-          <img src="{{ .Site.Params.logo_small | relURL }}" alt="{{ .Title }} logo" class="visible-xs visible-sm" />
-          {{ end }}
-          <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
-        </a>
-        <div class="navbar-buttons">
-          <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
-            data-target="#navigation">
-            <span class="sr-only">{{ i18n "navToggle" }}</span>
-            <i class="fas fa-align-justify"></i>
-          </button>
-        </div>
-      </div>
-      <!--/.navbar-header -->
-
-      <div class="navbar-collapse collapse" id="navigation">
-        <ul class="nav navbar-nav navbar-right">
-          {{ $current := . }}
-
-          {{ range .Site.Menus.main.ByWeight }}
-          {{ $topLevel := replace .URL "/" "" }}
-          {{ $active := "" }}
-          {{ $menuItemClass := "" }}
-
-          {{ if .Identifier }}
-          {{ $menuItemClass = printf "menu-item-%s" (.Identifier | urlize) }}
-          {{ end }}
-
-          {{ if eq $current.RelPermalink .URL }}
-          {{ $active = "active" }}
-          {{ end }}
-
-          {{ if eq $current.Type $topLevel }}
-          {{ $active = "active" }}
-          {{ end }}
-
-          {{ if and (or (eq $current.RelPermalink .URL) (eq "term" $current.Kind)) (in (slice "page" "term")
-          $current.Kind) }}
-          {{ range (split .URL "/") }}
-          {{ if eq "blog" . }}
-          {{ $active = "active" }}
-          {{ end }}
-          {{ end }}
-          {{ end }}
-
-          {{ if eq (index .Params "suppress_active") true }}
-          {{ $active = "" }}
-          {{ end }}
-
-          {{ if .HasChildren }}
-          <!-- Check if the first child marks a menu section identifier -->
-          {{ $hasSections := (hasPrefix (index .Children 0).Identifier "section.") }}
-          {{ $compactMegaMenu := and $hasSections .Params.compact }}
-          {{ $showMenuImage := false }}
-          {{ $columnClass := "col-sm-3" }}
-          {{ if $compactMegaMenu }}
-          {{ $columnClass = "col-sm-6" }}
-          {{ else if not $showMenuImage }}
-          {{ $columnClass = "col-sm-6" }}
-          {{ end }}
-          <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{end}}{{ if $compactMegaMenu }} mega-menu-compact{{ end }} {{ $active }}{{ if $menuItemClass }} {{ $menuItemClass }}{{ end }}">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-            {{ if $hasSections }}
-            <ul class="dropdown-menu">
-              <li>
-                <div class="yamm-content">
-                  <div class="row">
-                    {{ if $showMenuImage }}
-                    <div class="col-sm-6">
-                      <img src="{{ .URL }}" class="img-responsive hidden-xs" />
-                    </div>
-                    {{ end }}
-                    <div class="{{ $columnClass }}">
-                      {{ range .Children.ByWeight }}
-                      {{ $column := printf "%s" .Post }}
-                      {{ if eq $column "1" }}
-                      <h5>{{ .Name }}</h5>
-                      {{ if .HasChildren }}
-                      <ul>
-                        {{ range .Children.ByWeight }}
-                        <li>
-                          {{ partial "menu-link.html" . }}
-                        </li>
-                        {{- end }}
-                      </ul>
-                      {{ end }}
-                      {{ end }}
-                      {{ end }}
-                    </div>
-                    <div class="{{ $columnClass }}">
-                      {{ range .Children.ByWeight }}
-                      {{ $column := printf "%s" .Post }}
-                      {{ if eq $column "2" }}
-                      <h5>{{ .Name }}</h5>
-                      {{ if .HasChildren }}
-                      <ul>
-                        {{ range .Children.ByWeight }}
-                        <li>
-                          {{ partial "menu-link.html" . }}
-                        </li>
-                        {{ end }}
-                      </ul>
-                      {{ end }}
-                      {{ end }}
-                      {{ end }}
-                    </div>
-                    {{ if and (not $showMenuImage) (not $compactMegaMenu) }}
-                    <div class="col-sm-3">
-                      {{ range .Children }}
-                      {{ $column := printf "%s" .Post }}
-                      {{ if eq $column "3" }}
-                      <h5>{{ .Name }}</h5>
-                      {{ if .HasChildren }}
-                      <ul>
-                        {{ range .Children.ByWeight }}
-                        <li>
-                          {{ partial "menu-link.html" . }}
-                        </li>
-                        {{ end }}
-                      </ul>
-                      {{ end }}
-                      {{ end }}
-                      {{ end }}
-                    </div>
-                    <div class="col-sm-3">
-                      {{ range .Children }}
-                      {{ $column := printf "%s" .Post }}
-                      {{ if eq $column "4" }}
-                      <h5>{{ .Name }}</h5>
-                      {{ if .HasChildren }}
-                      <ul>
-                        {{ range .Children.ByWeight }}
-                        <li>
-                          {{ partial "menu-link.html" . }}
-                        </li>
-                        {{ end }}
-                      </ul>
-                      {{ end }}
-                      {{ end }}
-                      {{ end }}
-                    </div>
-                    {{ end }}
-                  </div>
-                </div>
-              </li>
-            </ul>
-            {{ else }}
-            <ul class="dropdown-menu">
-              {{ range .Children.ByWeight }}
-              <li>
-                {{ partial "menu-link.html" . }}
-              </li>
-              {{ end }}
-            </ul>
+<a class="precision-skip" href="#content">Skip to content</a>
+{{ if .Site.Params.design_review }}<div class="review-ribbon">Design review <span>2027 direction · For approval</span><a href="https://www.zonge.com/" target="_blank" rel="noopener">Current website ↗</a></div>{{ end }}
+<header class="precision-header">
+  <div class="precision-wrap precision-nav-row">
+    <a class="precision-brand" href="{{ "/" | relURL }}" aria-label="Zonge International home"><img src="{{ .Site.Params.logo | relURL }}" alt="Zonge — Trusted Geophysics" width="150" height="65"></a>
+    <button class="precision-menu-toggle" type="button" aria-controls="precision-navigation" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="precision-navigation" class="precision-navigation" aria-label="Main navigation">
+      {{ range .Site.Menus.main.ByWeight }}
+      {{ if ne (lower .Name) "linkedin" }}
+        {{ if .HasChildren }}
+        <details class="precision-dropdown">
+          <summary>{{ .Name }} <span aria-hidden="true">⌄</span></summary>
+          <div class="precision-dropdown-panel">
+            {{ if eq .Name "Methods" }}<a class="precision-overview" href="{{ "/methods/" | relURL }}">Explore all methods →</a>{{ end }}
+            {{ if eq .Name "Instruments" }}<a class="precision-overview" href="{{ "/instruments/" | relURL }}">Explore all instruments →</a>{{ end }}
+            {{ range .Children.ByWeight }}
+              {{ if .HasChildren }}<div class="precision-menu-group"><p>{{ .Name }}</p>{{ range .Children.ByWeight }}{{ partial "menu-link.html" . }}{{ end }}</div>
+              {{ else }}{{ partial "menu-link.html" . }}{{ end }}
             {{ end }}
-          </li>
-          {{ else }}
-          <li class="dropdown {{ $active }}{{ if $menuItemClass }} {{ $menuItemClass }}{{ end }}">
-            <a href="{{ .URL }}">
-              {{ if .Pre }}
-              {{ .Pre | safeHTML }}<span class="sr-only">{{ .Name }}</span>
-              {{ else }}
-              {{ .Name }}
-              {{ end }}
-            </a>
-          </li>
-          {{ end }}
-          {{ end }}
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-
-      <div class="collapse clearfix" id="search">
-        <form class="navbar-form" role="search">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
-            </span>
           </div>
-        </form>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
+        </details>
+        {{ else }}<a href="{{ .URL | relURL }}">{{ .Name }}</a>{{ end }}
+      {{ end }}
+      {{ end }}
+      <a class="precision-nav-contact" href="{{ "/contact/" | relURL }}">Talk to Zonge <span aria-hidden="true">↗</span></a>
+    </nav>
   </div>
 </header>
-
 <script>
-  (function () {
-    const navigation = document.getElementById('navigation');
-    if (!navigation) return;
-
-    const syncMobileNavState = () => {
-      const isMobile = window.innerWidth < 768;
-      const isOpen = navigation.classList.contains('in') || navigation.classList.contains('show');
-      document.body.classList.toggle('mobile-nav-open', isMobile && isOpen);
-    };
-
-    const observer = new MutationObserver(syncMobileNavState);
-    observer.observe(navigation, { attributes: true, attributeFilter: ['class'] });
-
-    window.addEventListener('resize', syncMobileNavState);
-    window.addEventListener('orientationchange', syncMobileNavState);
-    document.addEventListener('click', syncMobileNavState);
-    syncMobileNavState();
-  })();
+(() => {
+  const toggle = document.querySelector('.precision-menu-toggle');
+  const navigation = document.getElementById('precision-navigation');
+  const dropdowns = [...navigation.querySelectorAll('details')];
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(open));
+    navigation.classList.toggle('is-open', open);
+  });
+  dropdowns.forEach(item => item.addEventListener('toggle', () => {
+    if (item.open) dropdowns.forEach(other => { if (other !== item) other.open = false; });
+  }));
+  document.addEventListener('click', event => {
+    if (!navigation.contains(event.target) && !toggle.contains(event.target)) {
+      dropdowns.forEach(item => item.open = false);
+      navigation.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      const active = dropdowns.find(item => item.open);
+      if (active) { active.open = false; active.querySelector('summary').focus(); }
+      else if (navigation.classList.contains('is-open')) { navigation.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }
+    }
+  });
+})();
 </script>
-
-<!-- *** NAVBAR END ***-->

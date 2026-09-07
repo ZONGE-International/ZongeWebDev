@@ -10,7 +10,7 @@ weight = 1
       <i class="fas fa-shield-alt" aria-hidden="true"></i>
     </div>
     <div>
-      <h1>Safety at Zonge</h1>
+      <h2>Safety at Zonge</h2>
       <p class="zonge-safety-lead">Safety is a core part of how Zonge plans, mobilizes, and executes work.</p>
     </div>
   </div>

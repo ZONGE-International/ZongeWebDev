@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Locale }}">
-
-<head>
-    {{ partial "headers.html" . }}
-    {{ partial "custom_headers.html" . }}
-</head>
-
-<body>
-
-    <div id="all">
-
-        {{ partial "top.html" . }}
-
-        {{ partial "nav.html" . }}
-
-        {{ partial "carousel.html" . }}
-
-
+<head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
+<body class="precision-home">
+{{ partial "nav.html" . }}
+<main id="content">
+  <section class="precision-hero">
+    <div class="precision-hero-image"><img src="{{ "img/methods/ip/ip-transmitter-tent-banner.jpg" | relURL }}" alt="Zonge survey camp and transmitter equipment in a mountain valley" fetchpriority="high"><span>From the field. Into focus.</span></div>
+    <div class="precision-wrap precision-hero-inner"><div class="precision-hero-copy">
+      <p class="precision-eyebrow">Zonge International · Since 1972</p>
+      <h1>Precision beneath<br>the surface.</h1>
+      <p class="precision-lead">Geophysical expertise and instruments for a clearer understanding of the Earth.</p>
+      <div class="precision-actions"><a class="precision-button" href="{{ "/methods/" | relURL }}">Explore our services <span>↗</span></a><a class="precision-text-link" href="{{ "/instruments/" | relURL }}">Find your instrument <span>→</span></a></div>
+    </div></div>
+  </section>
+  <div class="precision-proof"><div class="precision-wrap"><p><strong>Independent.</strong> Employee-owned.</p><p><strong>Integrated.</strong> Fieldwork to instrumentation.</p><p><strong>Worldwide.</strong> Instruments and expertise.</p></div></div>
+  <section class="precision-section precision-wrap">
+    <div class="precision-section-heading"><p class="precision-eyebrow">01 / Our capabilities</p><h2>Engineering and exploration.<br>Working together.</h2><p>Survey design, data acquisition, modeling, and the instruments that make it possible. All informed by experience in the field.</p></div>
+    <div class="precision-capabilities">
+      <a class="precision-capability" href="{{ "/methods/" | relURL }}"><span class="precision-number">01</span><h3>Geophysical services</h3><p>Electrical, electromagnetic, and potential-field methods matched to your site and objectives.</p><span class="precision-inline-link">Explore survey methods <span>↗</span></span></a>
+      <a class="precision-capability" href="{{ "/instruments/" | relURL }}"><span class="precision-number">02</span><h3>Instrumentation</h3><p>Receivers, transmitters, sensors, and power systems engineered for demanding fieldwork.</p><span class="precision-inline-link">Explore instruments <span>↗</span></span></a>
+      <a class="precision-capability" href="{{ "/software/" | relURL }}"><span class="precision-number">03</span><h3>Geophysical software</h3><p>Tools for processing, modeling, and interpreting electrical and electromagnetic survey data.</p><span class="precision-inline-link">Explore software <span>↗</span></span></a>
     </div>
-    <!-- /#all -->
-
-    {{ partial "scripts.html" . }}
-
-</body>
-
-</html>
+  </section>
+  <section class="precision-product-feature"><div class="precision-wrap precision-feature-grid">
+    <div class="precision-feature-image"><img src="{{ "img/power/zt-100b-transmitter.png" | relURL }}" alt="Zonge ZT-100B transmitter front panel and controls" loading="lazy" width="1600" height="778"></div>
+    <div class="precision-feature-copy"><p class="precision-eyebrow">02 / Instrument spotlight</p><h2>ZT-100B.<br>Built for the next survey.</h2><p>A flexible transmitter platform with local and browser control, GPS synchronization, and configurable power supplies.</p><dl class="precision-spec-strip"><div><dt>100 A</dt><dd>Rated current output</dd></div><div><dt>1,200 V</dt><dd>Rated voltage output</dd></div></dl><a class="precision-button" href="{{ "/instruments/tx/zt100/" | relURL }}">Explore the ZT-100B <span>↗</span></a></div>
+  </div></section>
+  <section class="precision-section precision-wrap">
+    <div class="precision-section-heading"><p class="precision-eyebrow">03 / Applications</p><h2>Different targets.<br>The same depth of expertise.</h2></div>
+    <div class="precision-applications">
+      <a href="{{ "/targets/mining/" | relURL }}"><span class="precision-number">01</span><div><h3>Mineral exploration</h3><p>Map structures, alteration, and mineralized targets.</p></div><span aria-hidden="true">↗</span></a>
+      <a href="{{ "/targets/geothermal/" | relURL }}"><span class="precision-number">02</span><div><h3>Geothermal resources</h3><p>Investigate the structure of geothermal systems.</p></div><span aria-hidden="true">↗</span></a>
+      <a href="{{ "/targets/groundwater/" | relURL }}"><span class="precision-number">03</span><div><h3>Groundwater exploration</h3><p>Understand aquifers, bedrock, and subsurface boundaries.</p></div><span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+  <section class="precision-about-band"><div class="precision-wrap"><p class="precision-eyebrow">Independent thinking. Shared experience.</p><h2>Built on curiosity.<br>Grounded in experience.</h2><div><p>Founded by Dr. Ken Zonge in 1972, we bring geophysicists, engineers, and field crews together to solve subsurface challenges.</p><a class="precision-text-link" href="{{ "/about/" | relURL }}">Meet Zonge <span>→</span></a></div></div></section>
+  {{ $events := sort (where hugo.Data.events "end_date" "ge" (now.UTC.Format "2006-01-02")) "start_date" }}
+  {{ with $events }}{{ $event := index . 0 }}<aside class="precision-event-line precision-wrap"><p class="precision-eyebrow">Meet us in the field</p><div><h3>{{ $event.short_name }}</h3><p>{{ $event.date_display }} · {{ $event.location }}</p></div><a class="precision-text-link" href="{{ "/events/" | relURL }}">Event details <span>↗</span></a></aside>{{ end }}
+  <section class="precision-home-cta precision-wrap"><h2>What lies beneath<br>your next project?</h2><a class="precision-button" href="{{ "/contact/" | relURL }}">Talk to a geophysicist <span>↗</span></a></section>
+</main>
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+</body></html>

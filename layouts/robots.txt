@@ -1,4 +1,10 @@
+{{ if .Site.Params.design_review }}
+User-agent: *
+Disallow: /
+{{ else }}
 User-agent: *
 Allow: /
 
 Sitemap: {{ "sitemap.xml" | absURL }}
+
+{{ end }}

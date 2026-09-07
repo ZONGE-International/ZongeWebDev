@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-    #mining {
+    #geothermal-matrix {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         position: relative;
         padding: 2rem;
@@ -11,7 +11,7 @@
         box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
     }
 
-    #mining .geo-table {
+    #geothermal-matrix .geo-table {
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
@@ -21,12 +21,12 @@
         border-radius: 20px;
     }
 
-    #mining .geo-table-wrapper {
+    #geothermal-matrix .geo-table-wrapper {
         position: relative;
         overflow-x: auto;
     }
 
-    #mining .geo-cell {
+    #geothermal-matrix .geo-cell {
         padding: 1.25rem;
         text-align: center;
         cursor: pointer;
@@ -36,12 +36,12 @@
         border-bottom: 1px solid rgba(117, 152, 199, 0.12);
     }
 
-    #mining .geo-cell:hover {
+    #geothermal-matrix .geo-cell:hover {
         transform: translateY(-2px);
         box-shadow: inset 0 0 0 1px rgba(123, 191, 255, 0.18);
     }
 
-    #mining .geo-header {
+    #geothermal-matrix .geo-header {
         color: #eaf3ff;
         font-weight: bold;
         padding: 1rem;
@@ -54,15 +54,15 @@
         text-transform: uppercase;
     }
 
-    #mining td:nth-child(even) {
+    #geothermal-matrix td:nth-child(even) {
         background-color: rgba(13, 29, 53, 0.84);
     }
 
-    #mining td:nth-child(odd) {
+    #geothermal-matrix td:nth-child(odd) {
         background-color: rgba(9, 21, 39, 0.84);
     }
 
-    #mining tbody .geo-header {
+    #geothermal-matrix tbody .geo-header {
         background: rgba(12, 29, 52, 0.94);
         color: #f5f9ff;
         text-transform: none;
@@ -70,7 +70,7 @@
         font-size: 1.15rem;
     }
 
-    #mining .rating-thermometer {
+    #geothermal-matrix .rating-thermometer {
         position: relative;
         display: inline-flex;
         align-items: flex-end;
@@ -79,7 +79,7 @@
         height: 2.2rem;
     }
 
-    #mining .thermo-stem {
+    #geothermal-matrix .thermo-stem {
         position: absolute;
         bottom: 0.5rem;
         width: 0.48rem;
@@ -91,7 +91,7 @@
         box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.55);
     }
 
-    #mining .thermo-fill {
+    #geothermal-matrix .thermo-fill {
         position: absolute;
         left: 0;
         right: 0;
@@ -99,7 +99,7 @@
         border-radius: 999px 999px 0 0;
     }
 
-    #mining .thermo-bulb {
+    #geothermal-matrix .thermo-bulb {
         position: absolute;
         bottom: 0;
         width: 1rem;
@@ -110,34 +110,34 @@
         box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.45);
     }
 
-    #mining .rating-thermometer.level-3 .thermo-fill {
+    #geothermal-matrix .rating-thermometer.level-3 .thermo-fill {
         height: 100%;
     }
 
-    #mining .rating-thermometer.level-2 .thermo-fill {
+    #geothermal-matrix .rating-thermometer.level-2 .thermo-fill {
         height: 66%;
     }
 
-    #mining .rating-thermometer.level-1 .thermo-fill {
+    #geothermal-matrix .rating-thermometer.level-1 .thermo-fill {
         height: 33%;
     }
 
-    #mining .rating-thermometer.thermo-red .thermo-fill,
-    #mining .rating-thermometer.thermo-red .thermo-bulb {
+    #geothermal-matrix .rating-thermometer.thermo-red .thermo-fill,
+    #geothermal-matrix .rating-thermometer.thermo-red .thermo-bulb {
         background: linear-gradient(180deg, #ff8c8c 0%, #d62828 100%);
     }
 
-    #mining .rating-thermometer.thermo-yellow .thermo-fill,
-    #mining .rating-thermometer.thermo-yellow .thermo-bulb {
+    #geothermal-matrix .rating-thermometer.thermo-yellow .thermo-fill,
+    #geothermal-matrix .rating-thermometer.thermo-yellow .thermo-bulb {
         background: linear-gradient(180deg, #ffe690 0%, #d4a017 100%);
     }
 
-    #mining .rating-thermometer.thermo-blue .thermo-fill,
-    #mining .rating-thermometer.thermo-blue .thermo-bulb {
+    #geothermal-matrix .rating-thermometer.thermo-blue .thermo-fill,
+    #geothermal-matrix .rating-thermometer.thermo-blue .thermo-bulb {
         background: linear-gradient(180deg, #95d5ff 0%, #2b6cb0 100%);
     }
 
-    #mining .custom-modal-overlay {
+    #geothermal-matrix .custom-modal-overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -155,12 +155,12 @@
         border-radius: 20px;
     }
 
-    #mining .custom-modal-overlay.active {
+    #geothermal-matrix .custom-modal-overlay.active {
         visibility: visible;
         opacity: 1;
     }
 
-    #mining .custom-modal {
+    #geothermal-matrix .custom-modal {
         background: linear-gradient(180deg, rgba(10, 22, 40, 0.98), rgba(8, 18, 33, 0.98));
         padding: 2rem;
         border-radius: 1rem;
@@ -188,7 +188,7 @@
         }
     }
 
-    #mining .close-btn {
+    #geothermal-matrix .close-btn {
         position: absolute;
         top: 12px;
         right: 14px;
@@ -204,18 +204,18 @@
         color: #999;
     }
 
-    #mining .close-btn:hover {
+    #geothermal-matrix .close-btn:hover {
         color: #fff;
     }
 
-    #mining .modal-content-list {
+    #geothermal-matrix .modal-content-list {
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
         padding-top: 1rem;
     }
 
-    #mining .modal-row {
+    #geothermal-matrix .modal-row {
         display: flex;
         flex-direction: row;
         gap: 1rem;
@@ -223,18 +223,18 @@
         flex-wrap: wrap;
     }
 
-    #mining .modal-label {
+    #geothermal-matrix .modal-label {
         flex: 0 0 40%;
         font-weight: bold;
         color: #dceafb;
     }
 
-    #mining .modal-value {
+    #geothermal-matrix .modal-value {
         flex: 1;
         color: rgba(223, 232, 245, 0.82);
     }
 
-    #mining .modal-title-text {
+    #geothermal-matrix .modal-title-text {
         font-weight: bold;
         font-size: clamp(1.25rem, 3vw, 2rem);
         color: #f7fbff;
@@ -242,21 +242,21 @@
     }
 
     @media (max-width: 640px) {
-        #mining {
+        #geothermal-matrix {
             padding: 1.25rem;
         }
 
-        #mining .custom-modal-overlay {
+        #geothermal-matrix .custom-modal-overlay {
             padding: 0.75rem;
         }
 
-        #mining .custom-modal {
+        #geothermal-matrix .custom-modal {
             width: 100%;
             padding: 1.25rem;
             max-height: calc(100% - 1.5rem);
         }
 
-        #mining .close-btn {
+        #geothermal-matrix .close-btn {
             top: 8px;
             right: 8px;
             width: 40px;
@@ -264,19 +264,40 @@
             font-size: 2rem;
         }
 
-        #mining .modal-row {
+        #geothermal-matrix .modal-row {
             flex-direction: column;
             gap: 0.35rem;
         }
 
-        #mining .modal-label {
+        #geothermal-matrix .modal-label {
             flex: 1 1 auto;
         }
     }
+
+    /* Shared review styling; data and explanations remain unchanged. */
+    #geothermal-matrix { font-family: var(--sans); padding: 0; border: 0; border-radius: 0; background: #fff; box-shadow: none; }
+    #geothermal-matrix .geo-table { font-size: 15px; border: 1px solid var(--line); border-radius: 0; }
+    #geothermal-matrix .geo-header, #geothermal-matrix tbody .geo-header { background: var(--pale); color: var(--ink); font-size: 14px; font-weight: 500; letter-spacing: 0; text-transform: none; border-color: var(--line); padding: 15px 12px; }
+    #geothermal-matrix td:nth-child(even), #geothermal-matrix td:nth-child(odd) { background: #fff; }
+    #geothermal-matrix .geo-cell { padding: 14px 10px; border-color: var(--line); font-size: 14px; }
+    #geothermal-matrix .geo-cell:hover, #geothermal-matrix .geo-cell:focus { transform: none; background: #edf4fa; box-shadow: inset 0 0 0 2px var(--blue); outline: none; }
+    #geothermal-matrix .custom-modal-overlay { position: fixed; z-index: 200; padding: 24px; border-radius: 0; background: #092132aa; }
+    #geothermal-matrix .custom-modal { background: white; color: var(--ink); border: 1px solid var(--line); border-radius: 4px; padding: 32px; max-height: 85dvh; font-size: 16px; box-shadow: 0 20px 70px #0003; animation: none; }
+    #geothermal-matrix .modal-title-text { color: var(--ink); font-size: 25px; font-weight: 500; }
+    #geothermal-matrix .modal-label { color: var(--ink); font-size: 16px; font-weight: 600; }
+    #geothermal-matrix .modal-value { color: var(--muted); font-size: 16px; }
+    #geothermal-matrix .close-btn { color: var(--ink); border: 0; background: var(--pale); border-radius: 0; }
+    #geothermal-matrix .close-btn:hover { color: var(--blue); }
+    #geothermal-matrix .suitability { display: inline-flex; align-items: center; justify-content: center; gap: 3px; min-width: 38px; padding: 7px 0; }
+    #geothermal-matrix .suitability i { display: block; width: 7px; height: 17px; background: #dce3e9; }
+    #geothermal-matrix .suitability.level-1 i:nth-child(1), #geothermal-matrix .suitability.level-2 i:nth-child(-n+2), #geothermal-matrix .suitability.level-3 i { background: var(--blue); }
+    #geothermal-matrix .precision-matrix-note { font-size: 14px; color: var(--muted); margin: 12px 0 22px; }
+    @media(max-width:600px) { #geothermal-matrix .geo-table { min-width: 670px; display: table; } #geothermal-matrix .custom-modal-overlay { padding: 12px; } #geothermal-matrix .custom-modal { padding: 28px 20px; width:100%; } #geothermal-matrix .geo-header { min-width: 70px; } }
 </style>
 
-<div id="mining">
+<div id="geothermal-matrix">
     <h2 style="margin-bottom: 1rem;">Geothermal</h2>
+    <p class="precision-matrix-note">Three bars indicate greater suitability. Select a cell for the technical explanation.</p>
     <div class="geo-table-wrapper">
         <table class="geo-table">
             <thead>
@@ -294,8 +315,8 @@
         </table>
 
     <div class="custom-modal-overlay" data-modal-overlay>
-        <div class="custom-modal">
-            <div class="close-btn" data-close-modal>&times;</div>
+        <div class="custom-modal" role="dialog" aria-modal="true" aria-label="Method suitability explanation">
+            <button type="button" class="close-btn" data-close-modal aria-label="Close explanation">&times;</button>
             <h5 data-modal-title></h5>
             <div data-modal-content></div>
         </div>
@@ -307,15 +328,15 @@
     (function () {
         const root = document.currentScript.previousElementSibling;
         const icons = {
-            green: '<span class="rating-thermometer thermo-red level-3" aria-label="Good suitability"><span class="thermo-stem"><span class="thermo-fill"></span></span><span class="thermo-bulb"></span></span>',
-            yellow: '<span class="rating-thermometer thermo-yellow level-2" aria-label="Moderate suitability"><span class="thermo-stem"><span class="thermo-fill"></span></span><span class="thermo-bulb"></span></span>',
-            blue: '<span class="rating-thermometer thermo-blue level-1" aria-label="Low suitability"><span class="thermo-stem"><span class="thermo-fill"></span></span><span class="thermo-bulb"></span></span>'
+            green: '<span class="suitability level-3" aria-label="Good suitability"><i></i><i></i><i></i></span>',
+            yellow: '<span class="suitability level-2" aria-label="Moderate suitability"><i></i><i></i><i></i></span>',
+            blue: '<span class="suitability level-1" aria-label="Low suitability"><i></i><i></i><i></i></span>'
         };
 
         const messages = {
-            green: 'Red thermometer: good suitability',
-            yellow: 'Yellow thermometer: moderate suitability',
-            blue: 'Blue thermometer: low suitability'
+            green: 'Good suitability',
+            yellow: 'Moderate suitability',
+            blue: 'Low suitability'
         };
 
         const messagesByTypeAndMethod = {{ hugo.Data.mining.messageGEOTHERMAL | jsonify | safeJS
@@ -332,7 +353,18 @@
     const modalTitle = root.querySelector('[data-modal-title]');
     const modalContent = root.querySelector('[data-modal-content]');
     const closeModalBtn = root.querySelector('[data-close-modal]');
-    const closeModal = () => modal.classList.remove('active');
+    let opener = null;
+    const closeModal = () => { modal.classList.remove('active'); if (opener) opener.focus(); };
+    root.addEventListener('keydown', event => {
+      if (!modal.classList.contains('active')) return;
+      if (event.key === 'Escape') closeModal();
+      if (event.key === 'Tab') {
+        const items = [...modal.querySelectorAll('a[href], button, [tabindex="0"]')];
+        const first = items[0], last = items[items.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
     closeModalBtn.onclick = closeModal;
     modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
@@ -347,7 +379,11 @@
         row.values.forEach((cell, index) => {
             let td = document.createElement('td');
             td.classList.add('geo-cell');
+            td.tabIndex = 0;
+            td.setAttribute('role', 'button');
+            td.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); td.click(); } });
             const method = headers[index];
+            td.setAttribute('aria-label', row.type + ': ' + method + '. ' + messages[cell]);
             const customMsg = messagesByTypeAndMethod[row.type]?.[method];
             const defaultMsg = messages[cell];
 
@@ -365,7 +401,9 @@
                 } else {
                     modalContent.innerHTML = `<p style="font-size: 1.2rem;">${defaultMsg}</p>`;
                 }
+                opener = td;
                 modal.classList.add('active');
+                closeModalBtn.focus();
             };
 
             td.innerHTML = icons[cell];

@@ -10,7 +10,7 @@ aliases = ["/software/software/"]
 <div class="zonge-software-page">
   <div class="zonge-software-intro">
     <p class="zonge-software-eyebrow">Processing and Interpretation</p>
-    <h1>Zonge Software Programs</h1>
+    <h2>Zonge Software Programs</h2>
     <p class="zonge-software-lead">A focused catalog of Zonge processing and interpretation tools used across EM processing workflows.</p>
   </div>
 

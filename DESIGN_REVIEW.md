@@ -1,0 +1,28 @@
+# Zonge 2027 design review
+
+This branch proposes a new visual direction for the existing Hugo website. It keeps the current website available while the president and team review the redesign.
+
+## Review the experience
+
+- Homepage: a fixed opening message, actual field photography, service and instrument paths, a ZT-100B spotlight, applications, company background, and the next event.
+- Instruments: a visual catalog with all 15 existing product destinations, specification links, and clear legacy labeling.
+- Technical pages: clear instrument photography, compact page introductions, readable text, and navigation within longer pages.
+- Shared design: restrained navy and blue, IBM Plex typography, lighter content surfaces, simpler figures and tables, and a consistent navigation and footer.
+- Application matrices: a consistent suitability scale and keyboard-operable explanations. Underlying ratings and technical explanations are unchanged.
+
+Existing routes, downloadable documents, company history, audio, contact destinations, and technical content remain available. Heading levels and a spelling error were corrected as part of presentation cleanup.
+
+## Approval questions
+
+1. Does the design communicate Zonge's engineering quality and field experience?
+2. Is the balance between geophysical services and instrumentation right?
+3. Is the lighter reading layout preferable for the technical pages?
+4. Are the photographs and homepage wording appropriate for the brand?
+
+## Preview configuration
+
+Run `hugo server --environment review` for the review environment. It adds a review ribbon, excludes the preview from search indexing, disables analytics, and disables contact-form submission. `hugo --environment review --destination dist` builds the separate hosted preview.
+
+The normal production configuration keeps the contact form and analytics behavior. The production GitHub Pages workflow is restricted to `main`, including manual runs. This branch has not been merged into `main` or deployed to zonge.com.
+
+The `.openai/hosting.json` and `config/review/` files identify the separate review host. Revisit review-host configuration before a final production merge.

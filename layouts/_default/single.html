@@ -1,104 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Locale }}">
-
-<head>
-  {{ partial "headers.html" . }}
-  {{ partial "custom_headers.html" . }}
-</head>
-
-<body class="{{ if .Section }}section-{{ lower .Section }}{{ end }} kind-{{ .Kind }}">
-  <div id="all">
-
-    {{ partial "top.html" . }}
-
-    {{ partial "nav.html" . }}
-
-    {{ partial "breadcrumbs.html" . }}
-
-    {{ $immersiveSection := or (in (slice "methods" "instruments" "targets" "software" "about" "contact") (lower .Section)) (eq .Params.id "contact") }}
-    <div id="content" class="{{ if $immersiveSection }}zonge-immersive-content{{ end }}">
-      {{ if isset .Params "id" }}
-
-      {{ partial .Params.id . }}
-
-      {{ else }}
-      <div class="container {{ if $immersiveSection }}zonge-section-shell{{ end }}">
-
-        <div class="row">
-
-          <!-- *** LEFT COLUMN *** -->
-
-          <div class="col-md-12 {{ if $immersiveSection }}zonge-section-main{{ end }}" id="blog-post">
-
-            {{ if or .Params.author .Params.date }}
-            <p class="text-muted text-uppercase mb-small text-right">
-              {{ if isset .Params "authors" }}
-              {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a
-                href="{{ (printf "authors/%s/" ($author | urlize)) | relLangURL }}">{{ $author }}</a>{{ end }}
-              {{ end }}
-              {{ if and .Params.author .Params.date }} | {{ end }}
-              {{ if .Params.date }}
-              {{ $createdAt := .Date.Format .Site.Params.date_format }}
-              {{ range $index, $month := slice "January" "February" "March" "April" "May" "June" "July" "August"
-              "September" "October" "November" "December" }}
-              {{ $createdAt = replace $createdAt $month (i18n $month) }}
-              {{ end }}
-              {{ $createdAt }}
-              {{ end }}
-            </p>
-            {{ end }}
-
-            <div id="post-content" class="{{ if $immersiveSection }}zonge-section-prose{{ end }}">
-              {{ .Content }}
-            </div>
-            {{ partial "about-history-gallery.html" . }}
-            {{ partial "conversion-cta.html" . }}
-            <!-- /#post-content -->
-            {{ if .Site.Config.Services.Disqus.Shortname }}
-            <div id="comments">
-              {{ template "_internal/disqus.html" . }}
-            </div>
-            {{ end }}
-
-          </div>
-          <!-- /#blog-post -->
-
-          <!-- *** LEFT COLUMN END *** -->
-
-          <!-- *** RIGHT COLUMN *** -->
-
-          <div class="col-md-3">
-
-            <!-- *** MENUS AND WIDGETS *** -->
-
-            {{ partial "sidebar.html" . }}
-
-            <!-- *** MENUS AND FILTERS END *** -->
-
-          </div>
-          <!-- /.col-md-3 -->
-
-          <!-- *** RIGHT COLUMN END *** -->
-
-        </div>
-        <!-- /.row -->
-
-      </div>
-      <!-- /.container -->
-      {{ end }}
-    </div>
-    <!-- /#content -->
-
-    {{ if ne .Params.id "contact" }}
-    {{ partial "footer.html" . }}
-    {{ end }}
-
+<head>{{ partial "headers.html" . }}{{ partial "custom_headers.html" . }}</head>
+<body class="section-{{ lower .Section }} kind-{{ .Kind }}">
+{{ partial "nav.html" . }}
+{{ partial "breadcrumbs.html" . }}
+<main id="content" class="zonge-immersive-content">
+  {{ if isset .Params "id" }}
+    {{ partial .Params.id . }}
+  {{ else }}
+  <div class="precision-wrap precision-reading-layout">
+    {{ partial "precision-toc.html" . }}
+    <article class="precision-article" id="blog-post">
+      {{ if and .Date (eq .Section "blog") }}<p class="precision-eyebrow">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
+      <div id="post-content" class="zonge-section-prose">{{ .Content }}</div>
+      {{ partial "about-history-gallery.html" . }}
+      {{ partial "conversion-cta.html" . }}
+      {{ if .Site.Config.Services.Disqus.Shortname }}<div id="comments">{{ template "_internal/disqus.html" . }}</div>{{ end }}
+    </article>
   </div>
-  <!-- /#all -->
-
-  {{ partial "scripts.html" . }}
-  {{ partial "conversion-tracking.html" . }}
-
-</body>
-
-</html>
+  {{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+{{ partial "conversion-tracking.html" . }}
+</body></html>
