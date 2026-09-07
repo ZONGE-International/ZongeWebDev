@@ -13,7 +13,7 @@
       {{ $page := site.GetPage .path }}
       <article class="precision-product-card">
         {{ if ne $group "Sensors" }}{{ $image := .image | default $page.Params.banner }}{{ with $image }}<a class="precision-card-photo" href="{{ $page.RelPermalink }}" aria-label="Explore {{ $page.Title }}"><img src="{{ . | relURL }}" alt="{{ $page.Title }}" loading="lazy"></a>{{ end }}{{ end }}
-        <div class="precision-card-copy"><p class="precision-eyebrow">{{ .group }}{{ with .status }} · {{ . }}{{ end }}</p><h3><a href="{{ .path | relURL }}">{{ .name }} <span aria-hidden="true">↗</span></a></h3><p>{{ .description }}</p>{{ with .specification }}<a class="precision-spec-link" href="{{ . | relURL }}">Specification sheet ↓</a>{{ end }}</div>
+        <div class="precision-card-copy"><p class="precision-eyebrow">{{ .group }}{{ with .status }} · {{ . }}{{ end }}</p><h3><a href="{{ .path | relURL }}">{{ .name }} <span aria-hidden="true">↗</span></a></h3><p>{{ .description }}</p>{{ with .highlights }}<dl class="precision-card-facts">{{ range first 2 . }}<div><dt>{{ .value }}</dt><dd>{{ .label }}</dd></div>{{ end }}</dl>{{ end }}{{ with .specification }}<a class="precision-spec-link" href="{{ . | relURL }}">Specification sheet ↓</a>{{ end }}</div>
       </article>
     {{ end }}</div>
   </section>{{ end }}

@@ -1,27 +1,37 @@
+{{ $current := . }}
+{{ $section := lower .Section }}
 <a class="precision-skip" href="#content">Skip to content</a>
 <header class="precision-header">
   <div class="precision-wrap precision-nav-row">
-    <a class="precision-brand" href="{{ "/" | relURL }}" aria-label="Zonge International home"><img src="{{ .Site.Params.logo | relURL }}" alt="Zonge — Trusted Geophysics" width="150" height="65"></a>
+    <a class="precision-brand" href="{{ "/" | relURL }}" aria-label="Zonge International home"{{ if .IsHome }} aria-current="page"{{ end }}><img src="{{ .Site.Params.logo | relURL }}" alt="Zonge — Trusted Geophysics" width="200" height="96"></a>
     <button class="precision-menu-toggle" type="button" aria-controls="precision-navigation" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
     <nav id="precision-navigation" class="precision-navigation" aria-label="Main navigation">
-      {{ range .Site.Menus.main.ByWeight }}
-      {{ if ne (lower .Name) "linkedin" }}
+      {{ range .Site.Menus.main.ByWeight }}{{ if ne (lower .Name) "linkedin" }}
+        {{ $active := eq $section (strings.TrimPrefix "menu." .Identifier) }}
         {{ if .HasChildren }}
-        <details class="precision-dropdown">
-          <summary>{{ .Name }} <span aria-hidden="true">⌄</span></summary>
+        <details class="precision-dropdown{{ if eq .Name "Instruments" }} precision-dropdown-wide{{ end }}{{ if $active }} is-current{{ end }}">
+          <summary>{{ if eq .Name "Targets" }}Applications{{ else }}{{ .Name }}{{ end }} <span aria-hidden="true">⌄</span></summary>
           <div class="precision-dropdown-panel">
-            {{ if eq .Name "Methods" }}<a class="precision-overview" href="{{ "/methods/" | relURL }}">Explore all methods →</a>{{ end }}
-            {{ if eq .Name "Instruments" }}<a class="precision-overview" href="{{ "/instruments/" | relURL }}">Explore all instruments →</a>{{ end }}
-            {{ range .Children.ByWeight }}
-              {{ if .HasChildren }}<div class="precision-menu-group"><p>{{ .Name }}</p>{{ range .Children.ByWeight }}{{ partial "menu-link.html" . }}{{ end }}</div>
-              {{ else }}{{ partial "menu-link.html" . }}{{ end }}
+            {{ if eq .Name "Instruments" }}
+              <div class="precision-menu-overview"><div><p class="precision-eyebrow">Zonge instrumentation</p><p>From signal to system.</p></div><a href="{{ "/instruments/" | relURL }}"{{ if eq $current.Kind "section" }}{{ if $active }} aria-current="page"{{ end }}{{ end }}>Explore all instruments <span aria-hidden="true">↗</span></a></div>
+              {{ range slice "Receivers" "Transmitters" "Sensors" "Generators" }}{{ $group := . }}
+              <div class="precision-menu-group"><a class="precision-menu-category" href="{{ "/instruments/" | relURL }}#{{ . | urlize }}">{{ . }}</a>
+                {{ range where hugo.Data.instrument_catalog "group" $group }}{{ $target := site.GetPage .path }}
+                <a href="{{ .path | relURL }}"{{ if and $target (eq $current.RelPermalink $target.RelPermalink) }} class="is-current" aria-current="page"{{ end }}>{{ .name }}{{ with .status }} <span class="precision-menu-status">{{ . }}</span>{{ end }}</a>
+                {{ end }}
+              </div>{{ end }}
+            {{ else }}
+              {{ if eq .Name "Methods" }}<a class="precision-overview" href="{{ "/methods/" | relURL }}">Explore all methods <span aria-hidden="true">↗</span></a>{{ end }}
+              {{ range .Children.ByWeight }}
+                {{ if .HasChildren }}<div class="precision-menu-group"><p>{{ .Name }}</p>{{ range .Children.ByWeight }}{{ partial "menu-link.html" (dict "item" . "page" $current) }}{{ end }}</div>
+                {{ else }}{{ partial "menu-link.html" (dict "item" . "page" $current) }}{{ end }}
+              {{ end }}
             {{ end }}
           </div>
         </details>
-        {{ else }}<a href="{{ .URL | relURL }}">{{ .Name }}</a>{{ end }}
-      {{ end }}
-      {{ end }}
-      <a class="precision-nav-contact" href="{{ "/contact/" | relURL }}">Talk to Zonge <span aria-hidden="true">↗</span></a>
+        {{ else }}{{ $target := site.GetPage (lower .URL) }}<a href="{{ with $target }}{{ .RelPermalink }}{{ else }}{{ .URL | relURL }}{{ end }}"{{ if $active }} class="is-current"{{ end }}{{ if and $target (eq $current.RelPermalink $target.RelPermalink) }} aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}
+      {{ end }}{{ end }}
+      <a class="precision-nav-contact{{ if eq $section "contact" }} is-current{{ end }}" href="{{ "/contact/" | relURL }}"{{ if eq $section "contact" }} aria-current="page"{{ end }}>Talk to Zonge <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>

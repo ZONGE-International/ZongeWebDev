@@ -39,7 +39,7 @@
 <!-- Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Bootstrap and Font Awesome CSS -->
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.7.2/css/all.css">
@@ -58,6 +58,7 @@
 <!-- Project stylesheet -->
 <link href="{{ "css/custom.css" | relURL }}?{{ now.Unix }}" rel="stylesheet">
 <link href="{{ "css/precision.css" | relURL }}" rel="stylesheet">
+<link href="{{ "css/refinement.css" | relURL }}" rel="stylesheet">
 
 <!-- Responsivity for older IE -->
 {{ `
@@ -76,7 +77,7 @@
 <link href="{{ "css/owl.theme.css" | relURL }}" rel="stylesheet">
 
 <!-- RSS feed -->
-<link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
+<link rel="alternate" href="{{ "index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 
 <!-- Open Graph -->
 {{- $isBlog := and (eq .Type "blog") (eq .Kind "page") -}}

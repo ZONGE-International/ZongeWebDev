@@ -4,79 +4,186 @@
   image: img/receivers/zen-receiver-hero.png
   description: A high-resolution receiver for controlled- and natural-source electrical and electromagnetic data.
   specification: /documents/zen.pdf
+  highlights:
+    - value: "32-bit"
+      label: "Digital acquisition"
+    - value: "GPS"
+      label: "Synchronized"
+    - value: "Distributed"
+      label: "Survey acquisition"
 - name: GDP-3224
   group: Receivers
   path: /instruments/rx/gdp3224/
   image: img/receivers/gdp-3224-receiver.webp
   description: A multi-channel, 24-bit receiver platform for geophysical data acquisition.
   specification: /documents/gdp3224.pdf
+  highlights:
+    - value: "24-bit"
+      label: "Digital acquisition"
+    - value: "Up to 16"
+      label: "Channels, large case"
+    - value: "Multi-method"
+      label: "Geophysical receiver"
 - name: ZT-100B
   group: Transmitters
   path: /instruments/tx/zt100/
   image: img/power/zt-100b-transmitter.png
   description: A configurable transmitter platform with GPS synchronization, local controls, and Wi-Fi browser operation.
   specification: /documents/ZT100-B_spec_sheet_2026-04-09.pdf
+  highlights:
+    - value: "100 A"
+      label: "Rated current"
+    - value: "1,200 V"
+      label: "Rated voltage"
+    - value: "GPS"
+      label: "Synchronized"
 - name: XMT-R
   group: Transmitters
   path: /instruments/tx/xmtr/
   image: img/instruments/tx/xmtr-hardware-controls.webp
   description: Transmitter control with local hardware controls and a remote web interface.
+  highlights:
+    - value: "GPS"
+      label: "Synchronized"
+    - value: "Wi-Fi"
+      label: "Browser control"
+    - value: "Local + remote"
+      label: "Operation"
 - name: GGT-10B
   group: Transmitters
   path: /instruments/tx/ggt10/
   image: img/instruments/generators/ggt10b.png
-  description: A generator and transmitter package for geophysical fieldwork.
+  description: A constant-current transmitter for controlled-source electrical and electromagnetic surveys.
   specification: /documents/ggt10b.pdf
+  highlights:
+    - value: "DC–8 kHz"
+      label: "Frequency range"
+    - value: "50–1,000 V"
+      label: "Output voltage range"
+    - value: "Constant current"
+      label: "Output control"
 - name: GGT-30B
   group: Transmitters
   path: /instruments/tx/ggt30/
   image: img/power/ggt-30b-transmitter.webp
-  description: A higher-power generator and transmitter package for demanding survey configurations.
+  description: A higher-power constant-current transmitter for controlled-source geophysical surveys.
   specification: /documents/ggt30b.pdf
+  highlights:
+    - value: "DC–8 kHz"
+      label: "Frequency range"
+    - value: "0.2–45 A"
+      label: "Output current range"
+    - value: "50–1,000 V"
+      label: "Output voltage range"
 - name: ZT-30B
   group: Transmitters
   path: /instruments/tx/zt30b/
   image: img/power/zt-30b-transmitter.webp
-  description: A geophysical transmitter for established Zonge survey workflows.
+  description: A portable transmitter for transient electromagnetic surveys and resistive loads.
   specification: /documents/zt30b.pdf
+  highlights:
+    - value: "30 A"
+      label: "Peak bipolar output"
+    - value: "6.6 kg"
+      label: "Transmitter weight"
+    - value: "TEM"
+      label: "Survey application"
 - name: NT-20
   group: Transmitters
   path: /instruments/nt20/
   description: A transmitter for shallow transient electromagnetic field acquisition.
   specification: /documents/nt20.pdf
-- name: ZMG-9
+  image: img/review/nt20-transmitter.jpg
+  highlights:
+    - value: "≈1 μs"
+      label: "Turn-off, 20 × 20 m loop"
+    - value: "5 kg"
+      label: "Without batteries"
+    - value: "Shallow TEM"
+      label: "Survey application"
+- name: ZMG-9A
   group: Generators
   path: /instruments/generators/zmg9/
   image: img/power/zmg-9-generator.png
   description: A portable generator package for geophysical transmitter systems.
+  specification: /documents/power.pdf
+  highlights:
+    - value: "9 kVA"
+      label: "Generator rating"
+    - value: "Gasoline"
+      label: "Engine fuel"
+    - value: "Geophysical"
+      label: "Power applications"
 - name: ZMG-30DLE
   group: Generators
   path: /instruments/generators/zmg30/
   image: img/power/zmg-30b-generator.webp
   description: Legacy 30 KVA diesel generator. Not currently available for new deployments.
   status: Legacy
+  highlights:
+    - value: "30 kVA"
+      label: "Generator rating"
+    - value: "Diesel"
+      label: "Engine fuel"
+    - value: "Legacy"
+      label: "Equipment support"
 - name: ANT-4
   group: Sensors
   path: /instruments/sensors/ant4/
-  description: Magnetic antenna specifications and operating information.
+  description: A low-noise induction magnetometer for magnetotelluric and controlled-source electromagnetic surveys.
   specification: /documents/ant4.pdf
+  highlights:
+    - value: "MT / CSEM"
+      label: "Survey applications"
+    - value: "1,263 mm"
+      label: "Sensor length"
+    - value: "100 mV/nT"
+      label: "Sensitivity"
 - name: ANT-6
   group: Sensors
   path: /instruments/sensors/ant6/
-  description: Magnetic antenna specifications and operating information.
+  description: An audio-frequency induction magnetometer for AMT and CSAMT fieldwork.
   specification: /documents/ant6.pdf
+  highlights:
+    - value: "AMT / CSAMT"
+      label: "Survey applications"
+    - value: "919 mm"
+      label: "Sensor length"
+    - value: "250 mV/nT"
+      label: "Sensitivity"
 - name: ANT-7
   group: Sensors
   path: /instruments/sensors/ant7/
-  description: Magnetic antenna specifications and operating information.
+  description: A compact low-frequency MT magnetometer, suited to vertical-component measurements.
   specification: /documents/ant7.pdf
+  highlights:
+    - value: "Low-frequency MT"
+      label: "Survey application"
+    - value: "959 mm"
+      label: "Sensor length"
+    - value: "100 mV/nT"
+      label: "Sensitivity"
 - name: ANT-9 Borehole
   group: Sensors
   path: /instruments/sensors/ant9/
-  description: Borehole antenna specifications and operating information.
+  description: A compact induction magnetometer designed for downhole measurements.
   specification: /documents/ant9-borehole.pdf
+  highlights:
+    - value: "Borehole"
+      label: "Sensor configuration"
+    - value: "343 mm"
+      label: "Sensor length"
+    - value: "35.5 mm"
+      label: "Maximum diameter"
 - name: TEM-4
   group: Sensors
   path: /instruments/sensors/tem4/
-  description: Transient electromagnetic sensor specifications and operating information.
+  description: A single-channel antenna for TEM and CSAMT, with horizontal or vertical deployment.
   specification: /documents/tem4.pdf
+  highlights:
+    - value: "TEM / CSAMT"
+      label: "Survey applications"
+    - value: "15,000 m²"
+      label: "Effective area"
+    - value: "500 mm"
+      label: "Sensor length"

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Language.Locale }}">
+<head>
+<meta charset="utf-8">
+<title>{{ .Permalink }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+{{ if .Page.Site.Params.design_review }}<meta name="robots" content="noindex,nofollow">{{ end }}
+<meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+</head>
+</html>

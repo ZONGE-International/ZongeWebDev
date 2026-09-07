@@ -8,9 +8,9 @@
   <div class="precision-wrap precision-product-hero-grid">
     <div><a class="precision-eyebrow" href="{{ "/instruments/" | relURL }}">Instruments / {{ $product.group }}</a><h1>{{ $product.name }}</h1><p class="precision-product-summary">{{ $product.description }}</p>
     {{ with $product.status }}<p class="precision-status">{{ . }} equipment</p>{{ end }}
-    {{ if eq $product.name "ZT-100B" }}<dl class="precision-spec-strip"><div><dt>100 A</dt><dd>Rated current</dd></div><div><dt>1,200 V</dt><dd>Rated voltage</dd></div><div><dt>GPS</dt><dd>Synchronized</dd></div></dl>{{ end }}
+    {{ with $product.highlights }}<dl class="precision-product-facts">{{ range . }}<div><dt>{{ .value }}</dt><dd>{{ .label }}</dd></div>{{ end }}</dl>{{ end }}
     <div class="precision-actions"><a class="precision-button" href="{{ "/contact/" | relURL }}?intent=instrument-sales&amp;source={{ .RelPermalink | urlquery }}">{{ if $product.status }}Ask about support{{ else }}Discuss your setup{{ end }} <span>↗</span></a>{{ with $product.specification }}<a class="precision-text-link" href="{{ . | relURL }}">Specifications <span>↓</span></a>{{ end }}</div></div>
-    {{ $image := $product.image | default .Params.banner }}{{ with $image }}<div class="precision-product-photo"><img src="{{ . | relURL }}" alt="{{ $product.name }} geophysical instrument" fetchpriority="high"></div>{{ end }}
+    {{ $image := $product.image | default .Params.banner }}{{ with $image }}<div class="precision-product-photo"><img src="{{ . | relURL }}" alt="{{ if eq $product.group "Sensors" }}Zonge magnetic antenna and sensor family{{ else }}{{ $product.name }} geophysical instrument{{ end }}" fetchpriority="high"></div>{{ end }}
   </div>
 </section>
 {{ else }}
