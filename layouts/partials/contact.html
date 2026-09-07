@@ -1,10 +1,9 @@
-<div class="container zonge-contact-page" id="contact">
-    <div class="row zonge-contact-grid">
-        <div class="col-md-7 zonge-contact-main-col">
+<div class="precision-wrap zonge-contact-page" id="contact">
+    <div class="zonge-contact-grid">
+        <div class="zonge-contact-main-col">
             <section class="zonge-contact-panel zonge-contact-email-panel">
                 <div class="zonge-contact-section-heading">
                     <h2>Send an inquiry</h2>
-                    <p>Tell us about your project. We’ll connect you with the right team.</p>
                 </div>
                 {{- $formAction := strings.TrimSpace (default "" .Site.Params.formspree_action) -}}
                 {{- $formReady := and $formAction (not (strings.HasPrefix $formAction "mailto:")) (not .Site.Params.design_review) -}}
@@ -40,6 +39,7 @@
                                     <label for="contact-inquiry-type">Inquiry Type</label>
                                     <select class="form-control" name="inquiry_type" id="contact-inquiry-type" required>
                                         <option value="">Select an inquiry type</option>
+                                        <option value="General inquiry - Not sure">General inquiry / Not sure</option>
                                         <optgroup label="Instruments &amp; Equipment">
                                             <option value="Instruments &amp; Equipment - Sales &amp; Training">Sales &amp; Training</option>
                                             <option value="Instruments &amp; Equipment - Service &amp; Repair">Service &amp; Repair</option>
@@ -60,30 +60,37 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="contact-country">Country <span class="zonge-form-optional">(optional)</span></label>
-                                    <input type="text" class="form-control" name="country" id="contact-country" autocomplete="country-name">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="contact-timeline">Project Timeline <span class="zonge-form-optional">(optional)</span></label>
-                                    <select class="form-control" name="project_timeline" id="contact-timeline">
-                                        <option value="">Select a timeline</option>
-                                        <option value="As soon as possible">As soon as possible</option>
-                                        <option value="Within 1-3 months">Within 1–3 months</option>
-                                        <option value="Within 3-6 months">Within 3–6 months</option>
-                                        <option value="6+ months">6+ months</option>
-                                        <option value="Planning or unsure">Planning or unsure</option>
-                                    </select>
-                                </div>
-                            </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="contact-message">{{ i18n "contactMessage" }}</label>
                                     <textarea id="contact-message" class="form-control" name="message" required></textarea>
                                 </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <details class="precision-contact-options">
+                                    <summary>Additional project details <span>(optional)</span></summary>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="contact-country">Country <span class="zonge-form-optional">(optional)</span></label>
+                                                <input type="text" class="form-control" name="country" id="contact-country" autocomplete="country-name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="contact-timeline">Project Timeline <span class="zonge-form-optional">(optional)</span></label>
+                                                <select class="form-control" name="project_timeline" id="contact-timeline">
+                                                    <option value="">Select a timeline</option>
+                                                    <option value="As soon as possible">As soon as possible</option>
+                                                    <option value="Within 1-3 months">Within 1–3 months</option>
+                                                    <option value="Within 3-6 months">Within 3–6 months</option>
+                                                    <option value="6+ months">6+ months</option>
+                                                    <option value="Planning or unsure">Planning or unsure</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
                             {{ if $turnstileReady }}
                             <div class="col-sm-12">
@@ -106,46 +113,18 @@
             </section>
         </div>
 
-        <div class="col-md-5 zonge-contact-side-col">
-            <section class="zonge-contact-panel zonge-contact-intro">
-                <div class="zonge-contact-copy">
-                    {{ .Content }}
-                </div>
-            </section>
-
-
-            {{ if or (isset .Site.Params "contact_page_address") (isset .Site.Params "address") }}
-            <section class="zonge-contact-panel zonge-contact-address-panel">
-                <div class="zonge-contact-section-heading zonge-contact-section-heading-compact">
-                    <h3>{{ i18n "contactAddrTitle" }}</h3>
-                    <p>Reach the office that best matches your project or support request.</p>
-                </div>
-                <div class="zonge-contact-address-copy">
-                    {{ default .Site.Params.address .Site.Params.contact_page_address | safeHTML }}
-                </div>
+        <aside class="zonge-contact-side-col" aria-labelledby="contact-offices-heading">
+            <h2 id="contact-offices-heading">Our offices</h2>
+            <p class="precision-office-company">Zonge International, Inc.</p>
+            {{ range .Params.offices }}
+            <section class="precision-office">
+                <h3>{{ .name }}</h3>
+                {{ with .role }}<p class="precision-office-role">{{ . }}</p>{{ end }}
+                <address>{{ range .address }}<span>{{ . }}</span>{{ end }}</address>
+                <a href="{{ .phone_uri | safeURL }}">{{ .phone }} <span aria-hidden="true">↗</span></a>
             </section>
             {{ end }}
-
-            {{ range site.Menus.topbar }}
-            {{ if eq .Name "LinkedIn" }}
-            <section class="zonge-contact-panel zonge-contact-social-panel">
-                <div class="zonge-contact-section-heading zonge-contact-section-heading-compact">
-                    <h3>Follow Zonge</h3>
-                    <p>Stay connected for company updates, field highlights, and product news.</p>
-                </div>
-                <a class="zonge-contact-social-link" href="{{ .URL }}" target="_blank" rel="noopener" aria-label="Follow Zonge on LinkedIn">
-                    <span class="zonge-contact-social-icon" aria-hidden="true">
-                        <i class="fab fa-linkedin-in"></i>
-                    </span>
-                    <span class="zonge-contact-social-copy">
-                        <strong>LinkedIn</strong>
-                        <span>Visit our company page</span>
-                    </span>
-                </a>
-            </section>
-            {{ end }}
-            {{ end }}
-        </div>
+        </aside>
     </div>
 </div>
 

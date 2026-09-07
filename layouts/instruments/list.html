@@ -10,7 +10,6 @@
   <p class="precision-filter-status" aria-live="polite" aria-atomic="true"></p>
   {{ range slice "Receivers" "Transmitters" "Generators" "Sensors" }}
   {{ $group := . }}<section class="precision-catalog-group" id="{{ . | urlize }}"><div class="precision-group-heading"><h2>{{ . }}</h2><p>{{ if eq . "Receivers" }}Capture the signal. Understand the subsurface.{{ else if eq . "Transmitters" }}Controlled-source power for your survey.{{ else if eq . "Generators" }}Power systems and legacy equipment support.{{ else }}Magnetic and electromagnetic sensing.{{ end }}</p></div>
-    {{ if eq . "Sensors" }}<div class="precision-sensor-image"><img src="{{ "img/antennas/ant-sensor-banner.webp" | relURL }}" alt="Zonge magnetic antenna and sensor family" loading="lazy"></div>{{ end }}
     <div class="precision-product-grid{{ if in (slice "Receivers" "Generators") . }} precision-product-grid-pair{{ end }}{{ if eq . "Sensors" }} precision-product-grid-compact{{ end }}">
     {{ range where hugo.Data.instrument_catalog "group" $group }}
       {{ $page := site.GetPage .path }}
