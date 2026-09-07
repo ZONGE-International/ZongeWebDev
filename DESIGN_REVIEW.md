@@ -4,7 +4,7 @@ This branch proposes a new visual direction for the existing Hugo website. It ke
 
 ## Review the experience
 
-- Homepage: a fixed opening message, actual field photography, service and instrument paths, a ZT-100B spotlight, applications, company background, and the next event.
+- Homepage: a fixed opening message, the existing night-sky hero image, service and instrument paths, a ZT-100B spotlight, applications, company background, and the next event.
 - Instruments: a visual catalog with all 15 existing product destinations, specification links, and clear legacy labeling.
 - Technical pages: clear instrument photography, compact page introductions, readable text, and navigation within longer pages.
 - Shared design: restrained navy and blue, IBM Plex typography, lighter content surfaces, simpler figures and tables, and a consistent navigation and footer.

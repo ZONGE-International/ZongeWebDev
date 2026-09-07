@@ -1886,3 +1886,10 @@ img {
   font-size:15px;
   color:var(--muted)
 }
+
+/* Preserve Zonge's night-sky homepage image across the full hero. */
+.precision-hero-image { inset: 0; }
+.precision-hero-image img { object-position: 50% 55%; }
+.precision-hero-image::after { background: linear-gradient(90deg, rgba(7,25,39,.9) 0%, rgba(7,25,39,.62) 34%, rgba(7,25,39,.08) 75%); }
+@media (max-width: 900px) { .precision-hero-image { left: 0; } .precision-hero-image::after { background: linear-gradient(90deg, rgba(7,25,39,.88), rgba(7,25,39,.2)); } }
+@media (max-width: 600px) { .precision-hero-image { inset: auto; } .precision-hero-image img { object-position: 50% 60%; } .precision-hero-image::after { display: none; } }
