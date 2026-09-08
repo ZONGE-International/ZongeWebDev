@@ -4,7 +4,6 @@ description = "Zonge software supports quality control, processing, modeling, an
 banner = "img/surveyor-vista.webp"
 weight = 1
 layout = "single"
-aliases = ["/software/software/"]
 +++
 
 <div class="zonge-software-page">

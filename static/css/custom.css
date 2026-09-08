@@ -289,6 +289,34 @@
     text-shadow: 0 8px 24px rgba(0, 0, 0, 0.38);
 }
 
+.home-carousel .carousel-text-col .carousel-expertise-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.carousel-expertise-links a {
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    font-weight: 800;
+}
+
+.carousel-expertise-links a:hover,
+.carousel-expertise-links a:focus {
+    border-color: #8cc8ff;
+    color: #b9ddff;
+}
+
+.carousel-expertise-links span {
+    color: rgba(220, 235, 250, 0.65);
+}
+
 .carousel-media-col,
 .carousel-only-image-col,
 .carousel-single-col {

@@ -1,10 +1,11 @@
 +++
 title = "Geophysical Survey Applications"
+seo_title = "Geophysical Survey Applications | Zonge International"
 description = "Explore how Zonge geophysical methods support mineral exploration, geothermal development, and groundwater investigations."
 banner = "img/surveyor-vista.webp"
 weight = 1
 layout = "single"
-aliases = ["/targets/targets/", "/targetskeleton/"]
+aliases = ["/targetskeleton/"]
 +++
 
 {{< testimonial >}}
