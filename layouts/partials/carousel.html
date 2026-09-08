@@ -13,40 +13,7 @@
             {{ if isset hugo.Data "events" }}
             {{ $upcomingEvents = sort (where hugo.Data.events "end_date" "ge" $today) "start_date" }}
             {{ end }}
-            {{ if gt (len $upcomingEvents) 0 }}
-            {{ $nextEvent := index $upcomingEvents 0 }}
-            <div class="item custom-flex-row carousel-event-slide">
-                <a href="{{ "/events/" | relURL }}" title="View upcoming Zonge events">
-                    <div class="row carousel-slide-row">
-                        <div class="col-sm-5 right carousel-text-col">
-                            <span class="carousel-event-kicker"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Next event</span>
-                            <h1>{{ $nextEvent.short_name }}</h1>
-                            <p class="carousel-event-meta">
-                                <strong>{{ $nextEvent.date_display }}</strong>
-                                <span>{{ $nextEvent.venue }} &nbsp;&bull;&nbsp; {{ $nextEvent.location }}</span>
-                            </p>
-                            {{ with $nextEvent.booth }}
-                            <span class="carousel-event-booth"><i class="fa-solid fa-store" aria-hidden="true"></i> Booth: {{ . }}</span>
-                            {{ end }}
-                            <span class="carousel-event-cta">View event details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="col-sm-7 carousel-media-col carousel-event-visual" aria-hidden="true">
-                            <div class="carousel-event-calendar">
-                                <span class="carousel-event-calendar__label">Meet Zonge</span>
-                                <div class="carousel-event-calendar__date">
-                                    <span class="carousel-event-calendar__month">{{ $nextEvent.month }}</span>
-                                    <strong class="carousel-event-calendar__days">{{ $nextEvent.days }}</strong>
-                                    <span class="carousel-event-calendar__year">{{ $nextEvent.year }}</span>
-                                </div>
-                                <span class="carousel-event-calendar__place"><i class="fa-solid fa-location-dot"></i> {{ $nextEvent.location }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            {{ end }}
-            {{ range sort hugo.Data.carousel "weight" }}
-            {{ if default false .homepage }}
+            {{ range $index, $slide := where (sort hugo.Data.carousel "weight") "homepage" true }}
             <div class="item custom-flex-row">
                 {{ if .href }}
                 <a href="{{ .href }}"{{ if hasPrefix .href "http" }} target="_blank" rel="noopener"{{ end }}
@@ -85,6 +52,37 @@
                     {{ if .href }}
                 </a>
                 {{ end }}
+            </div>
+            {{ if and (eq $index 0) (gt (len $upcomingEvents) 0) }}
+            {{ $nextEvent := index $upcomingEvents 0 }}
+            <div class="item custom-flex-row carousel-event-slide">
+                <a href="{{ "/events/" | relURL }}" title="View upcoming Zonge events">
+                    <div class="row carousel-slide-row">
+                        <div class="col-sm-5 right carousel-text-col">
+                            <span class="carousel-event-kicker"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Next event</span>
+                            <h1>{{ $nextEvent.short_name }}</h1>
+                            <p class="carousel-event-meta">
+                                <strong>{{ $nextEvent.date_display }}</strong>
+                                <span>{{ $nextEvent.venue }} &nbsp;&bull;&nbsp; {{ $nextEvent.location }}</span>
+                            </p>
+                            {{ with $nextEvent.booth }}
+                            <span class="carousel-event-booth"><i class="fa-solid fa-store" aria-hidden="true"></i> Booth: {{ . }}</span>
+                            {{ end }}
+                            <span class="carousel-event-cta">View event details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-sm-7 carousel-media-col carousel-event-visual" aria-hidden="true">
+                            <div class="carousel-event-calendar">
+                                <span class="carousel-event-calendar__label">Meet Zonge</span>
+                                <div class="carousel-event-calendar__date">
+                                    <span class="carousel-event-calendar__month">{{ $nextEvent.month }}</span>
+                                    <strong class="carousel-event-calendar__days">{{ $nextEvent.days }}</strong>
+                                    <span class="carousel-event-calendar__year">{{ $nextEvent.year }}</span>
+                                </div>
+                                <span class="carousel-event-calendar__place"><i class="fa-solid fa-location-dot"></i> {{ $nextEvent.location }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             {{ end }}
             {{ end }}
