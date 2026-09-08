@@ -4,6 +4,7 @@ seo_title = "Upcoming Events | Meet Zonge International"
 description = "Meet Zonge International at upcoming water resources, geophysics, mining, and mineral exploration conferences across the United States and Canada."
 banner = "img/carousel/locations-outreach-map.png"
 banner_position = "center"
+events_listing = true
 url = "/events/"
 aliases = ["/about/events/"]
 +++

@@ -97,6 +97,28 @@
 
 {{- $graph := slice $organizationNode $websiteNode $pageNode -}}
 
+{{- if .Params.events_listing -}}
+  {{- $eventListItems := slice -}}
+  {{- range $index, $event := hugo.Data.events -}}
+    {{- $eventListItems = $eventListItems | append (dict
+      "@type" "ListItem"
+      "position" (add $index 1)
+      "name" $event.name
+      "item" $event.url
+    ) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict
+    "@type" "ItemList"
+    "@id" (printf "%s#upcoming-events" $pageURL)
+    "name" $pageTitle
+    "description" $description
+    "itemListOrder" "https://schema.org/ItemListOrderAscending"
+    "numberOfItems" (len $eventListItems)
+    "itemListElement" $eventListItems
+    "mainEntityOfPage" (dict "@id" (printf "%s#webpage" $pageURL))
+  ) -}}
+{{- end -}}
+
 {{- if and (not $isHome) (ne .Kind "section") -}}
   {{- $breadcrumbItems := slice (dict
     "@type" "ListItem"

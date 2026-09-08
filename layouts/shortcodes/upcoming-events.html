@@ -2,9 +2,7 @@
 <section class="zonge-events" aria-label="Zonge upcoming events">
   <div class="zonge-events-grid">
     {{- range $events }}
-    <article class="zonge-event-card" itemscope itemtype="https://schema.org/Event">
-      <meta itemprop="startDate" content="{{ .start_date }}">
-      <meta itemprop="endDate" content="{{ .end_date }}">
+    <article class="zonge-event-card">
       <div class="zonge-event-date" aria-hidden="true">
         <span class="zonge-event-date__month">{{ .month }}</span>
         <span class="zonge-event-date__days">{{ .days }}</span>
@@ -13,15 +11,15 @@
 
       <div class="zonge-event-content">
         <p class="zonge-event-eyebrow">Meet Zonge</p>
-        <h3 itemprop="name">{{ .name }}</h3>
+        <h3>{{ .name }}</h3>
         <ul class="zonge-event-details">
           <li>
             <i class="fa-regular fa-calendar" aria-hidden="true"></i>
             <time datetime="{{ .start_date }}">{{ .date_display }}</time>
           </li>
-          <li itemprop="location" itemscope itemtype="https://schema.org/Place">
+          <li>
             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-            <span><span itemprop="name">{{ .venue }}</span><br><span itemprop="address">{{ .location }}</span></span>
+            <span>{{ .venue }}<br>{{ .location }}</span>
           </li>
           {{- with .attendance }}
           <li>
@@ -38,7 +36,7 @@
             Booth: {{ . }}
           </span>
           {{- end }}
-          <a class="zonge-event-link" href="{{ .url }}" itemprop="url" target="_blank" rel="noopener noreferrer">
+          <a class="zonge-event-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
             Event website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
           </a>
         </div>
