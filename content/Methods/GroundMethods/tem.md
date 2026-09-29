@@ -51,4 +51,7 @@ Related applications: [mining exploration](/targets/mining/) and [groundwater ex
 
 ## Case Studies and Resources
 
+Selected third-party project references are listed below. Project interpretations and results are reported by the cited publisher.
+
+- [NanoTEM survey results from the Blackhawk silver district, New Mexico](https://finance.yahoo.com/news/texas-mineral-resources-announces-webinar-181100665.html) — Texas Mineral Resources Corp., Dec 2022
 - Contact Zonge for TEM and NanoTEM project examples, target-specific applications, and supporting references.

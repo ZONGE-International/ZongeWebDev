@@ -25,6 +25,15 @@ Read the 2013 Stanford Geothermal Workshop paper, [*The Evolving Role of MT in G
 
 As part of a Sandia National Laboratories-led geothermal research project, Zonge International conducted a combined 40-station MT and CSEM survey and processed the resulting data in northern Steptoe Valley, Nevada. The public overview presents the broader investigation and its findings: [Geophysical Imaging at Steptoe Valley, Nevada](https://storymaps.arcgis.com/stories/fdba3f1084b7469b87d4f6822c60311c).
 
+## Selected Research and Awards
+
+The following independent and agency sources document Zonge fieldwork, instrumentation, or research support.
+
+- [Gravity survey at the Granite Mountain geothermal system, Nevada](https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2026/Adams.pdf) — 51st Stanford Geothermal Workshop, Feb 2026
+- [DOE SBIR award for airborne drone EM in geothermal exploration](https://www.sbir.gov/awards/214334) — U.S. Department of Energy, 2024
+- [Gravity survey at the Grover Point blind geothermal system, Nevada](https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2024/Folsom.pdf) — 49th Stanford Geothermal Workshop, Feb 2024
+- [ZEN and ANT-4 field acquisition at San Emidio, Nevada](https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2020/Folsom.pdf) — 45th Stanford Geothermal Workshop, Feb 2020
+
 ## Related Survey Methods
 
 Explore [UAV magnetic surveys](/methods/airborne-methods/drone-magnetic-surveys/), [gravity](/methods/groundmethods/gravity/), [CSAMT](/methods/groundmethods/csamt/), [MT/AMT](/methods/groundmethods/mt/), and [induced polarization](/methods/groundmethods/ip/).

@@ -49,4 +49,11 @@ Related applications: [mining exploration](/targets/mining/), [geothermal explor
 
 ## Case Studies and Resources
 
+Selected third-party project references are listed below. Project interpretations and results are reported by the cited publishers.
+
+- [20 line-km CSAMT program at Table Mountain, Nevada](https://www.juniorminingnetwork.com/junior-miner-news/press-releases/3431-tsx-venture/tgc/207588-toogood-gold-expands-table-mountain-project-to-1-902-hectares-along-priority-structural-corridors.html) — Toogood Gold Corp., Jul 2026
+- [CSAMT results and drill targeting at Stockade Mountain, Oregon](https://www.newsfilecorp.com/release/299715/Austin-Gold-Reports-Results-of-CSAMT-Survey-and-Advances-Drill-Targeting-at-Stockade-Mountain) — Austin Gold Corp., Jun 2026
+- [11.2 line-km CSAMT survey at Bellehelen, Nevada](https://www.newsfilecorp.com/release/285376/Excalibur-Metals-Delineates-Drill-Targets-and-Strengthens-Management-Team) — Excalibur Metals Corp., Feb 2026
+- [Property-wide CSAMT and the Silver Sage discovery targets, Alaska](https://www.newsfilecorp.com/release/272869/Alaska-Silver-Announces-New-HighGrade-Discovery-Zone-Silver-Sage) — Alaska Silver Corp., Nov 2025
+- [CSAMT data from the Gooseberry silver project, Nevada](https://www.globenewswire.com/news-release/2023/02/15/2608580/0/en/American-Pacific-Mining-Announces-2023-Drill-Plans-and-Compilation-of-2022-Soil-Geochemistry-and-Integrated-CSAMT-Geophysics-at-its-Gooseberry-Project.html) — American Pacific Mining Corp., Feb 2023
 - Contact Zonge for CSAMT project examples, deliverable samples, and references relevant to your survey objectives.

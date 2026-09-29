@@ -18,3 +18,8 @@ We are a true medium-sized company, with the nucleus of our field services exist
 Our company consists of approximately 50 employees, with the majority working on the field services side.
 
 Although most of the fieldwork we complete is in the western U.S. and Mexico, we have worked internationally, and we are open to international fieldwork opportunities and partnerships going forward. Most of our instrument sales are to companies outside of the U.S.
+
+## Awards and Coverage
+
+- [SEG Distinguished Achievement Award: Zonge International (2022)](https://library.seg.org/doi/10.1190/tle41080558.1) — Society of Exploration Geophysicists, _The Leading Edge_
+- [Interview: why reliable interpretation starts with field data](https://mexicobusiness.news/mining/news/quality-data-begins-field-collection-zonge-international) — Mexico Business News, Aug 2025

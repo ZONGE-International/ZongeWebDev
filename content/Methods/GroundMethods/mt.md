@@ -49,4 +49,9 @@ Related applications: [mining exploration](/targets/mining/), [geothermal explor
 
 ## Case Studies and Resources
 
+Selected third-party project references are listed below. Project interpretations and results are reported by the cited publishers.
+
+- [Vector AMT survey and carbonate-replacement targets at Tombstone, Arizona](https://www.juniorminingnetwork.com/junior-miner-news/press-releases/2113-tsx-venture/azt/177079-aztec-identifies-high-priority-carbonate-replacement-targets-crd-at-tombstone-project-arizona.html) — Aztec Minerals Corp., Mar 2025
+- [Zonge's role in the completed US Magnetotelluric Array](https://www.earthscope.org/news/after-18-years-magnetotelluric-array-completes-survey-of-contiguous-us/) — EarthScope Consortium, Jun 2024
+- [MT results supporting new claim staking at Railroad Valley, Nevada](https://www.globenewswire.com/news-release/2021/10/27/2321802/0/en/Ameriwest-Lithium-Railroad-Valley-Geophysics-Results-in-Staking-of-Additional-Claims.html) — Ameriwest Lithium Inc., Oct 2021
 - Contact Zonge for MT and AMT project examples, regional case studies, and deliverable samples.

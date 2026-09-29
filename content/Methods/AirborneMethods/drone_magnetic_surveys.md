@@ -58,4 +58,11 @@ Related applications: [mining exploration](/targets/mining/) and [geothermal exp
 
 ## Case Studies and Resources
 
+Selected third-party project references are listed below. Project interpretations and results are reported by the cited publishers.
+
+- [650 line-km drone magnetic survey at Copper Springs, Arizona](https://www.newsfilecorp.com/release/307940/Soil-Geochemistry-Confirms-Large-Porphyry-System-at-Copper-Springs-in-the-Arizona-Copper-Triangle-Coyote-Copper-Mines-Expands-Land-Package-by-2000-Acres) — Coyote Copper Mines Inc., Aug 2026
+- [325 line-km drone magnetic survey at CK Gold, Wyoming](https://www.usgoldcorp.com/news-media/press-releases/detail/250/u-s-gold-corp-advances-exploration-activities-at-its-ck) — U.S. Gold Corp., Jun 2026
+- [235.7 line-km drone magnetic survey at Gran Pilar, Sonora](https://www.juniorminingnetwork.com/junior-miner-news/press-releases/2727-cse/toc/199614-tocvan-drone-magnetic-data-strengthens-gold-silver-targets-across-gran-pilar-identifies-broad-zones-for-expansion-potential.html) — Tocvan Ventures Corp., Mar 2026
+- [Completed drone magnetic survey at Eldorado, Oregon](https://www.provenancegold.com/20250320-provenance-gold-completes-drone-based-airborne-magnetic-survey-at-the-eldorado-project) — Provenance Gold Corp., Mar 2025
+- [658 line-km UAV magnetic survey at Cecilia, Sonora](https://www.newsfilecorp.com/release/219104) — Riverside Resources Inc., Aug 2024
 - Contact Zonge for UAV magnetic survey examples, terrain-specific planning guidance, and representative deliverables.

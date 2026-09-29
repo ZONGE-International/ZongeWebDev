@@ -52,4 +52,7 @@ Related applications: [mining exploration](/targets/mining/), [geothermal explor
 
 ## Case Studies and Resources
 
+Selected third-party project references are listed below. Project interpretations and results are reported by the cited publisher.
+
+- [800-station gravity survey at the Eastside gold project, Nevada](https://www.juniorminingnetwork.com/junior-miner-news/press-releases/2512-tsx-venture/auau/187370-a2gold-commences-comprehensive-geophysics-program-at-eastside-project.html) — A2Gold Corp., Sep 2025
 - Contact Zonge for gravity project examples, derivative product samples, and application notes relevant to your target.
