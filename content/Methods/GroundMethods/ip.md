@@ -59,4 +59,14 @@ Related applications: [mining exploration](/targets/mining/) and [groundwater ex
 ## Case Studies and Resources
 
 - Zonge, K., J. Wynn, and S. Urquhart, 2005, Resistivity, induced polarization, and complex resistivity, _in_ D. K. Butler, ed., _Near-Surface Geophysics_, SEG Investigations in Geophysics Series No. 13, Chapter 9. http://dx.doi.org/10.1190/1.9781560801719.ch9
+
+Selected third-party project references are listed below. Project interpretations and results are reported by the cited publishers.
+
+- [IP, MT, inversion and interpretation at Thompson Knolls, Utah](https://www.newsfilecorp.com/release/310392/Exploration-Accelerated-at-BCMs-100-Controlled-Thompson-Knolls-Project-Utah) — BCM Resources Corp., Aug 2026
+- [IP-resistivity anomaly and drill targets at Claudia, Mexico](https://www.juniorminingnetwork.com/junior-miner-news/press-releases/3370-cse/psil/206733-pacifica-silver-s-first-ip-survey-identifies-large-near-surface-chargeability-anomaly-at-claudia-drill-testing-commences-on-new-judy-anomaly.html) — Pacifica Silver Corp., Jul 2026
+- [Property-wide IP and resistivity survey at Hayden Hill, California](https://irw-press.com/en/four-nines-gold-advances-toward-maiden-drill-program-with-property-wide-geophysical-survey-at-hayden-hill/) — Four Nines Gold Inc., Jun 2026
+- [Dipole-dipole IP defining drill targets at Gold Run, Nevada](https://www.juniorminingnetwork.com/junior-miner-news/press-releases/2979-tsx-venture/lstr/198992-lodestar-metals-receives-final-blm-drill-permit-approval-and-defines-new-high-priority-ddip-targets-at-gold-run-nevada.html) — Lodestar Metals Corp., Mar 2026
+- [DC resistivity-IP survey and inversion at the Ivy project, Nevada](https://www.juniorminingnetwork.com/junior-miner-news/press-releases/1699-tsx-venture/cgd/191378-carlin-gold-s-ivy-copper-gold-project-dc-resistivity-ip-survey-targets-identified.html) — Carlin Gold Corp., Nov 2025
+- [Drone-assisted IP survey at the Hycroft mine, Nevada](https://hycroftmining.com/press-releases/hycroft-announces-potential-feeder-identified-in-brimstone-geophysics/) — Hycroft Mining Holding Corp., Sep 2025
+- [IP and MT program at the Phoenix Silver project, Arizona](https://www.newsfilecorp.com/release/267325/Silver-One-Commences-Ground-Geophysical-Survey-at-Its-Phoenix-Silver-Project-and-Advances-Candelaria-PEA) — Silver One Resources Inc., Sep 2025
 - Contact Zonge for IP project examples and references relevant to your target style and survey scale.
