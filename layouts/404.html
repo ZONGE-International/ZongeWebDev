@@ -4,6 +4,18 @@
   <head>
     {{ partial "headers.html" . }}
     {{ partial "custom_headers.html" . }}
+    {{- with .Site.Params.analytics404ID }}
+      {{- if and hugo.IsProduction (ne . "G-B7SVCQZ8GK") }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ . }}', {send_page_view: false});
+      gtag('event', '404_view', {send_to: '{{ . }}', page_path: window.location.pathname});
+    </script>
+      {{- end }}
+    {{- end }}
   </head>
 
   <body>
@@ -24,7 +36,7 @@
                         <h3>{{ i18n "404Message" | markdownify }}</h3>
                         <h4 class="text-muted">{{ i18n "404Error" | markdownify }}</h4>
 
-                        <p class="buttons"><a href="{{ "/" | relURL }}" class="btn btn-template-main"><i class="fas fa-home"></i> {{ i18n "404NavHome" | markdownify }}</a>
+                        <p class="buttons"><a href="{{ .Site.Home.RelPermalink }}" class="btn btn-template-main"><i class="fas fa-home"></i> {{ i18n "404NavHome" | markdownify }}</a>
                         </p>
                     </div>
 

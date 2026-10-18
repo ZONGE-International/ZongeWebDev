@@ -1,8 +1,8 @@
-{{- if hugo.IsProduction }}
+{{- $is404 := or (eq .Kind "404") (eq .RelPermalink "/404.html") -}}
+{{- if and hugo.IsProduction (not $is404) }}
 {{ template "_internal/google_analytics.html" . }}
 {{- end }}
 <meta charset="utf-8">
-{{- $is404 := or (eq .Kind "404") (eq .RelPermalink "/404.html") -}}
 {{- $robots := cond $is404 "noindex,follow" (default "index,follow" .Params.robots) -}}
 <meta name="robots" content="{{ $robots }}">
 {{- if strings.Contains $robots "noindex" }}

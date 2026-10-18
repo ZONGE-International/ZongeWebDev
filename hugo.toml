@@ -2,8 +2,8 @@ baseurl = "https://www.zonge.com/"
 #baseurl = "http://localhost:1313/ZongeWebDev/" 
 enableRobotsTXT = true
 enableGitInfo = true
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 title = "Zonge"
 theme = "hugo-universal-theme"
 #themesDir = "./."
@@ -385,6 +385,9 @@ pluralizelisttitles = false
     pre = "<i class='fab fa-2x fa-linkedin'></i>"
 
 [params]
+    # Optional dedicated GA4 property for 404 diagnostics. Leave unset by default.
+    # Never use the main site measurement ID here.
+    # analytics404ID = "G-EXAMPLE404"
     viewMorePostLink = "/blog/"
     author = "Zonge"
     mainSections = ["blog"]

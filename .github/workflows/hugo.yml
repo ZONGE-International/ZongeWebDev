@@ -70,6 +70,8 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Validate 404 page and redirect manifest
+        run: python3 -m unittest discover -s tests -v
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
