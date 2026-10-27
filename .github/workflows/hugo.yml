@@ -35,7 +35,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.165.0
+      HUGO_VERSION: 0.168.0
       THEME_REPO: https://github.com/devcows/hugo-universal-theme.git
       THEME_COMMIT: d3000904ec2dfe7cae2a2d09320444cfccd3f5fc
     steps:

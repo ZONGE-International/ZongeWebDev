@@ -24,7 +24,7 @@ The production site is deployed through GitHub Pages from the workflow in [.gith
 
 Install:
 
-- Hugo Extended `0.165.0` (the version pinned in CI)
+- Hugo Extended `0.168.0` (the version pinned in CI)
 - Dart Sass
 - Git
 
