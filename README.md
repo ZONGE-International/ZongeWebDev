@@ -25,7 +25,6 @@ The production site is deployed through GitHub Pages from the workflow in [.gith
 Install:
 
 - Hugo Extended `0.168.0` (the version pinned in CI)
-- Dart Sass
 - Git
 
 If you clone the repository fresh, create the local theme checkout at the same pinned revision used by CI:
@@ -81,11 +80,11 @@ Their supporting explanation text lives in:
 
 ## Deployment
 
-Deployment is handled by GitHub Actions on pushes to `main`.
+Deployment is handled by GitHub Actions on pushes to `main` and by a daily scheduled rebuild. The daily rebuild refreshes the homepage's next upcoming event as dates pass.
 
 The workflow:
 
-1. Installs Hugo Extended and Dart Sass
+1. Installs Hugo Extended
 2. Checks out the repository
 3. Ensures the theme is pinned to the expected commit
 4. Builds the site with Hugo
