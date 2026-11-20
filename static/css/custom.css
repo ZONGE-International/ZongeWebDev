@@ -2067,6 +2067,7 @@ button:hover,
 .zonge-contact-form select.form-control {
     padding-right: 44px;
     appearance: none;
+    color-scheme: dark;
     background-image:
         linear-gradient(45deg, transparent 50%, rgba(220, 234, 251, 0.84) 50%),
         linear-gradient(135deg, rgba(220, 234, 251, 0.84) 50%, transparent 50%);
@@ -2083,7 +2084,8 @@ button:hover,
 
 .zonge-contact-form select.form-control option,
 .zonge-contact-form select.form-control optgroup {
-    color: #132535;
+    color: #fff;
+    background-color: #162130;
 }
 
 .zonge-contact-form textarea.form-control {
@@ -2098,7 +2100,7 @@ button:hover,
 
 .zonge-contact-form .form-control:focus {
     border-color: rgba(112, 182, 255, 0.58);
-    background: rgba(8, 20, 37, 0.94);
+    background-color: rgba(8, 20, 37, 0.94);
     box-shadow: 0 0 0 4px rgba(92, 170, 255, 0.12);
 }
 

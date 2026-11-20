@@ -18,7 +18,7 @@
                 {{- $turnstileReady := and $formReady $turnstileSiteKey -}}
                 <div class="zonge-contact-email-card">
                     <form id="zonge-contact-form" class="zonge-contact-form" action="{{ if $formReady }}{{ $formAction }}{{ else }}#{{ end }}" method="post" data-form-ready="{{ if $formReady }}true{{ else }}false{{ end }}">
-                        <input type="hidden" name="_subject" value="Website inquiry">
+                        <input type="hidden" name="_subject" value="Website Inquiry">
                         <input type="hidden" name="_next" value="{{ "thanks/" | absURL }}">
                         <input type="hidden" name="source_page" id="contact-source-page" value="Not available">
                         <input type="hidden" name="source_intent" id="contact-source-intent" value="Not specified">
@@ -149,6 +149,22 @@
 </div>
 
 {{ partial "map.html" . }}
+
+<script>
+    document.getElementById("zonge-contact-form").addEventListener("formdata", function (event) {
+        var data = event.formData;
+        var inquiryType = data.get("inquiry_type");
+        var subject = data.get("_subject");
+
+        if (inquiryType) {
+            subject += ": " + inquiryType;
+        }
+
+        // Keep the existing dashboard field and set Formspree's email subject field.
+        data.set("_subject", subject);
+        data.set("subject", subject);
+    });
+</script>
 
 {{- if and (strings.TrimSpace (default "" .Site.Params.formspree_action)) (strings.TrimSpace (default "" .Site.Params.turnstile_site_key)) -}}
 <script>
