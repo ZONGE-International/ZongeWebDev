@@ -113,9 +113,9 @@
         var intentMap = {
             "instrument-sales": "Instruments & Equipment - Sales & Training",
             "instrument-support": "Instruments & Equipment - Service & Repair",
-            "survey-planning": "Geophysics Survey Expertise - Project Planning",
-            "mineral-geothermal": "Geophysics Survey Expertise - Mineral & Geothermal",
-            "groundwater": "Geophysics Survey Expertise - Groundwater",
+            "survey-planning": "Geophysics Survey Expertise - Survey Design",
+            "mineral-geothermal": "",
+            "groundwater": "Geophysics Survey Expertise - Groundwater Exploration",
             "software-support": "Software & Data - Software Support"
         };
         var query = new URLSearchParams(window.location.search);
@@ -145,8 +145,18 @@
         var sourceChannelInput = document.getElementById("contact-source-channel");
         var submissionIdInput = document.getElementById("contact-submission-id");
 
-        if (selectedIntent && inquiryType) {
-            inquiryType.value = intentMap[selectedIntent];
+        var suggestedInquiry = intentMap[selectedIntent];
+        if (selectedIntent === "mineral-geothermal") {
+            // Mining and geothermal links share an intent for attribution.
+            var explorationInquiries = {
+                "/targets/mining": "Geophysics Survey Expertise - Mineral Exploration",
+                "/targets/geothermal": "Geophysics Survey Expertise - Geothermal Exploration"
+            };
+            suggestedInquiry = explorationInquiries[normalizedPath(sourcePath)];
+        }
+
+        if (suggestedInquiry && inquiryType) {
+            inquiryType.value = suggestedInquiry;
         }
 
         if (sourcePageInput) {
